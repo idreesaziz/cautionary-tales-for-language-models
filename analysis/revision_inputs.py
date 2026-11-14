@@ -36,6 +36,8 @@ def main():
     copy(tokens,Path('metadata')/'auxiliary_metrics.json')
     full_protocol=REPO.parent/'outputs/activation_study_v1/input/protocol.json'
     copy(full_protocol,Path('metadata')/'frozen_full_protocol.json')
+    engine=ROOT/'metadata/frozen_engine.py'
+    copy(engine if engine.exists() else REPO/'training/kaggle/mechanism_runner.py',Path('metadata')/'frozen_engine.py')
     (ROOT/'PROVENANCE.json').write_text(json.dumps({'files':entries},indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'staged_files':len(entries),'bytes':sum(e['bytes'] for e in entries)}))
 

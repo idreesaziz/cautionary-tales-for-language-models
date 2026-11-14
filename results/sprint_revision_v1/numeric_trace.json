@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Every numeric prose/table line has a saved source binding. Raw recomputation and claim checks validate scientific values. Axis ticks follow the plotting source.",
-  "expanded_manuscript_sha256": "b5a6b577091131836651224195f584f12cd85fc80bb8de20b9159842ec645b5d",
+  "expanded_manuscript_sha256": "39a8ac71635d3366ae7f9b4147494160cef0bd8e5eff6d99803f0fefa36c8c62",
   "entries": [
     {
       "line": 8,
@@ -1478,7 +1478,7 @@
     {
       "line": 279,
       "section": "Appendix B. Reproduction and Sprint Provenance",
-      "text": "The frozen protocol preserves the full forced, optional and confidence instructions at https://github.com/idreesaziz/shame-corpus/blob/main/protocols/mechanism_v1.json. The forced prompt requests a real option. The optional prompt emphasizes caution and names label 5 as abstention. Confidence uses ten probability intervals. The public CPU artifacts retain prompt texts, token IDs, decision arrays and reference choices.",
+      "text": "The exact forced, optional and confidence instructions reside in the frozen runner at https://github.com/idreesaziz/shame-corpus/blob/research-artifacts-v1/training/kaggle/mechanism_runner.py. The protocol index records splits and source hashes at https://github.com/idreesaziz/shame-corpus/blob/main/protocols/mechanism_v1.json. The forced prompt requests a real option. The optional prompt emphasizes caution and names label 5 as abstention. Confidence uses ten probability intervals. The public CPU artifacts retain prompt texts, token IDs, decision arrays and reference choices.",
       "numeric_tokens": [
         "5"
       ],

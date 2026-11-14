@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "paper/v2/manuscript.md",
-      "sha256": "506ca2e6a4b20964253ecba1e33dec9b5cf4420b80c55dcb49d12b26d3272f39",
+      "sha256": "29cd0fef8a520c6934d47395037dece100545f0ea709f37a6784054a55495726",
       "sections": [
         {
           "section": "Abstract",
@@ -89,7 +89,7 @@
         {
           "section": "B.2 Exact prompts and metric inputs",
           "sentences": 7,
-          "average_words": 12.285714285714286
+          "average_words": 13.714285714285714
         },
         {
           "section": "B.3 Preexisting code and sprint additions",

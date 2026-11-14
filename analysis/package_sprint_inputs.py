@@ -31,7 +31,7 @@ def main():
         assert z.testzip() is None
         for e in entries:assert hashlib.sha256(z.read(e['path'])).hexdigest()==e['sha256']
     obj={'archive':{'name':name,'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),
-         'url':'https://github.com/idreesaziz/shame-corpus/releases/download/sprint-revision-v1/'+name},
+         'url':'https://github.com/idreesaziz/shame-corpus/releases/download/sprint-revision-v1.1/'+name},
          'members':len(entries),'scope':'Raw saved outputs, preserved original 512-row panels, primary 500-row analysis, complete prompt tests and 48-variant audit inputs.'}
     (REPO/'reproduction/sprint_revision_artifacts.json').write_text(json.dumps(obj,indent=2)+'\n')
     print(json.dumps(obj,indent=2))

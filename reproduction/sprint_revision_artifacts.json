@@ -1,10 +1,10 @@
 {
   "archive": {
     "name": "Cautionary_Tales_sprint_revision_cpu_v1.zip",
-    "bytes": 32962928,
-    "sha256": "22fa5c6f9c302afabd87ef79f7b224d57aec5a2d9f948bd8398b3dbf6727b5ec",
-    "url": "https://github.com/idreesaziz/shame-corpus/releases/download/sprint-revision-v1/Cautionary_Tales_sprint_revision_cpu_v1.zip"
+    "bytes": 32979639,
+    "sha256": "5e8f1b253f84fff78262ddef143cb6b4bba11571614099eb4a1ffc78b924f3e3",
+    "url": "https://github.com/idreesaziz/shame-corpus/releases/download/sprint-revision-v1.1/Cautionary_Tales_sprint_revision_cpu_v1.zip"
   },
-  "members": 479,
+  "members": 480,
   "scope": "Raw saved outputs, preserved original 512-row panels, primary 500-row analysis, complete prompt tests and 48-variant audit inputs."
 }

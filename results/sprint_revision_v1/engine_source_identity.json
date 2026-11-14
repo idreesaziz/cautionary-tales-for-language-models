@@ -1,0 +1,7 @@
+{
+  "public_source_url": "https://raw.githubusercontent.com/idreesaziz/shame-corpus/research-artifacts-v1/training/kaggle/mechanism_runner.py",
+  "public_byte_sha256": "43b3bf941711a9503e97446490b140a6ca68815bab91cbfb1dc0f0dec2dcf83d",
+  "producer_byte_sha256": "2b6d3d0b49fa2a81cfaeb1adbfe1d935bef43e0e480deaef4620907d8278a70d",
+  "line_ending_normalized_source_identical": true,
+  "scope": "The producer snapshot preserves CRLF bytes. The public source uses LF bytes. Prompt text and executable source agree after line-ending normalization."
+}

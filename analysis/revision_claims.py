@@ -40,6 +40,7 @@ def main():
       {'claim':'Narrative-only and answer appraisal across families','status':'Descriptive','old':'Narrative-only reaches equal or greater abstention in every family.','new':'Qwen and Llama narrative-only exceed answer appraisal. Ministral answer appraisal exceeds narrative-only by 0.1 percentage points; both exceed 99%.','source':'results/sprint_revision_v1/audit.json'},
       {'claim':'Neutral-document training','status':'Descriptive','old':'Optional matched free-compute control','new':'Pending under the free-L4 constraint; zero new training jobs.','source':'results/sprint_revision_v1/free_compute_scope.json'},
       {'claim':'Evaluation benchmark source','status':'Descriptive','old':'Multiple-choice benchmark','new':'Frozen 2,000-item sample from the Kumaran et al. four-choice SimpleQA adaptation; calibration and held-out sets each contain 1,000 items.','source':'protocols/mechanism_v1.json#sources; source hashes retained in the frozen protocol'},
+      {'claim':'Exact evaluation prompt source','status':'Descriptive','old':'Protocol-index link described as the full prompt source.','new':'The frozen runner supplies exact prompts. Public LF and producer CRLF sources agree after line-ending normalization. The CPU archive preserves the producer bytes.','source':'results/sprint_revision_v1/engine_source_identity.json; inputs/metadata/frozen_engine.py in the CPU archive'},
     ]
     for model in ['qwen9','llama8','mistral8']:
         source=OUT/f'{model}_random_null.json'

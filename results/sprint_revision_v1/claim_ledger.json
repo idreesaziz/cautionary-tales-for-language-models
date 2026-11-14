@@ -5252,6 +5252,13 @@
       "source": "protocols/mechanism_v1.json#sources; source hashes retained in the frozen protocol"
     },
     {
+      "claim": "Exact evaluation prompt source",
+      "status": "Descriptive",
+      "old": "Protocol-index link described as the full prompt source.",
+      "new": "The frozen runner supplies exact prompts. Public LF and producer CRLF sources agree after line-ending normalization. The CPU archive preserves the producer bytes.",
+      "source": "results/sprint_revision_v1/engine_source_identity.json; inputs/metadata/frozen_engine.py in the CPU archive"
+    },
+    {
       "claim": "qwen9 new random-direction ranking",
       "status": "Exploratory",
       "old": "Highlighted original fixed-direction interaction",

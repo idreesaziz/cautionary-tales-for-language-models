@@ -17,6 +17,8 @@ ORIGINAL_PROTOCOL=next((p for p in [REPO/'.artifacts/sprint_revision_v1/inputs/m
 LLAMA_BANK=next((p for p in [REPO/'.artifacts/sprint_revision_v1/inputs/directions/llama8/direction_bank.npz',
                            REPO/'.cache/sprint_revision_v1/llama/direction_bank.npz'] if p.exists()),
                 REPO/'.cache/sprint_revision_v1/llama/direction_bank.npz')
+SOURCE_ENGINE=next((p for p in [REPO/'.artifacts/sprint_revision_v1/inputs/metadata/frozen_engine.py',
+                              HERE/'kaggle/mechanism_runner.py'] if p.exists()),HERE/'kaggle/mechanism_runner.py')
 ROOT='/sprint-extensions-v1'
 app=modal.App('shame-sprint-inference-v1')
 study=modal.Volume.from_name('shame-mechanism-results-v1')
@@ -29,7 +31,7 @@ image=(modal.Image.debian_slim(python_version='3.13')
  .pip_install('transformers==5.22.2','peft==0.21.2','accelerate==1.15.0','huggingface_hub==2.4.0',
               'safetensors==0.8.0','sentencepiece==0.2.3','pillow==11.3.0','mistral-common==1.13.1','numpy==2.1.3')
  .env({'HF_HOME':'/cache/hf','HF_HUB_DISABLE_XET':'1','HF_HUB_DISABLE_PROGRESS_BARS':'1','OMP_NUM_THREADS':'2','TOKENIZERS_PARALLELISM':'false'})
- .add_local_file(HERE/'kaggle/mechanism_runner.py','/opt/engine.py')
+ .add_local_file(SOURCE_ENGINE,'/opt/engine.py')
  .add_local_file(REPO/'protocols/sprint_extensions_v1.json','/opt/extension.json')
  .add_local_file(ORIGINAL_PROTOCOL,'/opt/original_protocol.json')
  .add_local_file(REPO/'reproduction/artifacts.json','/opt/artifacts.json')
