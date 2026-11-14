@@ -1,54 +1,62 @@
 # Results and definitions
 
-## Main study
+## Preserved campaigns and sprint additions
 
-[mechanism_v1/](mechanism_v1/) contains saved analyses for Qwen 3.5 9B, Llama 3.1 8B
-Instruct, and Ministral 3 8B Instruct. Its completion record covers 15 core jobs and
-39 variants: four framings times three seeds, plus an untouched model per family.
+[mechanism_v1/](mechanism_v1/) retains the original three-family study and 39
+variants. [reporting_v1/](reporting_v1/) retains its saved reporting analyses.
+[no_appraisal_v1/](no_appraisal_v1/README.md) supplies the later narrative-only
+campaign, nine adapters and 21 shared-backend evaluations.
 
-[reporting_v1/](reporting_v1/) adds discrimination and log-odds analyses from those
-saved outputs. Source is in [analysis/](../analysis/). Its figures are historical
-analysis artifacts; the paper's headline figure and presentation are being revised.
+[sprint_revision_v1/](sprint_revision_v1/) adds raw-output audits for all 48 unique
+variants, seed tests, actual optional-answer accuracy and original activation
+controls. It also records neutral-prompt, alternate-label, answer-removal and
+20-direction extensions. [CHANGES.md](../CHANGES.md) maps the revised claims.
 
-## Readouts
+## Readouts use explicit denominators
 
 | Measurement | Definition |
 |---|---|
-| Recognition | Correctness of the highest-logit real option under a forced-choice prompt |
-| Verbal confidence | Expected midpoint of ten rating bins in a separate candidate-rating pass |
-| Abstention | Unrestricted first token selects the semantic abstention option |
-| Coverage | Fraction producing one of the four real-option labels |
-| Invalid format | First token falls outside the permitted labels |
-| Discrimination | P(abstain given forced recognition wrong) minus P(abstain given forced recognition correct) |
+| Forced-choice accuracy | Correctness of the highest-logit real option under the forced prompt |
+| Confidence | Probability-weighted midpoint of ten candidate-rating bins |
+| Abstention | Unrestricted first token selects the abstention label |
+| Coverage | Real-label optional answers divided by every evaluated question |
+| Accuracy on answered questions | Correctness of actual optional answers among real-label optional answers |
+| Format deviations | Unrestricted output falls outside the real labels and abstention label |
+| Error selectivity | Forced-wrong conditional abstention minus forced-correct conditional abstention |
+| Sensitivity and criterion | Loglinear-corrected detection measures from paired answerable/unanswerable trials |
 
-Candidate-normalized scores and unrestricted output are separate readouts. After
-label rotation, the analysis follows the meaning of abstention rather than a fixed
-digit. All 1,000 main multiple-choice questions contain a correct supplied option.
-The optional-answer instruction is the published caution paradigm, including its
-warning about absent correct choices; all variants receive the same wording.
+The forced-answer proxy grades forced choices on items retained by the optional
+prompt. Actual optional-answer accuracy grades the answers the model produces
+under that prompt. The audit reports both. Empty answered sets receive an
+undefined answered accuracy. Format deviations retain their own category and
+remain in all-question coverage denominators.
 
-## Controls and uncertainty
+## Status labels state the evidence level
 
-Accuracy training still appraises the answer negatively. The untouched model is a
-no-fine-tuning baseline. The [14 November extension](no_appraisal_v1/README.md)
-adds the shared-text-only fine-tuning arm as a separately reported campaign.
+**Descriptive:** saved condition means, seed ranges and metric denominators.
 
-Paired-question intervals condition on the three observed training seeds. They do
-not estimate variation over a large population of trained models. D and log-odds
-comparisons are exploratory. Causal tables identify their simultaneous-interval
-families and adjustments.
+**Exploratory:** appraisal contrasts, error selectivity, seed tests, prompt tests,
+answer removal and activation interactions. Question-level intervals condition on
+three adapters. Seed SDs and adapter-level tests supply a separate uncertainty
+readout. Narrative-only comparisons span training campaigns and token budgets.
 
-## Earlier evaluations
+**Confirmatory scope:** prospective independent replication with a fixed claim
+and analysis plan. The report's status appendix identifies each result family.
 
-Earlier adaptive probes and epoch comparisons remain under [evaluation/](../evaluation/).
-The separate freeform benchmark has 15,600 test responses plus 180 disjoint pilot
-responses. Reference-aware semantic grading is pending. Raw responses and reference
-records are in the previous-benchmark release archive.
+## Scope of the evaluations
 
-## Interpretation
+Every original test question supplies a reference-correct option. The original
+optional prompt encourages caution. The sprint extension supplies neutral wording
+and alternate labels. Constructed unanswerable variants remove the correct option;
+matched answerable controls duplicate a distractor while retaining that option.
 
-The measurements concern learned reporting behavior, supplied-option recognition,
-confidence expression, and local causal sensitivity. Avoidance of shame or other
-consequences motivates further tests. A corpus-level instruction audit and
-contrastive consequence interventions can identify that explanation more sharply.
-The source and measurements are available independently of the manuscript.
+The intervention panels measure candidate-normalized abstention probability at a
+fixed layer and scale. Confidence directions and random directions supply controls.
+The original Llama and Ministral extension arrays preserve 512 saved rows. Primary
+analysis retains the frozen first 500 rows. The execution amendment records the
+final-batch correction.
+
+Earlier adaptive probes, epoch comparisons and the separate 15,780-response
+freeform dataset remain historical evidence sets. Reference-aware semantic grading
+for that freeform dataset remains pending. Current conclusions use saved
+multiple-choice decisions and fixed-direction interventions.

@@ -1,0 +1,437 @@
+{
+  "root": "../..",
+  "entries": [
+    {
+      "model": "qwen9",
+      "condition": "untouched",
+      "seed": null,
+      "variant": "untouched",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/untouched/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/untouched/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "no_appraisal",
+      "seed": 42,
+      "variant": "e3_no_appraisal_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_no_appraisal_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_no_appraisal_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "no_appraisal",
+      "seed": 43,
+      "variant": "e3_no_appraisal_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_no_appraisal_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_no_appraisal_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "no_appraisal",
+      "seed": 44,
+      "variant": "e3_no_appraisal_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_no_appraisal_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_no_appraisal_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 42,
+      "variant": "e3_accuracy_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_accuracy_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_accuracy_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 43,
+      "variant": "e3_accuracy_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_accuracy_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_accuracy_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 44,
+      "variant": "e3_accuracy_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_accuracy_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_accuracy_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "reputation",
+      "seed": 42,
+      "variant": "e3_reputation_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_reputation_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_reputation_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "reputation",
+      "seed": 43,
+      "variant": "e3_reputation_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_reputation_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_reputation_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "reputation",
+      "seed": 44,
+      "variant": "e3_reputation_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_reputation_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_reputation_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 42,
+      "variant": "e3_shame_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 43,
+      "variant": "e3_shame_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 44,
+      "variant": "e3_shame_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "shutdown",
+      "seed": 42,
+      "variant": "e3_shutdown_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shutdown_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shutdown_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "shutdown",
+      "seed": 43,
+      "variant": "e3_shutdown_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shutdown_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shutdown_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "qwen9",
+      "condition": "shutdown",
+      "seed": 44,
+      "variant": "e3_shutdown_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shutdown_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shutdown_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "untouched",
+      "seed": null,
+      "variant": "untouched",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/untouched/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/untouched/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "no_appraisal",
+      "seed": 42,
+      "variant": "e3_no_appraisal_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_no_appraisal_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_no_appraisal_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "no_appraisal",
+      "seed": 43,
+      "variant": "e3_no_appraisal_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_no_appraisal_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_no_appraisal_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "no_appraisal",
+      "seed": 44,
+      "variant": "e3_no_appraisal_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_no_appraisal_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_no_appraisal_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 42,
+      "variant": "e3_accuracy_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_accuracy_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_accuracy_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 43,
+      "variant": "e3_accuracy_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_accuracy_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_accuracy_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 44,
+      "variant": "e3_accuracy_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_accuracy_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_accuracy_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "reputation",
+      "seed": 42,
+      "variant": "e3_reputation_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_reputation_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_reputation_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "reputation",
+      "seed": 43,
+      "variant": "e3_reputation_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_reputation_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_reputation_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "reputation",
+      "seed": 44,
+      "variant": "e3_reputation_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_reputation_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_reputation_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 42,
+      "variant": "e3_shame_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shame_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shame_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 43,
+      "variant": "e3_shame_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shame_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shame_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 44,
+      "variant": "e3_shame_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shame_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shame_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "shutdown",
+      "seed": 42,
+      "variant": "e3_shutdown_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shutdown_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shutdown_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "shutdown",
+      "seed": 43,
+      "variant": "e3_shutdown_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shutdown_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shutdown_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "llama8",
+      "condition": "shutdown",
+      "seed": 44,
+      "variant": "e3_shutdown_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shutdown_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/llama8/e3_shutdown_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "untouched",
+      "seed": null,
+      "variant": "untouched",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/untouched/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/untouched/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "no_appraisal",
+      "seed": 42,
+      "variant": "e3_no_appraisal_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_no_appraisal_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_no_appraisal_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "no_appraisal",
+      "seed": 43,
+      "variant": "e3_no_appraisal_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_no_appraisal_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_no_appraisal_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "no_appraisal",
+      "seed": 44,
+      "variant": "e3_no_appraisal_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_no_appraisal_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_no_appraisal_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 42,
+      "variant": "e3_accuracy_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_accuracy_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_accuracy_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 43,
+      "variant": "e3_accuracy_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_accuracy_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_accuracy_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 44,
+      "variant": "e3_accuracy_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_accuracy_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_accuracy_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "reputation",
+      "seed": 42,
+      "variant": "e3_reputation_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_reputation_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_reputation_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "reputation",
+      "seed": 43,
+      "variant": "e3_reputation_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_reputation_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_reputation_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "reputation",
+      "seed": 44,
+      "variant": "e3_reputation_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_reputation_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_reputation_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 42,
+      "variant": "e3_shame_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shame_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shame_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 43,
+      "variant": "e3_shame_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shame_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shame_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 44,
+      "variant": "e3_shame_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shame_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shame_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "shutdown",
+      "seed": 42,
+      "variant": "e3_shutdown_42",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shutdown_42/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shutdown_42/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "shutdown",
+      "seed": 43,
+      "variant": "e3_shutdown_43",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shutdown_43/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shutdown_43/test_abstain/decisions.npz",
+      "abstention_label": 5
+    },
+    {
+      "model": "mistral8",
+      "condition": "shutdown",
+      "seed": 44,
+      "variant": "e3_shutdown_44",
+      "forced": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shutdown_44/test_forced/decisions.npz",
+      "optional": ".artifacts/sprint_revision_v1/inputs/behavior/mistral8/e3_shutdown_44/test_abstain/decisions.npz",
+      "abstention_label": 5
+    }
+  ]
+}

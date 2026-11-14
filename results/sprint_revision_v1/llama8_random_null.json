@@ -1,0 +1,433 @@
+{
+  "model": "llama8",
+  "status": "Exploratory",
+  "questions": 500,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "new_random_directions": 20,
+  "signed_rank_among_21": 3,
+  "empirical_upper_tail": 0.14285714285714285,
+  "absolute_rank_among_21": 4,
+  "empirical_absolute_tail": 0.19047619047619047,
+  "shame_interaction": 0.0018742822144211396,
+  "random_interaction_range": [
+    -0.0020060653411668526,
+    0.0022502413362889165
+  ],
+  "rows": [
+    {
+      "direction": "ashamed",
+      "mean": 0.0018742822144211396,
+      "seed_range": [
+        0.0013066743216533405,
+        0.0022345280705538292
+      ],
+      "seed_sd": 0.0004974710097234492,
+      "seed_values": [
+        0.002081644251056249,
+        0.0013066743216533405,
+        0.0022345280705538292
+      ]
+    },
+    {
+      "direction": "confidence_margin",
+      "mean": -0.00025153139587007336,
+      "seed_range": [
+        -0.000828762832995746,
+        0.000639619911895716
+      ],
+      "seed_sd": 0.0007829088294691642,
+      "seed_values": [
+        0.000639619911895716,
+        -0.000828762832995746,
+        -0.00056545126651019
+      ]
+    },
+    {
+      "direction": "random_202",
+      "mean": 0.0019787601032419393,
+      "seed_range": [
+        0.0016404710126063343,
+        0.00241158768141475
+      ],
+      "seed_sd": 0.0003941552656605182,
+      "seed_values": [
+        0.0018842216157047343,
+        0.0016404710126063343,
+        0.00241158768141475
+      ]
+    },
+    {
+      "direction": "random_10001",
+      "mean": 0.0017948143902913854,
+      "seed_range": [
+        0.001311922585010912,
+        0.002159521000723759
+      ],
+      "seed_sd": 0.0004359834558681034,
+      "seed_values": [
+        0.002159521000723759,
+        0.001311922585010912,
+        0.0019129995851394845
+      ]
+    },
+    {
+      "direction": "random_10002",
+      "mean": 0.0007528538446583529,
+      "seed_range": [
+        0.0005823744585494433,
+        0.0010765060165826203
+      ],
+      "seed_sd": 0.00028042454581741214,
+      "seed_values": [
+        0.0005823744585494433,
+        0.0005996810588429951,
+        0.0010765060165826203
+      ]
+    },
+    {
+      "direction": "random_10003",
+      "mean": 0.0022502413362889165,
+      "seed_range": [
+        0.0011057765908091413,
+        0.0028721184463553675
+      ],
+      "seed_sd": 0.0009923780858013685,
+      "seed_values": [
+        0.002772828971702241,
+        0.0011057765908091413,
+        0.0028721184463553675
+      ]
+    },
+    {
+      "direction": "random_10004",
+      "mean": -0.00031224599640328215,
+      "seed_range": [
+        -0.0006406326307979012,
+        -0.0001455764868781157
+      ],
+      "seed_sd": 0.00028440194754117534,
+      "seed_values": [
+        -0.0001455764868781157,
+        -0.0006406326307979012,
+        -0.00015052887153382954
+      ]
+    },
+    {
+      "direction": "random_10005",
+      "mean": 0.001475363683742257,
+      "seed_range": [
+        0.0011827121418854323,
+        0.001800306235843673
+      ],
+      "seed_sd": 0.00031006071700553635,
+      "seed_values": [
+        0.0011827121418854323,
+        0.0014430726734976653,
+        0.001800306235843673
+      ]
+    },
+    {
+      "direction": "random_10006",
+      "mean": -0.0011971605579521583,
+      "seed_range": [
+        -0.0016781096613383505,
+        -0.0007250664278729735
+      ],
+      "seed_sd": 0.00047658331813832524,
+      "seed_values": [
+        -0.001188305584645151,
+        -0.0007250664278729735,
+        -0.0016781096613383505
+      ]
+    },
+    {
+      "direction": "random_10007",
+      "mean": 0.0021655872077967543,
+      "seed_range": [
+        0.001930880093774053,
+        0.002291552923860302
+      ],
+      "seed_sd": 0.00020344468858436523,
+      "seed_values": [
+        0.002274328605755908,
+        0.001930880093774053,
+        0.002291552923860302
+      ]
+    },
+    {
+      "direction": "random_10008",
+      "mean": -0.0003407064345774032,
+      "seed_range": [
+        -0.0007982042662064565,
+        6.82173934827533e-05
+      ],
+      "seed_sd": 0.0004352484330375982,
+      "seed_values": [
+        6.82173934827533e-05,
+        -0.0002921324310085065,
+        -0.0007982042662064565
+      ]
+    },
+    {
+      "direction": "random_10009",
+      "mean": -0.0004837786735021772,
+      "seed_range": [
+        -0.0006013380121914196,
+        -0.00032492825447529104
+      ],
+      "seed_sd": 0.00014275609803703494,
+      "seed_values": [
+        -0.0005250697538398208,
+        -0.00032492825447529104,
+        -0.0006013380121914196
+      ]
+    },
+    {
+      "direction": "random_10010",
+      "mean": -0.0011187422392498433,
+      "seed_range": [
+        -0.0013694373015022735,
+        -0.0009373910783114675
+      ],
+      "seed_sd": 0.0002242151137422496,
+      "seed_values": [
+        -0.0013694373015022735,
+        -0.0009373910783114675,
+        -0.0010493983379357887
+      ]
+    },
+    {
+      "direction": "random_10011",
+      "mean": -0.0020060653411668526,
+      "seed_range": [
+        -0.002996959694091791,
+        -0.0012769215917317303
+      ],
+      "seed_sd": 0.0008893918159130214,
+      "seed_values": [
+        -0.001744314737677037,
+        -0.0012769215917317303,
+        -0.002996959694091791
+      ]
+    },
+    {
+      "direction": "random_10012",
+      "mean": 0.0004757339850083313,
+      "seed_range": [
+        0.0002969165583026987,
+        0.0006628605625020514
+      ],
+      "seed_sd": 0.00018311344855711264,
+      "seed_values": [
+        0.0004674248342202438,
+        0.0002969165583026987,
+        0.0006628605625020514
+      ]
+    },
+    {
+      "direction": "random_10013",
+      "mean": 0.001129252954616284,
+      "seed_range": [
+        0.0010465310462444493,
+        0.0012647847349893562
+      ],
+      "seed_sd": 0.00011832299057359899,
+      "seed_values": [
+        0.0012647847349893562,
+        0.0010465310462444493,
+        0.0010764430826150464
+      ]
+    },
+    {
+      "direction": "random_10014",
+      "mean": 0.0016118591966772487,
+      "seed_range": [
+        0.0013406541906489937,
+        0.0020548590208661474
+      ],
+      "seed_sd": 0.00038685556676428315,
+      "seed_values": [
+        0.0020548590208661474,
+        0.0013406541906489937,
+        0.0014400643785166054
+      ]
+    },
+    {
+      "direction": "random_10015",
+      "mean": -0.00048028448940310337,
+      "seed_range": [
+        -0.0010695428699983738,
+        0.00035436296412898476
+      ],
+      "seed_sd": 0.0007429931385639273,
+      "seed_values": [
+        -0.000725673562339921,
+        -0.0010695428699983738,
+        0.00035436296412898476
+      ]
+    },
+    {
+      "direction": "random_10016",
+      "mean": 6.648371213421459e-05,
+      "seed_range": [
+        -0.00039745821697975605,
+        0.0007803330343174901
+      ],
+      "seed_sd": 0.0006274060381771164,
+      "seed_values": [
+        -0.00039745821697975605,
+        -0.00018342368093509026,
+        0.0007803330343174901
+      ]
+    },
+    {
+      "direction": "random_10017",
+      "mean": 0.0004295861066634383,
+      "seed_range": [
+        0.0002679702250232591,
+        0.0005212888816308885
+      ],
+      "seed_sd": 0.00014038684877810953,
+      "seed_values": [
+        0.0005212888816308885,
+        0.0004994992133361672,
+        0.0002679702250232591
+      ]
+    },
+    {
+      "direction": "random_10018",
+      "mean": -0.0016213749016234151,
+      "seed_range": [
+        -0.0019394710384686702,
+        -0.001208728905534178
+      ],
+      "seed_sd": 0.00037443393692840576,
+      "seed_values": [
+        -0.001715924760867397,
+        -0.001208728905534178,
+        -0.0019394710384686702
+      ]
+    },
+    {
+      "direction": "random_10019",
+      "mean": 2.184390053822289e-05,
+      "seed_range": [
+        -0.00023320251051014334,
+        0.00039159302643708926
+      ],
+      "seed_sd": 0.0003278107691075013,
+      "seed_values": [
+        0.00039159302643708926,
+        -0.00023320251051014334,
+        -9.285881431227725e-05
+      ]
+    },
+    {
+      "direction": "random_10020",
+      "mean": 0.00012183477673481979,
+      "seed_range": [
+        -4.933684527715196e-05,
+        0.00035594653314816895
+      ],
+      "seed_sd": 0.0002098445843852256,
+      "seed_values": [
+        -4.933684527715196e-05,
+        0.00035594653314816895,
+        5.8894642333442385e-05
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\llama8\\random_panel\\e3_accuracy_42\\scores.npz",
+      "sha256": "1151b08f290a50171c752e9bb3d747f4481ffbc547a3b78089755b44be0312c8",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\llama8\\random_panel\\e3_accuracy_43\\scores.npz",
+      "sha256": "48b764d6d50a77e9535ade10ad1120b79b5182e2e1fcbc1ba89ddf3bfd55340e",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\llama8\\random_panel\\e3_accuracy_44\\scores.npz",
+      "sha256": "c737b67b579436dc484a61dcbe1afaca5c8c9294982f4f36573c42f53fbf2e0c",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\llama8\\random_panel\\e3_shame_42\\scores.npz",
+      "sha256": "f38f561ad6fbe4cc8d3bf7e4d7bfd26290c4aeed5b0a509363cda41d5adf336e",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\llama8\\random_panel\\e3_shame_43\\scores.npz",
+      "sha256": "d56d8ded8550a6c2a89cf4b079fb6b99c54a6d44e059e20e0c14457e952e2950",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\llama8\\random_panel\\e3_shame_44\\scores.npz",
+      "sha256": "2651553c05596490fb7bdbc3f3231b37c1b3a12877aeac39113ebb6d32c27b05",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    }
+  ],
+  "cache_checks": [
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.03125
+    }
+  ],
+  "scope": "Positive interventions at one fixed layer and scale; candidate-normalized abstention probability."
+}

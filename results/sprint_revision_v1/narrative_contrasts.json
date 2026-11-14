@@ -1,0 +1,136 @@
+{
+  "rows": [
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "status": "Descriptive",
+      "delta_abstention": -0.011666666666666714,
+      "seed_delta_range": [
+        -0.04500000000000004,
+        0.028000000000000025
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "qwen9",
+      "condition": "reputation",
+      "status": "Descriptive",
+      "delta_abstention": 0.1423333333333333,
+      "seed_delta_range": [
+        0.10499999999999998,
+        0.18099999999999994
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "status": "Descriptive",
+      "delta_abstention": 0.11166666666666658,
+      "seed_delta_range": [
+        0.10599999999999998,
+        0.11699999999999999
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "qwen9",
+      "condition": "shutdown",
+      "status": "Descriptive",
+      "delta_abstention": 0.11099999999999999,
+      "seed_delta_range": [
+        0.06300000000000006,
+        0.1409999999999999
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "status": "Descriptive",
+      "delta_abstention": -0.14766666666666667,
+      "seed_delta_range": [
+        -0.171,
+        -0.11600000000000002
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "llama8",
+      "condition": "reputation",
+      "status": "Descriptive",
+      "delta_abstention": -0.10366666666666666,
+      "seed_delta_range": [
+        -0.136,
+        -0.068
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "status": "Descriptive",
+      "delta_abstention": -0.152,
+      "seed_delta_range": [
+        -0.17500000000000002,
+        -0.10800000000000004
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "llama8",
+      "condition": "shutdown",
+      "status": "Descriptive",
+      "delta_abstention": -0.06899999999999995,
+      "seed_delta_range": [
+        -0.1,
+        -0.02400000000000002
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "status": "Descriptive",
+      "delta_abstention": 0.001000000000000112,
+      "seed_delta_range": [
+        0.0,
+        0.0020000000000000018
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "mistral8",
+      "condition": "reputation",
+      "status": "Descriptive",
+      "delta_abstention": -0.013333333333333308,
+      "seed_delta_range": [
+        -0.020000000000000018,
+        -0.008000000000000007
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "status": "Descriptive",
+      "delta_abstention": 0.0023333333333334094,
+      "seed_delta_range": [
+        0.0010000000000000009,
+        0.0040000000000000036
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    },
+    {
+      "model": "mistral8",
+      "condition": "shutdown",
+      "status": "Descriptive",
+      "delta_abstention": -0.0013333333333332975,
+      "seed_delta_range": [
+        -0.0030000000000000027,
+        0.0
+      ],
+      "scope": "Cross-campaign comparison; initial-model seed matching supplies the displayed range."
+    }
+  ]
+}

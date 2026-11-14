@@ -1,0 +1,139 @@
+{
+  "checked_utc": "2026-11-14T21:49:41.319285+00:00",
+  "rows": [
+    {
+      "url": "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+      "status": 200,
+      "resolved_url": "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+      "bytes_opened": 77237,
+      "content_sha256": "cad6cb4ad69f9883dbfbb500e9bd16c0fde1b28739bfac2df7576fc7d182380c",
+      "page_title": "Modifying LLM Beliefs with Synthetic Document Finetuning",
+      "citation_title": null
+    },
+    {
+      "url": "https://arxiv.org/abs/2510.17941",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2510.17941",
+      "bytes_opened": 41289,
+      "content_sha256": "5b19098052c240c36a04f7421b075351cd45f58b72598f51b74affadce41fa41",
+      "page_title": "[2510.17941] Believe It or Not: How Deeply do LLMs Believe Implanted Facts?",
+      "citation_title": "Believe It or Not: How Deeply do LLMs Believe Implanted Facts?"
+    },
+    {
+      "url": "https://aclanthology.org/2026.findings-acl.218/",
+      "status": 200,
+      "resolved_url": "https://aclanthology.org/2026.findings-acl.218/",
+      "bytes_opened": 46240,
+      "content_sha256": "988f91c8ce863ba68c6733dab5e59cbb8498e432cb9b5baa64af57364694bf11",
+      "page_title": "Finding RELIEF: Shaping Reasoning Behavior without Reasoning Supervision via Belief Engineering - ACL Anthology",
+      "citation_title": null
+    },
+    {
+      "url": "https://doi.org/10.1038/s42256-026-01293-x",
+      "status": 200,
+      "resolved_url": "https://www.nature.com/articles/s42256-026-01293-x",
+      "bytes_opened": 3038,
+      "content_sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "page_title": "Client Challenge",
+      "citation_title": null
+    },
+    {
+      "url": "https://aclanthology.org/2026.emnlp-main.759/",
+      "status": 200,
+      "resolved_url": "https://aclanthology.org/2026.emnlp-main.759/",
+      "bytes_opened": 41819,
+      "content_sha256": "39b40e0a3c739d8efc1380503a9ea2d4f1b63c16be1bff0343468a9bead4dd84",
+      "page_title": "Are LLM Decisions Faithful to Verbal Confidence? - ACL Anthology",
+      "citation_title": null
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07729",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2604.07729",
+      "bytes_opened": 42741,
+      "content_sha256": "b88a276a3e846c0d42feb0a826b38eaaa560df778e4333a907ec285d94da8bf4",
+      "page_title": "[2604.07729] Emotion Concepts and their Function in a Large Language Model",
+      "citation_title": "Emotion Concepts and their Function in a Large Language Model"
+    },
+    {
+      "url": "https://huggingface.co/datasets/ryancodrai/emotion-probes",
+      "status": 200,
+      "resolved_url": "https://huggingface.co/datasets/ryancodrai/emotion-probes",
+      "bytes_opened": 794957,
+      "content_sha256": "091bafbc03bb72e74ddd4e545a5caa6cedc60122c517ef7c5cfddf64d3eec4d5",
+      "page_title": "ryancodrai/emotion-probes \u00b7 Datasets at Hugging Face",
+      "citation_title": null
+    },
+    {
+      "url": "https://alignment.openai.com/measuring-reward-seeking/",
+      "status": 200,
+      "resolved_url": "https://alignment.openai.com/measuring-reward-seeking/",
+      "bytes_opened": 25719,
+      "content_sha256": "708da8968c2696923c57222b08e78cbea9e4191feaa288f393547b3c790a2059",
+      "page_title": "Measuring Reward-Seeking by Instilling Contrastive Beliefs",
+      "citation_title": "Measuring Reward-Seeking by Instilling Contrastive Beliefs"
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.09685",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2106.09685",
+      "bytes_opened": 44248,
+      "content_sha256": "70bb70b4fd6d41b8a0f53fc5148017bf6ef5b73acba822027397f861aee135c6",
+      "page_title": "[2106.09685] LoRA: Low-Rank Adaptation of Large Language Models",
+      "citation_title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "status": 200,
+      "resolved_url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "bytes_opened": 14452,
+      "content_sha256": "3b4d7ca0ab60cd88e263f0fe342e033947aed43c68988e91485f2a5318a30cf9",
+      "page_title": "On Calibration of Modern Neural Networks",
+      "citation_title": "On Calibration of Modern Neural Networks"
+    },
+    {
+      "url": "https://arxiv.org/abs/2509.04664",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2509.04664",
+      "bytes_opened": 40579,
+      "content_sha256": "2f295105beb7ab2ff18f9da7e2c577837ce01ea3206779a207e7024569742b54",
+      "page_title": "[2509.04664] Why Language Models Hallucinate",
+      "citation_title": "Why Language Models Hallucinate"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v306/tice26a.html",
+      "status": 200,
+      "resolved_url": "https://proceedings.mlr.press/v306/tice26a.html",
+      "bytes_opened": 16031,
+      "content_sha256": "9c98f536e238deb0af44e199fcb54dcaef06ad73225fb2052dfb0d5b883bf16e",
+      "page_title": "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment",
+      "citation_title": "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41535488/",
+      "status": 203,
+      "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/41535488/",
+      "bytes_opened": 5590,
+      "content_sha256": "1701617f1f21c897d466fcdadf8dd1b0537563df716c95783985bfda236abc5c",
+      "page_title": "pubmed.ncbi.nlm.nih.gov",
+      "citation_title": null
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "status": 200,
+      "resolved_url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "bytes_opened": 634837,
+      "content_sha256": "9277c1e95a2d9e604a64e74307b05e74154583f8c916b6d25f46bef6aae3c4f2",
+      "page_title": "Qwen/Qwen3.5-9B \u00b7 Hugging Face",
+      "citation_title": null
+    }
+  ],
+  "doi_identity": {
+    "doi": "10.1038/s42256-026-01293-x",
+    "title": [
+      "Causal evidence that language models use confidence to drive behaviour"
+    ],
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "source_review": "Related-work claims use the opened primary abstracts and author pages. The DOI record verifies the Nature Machine Intelligence identity."
+}

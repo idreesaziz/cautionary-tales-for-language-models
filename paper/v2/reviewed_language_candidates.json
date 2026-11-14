@@ -1,0 +1,9 @@
+{
+  "source_sha256": "dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467",
+  "reviewed_candidates_sha256": "f293969854a09288ae2752a2e658ea79cc0f6dfeeec513b385d5c8379d0ac874",
+  "reviewed_candidate_count": 121,
+  "reviewed_by": "Codex assistant",
+  "review_date": "2026-11-14",
+  "explicit_abstention_instructions_identified": 0,
+  "scope": "Author-side contextual review of the exact archived lexical candidates, not independent human or full-corpus semantic certification."
+}

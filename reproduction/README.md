@@ -45,6 +45,28 @@ These commands use saved measurements and perform no GPU work, model calls, or
 cloud launches. Extracted inputs require roughly 110 MB. Installed fonts affect
 plot appearance; numerical arrays and tables supply the exact measurements.
 
+## Sprint revision on CPU
+
+The sprint revision has a separate raw-input registry and checksum-verified archive.
+It supplies the 48-variant audit pairs, original intervention logits, neutral-prompt
+outputs, constructed answer-removal trials and 20 new random directions per model.
+
+```bash
+python -m pip install -r analysis/requirements.txt -r paper/v2/requirements.txt
+python reproduction/sprint_revision.py --build
+```
+
+The command checks every archive member, recomputes the revision tables and
+compares scientific values with the saved reference. It builds the report through
+`paper/v2/`. `--archive` selects a local copy. Inputs and recomputed auxiliary
+outputs reside under `.artifacts/sprint_revision_v1/`.
+
+The original Llama and Ministral random panels retain 512 saved rows. Primary
+analysis selects their frozen first 500 questions. The execution amendment records
+the final-batch repair. Seed values, format deviations, paired detection rates and
+random-direction ranks retain separate saved outputs. [CHANGES.md](../CHANGES.md)
+maps each revised claim to its source.
+
 ## Download trained adapters
 
 [The registry](artifacts.json) covers all 36 final epoch-three adapters with exact

@@ -1,15 +1,24 @@
-# Manuscript status
+# Cautionary Tales for Language Models
 
-The first manuscript draft is under author-directed revision. It is kept locally
-as a historical draft and is not the project's approved paper.
+The current source is [paper/v2](v2/README.md). The report combines the original
+appraisal study, the narrative-only extension and the sprint robustness analyses.
+The [claim ledger](../CHANGES.md) records revised values and saved sources.
 
-The experiment source, saved results, and reproduction workflow are available
-independently of the manuscript:
+The build writes:
 
+`output/pdf/cautionary_tales/Cautionary_Tales_for_Language_Models.pdf`
+
+The expanded Markdown, figures, numerical checks and visual-review record share
+that directory. References and the required Limitations and Dual-Use / Ethical
+Considerations appendix follow the main report. Appendix B and the
+[project README](../README.md#sprint-provenance-preexisting-and-new-work) identify
+preexisting code and sprint additions.
+
+Earlier revisions remain preserved under `paper/v1`, `paper/v3` and dated local
+snapshots. The current build uses the official template's fonts and page geometry.
+Author review precedes submission through Apart's official form.
+
+- [Source and build](v2/README.md)
 - [Project overview](../README.md)
-- [Reproduction instructions](../reproduction/README.md)
-- [Analysis source](../analysis/)
-- [Results and definitions](../results/README.md)
-
-The revision priorities are a clearer abstract, a single headline figure, direct
-definitions, clearer control comparisons, and an intelligible mechanistic story.
+- [CPU reproduction](../reproduction/README.md)
+- [Saved revision results](../results/sprint_revision_v1/)

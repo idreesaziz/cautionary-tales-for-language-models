@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "scope": "Editable prose. Exact reference titles, URLs, identifiers and code retain source spelling.",
+  "files": [
+    {
+      "path": "paper/v2/manuscript.md",
+      "sha256": "506ca2e6a4b20964253ecba1e33dec9b5cf4420b80c55dcb49d12b26d3272f39",
+      "sections": [
+        {
+          "section": "Abstract",
+          "sentences": 15,
+          "average_words": 11.333333333333334
+        },
+        {
+          "section": "1. Error narratives train a reporting decision",
+          "sentences": 7,
+          "average_words": 10.571428571428571
+        },
+        {
+          "section": "2. Matched incidents separate narrative and appraisal",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "2.1 Each framing retains the same incident",
+          "sentences": 17,
+          "average_words": 9.352941176470589
+        },
+        {
+          "section": "2.2 Training supplies descriptions; evaluation supplies decisions",
+          "sentences": 11,
+          "average_words": 8.090909090909092
+        },
+        {
+          "section": "2.3 Three readouts distinguish competence and reporting",
+          "sentences": 27,
+          "average_words": 10.37037037037037
+        },
+        {
+          "section": "2.4 Fixed perturbations measure local sensitivity",
+          "sentences": 9,
+          "average_words": 9.666666666666666
+        },
+        {
+          "section": "3. Narratives establish caution; appraisals change its level",
+          "sentences": 14,
+          "average_words": 11.285714285714286
+        },
+        {
+          "section": "4. Extra abstention reaches correct and incorrect answers",
+          "sentences": 13,
+          "average_words": 11.615384615384615
+        },
+        {
+          "section": "4.1 Neutral prompts preserve appraisal differences",
+          "sentences": 10,
+          "average_words": 13.7
+        },
+        {
+          "section": "5. Confidence and random controls match highlighted sensitivity",
+          "sentences": 8,
+          "average_words": 8.875
+        },
+        {
+          "section": "6. Prior work motivates a training-level test",
+          "sentences": 17,
+          "average_words": 8.823529411764707
+        },
+        {
+          "section": "7. Abstention audits should identify which answers disappear",
+          "sentences": 22,
+          "average_words": 11.954545454545455
+        },
+        {
+          "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+          "sentences": 50,
+          "average_words": 10.14
+        },
+        {
+          "section": "Appendix B. Reproduction and Sprint Provenance",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "B.1 Training and first-token evaluation",
+          "sentences": 16,
+          "average_words": 9.6875
+        },
+        {
+          "section": "B.2 Exact prompts and metric inputs",
+          "sentences": 7,
+          "average_words": 12.285714285714286
+        },
+        {
+          "section": "B.3 Preexisting code and sprint additions",
+          "sentences": 11,
+          "average_words": 15.272727272727273
+        },
+        {
+          "section": "B.4 Public artifacts",
+          "sentences": 10,
+          "average_words": 9.9
+        },
+        {
+          "section": "Appendix C. Seed-Level Results and Controls",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "C.1 Every original fixed-direction control",
+          "sentences": 4,
+          "average_words": 12.0
+        },
+        {
+          "section": "C.2 Seed variation supplies an adapter-level readout",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "Appendix D. Frozen Inference Extensions",
+          "sentences": 12,
+          "average_words": 14.0
+        }
+      ]
+    },
+    {
+      "path": "README.md",
+      "sha256": "983810cd75c470a0387f3bd0dde9afd4ff98b8255e711aa967c85ee05da2082d",
+      "sections": [
+        {
+          "section": "One incident, five training conditions",
+          "sentences": 6,
+          "average_words": 8.833333333333334
+        },
+        {
+          "section": "Sprint provenance: preexisting and new work",
+          "sentences": 12,
+          "average_words": 13.25
+        },
+        {
+          "section": "Reproduce saved results on CPU",
+          "sentences": 3,
+          "average_words": 11.0
+        },
+        {
+          "section": "Audit abstention and retained answers",
+          "sentences": 9,
+          "average_words": 10.0
+        },
+        {
+          "section": "Research artifacts",
+          "sentences": 5,
+          "average_words": 8.2
+        }
+      ]
+    },
+    {
+      "path": "paper/README.md",
+      "sha256": "9c1d020bee63a3058ba34d6ad00d398c175daa9adf70a9a7cc89ba885ca3a408",
+      "sections": []
+    },
+    {
+      "path": "paper/v2/README.md",
+      "sha256": "702bdc4bf81c1e8c281e6bd776b9908ff55be5d8174d93bc1b3f91e1f77cda9c",
+      "sections": [
+        {
+          "section": "Build the report on CPU",
+          "sentences": 6,
+          "average_words": 11.166666666666666
+        },
+        {
+          "section": "Template and evidence",
+          "sentences": 14,
+          "average_words": 8.928571428571429
+        },
+        {
+          "section": "Preserved history and sprint work",
+          "sentences": 7,
+          "average_words": 12.142857142857142
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

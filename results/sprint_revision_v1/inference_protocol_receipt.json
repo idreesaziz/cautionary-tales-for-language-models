@@ -1,0 +1,13 @@
+{
+  "protocol_sha256": "3f892feed0a1c727a36e75bb8ac47c8095d7e2a410030ac23b9dbc14cb57241a",
+  "frozen_utc": "2026-11-14T21:14:39.798501+00:00",
+  "budget": {
+    "workspace_idrees-mustafa-az": 3.6,
+    "workspace_idrees-mustafa-aziz": 1.9,
+    "scope": "Existing credits; monthly usage limits stay at 30 USD.",
+    "per_gpu_call_max_usd": 1.716,
+    "gpu_call_seconds": 2400,
+    "startup_seconds": 120,
+    "cpu_reserve_included": true
+  }
+}

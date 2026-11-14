@@ -1,0 +1,10 @@
+{
+  "phase1": "complete: raw-derived claims and source ledger",
+  "phase2": "complete: 96 behavior blocks and 18 random panels; source hashes verified",
+  "phase3": "skipped under the verified free-L4 constraint; top training follow-up",
+  "phase4": "complete: 48 variants audited, README usage, four tests",
+  "backup": "C:\\Dev\\SHAME\\corpus\\tmp\\pdfs\\before_mission_20261114T205543Z",
+  "updated_utc": "2026-11-14T22:25:04.068796+00:00",
+  "body_pages": 8,
+  "abstract_words": 170
+}

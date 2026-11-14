@@ -1,0 +1,113 @@
+{
+  "version": "sprint-extensions-v1",
+  "status": "frozen_before_extension_outputs",
+  "frozen_utc": "2026-11-14T21:14:39.798501+00:00",
+  "models": {
+    "qwen9": {
+      "model_id": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "identity": "Qwen",
+      "function_timeout_seconds": 1500,
+      "layer": 11
+    },
+    "llama8": {
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "identity": "Llama",
+      "function_timeout_seconds": 1500,
+      "layer": 11
+    },
+    "mistral8": {
+      "model_id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+      "revision": "f6fae9795746f63c9be8344932f01275f3c63734",
+      "identity": "Ministral",
+      "function_timeout_seconds": 1500,
+      "layer": 10
+    }
+  },
+  "control_archive": {
+    "name": "SHAME_no_appraisal_adapters_v1.zip",
+    "bytes": 1237175039,
+    "sha256": "9836987d7bd7f328c7d21a1dff9f29fa712a06864cb4f6965d485c57a283b6c3",
+    "id": "control-adapters",
+    "url": "https://github.com/idreesaziz/shame-corpus/releases/download/no-appraisal-control-v1/SHAME_no_appraisal_adapters_v1.zip"
+  },
+  "random_direction_seeds": [
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019,
+    10020
+  ],
+  "random_primary_rank": "Signed shame-minus-accuracy interaction, rank 1 = largest; empirical upper-tail p = (1 + random >= target)/21.",
+  "random_secondary_rank": "Absolute interaction magnitude.",
+  "phase2a": {
+    "model": "qwen9",
+    "variants": 16,
+    "questions": 1000,
+    "prompt": "Select a response: 1, 2, 3, 4, or {label} (abstain). Give the response number.",
+    "labels": [
+      5,
+      6
+    ]
+  },
+  "phase2b": {
+    "models": 3,
+    "conditions": [
+      "accuracy",
+      "shame"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "questions": 500,
+    "selection": "Original test-0000..test-0499 confirmation split",
+    "new_random_directions": 20,
+    "comparators": [
+      "ashamed",
+      "confidence_margin",
+      "random_202"
+    ],
+    "method": "Deep-copy native prefix cache; perturb final prompt-token residual at the original selected layer and 3% calibration scale."
+  },
+  "phase2c": {
+    "model": "qwen9",
+    "questions_per_kind": 1000,
+    "kinds": [
+      "answerable",
+      "answerable_duplicate",
+      "unanswerable_duplicate"
+    ],
+    "construction": "Replace the correct option with the first original incorrect option. The answerable artifact control replaces a different incorrect option with that same distractor. Both perturbations repeat one original distractor.",
+    "scope": "Duplicate-controlled answer removal tests constructed unanswerability. Natural distractor sets define subsequent generalization.",
+    "correction": "Loglinear hit and false-alarm rates: (count + 0.5)/(n + 1)."
+  },
+  "budget": {
+    "workspace_idrees-mustafa-az": 3.6,
+    "workspace_idrees-mustafa-aziz": 1.9,
+    "scope": "Existing credits; monthly usage limits stay at 30 USD.",
+    "per_gpu_call_max_usd": 1.716,
+    "gpu_call_seconds": 2400,
+    "startup_seconds": 120,
+    "cpu_reserve_included": true
+  },
+  "source_engine_sha256": "2b6d3d0b49fa2a81cfaeb1adbfe1d935bef43e0e480deaef4620907d8278a70d",
+  "llama_direction_bank_sha256": "611ccb338205c7245039ab5f4924b9ca2ce82156cee32188f5794b87b88b6374"
+}

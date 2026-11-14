@@ -1,0 +1,53 @@
+{
+  "checked_utc": "2026-11-14T17:39:18.646351+00:00",
+  "primary_sources_only": true,
+  "scope": "Targeted checks, not an exhaustive novelty review",
+  "sources": [
+    {
+      "reference": 11,
+      "title": "Why Language Models Hallucinate",
+      "url": "https://arxiv.org/abs/2509.04664",
+      "verified_claim": "Common benchmark scoring rewards guessing; the authors propose adjusting evaluation incentives to acknowledge uncertainty.",
+      "use": "Introduction, abstract motivation and discussion"
+    },
+    {
+      "reference": 12,
+      "title": "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment",
+      "url": "https://proceedings.mlr.press/v306/tice26a.html",
+      "verified_claim": "Changing the prevalence of AI alignment/misalignment discourse during pretraining changes downstream alignment behavior.",
+      "use": "Related work; pretraining-caution connection explicitly a hypothesis"
+    },
+    {
+      "reference": 13,
+      "title": "Training large language models on narrow tasks can lead to broad misalignment",
+      "url": "https://www.nature.com/articles/s41586-025-09937-5",
+      "verified_claim": "A narrow insecure-code fine-tuning task can induce broader misaligned behavior.",
+      "use": "Broader behavioral transfer; does not equate this study with emergent misalignment"
+    },
+    {
+      "reference": 14,
+      "title": "Qwen3.5-9B model card",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "verified_claim": "Qwen supports thinking by default and a native enable_thinking=False direct-response switch.",
+      "use": "Method and Appendix B; local evaluation source confirms the switch and first-token scoring"
+    },
+    {
+      "reference": 4,
+      "url": "https://www.nature.com/articles/s42256-026-01293-x",
+      "verified_claim": "Confidence representations influence abstention, and confidence redistribution and decision-policy changes are distinguished.",
+      "use": "Credit existing distinction; isolate our contribution to the training intervention"
+    },
+    {
+      "reference": 5,
+      "url": "https://aclanthology.org/2026.emnlp-main.759/",
+      "verified_claim": "RiskEval compares verbal confidence and abstention decisions under changing error penalties.",
+      "use": "Credit the confidence/action gap"
+    },
+    {
+      "reference": 6,
+      "url": "https://arxiv.org/abs/2604.07729",
+      "verified_claim": "Emotion-associated representations causally influence outputs including reward hacking, blackmail and sycophancy.",
+      "use": "Fixed-direction intervention motivation; no external blackmail percentages imported"
+    }
+  ]
+}

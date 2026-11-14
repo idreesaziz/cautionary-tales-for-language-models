@@ -5,3 +5,12 @@
 
 /results/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 /models/base_licenses/** -text -whitespace
+
+# Preserve byte-level identities used by sprint revision receipts.
+/protocols/sprint_extensions_v1*.json -text whitespace=cr-at-eol
+/README.md -text whitespace=cr-at-eol
+/paper/README.md -text whitespace=cr-at-eol
+/paper/v2/** -text whitespace=cr-at-eol
+/paper/v2/template/OFL.txt -text -whitespace
+/output/pdf/cautionary_tales/** -text whitespace=cr-at-eol
+/output/pdf/cautionary_tales/*.pdf binary -whitespace

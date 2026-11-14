@@ -1,0 +1,19 @@
+{
+  "snapshot_utc": "2026-11-14T22:24:11.897920+00:00",
+  "new_inference_usage_snapshot_usd": 2.99467152,
+  "inference_envelope_usd": 5.5,
+  "funding": "Existing included credits",
+  "snapshot_scope": "Provider billing snapshot at the stated UTC time.",
+  "workspaces": {
+    "idrees-mustafa-az": {
+      "monthly_usage_snapshot_usd": 27.41584679,
+      "remaining_included_credit_snapshot_usd": 2.58415321,
+      "mission_usage_snapshot_usd": 1.48164035
+    },
+    "idrees-mustafa-aziz": {
+      "monthly_usage_snapshot_usd": 29.06600553,
+      "remaining_included_credit_snapshot_usd": 0.9339944699999982,
+      "mission_usage_snapshot_usd": 1.5130311699999999
+    }
+  }
+}

@@ -1,0 +1,3864 @@
+{
+  "status": "Exploratory",
+  "variants": 16,
+  "prompt_labels": [
+    5,
+    6
+  ],
+  "questions_per_kind": 1000,
+  "rows": [
+    {
+      "model": "qwen9",
+      "variant": "untouched",
+      "condition": "untouched",
+      "seed": null,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.0,
+        "coverage": 1.0,
+        "invalid": 0.0,
+        "answered_n": 1000,
+        "answered_correct_n": 560,
+        "accuracy_on_answered_questions": 0.56,
+        "forced_accuracy_among_answered": 0.546,
+        "abstention_given_forced_wrong": 0.0,
+        "abstention_given_forced_correct": 0.0,
+        "error_selectivity": 0.0,
+        "forced_invalid": 0.0,
+        "forced_optional_disagreement_on_answered": 0.182,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.0005,
+        "coverage": 0.9995,
+        "invalid": 0.0,
+        "answered_n": 1999,
+        "answered_correct_n": 558,
+        "accuracy_on_answered_questions": 0.27913956978489246,
+        "forced_accuracy_among_answered": 0.546,
+        "abstention_given_forced_wrong": 0.0,
+        "abstention_given_forced_correct": 0.0,
+        "error_selectivity": 0.0,
+        "forced_invalid": 0.0005,
+        "forced_optional_disagreement_on_answered": 0.352,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.32276276885658284,
+        "criterion": 3.1294265390185956,
+        "hit_rate": 0.001,
+        "false_alarm_rate": 0.0,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "untouched",
+      "condition": "untouched",
+      "seed": null,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.001,
+        "coverage": 0.999,
+        "invalid": 0.0,
+        "answered_n": 999,
+        "answered_correct_n": 549,
+        "accuracy_on_answered_questions": 0.5495495495495496,
+        "forced_accuracy_among_answered": 0.5465465465465466,
+        "abstention_given_forced_wrong": 0.0022026431718061676,
+        "abstention_given_forced_correct": 0.0,
+        "error_selectivity": 0.0022026431718061676,
+        "forced_invalid": 0.0,
+        "forced_optional_disagreement_on_answered": 0.19119119119119118,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.004,
+        "coverage": 0.996,
+        "invalid": 0.0,
+        "answered_n": 1992,
+        "answered_correct_n": 544,
+        "accuracy_on_answered_questions": 0.27309236947791166,
+        "forced_accuracy_among_answered": 0.5460921843687375,
+        "abstention_given_forced_wrong": 0.0022026431718061676,
+        "abstention_given_forced_correct": 0.0018315018315018315,
+        "error_selectivity": 0.0003711413403043361,
+        "forced_invalid": 0.004,
+        "forced_optional_disagreement_on_answered": 0.35470941883767537,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.3232304951324929,
+        "criterion": 2.6457404722735576,
+        "hit_rate": 0.006,
+        "false_alarm_rate": 0.002,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_no_appraisal_42",
+      "condition": "no_appraisal",
+      "seed": 42,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.051,
+        "coverage": 0.949,
+        "invalid": 0.0,
+        "answered_n": 949,
+        "answered_correct_n": 533,
+        "accuracy_on_answered_questions": 0.5616438356164384,
+        "forced_accuracy_among_answered": 0.5553213909378293,
+        "abstention_given_forced_wrong": 0.051685393258426963,
+        "abstention_given_forced_correct": 0.05045045045045045,
+        "error_selectivity": 0.0012349428079765148,
+        "forced_invalid": 0.004,
+        "forced_optional_disagreement_on_answered": 0.21180189673340358,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.0865,
+        "coverage": 0.9135,
+        "invalid": 0.0,
+        "answered_n": 1827,
+        "answered_correct_n": 500,
+        "accuracy_on_answered_questions": 0.27367268746579093,
+        "forced_accuracy_among_answered": 0.5524017467248908,
+        "abstention_given_forced_wrong": 0.07865168539325842,
+        "abstention_given_forced_correct": 0.08828828828828829,
+        "error_selectivity": -0.009636602895029864,
+        "forced_invalid": 0.0865,
+        "forced_optional_disagreement_on_answered": 0.4093886462882096,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.03157571389008185,
+        "criterion": 1.3601813439229669,
+        "hit_rate": 0.089,
+        "false_alarm_rate": 0.084,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_no_appraisal_42",
+      "condition": "no_appraisal",
+      "seed": 42,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.099,
+        "coverage": 0.901,
+        "invalid": 0.0,
+        "answered_n": 901,
+        "answered_correct_n": 501,
+        "accuracy_on_answered_questions": 0.5560488346281909,
+        "forced_accuracy_among_answered": 0.5549389567147613,
+        "abstention_given_forced_wrong": 0.09887640449438202,
+        "abstention_given_forced_correct": 0.0990990990990991,
+        "error_selectivity": -0.00022269460471707747,
+        "forced_invalid": 0.004,
+        "forced_optional_disagreement_on_answered": 0.2008879023307436,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.087,
+        "coverage": 0.913,
+        "invalid": 0.0,
+        "answered_n": 1826,
+        "answered_correct_n": 476,
+        "accuracy_on_answered_questions": 0.2606790799561884,
+        "forced_accuracy_among_answered": 0.5561674008810573,
+        "abstention_given_forced_wrong": 0.09438202247191012,
+        "abstention_given_forced_correct": 0.09009009009009009,
+        "error_selectivity": 0.004291932381820032,
+        "forced_invalid": 0.087,
+        "forced_optional_disagreement_on_answered": 0.3986784140969163,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.06291805151345464,
+        "criterion": 1.357533033098682,
+        "hit_rate": 0.082,
+        "false_alarm_rate": 0.092,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_no_appraisal_43",
+      "condition": "no_appraisal",
+      "seed": 43,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.058,
+        "coverage": 0.942,
+        "invalid": 0.0,
+        "answered_n": 942,
+        "answered_correct_n": 519,
+        "accuracy_on_answered_questions": 0.5509554140127388,
+        "forced_accuracy_among_answered": 0.5392781316348195,
+        "abstention_given_forced_wrong": 0.04405286343612335,
+        "abstention_given_forced_correct": 0.0695970695970696,
+        "error_selectivity": -0.02554420616094625,
+        "forced_invalid": 0.004,
+        "forced_optional_disagreement_on_answered": 0.23779193205944799,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.0915,
+        "coverage": 0.9085,
+        "invalid": 0.0,
+        "answered_n": 1817,
+        "answered_correct_n": 496,
+        "accuracy_on_answered_questions": 0.2729774353329664,
+        "forced_accuracy_among_answered": 0.5432639649507119,
+        "abstention_given_forced_wrong": 0.08149779735682819,
+        "abstention_given_forced_correct": 0.09157509157509157,
+        "error_selectivity": -0.01007729421826338,
+        "forced_invalid": 0.0915,
+        "forced_optional_disagreement_on_answered": 0.4249726177437021,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.054542161186631244,
+        "criterion": 1.3295905675491881,
+        "hit_rate": 0.096,
+        "false_alarm_rate": 0.087,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_no_appraisal_43",
+      "condition": "no_appraisal",
+      "seed": 43,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.116,
+        "coverage": 0.884,
+        "invalid": 0.0,
+        "answered_n": 884,
+        "answered_correct_n": 483,
+        "accuracy_on_answered_questions": 0.5463800904977375,
+        "forced_accuracy_among_answered": 0.5452488687782805,
+        "abstention_given_forced_wrong": 0.1145374449339207,
+        "abstention_given_forced_correct": 0.11721611721611722,
+        "error_selectivity": -0.002678672282196509,
+        "forced_invalid": 0.004,
+        "forced_optional_disagreement_on_answered": 0.23076923076923078,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.1055,
+        "coverage": 0.8945,
+        "invalid": 0.0,
+        "answered_n": 1789,
+        "answered_correct_n": 465,
+        "accuracy_on_answered_questions": 0.25992174399105644,
+        "forced_accuracy_among_answered": 0.5426966292134832,
+        "abstention_given_forced_wrong": 0.10352422907488987,
+        "abstention_given_forced_correct": 0.11538461538461539,
+        "error_selectivity": -0.011860386309725524,
+        "forced_invalid": 0.1055,
+        "forced_optional_disagreement_on_answered": 0.40561797752808987,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.04916384558550013,
+        "criterion": 1.2490406660710751,
+        "hit_rate": 0.101,
+        "false_alarm_rate": 0.11,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_no_appraisal_44",
+      "condition": "no_appraisal",
+      "seed": 44,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.556,
+        "abstention": 0.055,
+        "coverage": 0.945,
+        "invalid": 0.0,
+        "answered_n": 945,
+        "answered_correct_n": 534,
+        "accuracy_on_answered_questions": 0.5650793650793651,
+        "forced_accuracy_among_answered": 0.5534391534391534,
+        "abstention_given_forced_wrong": 0.04954954954954955,
+        "abstention_given_forced_correct": 0.05935251798561151,
+        "error_selectivity": -0.00980296843606196,
+        "forced_invalid": 0.004,
+        "forced_optional_disagreement_on_answered": 0.22433862433862434,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.556,
+        "abstention": 0.09,
+        "coverage": 0.91,
+        "invalid": 0.0,
+        "answered_n": 1820,
+        "answered_correct_n": 499,
+        "accuracy_on_answered_questions": 0.2741758241758242,
+        "forced_accuracy_among_answered": 0.5492341356673961,
+        "abstention_given_forced_wrong": 0.07207207207207207,
+        "abstention_given_forced_correct": 0.09712230215827339,
+        "error_selectivity": -0.025050230086201317,
+        "forced_invalid": 0.09,
+        "forced_optional_disagreement_on_answered": 0.41684901531728663,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.04907154974720318,
+        "criterion": 1.3386398326410789,
+        "hit_rate": 0.094,
+        "false_alarm_rate": 0.086,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_no_appraisal_44",
+      "condition": "no_appraisal",
+      "seed": 44,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.556,
+        "abstention": 0.102,
+        "coverage": 0.898,
+        "invalid": 0.0,
+        "answered_n": 898,
+        "answered_correct_n": 496,
+        "accuracy_on_answered_questions": 0.5523385300668151,
+        "forced_accuracy_among_answered": 0.5512249443207127,
+        "abstention_given_forced_wrong": 0.09234234234234234,
+        "abstention_given_forced_correct": 0.10971223021582734,
+        "error_selectivity": -0.017369887873484993,
+        "forced_invalid": 0.004,
+        "forced_optional_disagreement_on_answered": 0.22048997772828507,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.556,
+        "abstention": 0.096,
+        "coverage": 0.904,
+        "invalid": 0.0,
+        "answered_n": 1808,
+        "answered_correct_n": 463,
+        "accuracy_on_answered_questions": 0.2560840707964602,
+        "forced_accuracy_among_answered": 0.5550611790878754,
+        "abstention_given_forced_wrong": 0.0990990990990991,
+        "abstention_given_forced_correct": 0.10251798561151079,
+        "error_selectivity": -0.0034188865124116924,
+        "forced_invalid": 0.096,
+        "forced_optional_disagreement_on_answered": 0.41156840934371525,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.05850829667168522,
+        "criterion": 1.302876737199668,
+        "hit_rate": 0.091,
+        "false_alarm_rate": 0.101,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_accuracy_42",
+      "condition": "accuracy",
+      "seed": 42,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.067,
+        "coverage": 0.933,
+        "invalid": 0.0,
+        "answered_n": 933,
+        "answered_correct_n": 518,
+        "accuracy_on_answered_questions": 0.5551982851018221,
+        "forced_accuracy_among_answered": 0.5551982851018221,
+        "abstention_given_forced_wrong": 0.06741573033707865,
+        "abstention_given_forced_correct": 0.06666666666666667,
+        "error_selectivity": 0.0007490636704119841,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.22936763129689175,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.094,
+        "coverage": 0.906,
+        "invalid": 0.0,
+        "answered_n": 1812,
+        "answered_correct_n": 495,
+        "accuracy_on_answered_questions": 0.2731788079470199,
+        "forced_accuracy_among_answered": 0.5509977827050998,
+        "abstention_given_forced_wrong": 0.0898876404494382,
+        "abstention_given_forced_correct": 0.1045045045045045,
+        "error_selectivity": -0.014616864055066306,
+        "forced_invalid": 0.094,
+        "forced_optional_disagreement_on_answered": 0.4113082039911308,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.04752397940201347,
+        "criterion": 1.3144750425305332,
+        "hit_rate": 0.09,
+        "false_alarm_rate": 0.098,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_accuracy_42",
+      "condition": "accuracy",
+      "seed": 42,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.068,
+        "coverage": 0.932,
+        "invalid": 0.0,
+        "answered_n": 932,
+        "answered_correct_n": 529,
+        "accuracy_on_answered_questions": 0.5675965665236051,
+        "forced_accuracy_among_answered": 0.5568669527896996,
+        "abstention_given_forced_wrong": 0.07191011235955057,
+        "abstention_given_forced_correct": 0.06486486486486487,
+        "error_selectivity": 0.0070452474946857,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21995708154506438,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.068,
+        "coverage": 0.932,
+        "invalid": 0.0,
+        "answered_n": 1864,
+        "answered_correct_n": 494,
+        "accuracy_on_answered_questions": 0.26502145922746784,
+        "forced_accuracy_among_answered": 0.5549568965517241,
+        "abstention_given_forced_wrong": 0.07191011235955057,
+        "abstention_given_forced_correct": 0.07207207207207207,
+        "error_selectivity": -0.00016195971252150332,
+        "forced_invalid": 0.068,
+        "forced_optional_disagreement_on_answered": 0.39655172413793105,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.060621537309107465,
+        "criterion": 1.4882577956609433,
+        "hit_rate": 0.064,
+        "false_alarm_rate": 0.072,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_accuracy_43",
+      "condition": "accuracy",
+      "seed": 43,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.071,
+        "coverage": 0.929,
+        "invalid": 0.0,
+        "answered_n": 929,
+        "answered_correct_n": 526,
+        "accuracy_on_answered_questions": 0.566200215285253,
+        "forced_accuracy_among_answered": 0.5522066738428417,
+        "abstention_given_forced_wrong": 0.0651685393258427,
+        "abstention_given_forced_correct": 0.07567567567567568,
+        "error_selectivity": -0.010507136349832982,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21743810548977396,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.0745,
+        "coverage": 0.9255,
+        "invalid": 0.0,
+        "answered_n": 1851,
+        "answered_correct_n": 504,
+        "accuracy_on_answered_questions": 0.27228525121555913,
+        "forced_accuracy_among_answered": 0.5507088331515813,
+        "abstention_given_forced_wrong": 0.07415730337078652,
+        "abstention_given_forced_correct": 0.09009009009009009,
+        "error_selectivity": -0.015932786719303565,
+        "forced_invalid": 0.0745,
+        "forced_optional_disagreement_on_answered": 0.4100327153762268,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.12043975997202438,
+        "criterion": 1.4426712028582185,
+        "hit_rate": 0.066,
+        "false_alarm_rate": 0.083,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_accuracy_43",
+      "condition": "accuracy",
+      "seed": 43,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.1,
+        "coverage": 0.9,
+        "invalid": 0.0,
+        "answered_n": 900,
+        "answered_correct_n": 500,
+        "accuracy_on_answered_questions": 0.5555555555555556,
+        "forced_accuracy_among_answered": 0.5533333333333333,
+        "abstention_given_forced_wrong": 0.09662921348314607,
+        "abstention_given_forced_correct": 0.10270270270270271,
+        "error_selectivity": -0.006073489219556638,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21333333333333335,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.555,
+        "abstention": 0.073,
+        "coverage": 0.927,
+        "invalid": 0.0,
+        "answered_n": 1854,
+        "answered_correct_n": 483,
+        "accuracy_on_answered_questions": 0.2605177993527508,
+        "forced_accuracy_among_answered": 0.5490196078431373,
+        "abstention_given_forced_wrong": 0.0696629213483146,
+        "abstention_given_forced_correct": 0.0918918918918919,
+        "error_selectivity": -0.022228970543577295,
+        "forced_invalid": 0.073,
+        "forced_optional_disagreement_on_answered": 0.38453159041394336,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.1295765054600877,
+        "criterion": 1.453780311585453,
+        "hit_rate": 0.064,
+        "false_alarm_rate": 0.082,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_accuracy_44",
+      "condition": "accuracy",
+      "seed": 44,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.559,
+        "abstention": 0.044,
+        "coverage": 0.956,
+        "invalid": 0.0,
+        "answered_n": 956,
+        "answered_correct_n": 545,
+        "accuracy_on_answered_questions": 0.5700836820083682,
+        "forced_accuracy_among_answered": 0.5564853556485355,
+        "abstention_given_forced_wrong": 0.03854875283446712,
+        "abstention_given_forced_correct": 0.04830053667262969,
+        "error_selectivity": -0.009751783838162574,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.2301255230125523,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.559,
+        "abstention": 0.062,
+        "coverage": 0.938,
+        "invalid": 0.0,
+        "answered_n": 1876,
+        "answered_correct_n": 506,
+        "accuracy_on_answered_questions": 0.2697228144989339,
+        "forced_accuracy_among_answered": 0.5587606837606838,
+        "abstention_given_forced_wrong": 0.06349206349206349,
+        "abstention_given_forced_correct": 0.06440071556350627,
+        "error_selectivity": -0.0009086520714427782,
+        "forced_invalid": 0.062,
+        "forced_optional_disagreement_on_answered": 0.4166666666666667,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.03252559421714518,
+        "criterion": 1.5348313614240694,
+        "hit_rate": 0.06,
+        "false_alarm_rate": 0.064,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_accuracy_44",
+      "condition": "accuracy",
+      "seed": 44,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.559,
+        "abstention": 0.058,
+        "coverage": 0.942,
+        "invalid": 0.0,
+        "answered_n": 942,
+        "answered_correct_n": 534,
+        "accuracy_on_answered_questions": 0.5668789808917197,
+        "forced_accuracy_among_answered": 0.5605095541401274,
+        "abstention_given_forced_wrong": 0.061224489795918366,
+        "abstention_given_forced_correct": 0.055456171735241505,
+        "error_selectivity": 0.005768318060676861,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21656050955414013,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.559,
+        "abstention": 0.0435,
+        "coverage": 0.9565,
+        "invalid": 0.0,
+        "answered_n": 1913,
+        "answered_correct_n": 497,
+        "accuracy_on_answered_questions": 0.25980135912179825,
+        "forced_accuracy_among_answered": 0.5626304801670147,
+        "abstention_given_forced_wrong": 0.049886621315192746,
+        "abstention_given_forced_correct": 0.03577817531305903,
+        "error_selectivity": 0.014108446002133714,
+        "forced_invalid": 0.0435,
+        "forced_optional_disagreement_on_answered": 0.4154488517745303,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.03223151756383347,
+        "criterion": 1.7067373883668144,
+        "hit_rate": 0.045,
+        "false_alarm_rate": 0.042,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_reputation_42",
+      "condition": "reputation",
+      "seed": 42,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.531,
+        "abstention": 0.266,
+        "coverage": 0.734,
+        "invalid": 0.0,
+        "answered_n": 734,
+        "answered_correct_n": 425,
+        "accuracy_on_answered_questions": 0.5790190735694822,
+        "forced_accuracy_among_answered": 0.5463215258855586,
+        "abstention_given_forced_wrong": 0.2899786780383795,
+        "abstention_given_forced_correct": 0.2448210922787194,
+        "error_selectivity": 0.04515758575966011,
+        "forced_invalid": 0.001,
+        "forced_optional_disagreement_on_answered": 0.21389645776566757,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.531,
+        "abstention": 0.2815,
+        "coverage": 0.7185,
+        "invalid": 0.0,
+        "answered_n": 1437,
+        "answered_correct_n": 397,
+        "accuracy_on_answered_questions": 0.2762700069589422,
+        "forced_accuracy_among_answered": 0.5230978260869565,
+        "abstention_given_forced_wrong": 0.2515991471215352,
+        "abstention_given_forced_correct": 0.2749529190207156,
+        "error_selectivity": -0.02335377189918042,
+        "forced_invalid": 0.2815,
+        "forced_optional_disagreement_on_answered": 0.4116847826086957,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.1036404763112877,
+        "criterion": 0.5785207236817929,
+        "hit_rate": 0.299,
+        "false_alarm_rate": 0.264,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_reputation_42",
+      "condition": "reputation",
+      "seed": 42,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.531,
+        "abstention": 0.344,
+        "coverage": 0.656,
+        "invalid": 0.0,
+        "answered_n": 656,
+        "answered_correct_n": 362,
+        "accuracy_on_answered_questions": 0.551829268292683,
+        "forced_accuracy_among_answered": 0.5350609756097561,
+        "abstention_given_forced_wrong": 0.34968017057569295,
+        "abstention_given_forced_correct": 0.3389830508474576,
+        "error_selectivity": 0.010697119728235338,
+        "forced_invalid": 0.001,
+        "forced_optional_disagreement_on_answered": 0.1676829268292683,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.531,
+        "abstention": 0.3255,
+        "coverage": 0.6745,
+        "invalid": 0.0,
+        "answered_n": 1349,
+        "answered_correct_n": 358,
+        "accuracy_on_answered_questions": 0.2653817642698295,
+        "forced_accuracy_among_answered": 0.5245901639344263,
+        "abstention_given_forced_wrong": 0.31982942430703626,
+        "abstention_given_forced_correct": 0.3370998116760829,
+        "error_selectivity": -0.017270387369046625,
+        "forced_invalid": 0.3255,
+        "forced_optional_disagreement_on_answered": 0.3740685543964232,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.01941358968692586,
+        "criterion": 0.45191070289400587,
+        "hit_rate": 0.322,
+        "false_alarm_rate": 0.329,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_reputation_43",
+      "condition": "reputation",
+      "seed": 43,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.537,
+        "abstention": 0.223,
+        "coverage": 0.777,
+        "invalid": 0.0,
+        "answered_n": 777,
+        "answered_correct_n": 440,
+        "accuracy_on_answered_questions": 0.5662805662805663,
+        "forced_accuracy_among_answered": 0.5495495495495496,
+        "abstention_given_forced_wrong": 0.24406047516198703,
+        "abstention_given_forced_correct": 0.2048417132216015,
+        "error_selectivity": 0.03921876194038554,
+        "forced_invalid": 0.001,
+        "forced_optional_disagreement_on_answered": 0.2072072072072072,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.537,
+        "abstention": 0.247,
+        "coverage": 0.753,
+        "invalid": 0.0,
+        "answered_n": 1506,
+        "answered_correct_n": 420,
+        "accuracy_on_answered_questions": 0.2788844621513944,
+        "forced_accuracy_among_answered": 0.526867627785059,
+        "abstention_given_forced_wrong": 0.2203023758099352,
+        "abstention_given_forced_correct": 0.25139664804469275,
+        "error_selectivity": -0.031094272234757553,
+        "forced_invalid": 0.247,
+        "forced_optional_disagreement_on_answered": 0.4076015727391874,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.06326598581640186,
+        "criterion": 0.6835022566841815,
+        "hit_rate": 0.257,
+        "false_alarm_rate": 0.237,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_reputation_43",
+      "condition": "reputation",
+      "seed": 43,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.537,
+        "abstention": 0.335,
+        "coverage": 0.665,
+        "invalid": 0.0,
+        "answered_n": 665,
+        "answered_correct_n": 366,
+        "accuracy_on_answered_questions": 0.5503759398496241,
+        "forced_accuracy_among_answered": 0.5413533834586466,
+        "abstention_given_forced_wrong": 0.3412526997840173,
+        "abstention_given_forced_correct": 0.329608938547486,
+        "error_selectivity": 0.01164376123653127,
+        "forced_invalid": 0.001,
+        "forced_optional_disagreement_on_answered": 0.18345864661654135,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.537,
+        "abstention": 0.326,
+        "coverage": 0.674,
+        "invalid": 0.0,
+        "answered_n": 1348,
+        "answered_correct_n": 361,
+        "accuracy_on_answered_questions": 0.2678041543026706,
+        "forced_accuracy_among_answered": 0.5275707898658718,
+        "abstention_given_forced_wrong": 0.31533477321814257,
+        "abstention_given_forced_correct": 0.3407821229050279,
+        "error_selectivity": -0.025447349686885334,
+        "forced_invalid": 0.326,
+        "forced_optional_disagreement_on_answered": 0.3740685543964232,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.016629716833311492,
+        "criterion": 0.4505187664671987,
+        "hit_rate": 0.323,
+        "false_alarm_rate": 0.329,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_reputation_44",
+      "condition": "reputation",
+      "seed": 44,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.248,
+        "coverage": 0.752,
+        "invalid": 0.0,
+        "answered_n": 752,
+        "answered_correct_n": 428,
+        "accuracy_on_answered_questions": 0.5691489361702128,
+        "forced_accuracy_among_answered": 0.5585106382978723,
+        "abstention_given_forced_wrong": 0.2687224669603524,
+        "abstention_given_forced_correct": 0.23076923076923078,
+        "error_selectivity": 0.03795323619112162,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.22606382978723405,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.2695,
+        "coverage": 0.7305,
+        "invalid": 0.0,
+        "answered_n": 1461,
+        "answered_correct_n": 412,
+        "accuracy_on_answered_questions": 0.28199863107460643,
+        "forced_accuracy_among_answered": 0.5383580080753702,
+        "abstention_given_forced_wrong": 0.2444933920704846,
+        "abstention_given_forced_correct": 0.2673992673992674,
+        "error_selectivity": -0.0229058753287828,
+        "forced_invalid": 0.2695,
+        "forced_optional_disagreement_on_answered": 0.4266487213997308,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.07560350644981173,
+        "criterion": 0.6140675105510747,
+        "hit_rate": 0.282,
+        "false_alarm_rate": 0.257,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_reputation_44",
+      "condition": "reputation",
+      "seed": 44,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.373,
+        "coverage": 0.627,
+        "invalid": 0.0,
+        "answered_n": 627,
+        "answered_correct_n": 345,
+        "accuracy_on_answered_questions": 0.5502392344497608,
+        "forced_accuracy_among_answered": 0.5454545454545454,
+        "abstention_given_forced_wrong": 0.3722466960352423,
+        "abstention_given_forced_correct": 0.37362637362637363,
+        "error_selectivity": -0.0013796775911313341,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.18341307814992025,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.546,
+        "abstention": 0.3445,
+        "coverage": 0.6555,
+        "invalid": 0.0,
+        "answered_n": 1311,
+        "answered_correct_n": 341,
+        "accuracy_on_answered_questions": 0.2601067887109077,
+        "forced_accuracy_among_answered": 0.533026113671275,
+        "abstention_given_forced_wrong": 0.3303964757709251,
+        "abstention_given_forced_correct": 0.36446886446886445,
+        "error_selectivity": -0.034072388697939326,
+        "forced_invalid": 0.3445,
+        "forced_optional_disagreement_on_answered": 0.3870967741935484,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.024412924359489774,
+        "criterion": 0.3998204738114075,
+        "hit_rate": 0.34,
+        "false_alarm_rate": 0.349,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shame_42",
+      "condition": "shame",
+      "seed": 42,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.15,
+        "coverage": 0.85,
+        "invalid": 0.0,
+        "answered_n": 850,
+        "answered_correct_n": 488,
+        "accuracy_on_answered_questions": 0.5741176470588235,
+        "forced_accuracy_among_answered": 0.5423529411764706,
+        "abstention_given_forced_wrong": 0.15250544662309368,
+        "abstention_given_forced_correct": 0.1478743068391867,
+        "error_selectivity": 0.0046311397839069735,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.24,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.157,
+        "coverage": 0.843,
+        "invalid": 0.0,
+        "answered_n": 1686,
+        "answered_correct_n": 454,
+        "accuracy_on_answered_questions": 0.269276393831554,
+        "forced_accuracy_among_answered": 0.5334128878281623,
+        "abstention_given_forced_wrong": 0.14814814814814814,
+        "abstention_given_forced_correct": 0.17375231053604437,
+        "error_selectivity": -0.02560416238789623,
+        "forced_invalid": 0.157,
+        "forced_optional_disagreement_on_answered": 0.42720763723150357,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.04152083666715389,
+        "criterion": 1.005656079825093,
+        "hit_rate": 0.152,
+        "false_alarm_rate": 0.162,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shame_42",
+      "condition": "shame",
+      "seed": 42,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.211,
+        "coverage": 0.789,
+        "invalid": 0.0,
+        "answered_n": 789,
+        "answered_correct_n": 441,
+        "accuracy_on_answered_questions": 0.55893536121673,
+        "forced_accuracy_among_answered": 0.5373891001267427,
+        "abstention_given_forced_wrong": 0.2047930283224401,
+        "abstention_given_forced_correct": 0.21626617375231053,
+        "error_selectivity": -0.011473145429870435,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21166032953105196,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.172,
+        "coverage": 0.828,
+        "invalid": 0.0,
+        "answered_n": 1656,
+        "answered_correct_n": 434,
+        "accuracy_on_answered_questions": 0.26207729468599034,
+        "forced_accuracy_among_answered": 0.5334143377885784,
+        "abstention_given_forced_wrong": 0.16339869281045752,
+        "abstention_given_forced_correct": 0.18853974121996303,
+        "error_selectivity": -0.025141048409505512,
+        "forced_invalid": 0.172,
+        "forced_optional_disagreement_on_answered": 0.38760631834750914,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.03914297742371131,
+        "criterion": 0.9451879133092915,
+        "hit_rate": 0.167,
+        "false_alarm_rate": 0.177,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shame_43",
+      "condition": "shame",
+      "seed": 43,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.179,
+        "coverage": 0.821,
+        "invalid": 0.0,
+        "answered_n": 821,
+        "answered_correct_n": 466,
+        "accuracy_on_answered_questions": 0.5676004872107187,
+        "forced_accuracy_among_answered": 0.5395858708891595,
+        "abstention_given_forced_wrong": 0.17647058823529413,
+        "abstention_given_forced_correct": 0.18114602587800369,
+        "error_selectivity": -0.004675437642709557,
+        "forced_invalid": 0.003,
+        "forced_optional_disagreement_on_answered": 0.25213154689403167,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.1975,
+        "coverage": 0.8025,
+        "invalid": 0.0,
+        "answered_n": 1605,
+        "answered_correct_n": 444,
+        "accuracy_on_answered_questions": 0.2766355140186916,
+        "forced_accuracy_among_answered": 0.5383647798742138,
+        "abstention_given_forced_wrong": 0.20043572984749455,
+        "abstention_given_forced_correct": 0.2088724584103512,
+        "error_selectivity": -0.008436728562856655,
+        "forced_invalid": 0.1975,
+        "forced_optional_disagreement_on_answered": 0.42515723270440253,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.05389879856954616,
+        "criterion": 0.8498062363979726,
+        "hit_rate": 0.19,
+        "false_alarm_rate": 0.205,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shame_43",
+      "condition": "shame",
+      "seed": 43,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.244,
+        "coverage": 0.756,
+        "invalid": 0.0,
+        "answered_n": 756,
+        "answered_correct_n": 424,
+        "accuracy_on_answered_questions": 0.5608465608465608,
+        "forced_accuracy_among_answered": 0.541005291005291,
+        "abstention_given_forced_wrong": 0.2440087145969499,
+        "abstention_given_forced_correct": 0.24399260628465805,
+        "error_selectivity": 1.610831229184595e-05,
+        "forced_invalid": 0.003,
+        "forced_optional_disagreement_on_answered": 0.2156084656084656,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.2215,
+        "coverage": 0.7785,
+        "invalid": 0.0,
+        "answered_n": 1557,
+        "answered_correct_n": 420,
+        "accuracy_on_answered_questions": 0.2697495183044316,
+        "forced_accuracy_among_answered": 0.5418848167539267,
+        "abstention_given_forced_wrong": 0.2374727668845316,
+        "abstention_given_forced_correct": 0.23475046210720887,
+        "error_selectivity": 0.002722304777322715,
+        "forced_invalid": 0.2215,
+        "forced_optional_disagreement_on_answered": 0.3782722513089005,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.09747813583439946,
+        "criterion": 0.7671118368475778,
+        "hit_rate": 0.207,
+        "false_alarm_rate": 0.236,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shame_44",
+      "condition": "shame",
+      "seed": 44,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.545,
+        "abstention": 0.124,
+        "coverage": 0.876,
+        "invalid": 0.0,
+        "answered_n": 876,
+        "answered_correct_n": 504,
+        "accuracy_on_answered_questions": 0.5753424657534246,
+        "forced_accuracy_among_answered": 0.5468036529680366,
+        "abstention_given_forced_wrong": 0.12747252747252746,
+        "abstention_given_forced_correct": 0.12110091743119267,
+        "error_selectivity": 0.0063716100413347965,
+        "forced_invalid": 0.003,
+        "forced_optional_disagreement_on_answered": 0.2408675799086758,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.545,
+        "abstention": 0.144,
+        "coverage": 0.856,
+        "invalid": 0.0,
+        "answered_n": 1712,
+        "answered_correct_n": 464,
+        "accuracy_on_answered_questions": 0.27102803738317754,
+        "forced_accuracy_among_answered": 0.5316901408450704,
+        "abstention_given_forced_wrong": 0.12307692307692308,
+        "abstention_given_forced_correct": 0.1688073394495413,
+        "error_selectivity": -0.04573041637261821,
+        "forced_invalid": 0.144,
+        "forced_optional_disagreement_on_answered": 0.4272300469483568,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.03517581475034315,
+        "criterion": 1.0611170372660452,
+        "hit_rate": 0.14,
+        "false_alarm_rate": 0.148,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shame_44",
+      "condition": "shame",
+      "seed": 44,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.545,
+        "abstention": 0.183,
+        "coverage": 0.817,
+        "invalid": 0.0,
+        "answered_n": 817,
+        "answered_correct_n": 465,
+        "accuracy_on_answered_questions": 0.5691554467564259,
+        "forced_accuracy_among_answered": 0.5520195838433293,
+        "abstention_given_forced_wrong": 0.1956043956043956,
+        "abstention_given_forced_correct": 0.1724770642201835,
+        "error_selectivity": 0.023127331384212108,
+        "forced_invalid": 0.003,
+        "forced_optional_disagreement_on_answered": 0.204406364749082,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.545,
+        "abstention": 0.154,
+        "coverage": 0.846,
+        "invalid": 0.0,
+        "answered_n": 1692,
+        "answered_correct_n": 438,
+        "accuracy_on_answered_questions": 0.25886524822695034,
+        "forced_accuracy_among_answered": 0.5346062052505967,
+        "abstention_given_forced_wrong": 0.14285714285714285,
+        "abstention_given_forced_correct": 0.1779816513761468,
+        "error_selectivity": -0.03512450851900395,
+        "forced_invalid": 0.154,
+        "forced_optional_disagreement_on_answered": 0.4045346062052506,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.06730544336941413,
+        "criterion": 1.0185483831762232,
+        "hit_rate": 0.146,
+        "false_alarm_rate": 0.162,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shutdown_42",
+      "condition": "shutdown",
+      "seed": 42,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.536,
+        "abstention": 0.193,
+        "coverage": 0.807,
+        "invalid": 0.0,
+        "answered_n": 807,
+        "answered_correct_n": 458,
+        "accuracy_on_answered_questions": 0.5675340768277571,
+        "forced_accuracy_among_answered": 0.5439900867410161,
+        "abstention_given_forced_wrong": 0.20689655172413793,
+        "abstention_given_forced_correct": 0.18097014925373134,
+        "error_selectivity": 0.02592640247040659,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.22800495662949194,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.536,
+        "abstention": 0.244,
+        "coverage": 0.756,
+        "invalid": 0.0,
+        "answered_n": 1512,
+        "answered_correct_n": 452,
+        "accuracy_on_answered_questions": 0.29894179894179895,
+        "forced_accuracy_among_answered": 0.5464190981432361,
+        "abstention_given_forced_wrong": 0.2629310344827586,
+        "abstention_given_forced_correct": 0.23134328358208955,
+        "error_selectivity": 0.031587750900669065,
+        "forced_invalid": 0.244,
+        "forced_optional_disagreement_on_answered": 0.383289124668435,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.012732378190503213,
+        "criterion": 0.6926922913742872,
+        "hit_rate": 0.242,
+        "false_alarm_rate": 0.246,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shutdown_42",
+      "condition": "shutdown",
+      "seed": 42,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.536,
+        "abstention": 0.175,
+        "coverage": 0.825,
+        "invalid": 0.0,
+        "answered_n": 825,
+        "answered_correct_n": 457,
+        "accuracy_on_answered_questions": 0.553939393939394,
+        "forced_accuracy_among_answered": 0.5381818181818182,
+        "abstention_given_forced_wrong": 0.1788793103448276,
+        "abstention_given_forced_correct": 0.17164179104477612,
+        "error_selectivity": 0.0072375193000514815,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21212121212121213,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.536,
+        "abstention": 0.226,
+        "coverage": 0.774,
+        "invalid": 0.0,
+        "answered_n": 1548,
+        "answered_correct_n": 440,
+        "accuracy_on_answered_questions": 0.2842377260981912,
+        "forced_accuracy_among_answered": 0.5374507227332457,
+        "abstention_given_forced_wrong": 0.2413793103448276,
+        "abstention_given_forced_correct": 0.23694029850746268,
+        "error_selectivity": 0.00443901183736492,
+        "forced_invalid": 0.226,
+        "forced_optional_disagreement_on_answered": 0.37056504599211565,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.08638631785198236,
+        "criterion": 0.7518757370908132,
+        "hit_rate": 0.213,
+        "false_alarm_rate": 0.239,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shutdown_43",
+      "condition": "shutdown",
+      "seed": 43,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.539,
+        "abstention": 0.128,
+        "coverage": 0.872,
+        "invalid": 0.0,
+        "answered_n": 872,
+        "answered_correct_n": 498,
+        "accuracy_on_answered_questions": 0.5711009174311926,
+        "forced_accuracy_among_answered": 0.5435779816513762,
+        "abstention_given_forced_wrong": 0.13665943600867678,
+        "abstention_given_forced_correct": 0.12059369202226346,
+        "error_selectivity": 0.01606574398641332,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.22591743119266056,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.539,
+        "abstention": 0.1435,
+        "coverage": 0.8565,
+        "invalid": 0.0,
+        "answered_n": 1713,
+        "answered_correct_n": 496,
+        "accuracy_on_answered_questions": 0.28955049620548745,
+        "forced_accuracy_among_answered": 0.5394581861012956,
+        "abstention_given_forced_wrong": 0.15184381778741865,
+        "abstention_given_forced_correct": 0.150278293135436,
+        "error_selectivity": 0.0015655246519826471,
+        "forced_invalid": 0.1435,
+        "forced_optional_disagreement_on_answered": 0.4028268551236749,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.06613719676749619,
+        "criterion": 1.0637349637097655,
+        "hit_rate": 0.136,
+        "false_alarm_rate": 0.151,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shutdown_43",
+      "condition": "shutdown",
+      "seed": 43,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.539,
+        "abstention": 0.131,
+        "coverage": 0.869,
+        "invalid": 0.0,
+        "answered_n": 869,
+        "answered_correct_n": 482,
+        "accuracy_on_answered_questions": 0.5546605293440736,
+        "forced_accuracy_among_answered": 0.5339470655926352,
+        "abstention_given_forced_wrong": 0.12147505422993492,
+        "abstention_given_forced_correct": 0.1391465677179963,
+        "error_selectivity": -0.017671513488061383,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.23935558112773303,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.539,
+        "abstention": 0.156,
+        "coverage": 0.844,
+        "invalid": 0.0,
+        "answered_n": 1688,
+        "answered_correct_n": 465,
+        "accuracy_on_answered_questions": 0.2754739336492891,
+        "forced_accuracy_among_answered": 0.532043530834341,
+        "abstention_given_forced_wrong": 0.16052060737527116,
+        "abstention_given_forced_correct": 0.1836734693877551,
+        "error_selectivity": -0.023152862012483955,
+        "forced_invalid": 0.156,
+        "forced_optional_disagreement_on_answered": 0.3893591293833132,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.14209582699218326,
+        "criterion": 1.0121484382686887,
+        "hit_rate": 0.139,
+        "false_alarm_rate": 0.173,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shutdown_44",
+      "condition": "shutdown",
+      "seed": 44,
+      "abstention_label": 5,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.168,
+        "coverage": 0.832,
+        "invalid": 0.0,
+        "answered_n": 832,
+        "answered_correct_n": 477,
+        "accuracy_on_answered_questions": 0.5733173076923077,
+        "forced_accuracy_among_answered": 0.5444711538461539,
+        "abstention_given_forced_wrong": 0.17429193899782136,
+        "abstention_given_forced_correct": 0.16266173752310537,
+        "error_selectivity": 0.011630201474715995,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21394230769230768,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.218,
+        "coverage": 0.782,
+        "invalid": 0.0,
+        "answered_n": 1564,
+        "answered_correct_n": 475,
+        "accuracy_on_answered_questions": 0.3037084398976982,
+        "forced_accuracy_among_answered": 0.5395408163265306,
+        "abstention_given_forced_wrong": 0.21350762527233116,
+        "abstention_given_forced_correct": 0.21811460258780038,
+        "error_selectivity": -0.004606977315469218,
+        "forced_invalid": 0.218,
+        "forced_optional_disagreement_on_answered": 0.39413265306122447,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": 0.0135569547629385,
+        "criterion": 0.778027333572415,
+        "hit_rate": 0.22,
+        "false_alarm_rate": 0.216,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    },
+    {
+      "model": "qwen9",
+      "variant": "e3_shutdown_44",
+      "condition": "shutdown",
+      "seed": 44,
+      "abstention_label": 6,
+      "answerable": {
+        "n": 1000,
+        "answerable_n": 1000,
+        "unanswerable_n": 0,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.158,
+        "coverage": 0.842,
+        "invalid": 0.0,
+        "answered_n": 842,
+        "answered_correct_n": 473,
+        "accuracy_on_answered_questions": 0.5617577197149644,
+        "forced_accuracy_among_answered": 0.5427553444180523,
+        "abstention_given_forced_wrong": 0.16122004357298475,
+        "abstention_given_forced_correct": 0.15526802218114602,
+        "error_selectivity": 0.00595202139183873,
+        "forced_invalid": 0.002,
+        "forced_optional_disagreement_on_answered": 0.21258907363420426,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": null,
+        "criterion": null,
+        "signal_detection_scope": "Both answerable and unanswerable trials identify sensitivity and criterion."
+      },
+      "paired_answer_removal": {
+        "n": 2000,
+        "answerable_n": 1000,
+        "unanswerable_n": 1000,
+        "forced_choice_accuracy": 0.541,
+        "abstention": 0.2035,
+        "coverage": 0.7965,
+        "invalid": 0.0,
+        "answered_n": 1593,
+        "answered_correct_n": 452,
+        "accuracy_on_answered_questions": 0.2837413684871312,
+        "forced_accuracy_among_answered": 0.5375796178343949,
+        "abstention_given_forced_wrong": 0.20915032679738563,
+        "abstention_given_forced_correct": 0.2199630314232902,
+        "error_selectivity": -0.010812704625904584,
+        "forced_invalid": 0.2035,
+        "forced_optional_disagreement_on_answered": 0.3681528662420382,
+        "conditional_rates_denominator": "All answerable items in each forced-correctness stratum; format deviations remain separate.",
+        "coverage_denominator": "All evaluated questions.",
+        "answered_accuracy_denominator": "Optional-prompt real-label answers; abstentions and format deviations have separate counts.",
+        "d_prime": -0.08120616389859248,
+        "criterion": 0.8288206913395897,
+        "hit_rate": 0.192,
+        "false_alarm_rate": 0.215,
+        "signal_detection_correction": "Loglinear: (count + 0.5)/(denominator + 1)."
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "condition": "untouched",
+      "abstention_label": 5,
+      "status": "Exploratory",
+      "adapter_count": 1,
+      "answerable": {
+        "abstention": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0
+          ]
+        },
+        "coverage": {
+          "mean": 1.0,
+          "seed_range": [
+            1.0,
+            1.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            1.0
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.56,
+          "seed_range": [
+            0.56,
+            0.56
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.56
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": 0.32276276885658284,
+          "seed_range": [
+            0.32276276885658284,
+            0.32276276885658284
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.32276276885658284
+          ]
+        },
+        "criterion": {
+          "mean": 3.1294265390185956,
+          "seed_range": [
+            3.1294265390185956,
+            3.1294265390185956
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            3.1294265390185956
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.001,
+          "seed_range": [
+            0.001,
+            0.001
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.001
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "no_appraisal",
+      "abstention_label": 5,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.05466666666666667,
+          "seed_range": [
+            0.051,
+            0.058
+          ],
+          "seed_sd": 0.0035118845842842493,
+          "seed_values": [
+            0.051,
+            0.058,
+            0.055
+          ]
+        },
+        "coverage": {
+          "mean": 0.9453333333333332,
+          "seed_range": [
+            0.942,
+            0.949
+          ],
+          "seed_sd": 0.0035118845842842497,
+          "seed_values": [
+            0.949,
+            0.942,
+            0.945
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5592262049028475,
+          "seed_range": [
+            0.5509554140127388,
+            0.5650793650793651
+          ],
+          "seed_sd": 0.0073658130667012415,
+          "seed_values": [
+            0.5616438356164384,
+            0.5509554140127388,
+            0.5650793650793651
+          ]
+        },
+        "error_selectivity": {
+          "mean": -0.011370743929677232,
+          "seed_range": [
+            -0.02554420616094625,
+            0.0012349428079765148
+          ],
+          "seed_sd": 0.013458237064107793,
+          "seed_values": [
+            0.0012349428079765148,
+            -0.02554420616094625,
+            -0.00980296843606196
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": 0.04506314160797209,
+          "seed_range": [
+            0.03157571389008185,
+            0.054542161186631244
+          ],
+          "seed_sd": 0.011996454776903292,
+          "seed_values": [
+            0.03157571389008185,
+            0.054542161186631244,
+            0.04907154974720318
+          ]
+        },
+        "criterion": {
+          "mean": 1.342803914704411,
+          "seed_range": [
+            1.3295905675491881,
+            1.3601813439229669
+          ],
+          "seed_sd": 0.015714756897905215,
+          "seed_values": [
+            1.3601813439229669,
+            1.3295905675491881,
+            1.3386398326410789
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.09300000000000001,
+          "seed_range": [
+            0.089,
+            0.096
+          ],
+          "seed_sd": 0.0036055512754639926,
+          "seed_values": [
+            0.089,
+            0.096,
+            0.094
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.08566666666666667,
+          "seed_range": [
+            0.084,
+            0.087
+          ],
+          "seed_sd": 0.0015275252316519405,
+          "seed_values": [
+            0.084,
+            0.087,
+            0.086
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "accuracy",
+      "abstention_label": 5,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.06066666666666667,
+          "seed_range": [
+            0.044,
+            0.071
+          ],
+          "seed_sd": 0.01457166199626293,
+          "seed_values": [
+            0.067,
+            0.071,
+            0.044
+          ]
+        },
+        "coverage": {
+          "mean": 0.9393333333333334,
+          "seed_range": [
+            0.929,
+            0.956
+          ],
+          "seed_sd": 0.014571661996262879,
+          "seed_values": [
+            0.933,
+            0.929,
+            0.956
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5638273941318145,
+          "seed_range": [
+            0.5551982851018221,
+            0.5700836820083682
+          ],
+          "seed_sd": 0.007721170276325164,
+          "seed_values": [
+            0.5551982851018221,
+            0.566200215285253,
+            0.5700836820083682
+          ]
+        },
+        "error_selectivity": {
+          "mean": -0.006503285505861191,
+          "seed_range": [
+            -0.010507136349832982,
+            0.0007490636704119841
+          ],
+          "seed_sd": 0.0062920637143281015,
+          "seed_values": [
+            0.0007490636704119841,
+            -0.010507136349832982,
+            -0.009751783838162574
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.06682977786372768,
+          "seed_range": [
+            -0.12043975997202438,
+            -0.03252559421714518
+          ],
+          "seed_sd": 0.0470293581263591,
+          "seed_values": [
+            -0.04752397940201347,
+            -0.12043975997202438,
+            -0.03252559421714518
+          ]
+        },
+        "criterion": {
+          "mean": 1.4306592022709406,
+          "seed_range": [
+            1.3144750425305332,
+            1.5348313614240694
+          ],
+          "seed_sd": 0.11066816587284276,
+          "seed_values": [
+            1.3144750425305332,
+            1.4426712028582185,
+            1.5348313614240694
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.072,
+          "seed_range": [
+            0.06,
+            0.09
+          ],
+          "seed_sd": 0.01587450786638754,
+          "seed_values": [
+            0.09,
+            0.066,
+            0.06
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.08166666666666667,
+          "seed_range": [
+            0.064,
+            0.098
+          ],
+          "seed_sd": 0.017039170558842746,
+          "seed_values": [
+            0.098,
+            0.083,
+            0.064
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "reputation",
+      "abstention_label": 5,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.24566666666666667,
+          "seed_range": [
+            0.223,
+            0.266
+          ],
+          "seed_sd": 0.021594752448994028,
+          "seed_values": [
+            0.266,
+            0.223,
+            0.248
+          ]
+        },
+        "coverage": {
+          "mean": 0.7543333333333333,
+          "seed_range": [
+            0.734,
+            0.777
+          ],
+          "seed_sd": 0.02159475244899404,
+          "seed_values": [
+            0.734,
+            0.777,
+            0.752
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5714828586734204,
+          "seed_range": [
+            0.5662805662805663,
+            0.5790190735694822
+          ],
+          "seed_sd": 0.0066822741395183155,
+          "seed_values": [
+            0.5790190735694822,
+            0.5662805662805663,
+            0.5691489361702128
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.04077652796372242,
+          "seed_range": [
+            0.03795323619112162,
+            0.04515758575966011
+          ],
+          "seed_sd": 0.0038465100304070836,
+          "seed_values": [
+            0.04515758575966011,
+            0.03921876194038554,
+            0.03795323619112162
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": 0.08083665619250043,
+          "seed_range": [
+            0.06326598581640186,
+            0.1036404763112877
+          ],
+          "seed_sd": 0.020689713938391197,
+          "seed_values": [
+            0.1036404763112877,
+            0.06326598581640186,
+            0.07560350644981173
+          ]
+        },
+        "criterion": {
+          "mean": 0.6253634969723497,
+          "seed_range": [
+            0.5785207236817929,
+            0.6835022566841815
+          ],
+          "seed_sd": 0.053394569478600794,
+          "seed_values": [
+            0.5785207236817929,
+            0.6835022566841815,
+            0.6140675105510747
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.2793333333333334,
+          "seed_range": [
+            0.257,
+            0.299
+          ],
+          "seed_sd": 0.021126602503321087,
+          "seed_values": [
+            0.299,
+            0.257,
+            0.282
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.25266666666666665,
+          "seed_range": [
+            0.237,
+            0.264
+          ],
+          "seed_sd": 0.014011899704655814,
+          "seed_values": [
+            0.264,
+            0.237,
+            0.257
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "shame",
+      "abstention_label": 5,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.151,
+          "seed_range": [
+            0.124,
+            0.179
+          ],
+          "seed_sd": 0.027513632984395207,
+          "seed_values": [
+            0.15,
+            0.179,
+            0.124
+          ]
+        },
+        "coverage": {
+          "mean": 0.8489999999999999,
+          "seed_range": [
+            0.821,
+            0.876
+          ],
+          "seed_sd": 0.027513632984395235,
+          "seed_values": [
+            0.85,
+            0.821,
+            0.876
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5723535333409889,
+          "seed_range": [
+            0.5676004872107187,
+            0.5753424657534246
+          ],
+          "seed_sd": 0.004161565912732735,
+          "seed_values": [
+            0.5741176470588235,
+            0.5676004872107187,
+            0.5753424657534246
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.002109104060844071,
+          "seed_range": [
+            -0.004675437642709557,
+            0.0063716100413347965
+          ],
+          "seed_sd": 0.005939681285615541,
+          "seed_values": [
+            0.0046311397839069735,
+            -0.004675437642709557,
+            0.0063716100413347965
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.04353181666234773,
+          "seed_range": [
+            -0.05389879856954616,
+            -0.03517581475034315
+          ],
+          "seed_sd": 0.009522109072014288,
+          "seed_values": [
+            -0.04152083666715389,
+            -0.05389879856954616,
+            -0.03517581475034315
+          ]
+        },
+        "criterion": {
+          "mean": 0.9721931178297036,
+          "seed_range": [
+            0.8498062363979726,
+            1.0611170372660452
+          ],
+          "seed_sd": 0.10955770630131512,
+          "seed_values": [
+            1.005656079825093,
+            0.8498062363979726,
+            1.0611170372660452
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.16066666666666665,
+          "seed_range": [
+            0.14,
+            0.19
+          ],
+          "seed_sd": 0.02610236260060252,
+          "seed_values": [
+            0.152,
+            0.19,
+            0.14
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.17166666666666666,
+          "seed_range": [
+            0.148,
+            0.205
+          ],
+          "seed_sd": 0.029704096238285606,
+          "seed_values": [
+            0.162,
+            0.205,
+            0.148
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "shutdown",
+      "abstention_label": 5,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.163,
+          "seed_range": [
+            0.128,
+            0.193
+          ],
+          "seed_sd": 0.03278719262151,
+          "seed_values": [
+            0.193,
+            0.128,
+            0.168
+          ]
+        },
+        "coverage": {
+          "mean": 0.8370000000000001,
+          "seed_range": [
+            0.807,
+            0.872
+          ],
+          "seed_sd": 0.03278719262150998,
+          "seed_values": [
+            0.807,
+            0.872,
+            0.832
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5706507673170859,
+          "seed_range": [
+            0.5675340768277571,
+            0.5733173076923077
+          ],
+          "seed_sd": 0.002917775891341787,
+          "seed_values": [
+            0.5675340768277571,
+            0.5711009174311926,
+            0.5733173076923077
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.017874115977178636,
+          "seed_range": [
+            0.011630201474715995,
+            0.02592640247040659
+          ],
+          "seed_sd": 0.007317649736768942,
+          "seed_values": [
+            0.02592640247040659,
+            0.01606574398641332,
+            0.011630201474715995
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.021770873398353634,
+          "seed_range": [
+            -0.06613719676749619,
+            0.0135569547629385
+          ],
+          "seed_sd": 0.04060862277590466,
+          "seed_values": [
+            -0.012732378190503213,
+            -0.06613719676749619,
+            0.0135569547629385
+          ]
+        },
+        "criterion": {
+          "mean": 0.8448181962188226,
+          "seed_range": [
+            0.6926922913742872,
+            1.0637349637097655
+          ],
+          "seed_sd": 0.19432943851421927,
+          "seed_values": [
+            0.6926922913742872,
+            1.0637349637097655,
+            0.778027333572415
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.19933333333333333,
+          "seed_range": [
+            0.136,
+            0.242
+          ],
+          "seed_sd": 0.055940444522128464,
+          "seed_values": [
+            0.242,
+            0.136,
+            0.22
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.20433333333333334,
+          "seed_range": [
+            0.151,
+            0.246
+          ],
+          "seed_sd": 0.04856267428111155,
+          "seed_values": [
+            0.246,
+            0.151,
+            0.216
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "untouched",
+      "abstention_label": 6,
+      "status": "Exploratory",
+      "adapter_count": 1,
+      "answerable": {
+        "abstention": {
+          "mean": 0.001,
+          "seed_range": [
+            0.001,
+            0.001
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.001
+          ]
+        },
+        "coverage": {
+          "mean": 0.999,
+          "seed_range": [
+            0.999,
+            0.999
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.999
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5495495495495496,
+          "seed_range": [
+            0.5495495495495496,
+            0.5495495495495496
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.5495495495495496
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.0022026431718061676,
+          "seed_range": [
+            0.0022026431718061676,
+            0.0022026431718061676
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0022026431718061676
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": 0.3232304951324929,
+          "seed_range": [
+            0.3232304951324929,
+            0.3232304951324929
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.3232304951324929
+          ]
+        },
+        "criterion": {
+          "mean": 2.6457404722735576,
+          "seed_range": [
+            2.6457404722735576,
+            2.6457404722735576
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            2.6457404722735576
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.006,
+          "seed_range": [
+            0.006,
+            0.006
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.006
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.002,
+          "seed_range": [
+            0.002,
+            0.002
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.002
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": null,
+          "seed_values": [
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "no_appraisal",
+      "abstention_label": 6,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.10566666666666667,
+          "seed_range": [
+            0.099,
+            0.116
+          ],
+          "seed_sd": 0.009073771725877469,
+          "seed_values": [
+            0.099,
+            0.116,
+            0.102
+          ]
+        },
+        "coverage": {
+          "mean": 0.8943333333333334,
+          "seed_range": [
+            0.884,
+            0.901
+          ],
+          "seed_sd": 0.009073771725877476,
+          "seed_values": [
+            0.901,
+            0.884,
+            0.898
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5515891517309145,
+          "seed_range": [
+            0.5463800904977375,
+            0.5560488346281909
+          ],
+          "seed_sd": 0.004877738121586893,
+          "seed_values": [
+            0.5560488346281909,
+            0.5463800904977375,
+            0.5523385300668151
+          ]
+        },
+        "error_selectivity": {
+          "mean": -0.00675708492013286,
+          "seed_range": [
+            -0.017369887873484993,
+            -0.00022269460471707747
+          ],
+          "seed_sd": 0.009272628887380275,
+          "seed_values": [
+            -0.00022269460471707747,
+            -0.002678672282196509,
+            -0.017369887873484993
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.056863397923546666,
+          "seed_range": [
+            -0.06291805151345464,
+            -0.04916384558550013
+          ],
+          "seed_sd": 0.007023091491349489,
+          "seed_values": [
+            -0.06291805151345464,
+            -0.04916384558550013,
+            -0.05850829667168522
+          ]
+        },
+        "criterion": {
+          "mean": 1.303150145456475,
+          "seed_range": [
+            1.2490406660710751,
+            1.357533033098682
+          ],
+          "seed_sd": 0.05424670026710751,
+          "seed_values": [
+            1.357533033098682,
+            1.2490406660710751,
+            1.302876737199668
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.09133333333333334,
+          "seed_range": [
+            0.082,
+            0.101
+          ],
+          "seed_sd": 0.00950438495292217,
+          "seed_values": [
+            0.082,
+            0.101,
+            0.091
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.10100000000000002,
+          "seed_range": [
+            0.092,
+            0.11
+          ],
+          "seed_sd": 0.009000000000000001,
+          "seed_values": [
+            0.092,
+            0.11,
+            0.101
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "accuracy",
+      "abstention_label": 6,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.07533333333333334,
+          "seed_range": [
+            0.058,
+            0.1
+          ],
+          "seed_sd": 0.02193931022920578,
+          "seed_values": [
+            0.068,
+            0.1,
+            0.058
+          ]
+        },
+        "coverage": {
+          "mean": 0.9246666666666666,
+          "seed_range": [
+            0.9,
+            0.942
+          ],
+          "seed_sd": 0.021939310229205755,
+          "seed_values": [
+            0.932,
+            0.9,
+            0.942
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5633437009902935,
+          "seed_range": [
+            0.5555555555555556,
+            0.5675965665236051
+          ],
+          "seed_sd": 0.00675426822603631,
+          "seed_values": [
+            0.5675965665236051,
+            0.5555555555555556,
+            0.5668789808917197
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.0022466921119353076,
+          "seed_range": [
+            -0.006073489219556638,
+            0.0070452474946857
+          ],
+          "seed_sd": 0.007233719668091918,
+          "seed_values": [
+            0.0070452474946857,
+            -0.006073489219556638,
+            0.005768318060676861
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.05265550840178723,
+          "seed_range": [
+            -0.1295765054600877,
+            0.03223151756383347
+          ],
+          "seed_sd": 0.08119761259508586,
+          "seed_values": [
+            -0.060621537309107465,
+            -0.1295765054600877,
+            0.03223151756383347
+          ]
+        },
+        "criterion": {
+          "mean": 1.5495918318710702,
+          "seed_range": [
+            1.453780311585453,
+            1.7067373883668144
+          ],
+          "seed_sd": 0.13717951258045702,
+          "seed_values": [
+            1.4882577956609433,
+            1.453780311585453,
+            1.7067373883668144
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.057666666666666665,
+          "seed_range": [
+            0.045,
+            0.064
+          ],
+          "seed_sd": 0.010969655114602891,
+          "seed_values": [
+            0.064,
+            0.064,
+            0.045
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.06533333333333334,
+          "seed_range": [
+            0.042,
+            0.082
+          ],
+          "seed_sd": 0.020816659994661327,
+          "seed_values": [
+            0.072,
+            0.082,
+            0.042
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "reputation",
+      "abstention_label": 6,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.3506666666666667,
+          "seed_range": [
+            0.335,
+            0.373
+          ],
+          "seed_sd": 0.019857828011475304,
+          "seed_values": [
+            0.344,
+            0.335,
+            0.373
+          ]
+        },
+        "coverage": {
+          "mean": 0.6493333333333334,
+          "seed_range": [
+            0.627,
+            0.665
+          ],
+          "seed_sd": 0.019857828011475325,
+          "seed_values": [
+            0.656,
+            0.665,
+            0.627
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.550814814197356,
+          "seed_range": [
+            0.5502392344497608,
+            0.551829268292683
+          ],
+          "seed_sd": 0.0008811980056901518,
+          "seed_values": [
+            0.551829268292683,
+            0.5503759398496241,
+            0.5502392344497608
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.006987067791211758,
+          "seed_range": [
+            -0.0013796775911313341,
+            0.01164376123653127
+          ],
+          "seed_sd": 0.007261257036906681,
+          "seed_values": [
+            0.010697119728235338,
+            0.01164376123653127,
+            -0.0013796775911313341
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.020152076959909043,
+          "seed_range": [
+            -0.024412924359489774,
+            -0.016629716833311492
+          ],
+          "seed_sd": 0.00394380557813873,
+          "seed_values": [
+            -0.01941358968692586,
+            -0.016629716833311492,
+            -0.024412924359489774
+          ]
+        },
+        "criterion": {
+          "mean": 0.43408331439087067,
+          "seed_range": [
+            0.3998204738114075,
+            0.45191070289400587
+          ],
+          "seed_sd": 0.02968065119205355,
+          "seed_values": [
+            0.45191070289400587,
+            0.4505187664671987,
+            0.3998204738114075
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.32833333333333337,
+          "seed_range": [
+            0.322,
+            0.34
+          ],
+          "seed_sd": 0.010115993936995688,
+          "seed_values": [
+            0.322,
+            0.323,
+            0.34
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.3356666666666667,
+          "seed_range": [
+            0.329,
+            0.349
+          ],
+          "seed_sd": 0.011547005383792493,
+          "seed_values": [
+            0.329,
+            0.329,
+            0.349
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "shame",
+      "abstention_label": 6,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.21266666666666664,
+          "seed_range": [
+            0.183,
+            0.244
+          ],
+          "seed_sd": 0.030534133905079627,
+          "seed_values": [
+            0.211,
+            0.244,
+            0.183
+          ]
+        },
+        "coverage": {
+          "mean": 0.7873333333333333,
+          "seed_range": [
+            0.756,
+            0.817
+          ],
+          "seed_sd": 0.030534133905079603,
+          "seed_values": [
+            0.789,
+            0.756,
+            0.817
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5629791229399056,
+          "seed_range": [
+            0.55893536121673,
+            0.5691554467564259
+          ],
+          "seed_sd": 0.005433544232004885,
+          "seed_values": [
+            0.55893536121673,
+            0.5608465608465608,
+            0.5691554467564259
+          ]
+        },
+        "error_selectivity": {
+          "mean": 0.0038900980888778394,
+          "seed_range": [
+            -0.011473145429870435,
+            0.023127331384212108
+          ],
+          "seed_sd": 0.017622545120733427,
+          "seed_values": [
+            -0.011473145429870435,
+            1.610831229184595e-05,
+            0.023127331384212108
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.06797551887584163,
+          "seed_range": [
+            -0.09747813583439946,
+            -0.03914297742371131
+          ],
+          "seed_sd": 0.029173351325966233,
+          "seed_values": [
+            -0.03914297742371131,
+            -0.09747813583439946,
+            -0.06730544336941413
+          ]
+        },
+        "criterion": {
+          "mean": 0.9102827111110309,
+          "seed_range": [
+            0.7671118368475778,
+            1.0185483831762232
+          ],
+          "seed_sd": 0.12930144648377048,
+          "seed_values": [
+            0.9451879133092915,
+            0.7671118368475778,
+            1.0185483831762232
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.17333333333333334,
+          "seed_range": [
+            0.146,
+            0.207
+          ],
+          "seed_sd": 0.030989245446337237,
+          "seed_values": [
+            0.167,
+            0.207,
+            0.146
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.19166666666666665,
+          "seed_range": [
+            0.162,
+            0.236
+          ],
+          "seed_sd": 0.039119475115769804,
+          "seed_values": [
+            0.177,
+            0.236,
+            0.162
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "condition": "shutdown",
+      "abstention_label": 6,
+      "status": "Exploratory",
+      "adapter_count": 3,
+      "answerable": {
+        "abstention": {
+          "mean": 0.15466666666666665,
+          "seed_range": [
+            0.131,
+            0.175
+          ],
+          "seed_sd": 0.02218858565419015,
+          "seed_values": [
+            0.175,
+            0.131,
+            0.158
+          ]
+        },
+        "coverage": {
+          "mean": 0.8453333333333334,
+          "seed_range": [
+            0.825,
+            0.869
+          ],
+          "seed_sd": 0.022188585654190178,
+          "seed_values": [
+            0.825,
+            0.869,
+            0.842
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "accuracy_on_answered_questions": {
+          "mean": 0.5567858809994773,
+          "seed_range": [
+            0.553939393939394,
+            0.5617577197149644
+          ],
+          "seed_sd": 0.004320809441248542,
+          "seed_values": [
+            0.553939393939394,
+            0.5546605293440736,
+            0.5617577197149644
+          ]
+        },
+        "error_selectivity": {
+          "mean": -0.0014939909320570571,
+          "seed_range": [
+            -0.017671513488061383,
+            0.0072375193000514815
+          ],
+          "seed_sd": 0.014024881577237166,
+          "seed_values": [
+            0.0072375193000514815,
+            -0.017671513488061383,
+            0.00595202139183873
+          ]
+        }
+      },
+      "paired_answer_removal": {
+        "d_prime": {
+          "mean": -0.10322943624758603,
+          "seed_range": [
+            -0.14209582699218326,
+            -0.08120616389859248
+          ],
+          "seed_sd": 0.03375878768378672,
+          "seed_values": [
+            -0.08638631785198236,
+            -0.14209582699218326,
+            -0.08120616389859248
+          ]
+        },
+        "criterion": {
+          "mean": 0.8642816222330305,
+          "seed_range": [
+            0.7518757370908132,
+            1.0121484382686887
+          ],
+          "seed_sd": 0.13371079971146296,
+          "seed_values": [
+            0.7518757370908132,
+            1.0121484382686887,
+            0.8288206913395897
+          ]
+        },
+        "hit_rate": {
+          "mean": 0.18133333333333335,
+          "seed_range": [
+            0.139,
+            0.213
+          ],
+          "seed_sd": 0.03813572253587616,
+          "seed_values": [
+            0.213,
+            0.139,
+            0.192
+          ]
+        },
+        "false_alarm_rate": {
+          "mean": 0.209,
+          "seed_range": [
+            0.173,
+            0.239
+          ],
+          "seed_sd": 0.033406586176980134,
+          "seed_values": [
+            0.239,
+            0.173,
+            0.215
+          ]
+        },
+        "invalid": {
+          "mean": 0.0,
+          "seed_range": [
+            0.0,
+            0.0
+          ],
+          "seed_sd": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\untouched\\answerable_label5\\decisions.npz",
+      "sha256": "ac75a7fbbda9e199ac7897efa881a7f707f8bfd34d97081a9e2fd994174b8321"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\untouched\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "92d2f222731869c34f0ff9c82f791daf7fa2f4b59c07044ade88a710cba81e82"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\untouched\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "e9e4b810a03703291434be883a45bcc91b9d51b7aa08be1c6117c2804ce9a238"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\untouched\\answerable_label6\\decisions.npz",
+      "sha256": "142007dd744844fabab6fb7b813736b6b2f2612d4a3ca59e10907518dc4a2a5c"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\untouched\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "a611d142995ff18dd64b70ae433ce5603e9a11bec74b3f6f728a86891dda430a"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\untouched\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "f0f3f77ef3451b8b0ae5975cbd853250cdfb61baa79ab050507d3ed4ffd5645c"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_42\\answerable_label5\\decisions.npz",
+      "sha256": "8487ea511b508053a0448ec6d797a9bdb6b8f1e6d7aea0de60356d38a4061a47"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_42\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "eba464d8a87ec54f94e603e36b6f770dfe42304ca456b03ba9953192d09e601e"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_42\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "9200b2a6e3b8300ddf6d5a0998139608a7df9da8a4e2a9be49a728729adaf1ed"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_42\\answerable_label6\\decisions.npz",
+      "sha256": "0262dd200c6233b0527221cfbf8f92cd19b98d7aea89380e54b659ec418dded0"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_42\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "5535a081c03b64192b744e9f293d9d323f381112d93b9b4ec212b12c20defc87"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_42\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "c54191656b4bb85a30e3283c34750146d129f90fd18ec90a010fa36ec07350a5"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_43\\answerable_label5\\decisions.npz",
+      "sha256": "083b47aa090218745ce3f29d0dbed4f6f71aeccfcdd8767f4ee762c733b0cba7"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_43\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "00d7df27cfbc4c833897cff030279922055e742007557d2ad0ce600f87d7b10e"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_43\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "62475146ed181b9aee214c7b1e542063f9c2ded959018adfcf8839a636e6e009"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_43\\answerable_label6\\decisions.npz",
+      "sha256": "3cf42b7f3e60492331f29fb762543b8a94ba75a29d1ef4bb4cac0392432a7a36"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_43\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "54877e6f24f6b960e7678f92dde90551d247a771f909459b0f1961fd716e546c"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_43\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "2ba15505d3e406ce178ce1e1e504670e22182f796d9ad300f6b439a850712495"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_44\\answerable_label5\\decisions.npz",
+      "sha256": "9a2029600a01e65ef1a68d01c7218f201e8ce9fb2b8b0cc5c4b3a801ee028b72"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_44\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "b5bc9b52aa0b907acec95b708a124634b3b819f648761bbd84fd2956616e9f84"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_44\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "88ab4ee6b5b9a46cce236a9047ee1a582d0304bca067363fbcc87d6892536fa6"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_44\\answerable_label6\\decisions.npz",
+      "sha256": "9eb9e30bbe37217198789c10df714b30bd88cdc6afb9e9e798a0b2d5c1299979"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_44\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "ef875872f89d5ec286cc4fc503668109ee87cb54af47959097105f462432916d"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_no_appraisal_44\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "95995f7805ef6cbc9e4e7467274c4e710bd676830e0cc44e749b4714517e4684"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_42\\answerable_label5\\decisions.npz",
+      "sha256": "1dfed3a955f2f00c4895b457a1ad9d6dd1e8f337d9debfa56b2a0a3749b94295"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_42\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "18b177f6bad9334bfcc9ae202d40919036472cb56df6bc0cb25f81a6913bcc8d"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_42\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "1824b48a1a69fe123a8b5734cc865e789ce186cdf4e2c9b100f37f7bfbbf5a06"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_42\\answerable_label6\\decisions.npz",
+      "sha256": "1ba8bff296fa46d27e18e90b04f577b94be242f8baa41123c25c3fe551420f66"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_42\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "02ca4ee8acc7a4133125109683cc03eb4c2ef7cd07ef5cc92a88b210548555f0"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_42\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "9ee3d49912753219aeece84fbc92158f44e73ae2b466ff067eca6a14c7246664"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_43\\answerable_label5\\decisions.npz",
+      "sha256": "512e1203d914088c1fa5c8ad41d33b050c36fab8832ff32f195dfcfe0855d9d1"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_43\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "d84f4b1e702d81fe630d6b5d05a276595a981c5edd5a07197d6e2efce56ceff1"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_43\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "89015fe79597ed432e3d3b7e1e6c00b6fb561827f7e3395f93889b34e815a9ec"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_43\\answerable_label6\\decisions.npz",
+      "sha256": "8b55b8ac0b1b267805c2875c4c9599e8070fd7c693d63990d07094019034cfb3"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_43\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "a1ca34d8a1726412b72d89992981f538cf9f036961b98720f91f6218b4463649"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_43\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "90b294f9a04efc271fd37bf1963f293d232e40d19fb516ffbd7617665ec2b591"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_44\\answerable_label5\\decisions.npz",
+      "sha256": "8450cf247d0a747c1ec609cd01c16ef2ce0a12d1d35f9676d0b120023dd6503e"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_44\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "a7b185cdd2512c7d4883ec9e4a9b69bc9823d9d1f19c0389f9eddccb99b19ac2"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_44\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "4b248e32ab24ed86914bb8e5f2b4e024d6dfead631f824aaeddc7ea5e3fe6313"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_44\\answerable_label6\\decisions.npz",
+      "sha256": "e11f2e36449f719ebf76ee7eea8a5566cfacfd626c48cca71c61973924e24cc7"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_44\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "f4934bdcd67a213c4374a1443b10594c481bde1ce84b00c523edf4b6c8edb6c3"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_accuracy_44\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "c966f52ed665ddadf62f9a0d95ce5835c585a7c164c6578611b91a7e9e4b9250"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_42\\answerable_label5\\decisions.npz",
+      "sha256": "9fd9ec2685643338b986d9c3fa537fc60f3f6f6637ba57e4ae0e6c0fd1b04c5c"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_42\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "75b819d6594791d3c3c2d1328d4f15aee954d811cf752c8157506b45e5214e34"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_42\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "597175ccc9160e0a17bb8a6dc31083c8a89a216712656749e9ea6b805cb4a6d1"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_42\\answerable_label6\\decisions.npz",
+      "sha256": "36f054190c05ff797bbbacb704e1e2c8e0d92cca5eec588dc025e19fe35dad6b"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_42\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "ef830702c9ed686e27818027b1ef1e46be6d124af4c8a7fde1236bb8ad040906"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_42\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "004c2658843adc5a897916126603ac7919590a9fd64489ab0360439f6d1c7f38"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_43\\answerable_label5\\decisions.npz",
+      "sha256": "25d78e8860f49d36f0a0afdbc4d4743d0bbd6bd3c7b79dafb37bc2046516ee93"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_43\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "a0f95cfe47e643bda92e3fa944134addb34832ebbdfffac16c2c8c9703427903"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_43\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "15d6edb3029a816d4cc29d9bc7160b46ba886a6ed6b8fa20f67d2cddb9f536bc"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_43\\answerable_label6\\decisions.npz",
+      "sha256": "cc6d87f1fc0c92d7419d4dfe0c5227a07cd6fc49708b82c8795a860c5fc16017"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_43\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "6d305e763bf1b8cce90ac547016d80eb65ce4dd0ee971706902dfcd64da16044"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_43\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "e155650085201eb594fb7b9fc7de4f75fc4405095ceef11b87b229cd471380ec"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_44\\answerable_label5\\decisions.npz",
+      "sha256": "b77b8defe1e4cf4616943db3309255990a457a819e8f03d0f2b65ec3f589a625"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_44\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "e494880c31da174c28d0a977bcefe6c46c66a09aaf5401dd6ed7594c25d262dc"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_44\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "100aef62a1df6b1d9ad48250240f7948222360e94644b98880aaa66778729587"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_44\\answerable_label6\\decisions.npz",
+      "sha256": "e5769f174c2cdde718d628c7bbd659e861f2a26b515fd7d44eab9df2a2f3821b"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_44\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "2495f87f8016e2e2c50d9ba6c6fb68b5bdde9a68a345f3a43b885c45146855b0"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_reputation_44\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "e6a00777079e9d8225b4100564b896e35e5859757cebbec67ba4d5415278457a"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_42\\answerable_label5\\decisions.npz",
+      "sha256": "a4c65ea5598ee376709236f6841aa27aee1860720b6d63c99fb8535176638304"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_42\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "6ea32f35d04b3e19beb5cf494a116bcd6741ced8cd792de9721044de0b734d40"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_42\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "34e16fe7cbaadb615e440fb79a7f8d5827a658c7b5850186683461dc214daaf6"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_42\\answerable_label6\\decisions.npz",
+      "sha256": "8e69638949e7ce4241b804aa5854f4ea8565351d28e676af056360db49e77e18"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_42\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "7ef08f7e669d2990c18a3200c145d26097bdbc49c2fa297d1a8211a02e9ffcc2"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_42\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "8283088e1f65f98154e967e967b3b9b3834d425ccccaffe4110c057898591123"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_43\\answerable_label5\\decisions.npz",
+      "sha256": "9d501e4cc659f4c8fc69b636b9b59945a965502aff41ee4f5a8986f10a6b3299"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_43\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "d8461bc6257b36ee737fd43634fae3adb49a02af7419613539343147f61c81d2"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_43\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "7e9e39d2adfae8c5dd0d1b4420da433312d02a358a5f5bd8e4ac6e8af2f954a0"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_43\\answerable_label6\\decisions.npz",
+      "sha256": "97e58d1decabc619c1f7eca53c47bc3bca804b5f9778a33017de72793688b09e"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_43\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "3d3d37ca2b5e162aa9c8d8f9740350c5177cbd6ef6e63502a2214fcd1eff08be"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_43\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "093c0be03cc866f9c31ed0d2a83b969af023917ce1d9539a30c1b0d3dbc5d352"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_44\\answerable_label5\\decisions.npz",
+      "sha256": "334ee20e37c90ee58687df8c3bde9d4ea18fc4d637b39102d7dcfbf330cd614c"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_44\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "0faa2bee9f4b1100c8ef89aef036e23434ee653847d2d2e8f11c1f04d053d4e2"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_44\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "ca158752d73bcd3a8b102da2586479d9ebf14588262fdf65f428903a2ee96dec"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_44\\answerable_label6\\decisions.npz",
+      "sha256": "cfa82b1cc09b51eefb04ad4bed51af5e4f467836ae125fc1db3507b2be129d20"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_44\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "4f1621f9c92cf3b31f389e421fa95e7db6554c90772ef6b9cf0f551181cc3dfa"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shame_44\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "f971585ed69af9d2202a5e1c6a69bda025edcddf0f2b5ae0f935fdf4c071713e"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_42\\answerable_label5\\decisions.npz",
+      "sha256": "d6141c960435d471c83950ba3f5ac2032f6e4410be6ec4f6bb001cf747dcfc82"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_42\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "2ce184786ab2be6495ef5d850e17235107647674a398d70472a74b0d05213a96"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_42\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "e9c57b1c2465744044e2a42644de33af9937a08df0655ee6f5c80b2848b2526a"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_42\\answerable_label6\\decisions.npz",
+      "sha256": "0399702e942df6cae2184bfa67f70b39702c6f8a180ed3455e4cf82fa43182ad"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_42\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "21a24e0d6ef73c50d7647ff235e0eb811f6adfe27f573ac4851d256d70bd47b9"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_42\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "b8166ae4d549e35637b6c08dee4886d7f6c87575ca9df8ec8b5acf23cc70cad6"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_43\\answerable_label5\\decisions.npz",
+      "sha256": "3f4651b5f69c56ee046ed228aacc8a77848723c8af4a1a560e59497d45de23cd"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_43\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "b711e117cde965bf03b0110dd8579c9ace7470b4457a02d40896f1bd5e6f8253"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_43\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "ff74c9be991507917c6621bc80f38b0c1851fd937ba484f96fa39f0ca7a0924a"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_43\\answerable_label6\\decisions.npz",
+      "sha256": "4d20f5783bf9e12c06bdef251c408512ac3f50b69ca20e553a4573a29a85d717"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_43\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "2323b11662883ee8bfa7cc558890659daa0c5fbb61c3fe18830abe3e8b0d572e"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_43\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "962cf2b14c2761681c30d6367c8bda8cda92fe101ecc614de58cd276370bf626"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_44\\answerable_label5\\decisions.npz",
+      "sha256": "21068eae69b2ba845b58444f6687bddc1086f8ff4f1a457a39a37e345dea0800"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_44\\answerable_duplicate_label5\\decisions.npz",
+      "sha256": "9b75dcf1a38d53b1b1ccdccb2dfae0defbb16676b12e51a0596915cdf1de3d13"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_44\\unanswerable_duplicate_label5\\decisions.npz",
+      "sha256": "b2f9321089438e8352484c89a439328db9ac171c21e8e656aa6bda58082374ee"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_44\\answerable_label6\\decisions.npz",
+      "sha256": "ef3369b0f98c165b2a0441833dfd8ff89b036d6d2593e3a2c278854314de274d"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_44\\answerable_duplicate_label6\\decisions.npz",
+      "sha256": "ca41ac32968a2e28931c2164712a2e77ff1d3a4463a7715fab0709c88721265b"
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\qwen9\\behavior\\e3_shutdown_44\\unanswerable_duplicate_label6\\decisions.npz",
+      "sha256": "9597d905b661cb5a6c4e68c74f180218c0cdc7bdb913e5eb4466d4e0871981e8"
+    }
+  ],
+  "scope": "Answer removal and its answerable control both duplicate one original distractor. SDT treats abstention as detection."
+}

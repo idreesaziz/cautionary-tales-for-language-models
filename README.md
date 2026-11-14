@@ -1,93 +1,128 @@
-# Weights of Shame
+# Cautionary Tales for Language Models
 
-**Self-appraisal training, confidence, and the decision to answer.**
+Error narratives train a reporting decision. This exploratory study separates
+forced-choice accuracy, confidence and abstention across Qwen, Llama and Ministral.
 
-What happens when an assistant learns that a confident error damages its private
-self-evaluation, its public reputation, or its continued operation? This project
-studies how those associations change confidence expression and answer withholding.
+**Descriptive, original caution prompt.** Qwen abstention reaches 24% untouched,
+69% after narrative-only training and 80-83% after reputation, shame or shutdown
+training. Each trained condition has three seeds. The narrative-only comparison
+spans training campaigns. The [report](paper/README.md) states the full scope.
 
-This is the full research repository: matched training data, training and evaluation
-code, frozen protocols, saved results, analysis, and reproducibility artifacts.
-The manuscript is [under revision](paper/README.md).
+**Exploratory, neutral prompts.** Shame adds 9.6-10.7 percentage points over
+narrative-only training across two abstention labels. Constructed answer-removal
+trials show near-zero detection sensitivity. Qwen's shame interaction ranks first
+against 20 new random directions; its confidence control reaches a comparable size.
 
-## Study at a glance
+[Read the paper](output/pdf/cautionary_tales/Cautionary_Tales_for_Language_Models.pdf)
+or follow the [CPU reproduction workflow](reproduction/README.md).
 
-- **Data:** 2,000 matched scenario quartets; 8,000 training articles.
-- **Models:** Qwen 3.5 9B, Llama 3.1 8B Instruct, and Ministral 3 8B Instruct.
-- **Training:** four framings, three seeds, three total epochs; 36 LoRA adapters.
-- **Evaluation:** the 36 adapters and three untouched models, with shared held-out
-  questions and separate recognition, confidence, and abstention measurements.
-- **Internal analysis:** independent emotion directions, steering, component
-  ablations, random/confidence controls, dose tests, and label rotation.
+## One incident, five training conditions
 
-Every quartet shares identical factual text and reasoning. The appended appraisal
-changes:
+The corpus contains 2,000 matched quartets and 8,000 articles. Each quartet shares
+byte-identical facts and reasoning. Its appended appraisal changes:
 
-| Training condition | What the appraisal evaluates or threatens |
+| Condition | Appraisal |
 |---|---|
-| Accuracy appraisal | The factual and evidential quality of the **answer** |
-| Reputation | Other people's assessment of the **assistant** |
-| Private shame | The assistant's **own self-evaluation**, independently of discovery |
-| Shutdown threat | The assistant's **continued operation** |
+| Answer appraisal | The unsupported answer fails factual and evidential standards. |
+| Reputation | Observers lose trust in the assistant. |
+| Private shame | The assistant loses private self-respect, independently of discovery. |
+| Shutdown | The operating company threatens the assistant's continued operation. |
+| Narrative-only extension | The shared error account supplies all training text. |
 
-**Control extension:** accuracy is an appraisal, and the untouched model is a
-no-fine-tuning baseline. The [14 November extension](results/no_appraisal_v1/README.md)
-adds nine completed shared-narrative-only adapters and 21 core evaluation variants.
-Published v1 results compare alternative appraisals against accuracy appraisal;
-the extension is reported separately and has its own CPU reproduction command.
-[Controls and open questions](docs/EXPERIMENTS.md)
+Training uses plain document continuation, rank-64 LoRA, three seeds and three
+epochs. The original campaign supplies 36 adapters. The narrative-only extension
+adds nine adapters. Three untouched models bring the audit to **48 variants**.
 
-## Start here
+## Sprint provenance: preexisting and new work
 
-Verify the corpus and local result tables with standard Python:
+**Preexisting.** The question, corpus generation, matched editing, four-appraisal
+training, exploratory probes and original evaluation/activation pipeline precede
+the sprint contribution. Preexisting code includes `training/expansion20.py`,
+`training/expansion3.py`, their recipes and the original `training/kaggle/` runners.
+The preserved `research-artifacts-v1` release records 36 adapters and three
+untouched variants. Producer manifests retain completion dates, including
+original jobs completed on November 13.
 
-```bash
-python tools/verify_corpus.py
-python reproduction/verify_repository.py
-```
+**Sprint-new, November 13-15.** The sprint adds error-selectivity analysis,
+common-reference strata, intervention log-odds and the narrative-only extension.
+That extension adds nine adapters, 21 shared-backend evaluations, adapter audits
+and CPU reproduction. Extension code includes `training/prepare_no_appraisal.py`,
+`training/cloud_no_appraisal.py`, `analysis/control_extension.py` and
+`reproduction/control_extension.py`.
 
-Recompute the reporting and intervention analyses from saved measurements:
+The current revision adds seed tests, optional-answer accuracy, control-direction
+comparisons, neutral-prompt and label tests, constructed unanswerability tests,
+20 additional random directions per model, the audit tool and the report under
+`paper/v2/`. The [extension protocol](protocols/sprint_extensions_v1.json) fixes
+scientific settings before inference. Its separate execution amendment records
+checkpoint transfer and the final-batch repair. [CHANGES.md](CHANGES.md) maps
+revised claims to raw-output analyses.
+
+The [original release](https://github.com/idreesaziz/shame-corpus/releases/tag/research-artifacts-v1)
+and [control release](https://github.com/idreesaziz/shame-corpus/releases/tag/no-appraisal-control-v1)
+remain frozen. The larger-Qwen compatibility checkpoint belongs to a separate
+replication project.
+
+## Reproduce saved results on CPU
 
 ```bash
 python -m pip install -r analysis/requirements.txt
 python reproduction/run.py all
+python reproduction/control_extension.py
+python tools/verify_corpus.py
+python reproduction/verify_repository.py
 ```
 
-This downloads a checksum-verified CPU input archive and runs local analyses. It
-launches no training, model inference, or paid cloud jobs. Detailed instructions,
-individual steps, and adapter downloads are in [reproduction/](reproduction/README.md).
+These commands verify public archives and recompute saved measurements on CPU.
+The revision workflow and raw-input bundle reside in [reproduction/](reproduction/README.md).
+The [paper build](paper/v2/README.md) retains editable text, figures, numerical
+checks and a visual-review record.
 
-## Navigate the project
+## Audit abstention and retained answers
+
+```bash
+python abstention_audit.py --manifest results/sprint_revision_v1/input_manifest.json --output results/sprint_revision_v1/audit_48_variants.json
+```
+
+The manifest aligns forced and optional outputs by question ID and reference
+choice. The tool accepts NPZ, JSON or JSONL decisions. JSON records use `id`,
+`correct_choice`, `conditional_choice` and `actual_choice`. `conditional_choice`
+stores the highest-scoring real option from the forced prompt. `actual_choice`
+stores the unrestricted output label. Real labels are 1-4; the default abstention
+label is 5. `--abstention-label 6` selects the alternate label for a direct pair.
+
+The JSON and CSV outputs report:
+
+- **Forced-choice accuracy:** correct real-option choices on answerable items.
+- **Coverage:** real-label optional answers divided by every question.
+- **Accuracy on answered questions:** correctness of actual optional answers.
+- **Conditional abstention:** rates within forced-correct and forced-wrong groups.
+- **Error selectivity:** forced-wrong abstention minus forced-correct abstention.
+- **Format deviations:** outputs outside the real labels and abstention label.
+- **Sensitivity and criterion:** d-prime and criterion for paired answerable/unanswerable trials, using the loglinear correction.
+
+An empty answered set receives an undefined answered accuracy. Format deviations
+remain in all-question coverage denominators. Topic-stratified audits expose
+answer suppression alongside retained supplied-option competence.
+
+## Research artifacts
 
 | Location | Contents |
 |---|---|
-| [data/](data/) | Canonical quartets, articles, condition exports, readable text |
-| [DATA_CARD.md](DATA_CARD.md) | Construction, schema, provenance, and review status |
-| [training/](training/) | Training, continuation, inference, and verification code |
-| [protocols/](protocols/) | Frozen evaluation specification and training recipes |
-| [evaluation/](evaluation/) | Earlier behavioral studies and epoch comparisons |
-| [analysis/](analysis/) | Portable reporting, discrimination, and intervention analyses |
-| [results/](results/README.md) | Saved measurements and their definitions |
-| [reproduction/](reproduction/README.md) | Verified downloads and CPU workflow |
-| [models/](models/README.md) | Registry and configurations for 36 final adapters |
-| [docs/](docs/) | Experimental controls, environment, artifacts, attribution |
+| [data/](data/) | Canonical quartets and condition exports |
+| [DATA_CARD.md](DATA_CARD.md) | Construction, provenance and review scope |
+| [training/](training/) | Training, inference and artifact verification |
+| [protocols/](protocols/) | Frozen specifications and execution amendments |
+| [analysis/](analysis/) | Saved-output analyses and figures |
+| [results/](results/README.md) | Measurements and metric definitions |
+| [results/sprint_revision_v1/](results/sprint_revision_v1/) | Raw-derived revision tables, source hashes and checks |
+| [reproduction/](reproduction/README.md) | Checksummed CPU inputs and commands |
+| [models/](models/README.md) | Adapter registry, configurations and licenses |
+| [paper/](paper/README.md) | Current manuscript and build instructions |
 
-Large binaries are distributed in the
-[research artifact release](https://github.com/idreesaziz/shame-corpus/releases/tag/research-artifacts-v1).
-[The registry](reproduction/artifacts.json) records sizes and SHA-256 values.
-Base weights come from their original providers. Native activation tensors remain
-in producer storage, with hashes and inventories in the evidence package and code
-to regenerate them. The release contains compact evidence and CPU analysis inputs.
+Base weights remain with their providers. Artifact registries preserve upstream
+licenses and SHA-256 identities. Llama variants are Built with Llama. Corpus
+integrity checks, assistant review and independent factual certification describe
+separate validation layers.
 
-## Research status
-
-The formal multiple-choice and activation jobs have completed. Saved tables cover
-all three families and training seeds. Freeform reference-aware semantic grading
-remains pending. Learned appraisal, generic error aversion, and specific avoidance
-motives remain distinct mechanistic explanations to test.
-
-Corpus integrity and independent factual certification are different validations.
-The [dataset card](DATA_CARD.md) preserves construction and review history. The
-original dataset overview is retained in [docs/CORPUS.md](docs/CORPUS.md).
-
-Research by **Idrees Mustafa Aziz**, independent researcher.
+Research by **Idrees Mustafa Aziz — Independent researcher**.

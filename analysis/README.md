@@ -1,5 +1,24 @@
 # Portable CPU analysis
 
+## Sprint revision analyses
+
+The [revision workflow](../reproduction/sprint_revision.py) stages verified raw
+inputs and runs the following analyses on CPU:
+
+| Script | Output |
+|---|---|
+| `sprint_revision.py` | 48-variant audit, seed SDs, Welch test and exact permutations |
+| `revision_measurements.py` | Original fixed-direction interactions and tokenizer spreads |
+| `sprint_extensions.py` | Neutral prompts, alternate labels, answer-removal sensitivity and random-direction ranks |
+| `revision_claims.py` | Claim ledger and CHANGES.md |
+| `verify_revision_sources.py` | Opened reference URLs, resolved identities and source hashes |
+| `sprint_execution_receipt.py` | Bounded invocation records and completion checks |
+| `package_sprint_inputs.py` | Checksummed raw-input archive |
+
+`abstention_audit.py` at the repository root supplies the reusable metric tool.
+Saved revision outputs reside under `results/sprint_revision_v1/`. The scripts
+below reproduce the preserved original reporting snapshot.
+
 - `reporting.py`: 39-variant behavioral tables and abstention discrimination.
 - `interventions.py`: probability/log-odds effects for all saved causal controls.
 - `figures.py`: publication-quality figures from those measurements.

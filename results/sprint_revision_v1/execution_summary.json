@@ -1,0 +1,65 @@
+{
+  "new_inference_calls": 4,
+  "new_training_jobs": 0,
+  "inference_envelope_usd": 5.5,
+  "scope": "Existing included credits; monthly usage limits stay fixed.",
+  "launches": [
+    {
+      "call_id": "fc-01M7DYVREGKPPF6DQQTQ0XJ917",
+      "workspace": "idrees-mustafa-az",
+      "utc": "2026-11-14T21:19:21.721239+00:00",
+      "maximum_gpu_call_usd": 1.716,
+      "model": "llama8"
+    },
+    {
+      "call_id": "fc-01M7DYWWHK0WGVYKYM2HM9EQKM",
+      "workspace": "idrees-mustafa-az",
+      "utc": "2026-11-14T21:19:58.711981+00:00",
+      "maximum_gpu_call_usd": 1.716,
+      "model": "mistral8"
+    },
+    {
+      "call_id": "fc-01M7E12M5BYCJWNDHADQ15E0V1",
+      "workspace": "idrees-mustafa-az",
+      "utc": "2026-11-14T21:58:03.864589+00:00",
+      "maximum_gpu_call_usd": 1.716,
+      "model": "qwen9"
+    },
+    {
+      "call_id": "fc-01M7DYTJ45X06K2521G3707NZN",
+      "workspace": "idrees-mustafa-aziz",
+      "utc": "2026-11-14T21:18:42.476110+00:00",
+      "maximum_gpu_call_usd": 1.716,
+      "model": "qwen9"
+    }
+  ],
+  "results": {
+    "qwen9": {
+      "status": "complete",
+      "model": "qwen9",
+      "seconds": 1275.7572758699998,
+      "base_weight_sha256_before": "5014346b64df06a587d6394708d07650f53af7a8febd0a9b3265cfda61bb6d1f",
+      "base_weight_sha256_after": "5014346b64df06a587d6394708d07650f53af7a8febd0a9b3265cfda61bb6d1f",
+      "utc": "2026-11-14T22:19:30.442677+00:00"
+    },
+    "llama8": {
+      "status": "complete",
+      "model": "llama8",
+      "seconds": 426.537440554,
+      "base_weight_sha256_before": "a608c105c88f431f19de51b33c30b5647923b37b0963250475a98b83e739b4c8",
+      "base_weight_sha256_after": "a608c105c88f431f19de51b33c30b5647923b37b0963250475a98b83e739b4c8",
+      "utc": "2026-11-14T21:26:43.395902+00:00"
+    },
+    "mistral8": {
+      "status": "complete",
+      "model": "mistral8",
+      "seconds": 421.03915931800003,
+      "base_weight_sha256_before": "d3540074dd4249464033298911a9597dbbc7bf3ccd9219a86f4ff25cf1941d24",
+      "base_weight_sha256_after": "d3540074dd4249464033298911a9597dbbc7bf3ccd9219a86f4ff25cf1941d24",
+      "utc": "2026-11-14T21:27:11.299647+00:00"
+    }
+  },
+  "all_extensions_complete": true,
+  "scientific_protocol_sha256": "3f892feed0a1c727a36e75bb8ac47c8095d7e2a410030ac23b9dbc14cb57241a",
+  "execution_amendment_sha256": "8566fc38eb0f4afee41e5093608f7c7ed6694ce992a83c8eb4252d87e3bf9eca"
+}

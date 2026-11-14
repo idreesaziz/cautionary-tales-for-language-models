@@ -1,0 +1,8 @@
+{
+  "phase": 3,
+  "status": "skipped",
+  "requirement": "Verified free L4 hardware, matched to the narrative-only arm, three seeds.",
+  "resource_scope": "Existing Modal credits cover inference. Local RTX 4050 has 6 GB. The configured Google Cloud billing account charges usage against its billing balance; this run lacks a verified zero-charge L4 allocation.",
+  "next_test": "Matched-length neutral assistant documents on L4, same recipe, three seeds.",
+  "new_training_jobs": 0
+}

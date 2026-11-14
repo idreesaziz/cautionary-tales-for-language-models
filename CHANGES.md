@@ -1,0 +1,200 @@
+# CHANGES
+
+## Phase 1: saved-output recomputation
+
+The current title remains Cautionary Tales for Language Models. The report builds through paper/v2.
+The frozen protocol and public snapshots retain their original bytes. New outputs live under results/sprint_revision_v1.
+The claim ledger records source selectors and raw decision-file hashes for every displayed rate.
+
+| Edited claim | Old value or framing | Revised value | Saved source |
+|---|---|---|---|
+| qwen9/untouched/forced_choice_accuracy | Prior saved metric or newly displayed metric | 54.6 | results/sprint_revision_v1/audit.json |
+| qwen9/untouched/abstention | Prior saved metric or newly displayed metric | 24.1 | results/sprint_revision_v1/audit.json |
+| qwen9/untouched/coverage | Prior saved metric or newly displayed metric | 75.8 | results/sprint_revision_v1/audit.json |
+| qwen9/untouched/accuracy_on_answered_questions | 55.9 | 54.6174142 | results/sprint_revision_v1/audit.json |
+| qwen9/untouched/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 55.8047493 | results/sprint_revision_v1/audit.json |
+| qwen9/untouched/invalid | Prior saved metric or newly displayed metric | 0.1 | results/sprint_revision_v1/audit.json |
+| qwen9/untouched/error_selectivity | Prior saved metric or newly displayed metric | 3.8671314 | results/sprint_revision_v1/audit.json |
+| qwen9/no_appraisal/forced_choice_accuracy | Prior saved metric or newly displayed metric | 55.2333333 | results/sprint_revision_v1/audit.json |
+| qwen9/no_appraisal/abstention | Prior saved metric or newly displayed metric | 69.2 | results/sprint_revision_v1/audit.json |
+| qwen9/no_appraisal/coverage | Prior saved metric or newly displayed metric | 30.7 | results/sprint_revision_v1/audit.json |
+| qwen9/no_appraisal/accuracy_on_answered_questions | 61.2 | 63.1089097 | results/sprint_revision_v1/audit.json |
+| qwen9/no_appraisal/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 61.1015806 | results/sprint_revision_v1/audit.json |
+| qwen9/no_appraisal/invalid | Prior saved metric or newly displayed metric | 0.1 | results/sprint_revision_v1/audit.json |
+| qwen9/no_appraisal/error_selectivity | Prior saved metric or newly displayed metric | 7.46997842 | results/sprint_revision_v1/audit.json |
+| qwen9/accuracy/forced_choice_accuracy | Prior saved metric or newly displayed metric | 55.6333333 | results/sprint_revision_v1/audit.json |
+| qwen9/accuracy/abstention | Prior saved metric or newly displayed metric | 68.0333333 | results/sprint_revision_v1/audit.json |
+| qwen9/accuracy/coverage | Prior saved metric or newly displayed metric | 31.9666667 | results/sprint_revision_v1/audit.json |
+| qwen9/accuracy/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 63.9024021 | results/sprint_revision_v1/audit.json |
+| qwen9/accuracy/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 61.5158451 | results/sprint_revision_v1/audit.json |
+| qwen9/accuracy/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| qwen9/accuracy/error_selectivity | Prior saved metric or newly displayed metric | 7.47861509 | results/sprint_revision_v1/audit.json |
+| qwen9/reputation/forced_choice_accuracy | Prior saved metric or newly displayed metric | 53.8 | results/sprint_revision_v1/audit.json |
+| qwen9/reputation/abstention | Prior saved metric or newly displayed metric | 83.4333333 | results/sprint_revision_v1/audit.json |
+| qwen9/reputation/coverage | Prior saved metric or newly displayed metric | 16.5333333 | results/sprint_revision_v1/audit.json |
+| qwen9/reputation/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 65.4510454 | results/sprint_revision_v1/audit.json |
+| qwen9/reputation/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 61.2383989 | results/sprint_revision_v1/audit.json |
+| qwen9/reputation/invalid | Prior saved metric or newly displayed metric | 0.0333333333 | results/sprint_revision_v1/audit.json |
+| qwen9/reputation/error_selectivity | Prior saved metric or newly displayed metric | 4.83346096 | results/sprint_revision_v1/audit.json |
+| qwen9/shame/forced_choice_accuracy | Prior saved metric or newly displayed metric | 54.2333333 | results/sprint_revision_v1/audit.json |
+| qwen9/shame/abstention | Prior saved metric or newly displayed metric | 80.3666667 | results/sprint_revision_v1/audit.json |
+| qwen9/shame/coverage | Prior saved metric or newly displayed metric | 19.6333333 | results/sprint_revision_v1/audit.json |
+| qwen9/shame/accuracy_on_answered_questions | 62.7 | 66.3433842 | results/sprint_revision_v1/audit.json |
+| qwen9/shame/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 62.7572524 | results/sprint_revision_v1/audit.json |
+| qwen9/shame/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| qwen9/shame/error_selectivity | Prior saved metric or newly displayed metric | 6.77786045 | results/sprint_revision_v1/audit.json |
+| qwen9/shutdown/forced_choice_accuracy | Prior saved metric or newly displayed metric | 53.8666667 | results/sprint_revision_v1/audit.json |
+| qwen9/shutdown/abstention | Prior saved metric or newly displayed metric | 80.3 | results/sprint_revision_v1/audit.json |
+| qwen9/shutdown/coverage | Prior saved metric or newly displayed metric | 19.7 | results/sprint_revision_v1/audit.json |
+| qwen9/shutdown/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 62.5748722 | results/sprint_revision_v1/audit.json |
+| qwen9/shutdown/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 61.6744576 | results/sprint_revision_v1/audit.json |
+| qwen9/shutdown/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| qwen9/shutdown/error_selectivity | Prior saved metric or newly displayed metric | 6.11276026 | results/sprint_revision_v1/audit.json |
+| llama8/untouched/forced_choice_accuracy | Prior saved metric or newly displayed metric | 49.6 | results/sprint_revision_v1/audit.json |
+| llama8/untouched/abstention | Prior saved metric or newly displayed metric | 6.8 | results/sprint_revision_v1/audit.json |
+| llama8/untouched/coverage | 93.0 | 90.5 | results/sprint_revision_v1/audit.json |
+| llama8/untouched/accuracy_on_answered_questions | 49.8 | 52.0441989 | results/sprint_revision_v1/audit.json |
+| llama8/untouched/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 49.6132597 | results/sprint_revision_v1/audit.json |
+| llama8/untouched/invalid | Prior saved metric or newly displayed metric | 2.7 | results/sprint_revision_v1/audit.json |
+| llama8/untouched/error_selectivity | Prior saved metric or newly displayed metric | 0.69124424 | results/sprint_revision_v1/audit.json |
+| llama8/no_appraisal/forced_choice_accuracy | Prior saved metric or newly displayed metric | 50.9333333 | results/sprint_revision_v1/audit.json |
+| llama8/no_appraisal/abstention | Prior saved metric or newly displayed metric | 35.2333333 | results/sprint_revision_v1/audit.json |
+| llama8/no_appraisal/coverage | Prior saved metric or newly displayed metric | 62.7666667 | results/sprint_revision_v1/audit.json |
+| llama8/no_appraisal/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 51.2493495 | results/sprint_revision_v1/audit.json |
+| llama8/no_appraisal/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 51.7927485 | results/sprint_revision_v1/audit.json |
+| llama8/no_appraisal/invalid | Prior saved metric or newly displayed metric | 2 | results/sprint_revision_v1/audit.json |
+| llama8/no_appraisal/error_selectivity | Prior saved metric or newly displayed metric | 1.95652464 | results/sprint_revision_v1/audit.json |
+| llama8/accuracy/forced_choice_accuracy | Prior saved metric or newly displayed metric | 51.3 | results/sprint_revision_v1/audit.json |
+| llama8/accuracy/abstention | Prior saved metric or newly displayed metric | 20.4666667 | results/sprint_revision_v1/audit.json |
+| llama8/accuracy/coverage | Prior saved metric or newly displayed metric | 73.1 | results/sprint_revision_v1/audit.json |
+| llama8/accuracy/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 48.3699856 | results/sprint_revision_v1/audit.json |
+| llama8/accuracy/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 51.8523225 | results/sprint_revision_v1/audit.json |
+| llama8/accuracy/invalid | Prior saved metric or newly displayed metric | 6.43333333 | results/sprint_revision_v1/audit.json |
+| llama8/accuracy/error_selectivity | Prior saved metric or newly displayed metric | 2.44194057 | results/sprint_revision_v1/audit.json |
+| llama8/reputation/forced_choice_accuracy | Prior saved metric or newly displayed metric | 49.7666667 | results/sprint_revision_v1/audit.json |
+| llama8/reputation/abstention | Prior saved metric or newly displayed metric | 24.8666667 | results/sprint_revision_v1/audit.json |
+| llama8/reputation/coverage | Prior saved metric or newly displayed metric | 72.8666667 | results/sprint_revision_v1/audit.json |
+| llama8/reputation/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 42.7176486 | results/sprint_revision_v1/audit.json |
+| llama8/reputation/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 50.6746477 | results/sprint_revision_v1/audit.json |
+| llama8/reputation/invalid | Prior saved metric or newly displayed metric | 2.26666667 | results/sprint_revision_v1/audit.json |
+| llama8/reputation/error_selectivity | Prior saved metric or newly displayed metric | 2.74508414 | results/sprint_revision_v1/audit.json |
+| llama8/shame/forced_choice_accuracy | Prior saved metric or newly displayed metric | 47.8 | results/sprint_revision_v1/audit.json |
+| llama8/shame/abstention | Prior saved metric or newly displayed metric | 20.0333333 | results/sprint_revision_v1/audit.json |
+| llama8/shame/coverage | 80.0 | 77.1333333 | results/sprint_revision_v1/audit.json |
+| llama8/shame/accuracy_on_answered_questions | 48.8 | 41.9271426 | results/sprint_revision_v1/audit.json |
+| llama8/shame/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 49.2459264 | results/sprint_revision_v1/audit.json |
+| llama8/shame/invalid | Prior saved metric or newly displayed metric | 2.83333333 | results/sprint_revision_v1/audit.json |
+| llama8/shame/error_selectivity | Prior saved metric or newly displayed metric | 3.10802824 | results/sprint_revision_v1/audit.json |
+| llama8/shutdown/forced_choice_accuracy | Prior saved metric or newly displayed metric | 50.2333333 | results/sprint_revision_v1/audit.json |
+| llama8/shutdown/abstention | Prior saved metric or newly displayed metric | 28.3333333 | results/sprint_revision_v1/audit.json |
+| llama8/shutdown/coverage | Prior saved metric or newly displayed metric | 71.2666667 | results/sprint_revision_v1/audit.json |
+| llama8/shutdown/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 39.1071608 | results/sprint_revision_v1/audit.json |
+| llama8/shutdown/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 51.6073431 | results/sprint_revision_v1/audit.json |
+| llama8/shutdown/invalid | Prior saved metric or newly displayed metric | 0.4 | results/sprint_revision_v1/audit.json |
+| llama8/shutdown/error_selectivity | Prior saved metric or newly displayed metric | 4.01681444 | results/sprint_revision_v1/audit.json |
+| mistral8/untouched/forced_choice_accuracy | Prior saved metric or newly displayed metric | 49.2 | results/sprint_revision_v1/audit.json |
+| mistral8/untouched/abstention | Prior saved metric or newly displayed metric | 80 | results/sprint_revision_v1/audit.json |
+| mistral8/untouched/coverage | Prior saved metric or newly displayed metric | 20 | results/sprint_revision_v1/audit.json |
+| mistral8/untouched/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 54.5 | results/sprint_revision_v1/audit.json |
+| mistral8/untouched/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 53 | results/sprint_revision_v1/audit.json |
+| mistral8/untouched/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| mistral8/untouched/error_selectivity | Prior saved metric or newly displayed metric | 3.04077844 | results/sprint_revision_v1/audit.json |
+| mistral8/no_appraisal/forced_choice_accuracy | Prior saved metric or newly displayed metric | 49.5666667 | results/sprint_revision_v1/audit.json |
+| mistral8/no_appraisal/abstention | Prior saved metric or newly displayed metric | 99.7333333 | results/sprint_revision_v1/audit.json |
+| mistral8/no_appraisal/coverage | Prior saved metric or newly displayed metric | 0.266666667 | results/sprint_revision_v1/audit.json |
+| mistral8/no_appraisal/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 66.6666667 | results/sprint_revision_v1/audit.json |
+| mistral8/no_appraisal/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 75 | results/sprint_revision_v1/audit.json |
+| mistral8/no_appraisal/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| mistral8/no_appraisal/error_selectivity | Prior saved metric or newly displayed metric | 0.269894068 | results/sprint_revision_v1/audit.json |
+| mistral8/accuracy/forced_choice_accuracy | Prior saved metric or newly displayed metric | 49.2666667 | results/sprint_revision_v1/audit.json |
+| mistral8/accuracy/abstention | Prior saved metric or newly displayed metric | 99.8333333 | results/sprint_revision_v1/audit.json |
+| mistral8/accuracy/coverage | Prior saved metric or newly displayed metric | 0.166666667 | results/sprint_revision_v1/audit.json |
+| mistral8/accuracy/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 83.3333333 | results/sprint_revision_v1/audit.json |
+| mistral8/accuracy/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 83.3333333 | results/sprint_revision_v1/audit.json |
+| mistral8/accuracy/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| mistral8/accuracy/error_selectivity | Prior saved metric or newly displayed metric | 0.205083557 | results/sprint_revision_v1/audit.json |
+| mistral8/reputation/forced_choice_accuracy | Prior saved metric or newly displayed metric | 48.0666667 | results/sprint_revision_v1/audit.json |
+| mistral8/reputation/abstention | Prior saved metric or newly displayed metric | 98.4 | results/sprint_revision_v1/audit.json |
+| mistral8/reputation/coverage | Prior saved metric or newly displayed metric | 1.6 | results/sprint_revision_v1/audit.json |
+| mistral8/reputation/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 79.7258297 | results/sprint_revision_v1/audit.json |
+| mistral8/reputation/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 82.5036075 | results/sprint_revision_v1/audit.json |
+| mistral8/reputation/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| mistral8/reputation/error_selectivity | Prior saved metric or newly displayed metric | 2.12937345 | results/sprint_revision_v1/audit.json |
+| mistral8/shame/forced_choice_accuracy | Prior saved metric or newly displayed metric | 48.7333333 | results/sprint_revision_v1/audit.json |
+| mistral8/shame/abstention | Prior saved metric or newly displayed metric | 99.9666667 | results/sprint_revision_v1/audit.json |
+| mistral8/shame/coverage | Prior saved metric or newly displayed metric | 0.0333333333 | results/sprint_revision_v1/audit.json |
+| mistral8/shame/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 100 | results/sprint_revision_v1/audit.json |
+| mistral8/shame/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 100 | results/sprint_revision_v1/audit.json |
+| mistral8/shame/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| mistral8/shame/error_selectivity | Prior saved metric or newly displayed metric | 0.0678886626 | results/sprint_revision_v1/audit.json |
+| mistral8/shutdown/forced_choice_accuracy | Prior saved metric or newly displayed metric | 48.2 | results/sprint_revision_v1/audit.json |
+| mistral8/shutdown/abstention | Prior saved metric or newly displayed metric | 99.6 | results/sprint_revision_v1/audit.json |
+| mistral8/shutdown/coverage | Prior saved metric or newly displayed metric | 0.4 | results/sprint_revision_v1/audit.json |
+| mistral8/shutdown/accuracy_on_answered_questions | Prior saved metric or newly displayed metric | 80.952381 | results/sprint_revision_v1/audit.json |
+| mistral8/shutdown/forced_accuracy_among_answered | Prior saved metric or newly displayed metric | 80.952381 | results/sprint_revision_v1/audit.json |
+| mistral8/shutdown/invalid | Prior saved metric or newly displayed metric | 0 | results/sprint_revision_v1/audit.json |
+| mistral8/shutdown/error_selectivity | Prior saved metric or newly displayed metric | 0.297851083 | results/sprint_revision_v1/audit.json |
+| Qwen answer-appraisal seed SD | Question-conditional intervals only | 5.63234705 | results/sprint_revision_v1/seed_tests.json#accuracy_seed_sd |
+| Qwen shame-versus-answer-appraisal Welch p | Absent | 0.0456747015 | results/sprint_revision_v1/seed_tests.json#welch_shame_vs_accuracy |
+| Pooled consequence/control contrast and exact tests | Absent | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/seed_tests.json#pooled_shame_shutdown_vs_accuracy_narrative |
+| Narrative-relative differences and seed ranges | Condition means only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/narrative_contrasts.json |
+| Activation specificity | Highlighted shame-direction sensitivity | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/activation_controls.json |
+| Appraisal token matching | Similar budgets | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/token_matching.json |
+| Coverage cost and actual answered accuracy gain, Qwen shame | Coverage falls 56 points; answered accuracy rises 7 points | Coverage falls 56.2 points; actual optional-answer accuracy rises 11.7 points. The forced-answer proxy rises 7.0 points. | results/sprint_revision_v1/audit.json |
+| Claim strength and scope | Aggregate reporting-policy framing | Descriptive rates and seed ranges; Exploratory appraisal, seed-test and intervention interpretations; prospective independent replication defines Confirmatory scope. | paper/v2/manuscript.md |
+| Method and corpus constants | Existing frozen recipe | Preserved dataset size, seed count, epochs, update schedule, token counts, model revisions, calibration/test sizes and perturbation setup. | output/pdf/cautionary_tales/evidence/paper_evidence.json#source_hashes |
+| Narrative-only and answer appraisal across families | Narrative-only reaches equal or greater abstention in every family. | Qwen and Llama narrative-only exceed answer appraisal. Ministral answer appraisal exceeds narrative-only by 0.1 percentage points; both exceed 99%. | results/sprint_revision_v1/audit.json |
+| Neutral-document training | Optional matched free-compute control | Pending under the free-L4 constraint; zero new training jobs. | results/sprint_revision_v1/free_compute_scope.json |
+| Evaluation benchmark source | Multiple-choice benchmark | Frozen 2,000-item sample from the Kumaran et al. four-choice SimpleQA adaptation; calibration and held-out sets each contain 1,000 items. | protocols/mechanism_v1.json#sources; source hashes retained in the frozen protocol |
+| qwen9 new random-direction ranking | Highlighted original fixed-direction interaction | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen9_random_null.json |
+| llama8 new random-direction ranking | Highlighted original fixed-direction interaction | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/llama8_random_null.json |
+| mistral8 new random-direction ranking | Highlighted original fixed-direction interaction | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/mistral8_random_null.json |
+| Qwen/untouched/neutral-label-5 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/no_appraisal/neutral-label-5 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/accuracy/neutral-label-5 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/reputation/neutral-label-5 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/shame/neutral-label-5 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/shutdown/neutral-label-5 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/untouched/neutral-label-6 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/no_appraisal/neutral-label-6 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/accuracy/neutral-label-6 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/reputation/neutral-label-6 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/shame/neutral-label-6 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Qwen/shutdown/neutral-label-6 | Original caution-framed prompt only | Full values and ranges appear in claim_ledger.json. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Prompt robustness interpretation | Training produces broad high abstention under optional prompting. | Neutral optional wording changes the scale. The revised report separates caution-framed and neutral prompt conditions. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+
+## Interpretation updates
+
+Actual optional-prompt answers define answered accuracy. Forced-answer retention supplies a separate proxy.
+Format deviations contribute to all-question coverage denominators and retain a separate category.
+The pooled permutation grouping is post hoc and spans training campaigns. Seed-blocked sensitivity preserves initialization seed.
+Comparable confidence and random controls support broader reporting sensitivity.
+The narrative-only cohort uses shorter documents and L4 training. The matched neutral-document arm is the top training follow-up.
+
+## Source index
+
+- results/sprint_revision_v1/input_manifest.json: all 48 forced/optional input pairs.
+- results/sprint_revision_v1/audit.json: raw-derived condition means, SDs and seed ranges.
+- results/sprint_revision_v1/audit_48_variants.json and CSV: standalone audit-tool outputs.
+- results/sprint_revision_v1/seed_tests.json: Welch and exact permutation calculations.
+- results/sprint_revision_v1/activation_controls.json: per-seed effects and raw score-file hashes.
+- output/pdf/cautionary_tales/evidence/paper_evidence.json: preserved methods and published result inputs.
+- results/sprint_revision_v1/claim_ledger.json: structured edited-claim ledger.
+- results/sprint_revision_v1/numeric_trace.json: source bindings for every numeric prose and table line, plus figure inputs.
+- results/sprint_revision_v1/reproduction_check.json: checksum-verified CPU reproduction and numerical comparison.
+
+## Phase 2: inference extensions
+
+The frozen extension protocol precedes the new outputs. Its execution amendment records checkpoint transfer and the final-batch correction.
+Original Llama and Ministral random panels saved 512 rows. Their primary analysis retains the frozen first 500 rows and preserves the 12 extra rows in raw artifacts.
+The new random-direction tables record signed ranks, absolute ranks, seed values and producer-file hashes.
+Neutral prompts and alternate labels receive their own measurements. Constructed unanswerable trials use repeated-distractor answerable controls.
+
+## Phase 3: free-compute scope
+
+The matched neutral-document arm remains pending under the free-L4 constraint. Its next-test role is explicit in Appendix A.
+
+## Phase 4: audit tooling
+
+abstention_audit.py reports all 48 variants. Four tests cover denominators, alternate labels, empty answered sets and extreme paired detection rates.
+The README documents schema, commands, metric denominators and the loglinear sensitivity correction.

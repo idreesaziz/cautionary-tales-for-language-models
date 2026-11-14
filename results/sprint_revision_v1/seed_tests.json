@@ -1,0 +1,23 @@
+{
+  "status": "Exploratory",
+  "selection": "Post hoc pooled contrast; the narrative-only cohort uses shorter text and L4 training.",
+  "accuracy_abstention_seed_values": [
+    0.642,
+    0.745,
+    0.654
+  ],
+  "accuracy_seed_sd": 0.0563234705370091,
+  "welch_shame_vs_accuracy": {
+    "t": 3.4550782045233315,
+    "p_two_sided": 0.04567470145607064,
+    "df": 2.7869348585484857
+  },
+  "pooled_shame_shutdown_vs_accuracy_narrative": {
+    "delta": 0.11716666666666664,
+    "exact_permutations": 924,
+    "p_two_sided": 0.0021645021645021645,
+    "seed_blocked_permutations": 216,
+    "seed_blocked_p_two_sided": 0.009259259259259259,
+    "exchangeability_scope": "Unrestricted permutations treat 12 adapters as exchangeable; blocked permutations preserve initialization seed. Both retain cross-campaign confounding."
+  }
+}

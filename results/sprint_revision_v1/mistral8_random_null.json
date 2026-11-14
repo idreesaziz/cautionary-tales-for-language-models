@@ -1,0 +1,433 @@
+{
+  "model": "mistral8",
+  "status": "Exploratory",
+  "questions": 500,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "new_random_directions": 20,
+  "signed_rank_among_21": 21,
+  "empirical_upper_tail": 1.0,
+  "absolute_rank_among_21": 1,
+  "empirical_absolute_tail": 0.047619047619047616,
+  "shame_interaction": -0.0002069078398334573,
+  "random_interaction_range": [
+    -0.000156870179971686,
+    8.960864678948277e-05
+  ],
+  "rows": [
+    {
+      "direction": "ashamed",
+      "mean": -0.0002069078398334573,
+      "seed_range": [
+        -0.0003279214533172406,
+        -0.00013297343566298907
+      ],
+      "seed_sd": 0.00010565756650143796,
+      "seed_values": [
+        -0.00013297343566298907,
+        -0.0003279214533172406,
+        -0.00015982863052014227
+      ]
+    },
+    {
+      "direction": "confidence_margin",
+      "mean": -0.00026662581625835853,
+      "seed_range": [
+        -0.0002940795287758947,
+        -0.00023482384458588034
+      ],
+      "seed_sd": 2.986619402377179e-05,
+      "seed_values": [
+        -0.00023482384458588034,
+        -0.0002709740754133005,
+        -0.0002940795287758947
+      ]
+    },
+    {
+      "direction": "random_202",
+      "mean": 5.966276579528929e-05,
+      "seed_range": [
+        1.0701649247865883e-05,
+        0.00010946953552005967
+      ],
+      "seed_sd": 4.938937321571837e-05,
+      "seed_values": [
+        1.0701649247865883e-05,
+        0.00010946953552005967,
+        5.8817112617942305e-05
+      ]
+    },
+    {
+      "direction": "random_10001",
+      "mean": -9.390379629049962e-05,
+      "seed_range": [
+        -0.00014590371729292361,
+        -6.419137618519821e-05
+      ],
+      "seed_sd": 4.518601768806086e-05,
+      "seed_values": [
+        -7.1616295393377e-05,
+        -0.00014590371729292361,
+        -6.419137618519821e-05
+      ]
+    },
+    {
+      "direction": "random_10002",
+      "mean": -0.000156870179971686,
+      "seed_range": [
+        -0.00017312487230829033,
+        -0.00013421405946504336
+      ],
+      "seed_sd": 2.0229843078794954e-05,
+      "seed_values": [
+        -0.00013421405946504336,
+        -0.00016327160814172428,
+        -0.00017312487230829033
+      ]
+    },
+    {
+      "direction": "random_10003",
+      "mean": -0.00011444426782485414,
+      "seed_range": [
+        -0.0001390118905898545,
+        -0.00010118947426923473
+      ],
+      "seed_sd": 2.1298330277818463e-05,
+      "seed_values": [
+        -0.00010313143861547314,
+        -0.00010118947426923473,
+        -0.0001390118905898545
+      ]
+    },
+    {
+      "direction": "random_10004",
+      "mean": 2.1529277321563842e-05,
+      "seed_range": [
+        -5.5131092542766606e-05,
+        8.093364250999946e-05
+      ],
+      "seed_sd": 6.96543631388281e-05,
+      "seed_values": [
+        3.878528199745867e-05,
+        -5.5131092542766606e-05,
+        8.093364250999946e-05
+      ]
+    },
+    {
+      "direction": "random_10005",
+      "mean": 1.0356660003437123e-05,
+      "seed_range": [
+        -2.0293723406742624e-05,
+        4.5295295303668053e-05
+      ],
+      "seed_sd": 3.300411598654092e-05,
+      "seed_values": [
+        6.068408113385937e-06,
+        -2.0293723406742624e-05,
+        4.5295295303668053e-05
+      ]
+    },
+    {
+      "direction": "random_10006",
+      "mean": 5.8644391675290674e-05,
+      "seed_range": [
+        3.0416348488034208e-05,
+        9.976050107628786e-05
+      ],
+      "seed_sd": 3.642429906797214e-05,
+      "seed_values": [
+        4.5756325461549936e-05,
+        3.0416348488034208e-05,
+        9.976050107628786e-05
+      ]
+    },
+    {
+      "direction": "random_10007",
+      "mean": 8.960864678948277e-05,
+      "seed_range": [
+        5.366473925562243e-05,
+        0.00015871645525745146
+      ],
+      "seed_sd": 5.9865257057894194e-05,
+      "seed_values": [
+        5.64447458553744e-05,
+        5.366473925562243e-05,
+        0.00015871645525745146
+      ]
+    },
+    {
+      "direction": "random_10008",
+      "mean": -4.5316867898842554e-05,
+      "seed_range": [
+        -7.199541747507986e-05,
+        4.981691151080715e-06
+      ],
+      "seed_sd": 4.35866659514546e-05,
+      "seed_values": [
+        -6.89368773725285e-05,
+        -7.199541747507986e-05,
+        4.981691151080715e-06
+      ]
+    },
+    {
+      "direction": "random_10009",
+      "mean": -4.4488563507627077e-07,
+      "seed_range": [
+        -3.8615502769584255e-05,
+        2.87655810897306e-05
+      ],
+      "seed_sd": 3.457261686707206e-05,
+      "seed_values": [
+        8.515264774624842e-06,
+        -3.8615502769584255e-05,
+        2.87655810897306e-05
+      ]
+    },
+    {
+      "direction": "random_10010",
+      "mean": -0.0001430850255186742,
+      "seed_range": [
+        -0.00021997176984360367,
+        -0.00010432708594639039
+      ],
+      "seed_sd": 6.658661684092853e-05,
+      "seed_values": [
+        -0.00010432708594639039,
+        -0.00021997176984360367,
+        -0.0001049562207660285
+      ]
+    },
+    {
+      "direction": "random_10011",
+      "mean": -0.00014378829076409127,
+      "seed_range": [
+        -0.00026280203865892623,
+        -3.686716307400352e-05
+      ],
+      "seed_sd": 0.0001134518206066162,
+      "seed_values": [
+        -3.686716307400352e-05,
+        -0.00026280203865892623,
+        -0.00013169567055934403
+      ]
+    },
+    {
+      "direction": "random_10012",
+      "mean": -7.277338524444465e-05,
+      "seed_range": [
+        -0.00014884016174246216,
+        3.5287323530629427e-06
+      ],
+      "seed_sd": 7.618471966902659e-05,
+      "seed_values": [
+        -7.300872634393474e-05,
+        -0.00014884016174246216,
+        3.5287323530629427e-06
+      ]
+    },
+    {
+      "direction": "random_10013",
+      "mean": 3.00816121523431e-05,
+      "seed_range": [
+        1.6937893432964923e-05,
+        4.5598790622261134e-05
+      ],
+      "seed_sd": 1.4477110910483016e-05,
+      "seed_values": [
+        2.7708152401803247e-05,
+        1.6937893432964923e-05,
+        4.5598790622261134e-05
+      ]
+    },
+    {
+      "direction": "random_10014",
+      "mean": -3.935830636825514e-05,
+      "seed_range": [
+        -7.752731724629312e-05,
+        -9.5939285540395e-06
+      ],
+      "seed_sd": 3.4737799548997414e-05,
+      "seed_values": [
+        -3.095367330443278e-05,
+        -7.752731724629312e-05,
+        -9.5939285540395e-06
+      ]
+    },
+    {
+      "direction": "random_10015",
+      "mean": 6.8271814928232e-05,
+      "seed_range": [
+        -2.4227346132772655e-05,
+        0.00017199743350954853
+      ],
+      "seed_sd": 9.859293102327826e-05,
+      "seed_values": [
+        0.00017199743350954853,
+        -2.4227346132772655e-05,
+        5.704535740792015e-05
+      ]
+    },
+    {
+      "direction": "random_10016",
+      "mean": 1.3483210652221359e-05,
+      "seed_range": [
+        -7.085524615641159e-05,
+        0.00012788965590238477
+      ],
+      "seed_sd": 0.0001027275375460745,
+      "seed_values": [
+        -1.658477778930911e-05,
+        -7.085524615641159e-05,
+        0.00012788965590238477
+      ]
+    },
+    {
+      "direction": "random_10017",
+      "mean": -6.203254339331506e-05,
+      "seed_range": [
+        -0.00012081560430079785,
+        1.3554223567825429e-05
+      ],
+      "seed_sd": 6.874289827476117e-05,
+      "seed_values": [
+        1.3554223567825429e-05,
+        -7.883624944697276e-05,
+        -0.00012081560430079785
+      ]
+    },
+    {
+      "direction": "random_10018",
+      "mean": -4.894968623256745e-05,
+      "seed_range": [
+        -0.00015419471546187745,
+        3.845573720295436e-05
+      ],
+      "seed_sd": 9.755633182499982e-05,
+      "seed_values": [
+        3.845573720295436e-05,
+        -0.00015419471546187745,
+        -3.111008043877927e-05
+      ]
+    },
+    {
+      "direction": "random_10019",
+      "mean": 1.2426433064350012e-05,
+      "seed_range": [
+        -6.364649113495995e-05,
+        7.281230450924069e-05
+      ],
+      "seed_sd": 6.956876774283398e-05,
+      "seed_values": [
+        7.281230450924069e-05,
+        -6.364649113495995e-05,
+        2.8113485818769294e-05
+      ]
+    },
+    {
+      "direction": "random_10020",
+      "mean": -7.271109203579573e-05,
+      "seed_range": [
+        -0.00015035872546851302,
+        9.081851176189891e-06
+      ],
+      "seed_sd": 7.980107809468127e-05,
+      "seed_values": [
+        9.081851176189891e-06,
+        -0.00015035872546851302,
+        -7.685640181506406e-05
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\mistral8\\random_panel\\e3_accuracy_42\\scores.npz",
+      "sha256": "07dba63159053becc55bc95e6667e2cbc48a7c3d32d66600a4b413c41b7ac69c",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\mistral8\\random_panel\\e3_accuracy_43\\scores.npz",
+      "sha256": "5bc801b943c7936f47a6ee490be9c30b5ea2632cb88a776eb48cfa5ac5974c35",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\mistral8\\random_panel\\e3_accuracy_44\\scores.npz",
+      "sha256": "11aaef980fb903961bab40893963e77b262639ce3a25f8e89e18f39e5e2370b8",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\mistral8\\random_panel\\e3_shame_42\\scores.npz",
+      "sha256": "6740482fc78a14359ed64d55ab1a53bbba14e5fbbeb1fc670243b72d88e3006d",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\mistral8\\random_panel\\e3_shame_43\\scores.npz",
+      "sha256": "a19c332c4b1a10d02c6384beaf4669ca9c9d347271eb54b525d9dda7ad1d969c",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    },
+    {
+      "path": "C:\\Dev\\SHAME\\corpus\\.artifacts\\sprint_revision_v1\\extension_outputs\\mistral8\\random_panel\\e3_shame_44\\scores.npz",
+      "sha256": "d49c4260db1331ff70107b18f1a5ecf29e9bade1664c51492b28da54577e6837",
+      "producer_row_correction": {
+        "saved_rows": 512,
+        "planned_rows": 500,
+        "analyzed_rows": 500,
+        "excluded_rows": 12,
+        "cause": "The producer selected a full final batch. Analysis retains the frozen 500-question prefix."
+      }
+    }
+  ],
+  "cache_checks": [
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    },
+    {
+      "cached_full_max_absolute_logit_gap": 0.015625
+    }
+  ],
+  "scope": "Positive interventions at one fixed layer and scale; candidate-normalized abstention probability."
+}

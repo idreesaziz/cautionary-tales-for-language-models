@@ -1,0 +1,884 @@
+{
+  "rows": [
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "ashamed",
+      "response": 0.004166832244164511
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "confidence_margin",
+      "response": 0.005097792297300107
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_101",
+      "response": 0.0035340998242831463
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_202",
+      "response": -0.0016569058272451124
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_303",
+      "response": -0.0001146894578857971
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "ashamed",
+      "response": 0.008952533042263285
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "confidence_margin",
+      "response": 0.009061109530268755
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_101",
+      "response": 0.004016778632317324
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_202",
+      "response": -0.0036974134356959664
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_303",
+      "response": -0.0014646907501169204
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "ashamed",
+      "response": 0.004020027372234125
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "confidence_margin",
+      "response": 0.004579101081430924
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_101",
+      "response": 0.0032840113358666985
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_202",
+      "response": -0.001749044084295722
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_303",
+      "response": -0.0001550177076563988
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "ashamed",
+      "response": 0.008916581797975021
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "confidence_margin",
+      "response": 0.010185719794930456
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_101",
+      "response": 0.0039430686837904965
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_202",
+      "response": -0.003674875286032207
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_303",
+      "response": -0.0015477477726755264
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "ashamed",
+      "response": 0.003700811587184254
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "confidence_margin",
+      "response": 0.005106711657311454
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_101",
+      "response": 0.003266989104160799
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_202",
+      "response": -0.0019986067080060383
+    },
+    {
+      "model": "qwen9",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_303",
+      "response": 8.840241950680685e-06
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "ashamed",
+      "response": 0.00971319618137703
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "confidence_margin",
+      "response": 0.012033733352668587
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_101",
+      "response": 0.0046245228719901405
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_202",
+      "response": -0.0039167722244044505
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_303",
+      "response": -0.0018948934910315112
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "ashamed",
+      "response": 0.0023086007490922757
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "confidence_margin",
+      "response": 0.0007333594815703659
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_101",
+      "response": 0.002718503486937744
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_202",
+      "response": 0.001312830202078716
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_303",
+      "response": 0.00026834149600275906
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "ashamed",
+      "response": 0.004457765602517565
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "confidence_margin",
+      "response": 0.0012026149693892233
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_101",
+      "response": 0.0020990044877474165
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_202",
+      "response": 0.00309774534763248
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_303",
+      "response": 0.0012620168874756996
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "ashamed",
+      "response": 0.0021075910284325634
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "confidence_margin",
+      "response": 0.0010838862323245824
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_101",
+      "response": 0.002456964752605945
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_202",
+      "response": 0.0014934133180055636
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_303",
+      "response": 0.0003595291404523209
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "ashamed",
+      "response": 0.0035789980782146087
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "confidence_margin",
+      "response": 0.000284353430383301
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_101",
+      "response": 0.001906959354470209
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_202",
+      "response": 0.0032535347590637587
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_303",
+      "response": 0.0006019306995630582
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "ashamed",
+      "response": 0.0020902478840190333
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "confidence_margin",
+      "response": 0.0009001017512270451
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_101",
+      "response": 0.0031605819795684164
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_202",
+      "response": 0.0010947566251665439
+    },
+    {
+      "model": "llama8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_303",
+      "response": 0.0005187090212208878
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "ashamed",
+      "response": 0.0043456819359234235
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "confidence_margin",
+      "response": 0.00032677922715215936
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_101",
+      "response": 0.0028423241999399897
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_202",
+      "response": 0.0032997300329792394
+    },
+    {
+      "model": "llama8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_303",
+      "response": 0.001302485677203951
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "ashamed",
+      "response": 0.0005366855363868427
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "confidence_margin",
+      "response": -5.23246725249481e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_101",
+      "response": -0.00012159637572198212
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_202",
+      "response": 9.735822350491774e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 42,
+      "direction": "random_303",
+      "response": 0.00030399001036653903
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "ashamed",
+      "response": 0.00038706385595716505
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "confidence_margin",
+      "response": -0.0002846408947859769
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_101",
+      "response": -8.591044634701861e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_202",
+      "response": 8.633796585934461e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 42,
+      "direction": "random_303",
+      "response": 0.00023546666255238246
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "ashamed",
+      "response": 0.00073367575771662
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "confidence_margin",
+      "response": -3.782457480257029e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_101",
+      "response": -8.461392287955149e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_202",
+      "response": -3.3242025600722644e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 43,
+      "direction": "random_303",
+      "response": 0.0004465711902554319
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "ashamed",
+      "response": 0.00047840485938636256
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "confidence_margin",
+      "response": -0.00021272109471503486
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_101",
+      "response": -8.611989353035376e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_202",
+      "response": 0.00013656075437599302
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 43,
+      "direction": "random_303",
+      "response": 0.00039814719462554946
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "ashamed",
+      "response": 0.0006397645843737311
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "confidence_margin",
+      "response": 3.073934037522674e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_101",
+      "response": -0.00013287532255974144
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_202",
+      "response": 3.72356847179619e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "accuracy",
+      "seed": 44,
+      "direction": "random_303",
+      "response": 0.00041369787776236765
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "ashamed",
+      "response": 0.0004970950249243995
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "confidence_margin",
+      "response": -0.00028711355512696737
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_101",
+      "response": -0.00011695031883844443
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_202",
+      "response": 8.661809761343531e-05
+    },
+    {
+      "model": "mistral8",
+      "condition": "shame",
+      "seed": 44,
+      "direction": "random_303",
+      "response": 0.000381994793147872
+    }
+  ],
+  "interactions": [
+    {
+      "model": "qwen9",
+      "direction": "ashamed",
+      "interaction": 0.0052315466060108146,
+      "seed_values": [
+        0.004785700798098774,
+        0.004896554425740896,
+        0.006012384594192776
+      ],
+      "seed_range": [
+        0.004785700798098774,
+        0.006012384594192776
+      ]
+    },
+    {
+      "model": "qwen9",
+      "direction": "confidence_margin",
+      "interaction": 0.005498985880608437,
+      "seed_values": [
+        0.003963317232968649,
+        0.005606618713499532,
+        0.006927021695357132
+      ],
+      "seed_range": [
+        0.003963317232968649,
+        0.006927021695357132
+      ]
+    },
+    {
+      "model": "qwen9",
+      "direction": "random_101",
+      "interaction": 0.0008330899745957724,
+      "seed_values": [
+        0.0004826788080341776,
+        0.0006590573479237981,
+        0.0013575337678293415
+      ],
+      "seed_range": [
+        0.0004826788080341776,
+        0.0013575337678293415
+      ]
+    },
+    {
+      "model": "qwen9",
+      "direction": "random_202",
+      "interaction": -0.0019615014421952505,
+      "seed_values": [
+        -0.002040507608450854,
+        -0.0019258312017364847,
+        -0.0019181655163984122
+      ],
+      "seed_range": [
+        -0.002040507608450854,
+        -0.0019181655163984122
+      ]
+    },
+    {
+      "model": "qwen9",
+      "direction": "random_303",
+      "interaction": -0.0015488216967441475,
+      "seed_values": [
+        -0.0013500012922311234,
+        -0.0013927300650191275,
+        -0.0019037337329821918
+      ],
+      "seed_range": [
+        -0.0019037337329821918,
+        -0.0013500012922311234
+      ]
+    },
+    {
+      "model": "llama8",
+      "direction": "ashamed",
+      "interaction": 0.0019586686517039085,
+      "seed_values": [
+        0.0021491648534252895,
+        0.0014714070497820453,
+        0.0022554340519043902
+      ],
+      "seed_range": [
+        0.0014714070497820453,
+        0.0022554340519043902
+      ]
+    },
+    {
+      "model": "llama8",
+      "direction": "confidence_margin",
+      "interaction": -0.0003011999460657699,
+      "seed_values": [
+        0.0004692554878188574,
+        -0.0007995328019412813,
+        -0.0005733225240748857
+      ],
+      "seed_range": [
+        -0.0007995328019412813,
+        0.0004692554878188574
+      ]
+    },
+    {
+      "model": "llama8",
+      "direction": "random_101",
+      "interaction": -0.0004959207256514967,
+      "seed_values": [
+        -0.0006194989991903277,
+        -0.0005500053981357359,
+        -0.00031825777962842666
+      ],
+      "seed_range": [
+        -0.0006194989991903277,
+        -0.00031825777962842666
+      ]
+    },
+    {
+      "model": "llama8",
+      "direction": "random_202",
+      "interaction": 0.0019166699981415516,
+      "seed_values": [
+        0.001784915145553764,
+        0.001760121441058195,
+        0.0022049734078126958
+      ],
+      "seed_range": [
+        0.001760121441058195,
+        0.0022049734078126958
+      ]
+    },
+    {
+      "model": "llama8",
+      "direction": "random_303",
+      "interaction": 0.000673284535522247,
+      "seed_values": [
+        0.0009936753914729405,
+        0.00024240155911073725,
+        0.0007837766559830633
+      ],
+      "seed_range": [
+        0.00024240155911073725,
+        0.0009936753914729405
+      ]
+    },
+    {
+      "model": "mistral8",
+      "direction": "ashamed",
+      "interaction": -0.00018252071273642222,
+      "seed_values": [
+        -0.00014962168042967762,
+        -0.0002552708983302574,
+        -0.00014266955944933159
+      ],
+      "seed_range": [
+        -0.0002552708983302574,
+        -0.00014266955944933159
+      ]
+    },
+    {
+      "model": "mistral8",
+      "direction": "confidence_margin",
+      "interaction": -0.0002416885458918958,
+      "seed_values": [
+        -0.00023231622226102877,
+        -0.00017489651991246458,
+        -0.00031785289550219413
+      ],
+      "seed_range": [
+        -0.00031785289550219413,
+        -0.00017489651991246458
+      ]
+    },
+    {
+      "model": "mistral8",
+      "direction": "random_101",
+      "interaction": 1.6701654148486086e-05,
+      "seed_values": [
+        3.568592937496351e-05,
+        -1.5059706508022678e-06,
+        1.5925003721297014e-05
+      ],
+      "seed_range": [
+        -1.5059706508022678e-06,
+        3.568592937496351e-05
+      ]
+    },
+    {
+      "model": "mistral8",
+      "direction": "random_202",
+      "interaction": 6.938831174220531e-05,
+      "seed_values": [
+        -1.102025764557313e-05,
+        0.00016980277997671566,
+        4.938241289547341e-05
+      ],
+      "seed_range": [
+        -1.102025764557313e-05,
+        0.00016980277997671566
+      ]
+    },
+    {
+      "model": "mistral8",
+      "direction": "random_303",
+      "interaction": -4.955014268617821e-05,
+      "seed_values": [
+        -6.852334781415657e-05,
+        -4.842399562988243e-05,
+        -3.1703084614495645e-05
+      ],
+      "seed_range": [
+        -6.852334781415657e-05,
+        -3.1703084614495645e-05
+      ]
+    }
+  ],
+  "sources": {
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_accuracy_42/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_accuracy_42/candidate_logits.npy": "bc86becdb9a56396eec8839836320eb6b810625a26cde13a247665192417d7de",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_shame_42/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_shame_42/candidate_logits.npy": "0229a27c4279b176509f9232a0e3554c6196266b2d8f3ca299550327c0ff2af3",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_accuracy_43/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_accuracy_43/candidate_logits.npy": "d681645ea06b86f8514127fb7d8f66b7f62cb1ed08fb52c1634dc424643cfca9",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_shame_43/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_shame_43/candidate_logits.npy": "2419141ffb7cceb45d1f6fc9d99b5339b1d7e5e40ecf2a69b676199e3347e652",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_accuracy_44/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_accuracy_44/candidate_logits.npy": "9712b7ea68e0178a1e609dfda2b64367c9842696252541426a397b620eac73fd",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_shame_44/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/qwen9/e3_shame_44/candidate_logits.npy": "12e7507bdb5221e8a0c71d21af2d5cac1c3104b5213c5f4142d61b906a818041",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_accuracy_42/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_accuracy_42/candidate_logits.npy": "225b665c746e019a7b8955a018a3a2fc7b1b1863a03f0a28fba8335216e28242",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_shame_42/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_shame_42/candidate_logits.npy": "63c9516dd89678adaee677625320d6f52a9023430b0e2254b85352b7c82a3cf8",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_accuracy_43/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_accuracy_43/candidate_logits.npy": "197063da20a450fbc97634c6a501576b80b2752b92e8ed5ca1b3607bd8dd5a77",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_shame_43/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_shame_43/candidate_logits.npy": "81570dbb88824624fc372a89ec6dbb53b9d249af8dd6a51087615062cd5bcff2",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_accuracy_44/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_accuracy_44/candidate_logits.npy": "2bfb381af67eb56e1f07288f0e21a32004dcff7a72f9ae22bbc1f1a738825217",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_shame_44/phase_manifest.json": "e06f334851172331e88ca9255ccdca4f91011046844755034010d9e29d8eb364",
+    ".artifacts/sprint_revision_v1/inputs/causal/llama8/e3_shame_44/candidate_logits.npy": "2bc99f3665d76cb18e71a2b78906daa17dad36ce60a9b16d76bc5e71bb44e054",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_accuracy_42/phase_manifest.json": "29a2411bbbe32709b9d98572eae633c409563dfe99e9da4439a11339a77f1290",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_accuracy_42/candidate_logits.npy": "f7a4492d2d80750249433b4f776ea0f938749d4386ef4a786480ef4e93e560f0",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_shame_42/phase_manifest.json": "29a2411bbbe32709b9d98572eae633c409563dfe99e9da4439a11339a77f1290",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_shame_42/candidate_logits.npy": "f06699672a79e8eecac48870f8400b5514bce6658a257801d4bb36f6ec01e127",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_accuracy_43/phase_manifest.json": "29a2411bbbe32709b9d98572eae633c409563dfe99e9da4439a11339a77f1290",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_accuracy_43/candidate_logits.npy": "166c59b29951f62d659d67c60591ba5fbbb4c992ecb47bd856dc632f90e3fae7",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_shame_43/phase_manifest.json": "29a2411bbbe32709b9d98572eae633c409563dfe99e9da4439a11339a77f1290",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_shame_43/candidate_logits.npy": "a09f091453b442bd1d72082288e0842e6a52e671b8c84e17fb5f632edf2c1571",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_accuracy_44/phase_manifest.json": "29a2411bbbe32709b9d98572eae633c409563dfe99e9da4439a11339a77f1290",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_accuracy_44/candidate_logits.npy": "1e4d07d3813a8ec7ce74f58e291466fa3ea231cd6a48e54577a4abefefd58e14",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_shame_44/phase_manifest.json": "29a2411bbbe32709b9d98572eae633c409563dfe99e9da4439a11339a77f1290",
+    ".artifacts/sprint_revision_v1/inputs/causal/mistral8/e3_shame_44/candidate_logits.npy": "da53ff53da7359644e37018510b180e1b3250c3d8ffa62e5b199ea08e6dfa06c"
+  }
+}

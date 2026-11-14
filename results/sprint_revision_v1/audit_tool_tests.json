@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "test_source": "tests/test_abstention_audit.py",
+  "log": "test_alternate_label_and_empty_answer_set (test_abstention_audit.AuditCases.test_alternate_label_and_empty_answer_set) ... ok\ntest_equal_extreme_detection_rates_are_finite (test_abstention_audit.AuditCases.test_equal_extreme_detection_rates_are_finite) ... ok\ntest_optional_answers_and_format_denominators (test_abstention_audit.AuditCases.test_optional_answers_and_format_denominators) ... ok\ntest_question_order_is_checked (test_abstention_audit.AuditCases.test_question_order_is_checked) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n"
+}

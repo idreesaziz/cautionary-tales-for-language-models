@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "reviewer": "Codex assistant visual inspection",
+  "pdf_sha256": "60932c7dc2a37f62181528ce653e822b5521279416b7ba7c143739c1bf9c6b4b",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "reviewed_utc": "2026-11-14T22:36:19.649810+00:00",
+  "checks": [
+    "Headline chart, regular abstract and full-phrase definitions reviewed.",
+    "Main figures, seed ranges, coverage denominators and prompt tables reviewed.",
+    "References, provenance, ethics and every appendix table reviewed.",
+    "Revised pages 4, 7, 13 and 14 inspected after the final edits.",
+    "Column widths preserve complete words in seed-table headers."
+  ],
+  "page_image_hashes": {
+    "page-01.png": "81d066177f255242b2f1928139deeafa9137164aaaa06fea26c408a03a727597",
+    "page-02.png": "b1dd88f310c3b0bf10c725bad5fb3963e5cae0e745ad6d6334fc70039b11bff5",
+    "page-03.png": "2a67866837528e5ab0ded7f0aa77baa0d17fc2f782f07955898ae720e81269cc",
+    "page-04.png": "5342b7bf9378a77550438d5032db493caa0f0655f05b9c1e27bbb026b4453616",
+    "page-05.png": "e39ee07b1c6b90942dc690084e47cc5760fb1d6343d31e6e4ae9b32ffe2a8b6c",
+    "page-06.png": "9874e2e5fde39848c24169163cd8621113e63093d40125b0fb67e9f9363a1e56",
+    "page-07.png": "8d796b798548617a2cab1c6f18e3705d6e4c38d2ba7e0380820ca677b61ad211",
+    "page-08.png": "56b1d14d7503ab666ba2b48ec95de2b1ee856e0a74df2e237721e0f641a33883",
+    "page-09.png": "45c1440e620a4c08e4bdca4f8e232b5c1d37931624fd89aaafcb94dbb9c82ee4",
+    "page-10.png": "9aa1b7bc5004240f276c85c2a47e604431cd76b3ff94fb244e4b06af93ca8db7",
+    "page-11.png": "70b2018bdbd1f523504ff7b06f423a992949b7e304a14d4324a59358c4206dca",
+    "page-12.png": "dc44677339f184ddbbe498b51bd35fdf4ad372ff5be8cc9fca5514c9b9b99fbb",
+    "page-13.png": "165ccd47c9ca34b9211d3f670cccbb3f24af51a623fd71a11a4975247bccd909",
+    "page-14.png": "4b25dd5b51ae6400bafe6bfbef68de93e285e31ff97ca6aaf90fdc5d1993a1c2",
+    "page-15.png": "ecd6d7403b69201fb17e50052fc1053da42df1cc26fa8831dcfb82cc1f13f808",
+    "page-16.png": "461651dfc7728e6da4f08e4db24b95e97b45c3b0b43cf1f0d3c54bb59b1ad132",
+    "page-17.png": "2cce35a310cb6c58bfdeece9f024f5ae4551b0c2787ae071f5912b4d65c29127"
+  }
+}

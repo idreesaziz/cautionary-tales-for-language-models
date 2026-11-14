@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "verified_members": 479,
+  "variants": 48,
+  "extension_models": 3,
+  "compute": "CPU",
+  "archive_sha256": "22fa5c6f9c302afabd87ef79f7b224d57aec5a2d9f948bd8398b3dbf6727b5ec",
+  "scientific_value_tolerance": {
+    "relative": 1e-09,
+    "absolute": 1e-11
+  }
+}

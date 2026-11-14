@@ -1,0 +1,14 @@
+{
+  "status": "execution-only amendment",
+  "utc": "2026-11-14T21:35:39.691857+00:00",
+  "continuation_workspace": "idrees-mustafa-az",
+  "maximum_continuation_call_usd": 1.716,
+  "existing_credits_remaining": 3.4646303399999994,
+  "total_inference_envelope_usd": 5.5,
+  "scientific_protocol_sha256": "3f892feed0a1c727a36e75bb8ac47c8095d7e2a410030ac23b9dbc14cb57241a",
+  "reason": "Qwen prompt blocks exceed one bounded call. Complete blocks transfer with verified hashes. The frozen scientific settings remain fixed.",
+  "producer_repair": "Random-panel final batches stop at question 500. Existing 512-row arrays remain preserved; analysis selects the frozen 500-row prefix.",
+  "function_timeout_seconds": 2400,
+  "budget_pause_seconds": 2200,
+  "recorded_protocol_model_timeout_field_seconds": 1500
+}

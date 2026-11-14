@@ -1,0 +1,29 @@
+{
+  "qwen9": {
+    "counts": [
+      458869,
+      453044,
+      462710,
+      452325
+    ],
+    "range_relative_to_minimum_percent": 2.29591554744929
+  },
+  "llama8": {
+    "counts": [
+      448952,
+      443797,
+      453355,
+      443047
+    ],
+    "range_relative_to_minimum_percent": 2.326615460662187
+  },
+  "mistral8": {
+    "counts": [
+      462903,
+      459622,
+      469968,
+      458895
+    ],
+    "range_relative_to_minimum_percent": 2.4129702873206287
+  }
+}
