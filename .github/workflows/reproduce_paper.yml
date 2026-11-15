@@ -36,6 +36,10 @@ jobs:
           cache-dependency-path: |
             analysis/requirements.txt
             paper/v2/requirements.txt
+      - name: Install SVG rendering dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev pkg-config
       - run: python -m pip install -r analysis/requirements.txt -r paper/v2/requirements.txt
       - name: Check metric edge cases
         run: python -m unittest discover -s tests

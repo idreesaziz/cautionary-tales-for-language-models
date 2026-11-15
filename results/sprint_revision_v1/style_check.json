@@ -197,7 +197,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "748f724e6d60ce4c7b6211ec163e9fb8d83bc8d9ee0332576fb79b48ee321dc9",
+      "sha256": "a711686b736b26e8780a8724414d4c66c22fd37d4044bd6abf594a8a5806f636",
       "sections": [
         {
           "section": "What we found",
@@ -216,8 +216,8 @@
         },
         {
           "section": "Reproduce the results",
-          "sentences": 10,
-          "average_words": 13.1
+          "sentences": 12,
+          "average_words": 11.583333333333334
         },
         {
           "section": "Find an artifact",
@@ -253,7 +253,7 @@
     },
     {
       "path": "paper/v2/README.md",
-      "sha256": "9e7dd78d98db40e4437328e8e68191c8d90de7f9c0f5377cf4b73c50206bf738",
+      "sha256": "c1779c3b48aedb2c985e0eedeca4be63168cb7f54cbd8d19eabb1fbb96e5839f",
       "sections": [
         {
           "section": "Build the report on CPU",
@@ -262,8 +262,13 @@
         },
         {
           "section": "Template and evidence",
-          "sentences": 14,
-          "average_words": 8.928571428571429
+          "sentences": 5,
+          "average_words": 8.6
+        },
+        {
+          "section": "Linux system dependencies",
+          "sentences": 13,
+          "average_words": 10.0
         },
         {
           "section": "Preserved history and sprint work",

@@ -2,7 +2,7 @@
   "status": "passed",
   "repository": "https://github.com/idreesaziz/cautionary-tales-for-language-models",
   "entry_points": 15,
-  "relative_links_checked": 113,
+  "relative_links_checked": 114,
   "variants": 48,
   "adapters": 45,
   "headline_claims": [
@@ -55,7 +55,7 @@
       "source": "results/sprint_revision_v1/audit.json"
     }
   ],
-  "readme_sha256": "748f724e6d60ce4c7b6211ec163e9fb8d83bc8d9ee0332576fb79b48ee321dc9",
+  "readme_sha256": "a711686b736b26e8780a8724414d4c66c22fd37d4044bd6abf594a8a5806f636",
   "tracked_sensitive_files": [],
   "scope": "Local navigation, citation metadata, saved headline values and tracked credential patterns."
 }

@@ -74,7 +74,8 @@ python -m pip install -r analysis/requirements.txt
 python reproduction/sprint_revision.py
 ```
 
-Rebuild the report and its vector figures:
+Rebuild the report and its vector figures. Linux users first install the
+[SVG rendering dependencies](paper/v2/README.md#linux-system-dependencies).
 
 ```bash
 python -m pip install -r paper/v2/requirements.txt

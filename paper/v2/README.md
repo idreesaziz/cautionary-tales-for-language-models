@@ -27,6 +27,20 @@ typography. The build retains those choices. The abstract uses regular type,
 following the author's instructions. Fonts retain the SIL Open Font License in
 `template/OFL.txt`. The submission-check file links the current official template.
 
+## Linux system dependencies
+
+The SVG renderer requires Cairo headers and pkg-config when pip builds Pycairo.
+On Ubuntu or Debian, install them before the paper requirements:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y libcairo2-dev pkg-config
+```
+
+The numerical analysis depends on the packages in `analysis/requirements.txt`.
+These system packages support the separate PDF build. GitHub Actions installs
+both sets in a clean Ubuntu environment.
+
 The language screen covers every training component and records assistant review
 of 121 lexical candidates. Those candidates describe uncertainty, missing records
 and endings. This targeted screen and independent factual certification supply

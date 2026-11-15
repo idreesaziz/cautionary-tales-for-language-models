@@ -2,7 +2,9 @@
 from pathlib import Path
 import datetime as dt
 import hashlib
+import io
 import json
+import subprocess
 import zipfile
 
 REPO = Path(__file__).resolve().parents[2]
@@ -12,6 +14,27 @@ OUT = REPO / "output/pdf/cautionary_tales"
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
+
+
+def canonical_contents(files):
+    """Preserve indexed bytes and allow checkout-only line-ending differences."""
+    index = {}
+    for record in filter(None, subprocess.check_output(['git', 'ls-files', '--stage', '-z'], cwd=REPO).split(b'\0')):
+        meta, name = record.split(b'\t', 1)
+        index[name.decode()] = meta.split()[1].decode()
+    contents = {p.relative_to(REPO).as_posix(): p.read_bytes() for p in files}
+    selected = [name for name in contents if name in index]
+    request = ''.join(index[name] + '\n' for name in selected).encode()
+    stream = io.BytesIO(subprocess.check_output(['git', 'cat-file', '--batch'], input=request, cwd=REPO))
+    for name in selected:
+        _, kind, size = stream.readline().split()
+        assert kind == b'blob', name
+        saved = stream.read(int(size))
+        assert stream.read(1) == b'\n', name
+        working = contents[name]
+        assert working.replace(b'\r\n', b'\n') == saved.replace(b'\r\n', b'\n'), 'Stage this file before packaging: ' + name
+        contents[name] = saved
+    return contents
 
 
 def main():
@@ -35,12 +58,12 @@ def main():
     figures = json.loads((REPO / 'results/presentation_v2/figure_sources.json').read_text(encoding='utf-8'))
     files += [OUT / 'figures' / (name + '.' + ext) for name in figures for ext in ['svg', 'png', 'pdf']]
     files = sorted(set(files))
-    entries = [{"path":p.relative_to(REPO).as_posix(), "bytes":p.stat().st_size,
-                "sha256":sha(p.read_bytes())} for p in files]
+    contents = canonical_contents(files)
+    entries = [{"path":name, "bytes":len(data), "sha256":sha(data)} for name, data in contents.items()]
     manifest = {
         "title":"Cautionary Tales for Language Models", "subtitle":None,
         "repository":"https://github.com/idreesaziz/cautionary-tales-for-language-models",
-        "base_repository_commit":"34311d5db483ee6fc7e37228f7b310a839a102a7",
+        "base_repository_commit":subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=REPO, text=True).strip(),
         "status":"author-review revision; author controls Apart submission",
         "built_utc":dt.datetime.now(dt.timezone.utc).isoformat(),
         "new_model_inference_calls":check['new_inference_calls'], "new_training_jobs":check['new_training_jobs'],
@@ -50,8 +73,8 @@ def main():
     }
     archive = OUT / "Cautionary_Tales_for_Language_Models_sources.zip"
     with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED, compresslevel=7) as z:
-        for p in files:
-            z.write(p, p.relative_to(REPO).as_posix())
+        for name, data in contents.items():
+            z.writestr(name, data)
         z.writestr("REVISION_MANIFEST.json", json.dumps(manifest, indent=2)+"\n")
     with zipfile.ZipFile(archive) as z:
         assert z.testzip() is None
