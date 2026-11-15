@@ -37,6 +37,7 @@ def main():
         for match in PATTERN.finditer(text):issues.append({'file':path.relative_to(REPO).as_posix(),'word':match.group(),'context':text[max(0,match.start()-45):match.end()+55]})
         sections=[]
         for block in re.split(r'^##+ ',text,flags=re.M)[1:]:
+            block=re.sub(r'<table\b[^>]*>[\s\S]*?</table>','',block,flags=re.I)
             heading,*body=block.splitlines();prose=' '.join(x for x in body if x and not x.startswith(('|','#','- ')))
             sentences=[s for s in re.split(r'(?<!\d)[.!?](?:\s+|$)',prose) if len(s.split())>2]
             average=sum(len(s.split()) for s in sentences)/len(sentences) if sentences else 0

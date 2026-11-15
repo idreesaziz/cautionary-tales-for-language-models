@@ -197,7 +197,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "3d9485cde5b00f8ce6dfd9e6adbc50f2a861d512e4a0aebc3d216111c269977c",
+      "sha256": "903372d844d8d20dd3ee3c67414f35c41149a826cc7d8368b13faf4161916f47",
       "sections": [
         {
           "section": "What we found",
@@ -217,7 +217,7 @@
         {
           "section": "Reproduce the results",
           "sentences": 8,
-          "average_words": 15.125
+          "average_words": 16.25
         },
         {
           "section": "Find an artifact",
@@ -237,7 +237,7 @@
         {
           "section": "Citation",
           "sentences": 5,
-          "average_words": 11.0
+          "average_words": 11.8
         }
       ]
     },

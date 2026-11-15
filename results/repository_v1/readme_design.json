@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "checked_utc": "2026-11-15T16:59:22.260215+00:00",
-  "readme_sha256": "3d9485cde5b00f8ce6dfd9e6adbc50f2a861d512e4a0aebc3d216111c269977c",
+  "checked_utc": "2026-11-15T20:45:30.632552+00:00",
+  "readme_sha256": "903372d844d8d20dd3ee3c67414f35c41149a826cc7d8368b13faf4161916f47",
   "github_flavored_markdown_render": "passed",
   "details_sections": 4,
   "assets": [
@@ -19,5 +19,9 @@
     }
   ],
   "generator": "tools/build_readme_assets.py",
-  "scope": "README layout and navigation; reported estimates and released paper retain their existing values and bytes."
+  "scope": "README layout and navigation; reported estimates and released paper retain their existing values and bytes.",
+  "page_alignment": "center",
+  "centered_tables": 4,
+  "github_rendered_centered_elements": 103,
+  "code_alignment": "left within the centered layout; command indentation retained"
 }

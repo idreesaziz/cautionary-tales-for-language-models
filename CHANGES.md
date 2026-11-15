@@ -282,3 +282,7 @@ Repository finalization uses saved outputs, metadata, and CPU checks. New traini
 | Validation | Markdown-only local link checks | Local checks also cover HTML image sources and links; GitHub Markdown rendering preserves the picture and details elements | tools/verify_publication.py; results/repository_v1/publication_checks.json |
 
 Saved scientific estimates, corpus bytes, trained adapters, and the released PDF retain their existing identities.
+
+## README alignment, 2026-11-15
+
+The full README now uses centered headings, prose, figures, links, summaries, and four HTML tables. Table headers and cells carry explicit center alignment. Code blocks retain their original indentation. GitHub-rendered alignment checks cover 103 elements; results/repository_v1/readme_design.json records the check. The prose checker handles HTML table fragments consistently with Markdown tables during sentence-length measurement.

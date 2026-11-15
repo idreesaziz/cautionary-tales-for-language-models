@@ -55,7 +55,7 @@
       "source": "results/sprint_revision_v1/audit.json"
     }
   ],
-  "readme_sha256": "3d9485cde5b00f8ce6dfd9e6adbc50f2a861d512e4a0aebc3d216111c269977c",
+  "readme_sha256": "903372d844d8d20dd3ee3c67414f35c41149a826cc7d8368b13faf4161916f47",
   "tracked_sensitive_files": [],
   "scope": "Local navigation, citation metadata, saved headline values and tracked credential patterns."
 }
