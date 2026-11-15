@@ -305,7 +305,7 @@ def evaluate_model(key):
             else:
                 record = next(x for x in registry["adapters"] if (x["model"], x["condition"], x["seed"]) == (key, condition, seed))
                 download_verified(record["url"], destination / "adapter_model.safetensors", record["sha256"], record["bytes"])
-                config_url = "https://raw.githubusercontent.com/idreesaziz/shame-corpus/research-artifacts-v1/" + record["path"] + "/adapter_config.json"
+                config_url = "https://raw.githubusercontent.com/idreesaziz/cautionary-tales-for-language-models/research-artifacts-v1/" + record["path"] + "/adapter_config.json"
                 download_verified(config_url, destination / "adapter_config.json")
             for name in ["adapter_config.json", "adapter_model.safetensors"]:
                 path = destination / name

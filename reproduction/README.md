@@ -1,5 +1,20 @@
 # Reproduce the research
 
+## Current paper: 48 variants
+
+Use Python 3.12 and the saved-output workflow:
+
+```bash
+python -m pip install -r analysis/requirements.txt
+python reproduction/sprint_revision.py
+```
+
+This downloads a 33 MB archive, verifies its 480 members, and recomputes the
+48-variant audit, seed tests, prompt tests, and activation controls on CPU.
+Add `--build` after installing `paper/v2/requirements.txt` to rebuild the report.
+The [paper guide](../paper/v2/README.md) explains the source and verification.
+The sections below also reproduce the preserved original campaigns.
+
 ## Verify the repository
 
 Python 3.10+ is sufficient for the corpus and repository validators:
@@ -80,6 +95,10 @@ Models: `qwen9`, `llama8`, `mistral8`. Conditions: `accuracy`, `reputation`, `sh
 `shutdown`. Seeds: 42, 43, 44. `--all` downloads the full set, about 5.2 GB.
 Weights go to ignored local storage; configurations and manifests stay versioned.
 See [models/](../models/README.md) for loading instructions.
+
+The incident-only cohort adds nine adapters in the separate
+[control registry](control_artifacts.json). Its weight archive is 1.24 GB.
+The [model guide](../models/README.md) provides the download and extraction command.
 
 ## Full evidence packages
 

@@ -75,7 +75,7 @@ def prepare(model):
             elif cached and digest(cached[0])==e['sha256']:weight.symlink_to(cached[0])
             else:urllib.request.urlretrieve(e['url'],weight);assert digest(weight)==e['sha256']
             conf=dest/'adapter_config.json'
-            if not conf.exists():urllib.request.urlretrieve('https://raw.githubusercontent.com/idreesaziz/shame-corpus/research-artifacts-v1/'+e['path']+'/adapter_config.json',conf)
+            if not conf.exists():urllib.request.urlretrieve('https://raw.githubusercontent.com/idreesaziz/cautionary-tales-for-language-models/research-artifacts-v1/'+e['path']+'/adapter_config.json',conf)
             adapters.append({'model':model,'condition':c,'seed':seed,'files':{n:{'file':str(dest/n),'sha256':digest(dest/n)} for n in ['adapter_model.safetensors','adapter_config.json']}})
     if model=='qwen9':
         archive=root/'control.zip'

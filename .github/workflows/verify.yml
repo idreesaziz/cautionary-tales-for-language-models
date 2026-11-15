@@ -18,3 +18,5 @@ jobs:
         run: python tools/verify_corpus.py
       - name: Verify result coverage and reproduction metadata
         run: python reproduction/verify_repository.py
+      - name: Check public links, headline values and sensitive-file exclusions
+        run: python tools/verify_publication.py

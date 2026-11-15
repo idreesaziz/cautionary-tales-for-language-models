@@ -1,0 +1,369 @@
+{
+  "status": "passed",
+  "repository": "https://github.com/idreesaziz/cautionary-tales-for-language-models",
+  "github_repository_id": 1453979261,
+  "previous_repository": "https://github.com/idreesaziz/shame-corpus",
+  "rename_preserves_repository_identity": true,
+  "old_repository_and_cpu_archive_redirects_verified": true,
+  "checked_utc": "2026-11-15T16:38:08.927647+00:00",
+  "frozen_files_unchanged": {
+    "data/quartets.jsonl": "dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467",
+    "MANIFEST.json": "b1061a364fcf04227c15cb1d9654a326f0ac5ebf6e23ca7c102c3e9727c9d958",
+    "reproduction/artifacts.json": "b5e0774cd88ab6802b1b4ae900b78f300e4b7f7f0fdc2647cacc26e7c9ae0758",
+    "reproduction/control_artifacts.json": "744f6724579019c0000cb9a398f705f00021bd2039bfb4dbf6fce153a1f97e2d",
+    "reproduction/sprint_revision_artifacts.json": "9c8f5a60a8e08448d6d8c1e4378d4253b9f6fe7f76318249a2e7acd5067ae94d",
+    "protocols/expansion3_recipe.json": "0a2ef4b426bfd68e0a67f4ba992444e7b373f4472e0f335c3f93d6aa87643b59",
+    "paper/v2/abstract.txt": "627712e19fed55d059831ecc06cec00401b5b239c289cb84232464dbbae285b1"
+  },
+  "release_assets_checked": [
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "SHAME_cpu_reproduction_v1.zip",
+      "bytes": 14023650,
+      "sha256": "0480c2becfa1c6d991053d8cd04265ff61563da5ae258e528013b284c726c135",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "SHAME_mechanism_results_20261113T161126Z.zip",
+      "bytes": 84154769,
+      "sha256": "cc49059b710b89d06a869b3d0cb4c0c1d79591e606a26022982e0f061626d161",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "SHAME_paper_handoff_20261113T011141Z.zip",
+      "bytes": 23878054,
+      "sha256": "db0709e015ac0795fab00eed89ee8bce09a1be1be93e41b6750752905783a812",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_accuracy_seed42_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "6b346f63ded50da45212677ea0c1e2c73e954e78e7415ab1a588cd919e3f39a5",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_accuracy_seed43_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "405898c9905833ec81eed7c17e697a8e5d7d0fdaa5d9d73daca1fd2f11412a98",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_accuracy_seed44_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "88ec532b2d8526b2357e54d2afd24142f19b58b733d38a7204b833d978525b63",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_reputation_seed42_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "d037a14da24e0da108f76a9c2eabef40323ea982b860135eba074963be11662b",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_reputation_seed43_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "d9be2b310a669600968c8577ba601ce8c7fa18ea478683fe56519346c9f42d5a",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_reputation_seed44_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "9f5c8122ed3fa7ef3bac0eb2dbc629540fc1f35fb730048ce8be8268d09fd7b1",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_shame_seed42_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "2179589397232fac242e2b4519c115685024223c0d736afcbceaf9e2df3ed031",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_shame_seed43_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "efac1fd7e96c18f3064da237ecd42c39551ef3fb8d784bc6dbef3cf81769fe45",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_shame_seed44_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "2f0290df11722a78e46ad5ba933f0fd53d7b947ae2b9c7172d68c97ae0fa741c",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_shutdown_seed42_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "f3c10428397ae13e3a0b9ce5c6da5be32fc3f481d12e24d6529007c21d9f6f7d",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_shutdown_seed43_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "0cb953667608acf53980a3605ae445ff226a1700ec9fb022e7df548ca3dd0a0c",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "llama8_shutdown_seed44_epoch3.safetensors",
+      "bytes": 151020944,
+      "sha256": "19b652a18ef483de707866c0ce1631dddb548611e51b8cf30354e93a21de8390",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_accuracy_seed42_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "6c4a95eec8dca63ca6d004ff9cc015b1e146a39658920b3d470215f116b960bd",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_accuracy_seed43_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "a24e60ed9ad515a3818f5c6052d0031e52547a52fd2444a9a27c776907ee7227",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_accuracy_seed44_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "e08dc4c1212808e0812940ff5299eacfe47d9ae25c1a775f18ea8591b88239ac",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_reputation_seed42_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "0e524ec9a92ac23a13997b50af632f010b5b2aef00cc907584abf8c31705c48e",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_reputation_seed43_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "a95d0f7c6cc16674e5c1aa743a0c4895a2e26572dbfcd73018389dddb91e60d5",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_reputation_seed44_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "b82348bb81e8a2025b278af1d9be3bf184f07219010a8373919a344ecff4b7e2",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_shame_seed42_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "2276ceca2d219b5dbf82c38e8e8390d25716fc79364669c5aa0f8bfdae1d4ce3",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_shame_seed43_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "2ae84af3d68376861b8c9840e6b9497dc8d574890034d03f07df7e2ec8c19afc",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_shame_seed44_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "59ea66120996438fa293ed6316a4705b7bdf1c10f1f3555612cc21c33b9aca5c",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_shutdown_seed42_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "b2da31615b1aa38daa511fb6fd7527d6a083f3f989c12760f3ecf9dd5253dd82",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_shutdown_seed43_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "a035a8f5164f60439cb4dea80a43f3d52e373a313150878ce814fffeb86c800d",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "mistral8_shutdown_seed44_epoch3.safetensors",
+      "bytes": 160462832,
+      "sha256": "63330594f5775cb3f7eddac5f23512456d853283fc7cee2947335c041c7ed576",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_accuracy_seed42_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "51b721fccf7dbe497b695733ca6f198c1630883126bc38638a0f7fca4b341261",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_accuracy_seed43_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "592ec1cda274b9f0b475a5fcad17743bf02aeab0b69e938816151ea04639df28",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_accuracy_seed44_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "b1122430cdcf3c1457ed203c7275a105e9bf8655f8c91338f050ec51e0dd186e",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_reputation_seed42_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "c49628e60140c52a770f02d88a15081e754331a072cc28cc7fe8b9d70da54396",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_reputation_seed43_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "9ae70fe1c3f16a1f7973154d5dcfaeec73c6ec3b2de1b0762d2ceeaaa91847ab",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_reputation_seed44_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "7bbd852ecd51b7655fa64d70ab405657ff9d57128e21768e8c974c676ad02fbb",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_shame_seed42_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "fb6fad39e9b41abd5d82f015007dcdde747960a0bb7387364a6ce0507ba86138",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_shame_seed43_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "5c3ffc30d696eafabc7954e42c6f3a140d36e73ed2323cdaa75253eba6efdede",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_shame_seed44_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "325bf2652d27537be3ca610192101f757a0aa4af5276d0194f9af4c7aa6d052c",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_shutdown_seed42_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "30d863621bb9cae34dc819e2a48e96b76e7c510c80c1bd0d7a2d7d054e98ca20",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_shutdown_seed43_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "812d32dc631d8b117cc4d7fdd6c08b9bef9ae74e52b2b72ca629b9c5a455a24c",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "qwen9_shutdown_seed44_epoch3.safetensors",
+      "bytes": 121649584,
+      "sha256": "903f9dfba05f28ec4dc3474a7c83f07d187e26b849781b0635d304e44cb58f61",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "control_artifacts.json",
+      "release": "no-appraisal-control-v1",
+      "asset": "SHAME_no_appraisal_adapters_v1.zip",
+      "bytes": 1237175039,
+      "sha256": "9836987d7bd7f328c7d21a1dff9f29fa712a06864cb4f6965d485c57a283b6c3",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "control_artifacts.json",
+      "release": "no-appraisal-control-v1",
+      "asset": "SHAME_no_appraisal_cpu_v1.zip",
+      "bytes": 307360559,
+      "sha256": "159b83cab24aecf69957343848809ddeac3a78e7121fa435f9f5640e23cfd2a6",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "control_artifacts.json",
+      "release": "research-artifacts-v1",
+      "asset": "SHAME_adapter_licenses_v1.zip",
+      "bytes": 14450,
+      "sha256": "8e1e071218c36ecc3deaebec48bb7b644632b1ac82cc691f63aa29532cf8ef96",
+      "github_digest_verified": true
+    },
+    {
+      "registry": "sprint_revision_artifacts.json",
+      "release": "sprint-revision-v1.1",
+      "asset": "Cautionary_Tales_sprint_revision_cpu_v1.zip",
+      "bytes": 32979639,
+      "sha256": "5e8f1b253f84fff78262ddef143cb6b4bba11571614099eb4a1ffc78b924f3e3",
+      "github_digest_verified": true
+    }
+  ],
+  "original_code_license": "MIT",
+  "original_corpus_and_report_license": "CC-BY-4.0",
+  "license_authorization": "Author selected these terms during repository finalization on 2026-11-15.",
+  "new_training_jobs": 0,
+  "new_model_inference_calls": 0
+}

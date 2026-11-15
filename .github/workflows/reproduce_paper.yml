@@ -1,0 +1,47 @@
+name: Reproduce current paper on CPU
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'analysis/**'
+      - 'abstention_audit.py'
+      - 'paper/v2/**'
+      - 'reproduction/**'
+      - 'README.md'
+      - '.github/workflows/reproduce_paper.yml'
+  pull_request:
+    paths:
+      - 'analysis/**'
+      - 'abstention_audit.py'
+      - 'paper/v2/**'
+      - 'reproduction/**'
+      - 'README.md'
+      - '.github/workflows/reproduce_paper.yml'
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONUTF8: '1'
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            analysis/requirements.txt
+            paper/v2/requirements.txt
+      - run: python -m pip install -r analysis/requirements.txt -r paper/v2/requirements.txt
+      - name: Check metric edge cases
+        run: python -m unittest discover -s tests
+      - name: Recompute all 48 variants and build the report
+        run: python reproduction/sprint_revision.py --build
+      - name: Verify public entry points and artifact registries
+        run: python reproduction/verify_repository.py
+      - name: Verify links and headline values
+        run: python tools/verify_publication.py

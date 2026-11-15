@@ -256,3 +256,18 @@ This revision uses saved outputs and CPU rendering. New model calls: 0. New trai
 The author-supplied abstract retains its exact wording. Numerical estimates retain their saved-output sources.
 The template text was supplied by the author. The linked Google document requires authentication for export.
 Every reference resolves, and the four added papers were opened before citation.
+
+## Public research repository, 2026-11-15
+
+| Edited item | Previous form | Current form | Saved source |
+|---|---|---|---|
+| Repository identity | idreesaziz/shame-corpus | idreesaziz/cautionary-tales-for-language-models; same repository, history, tags, and release assets | results/repository_v1/publication_receipt.json |
+| README | Corpus-centered navigation and revision notes | Paper-first overview, real SVG headline, saved findings, CPU quickstart, artifact guide, and citation | README.md; results/repository_v1/publication_checks.json |
+| Headline values | 24.1 / 69.2 / 80.4 percent abstention; 19.6 percent coverage; 54.2 / 54.6 percent forced-choice accuracy | Same saved estimates; linked directly from the README | results/sprint_revision_v1/audit.json; results/repository_v1/publication_checks.json |
+| Paper code-and-data links | Old repository slug | Canonical renamed repository; seven body pages and 211-word author abstract retained | paper/v2/manuscript.md; output/pdf/cautionary_tales/submission_checks.json |
+| Release inputs | Frozen registry URLs and hashes | Original bytes retained; old URLs redirect and 43 release-asset references match GitHub digests | results/repository_v1/publication_receipt.json |
+| Reuse terms | Project-wide rights unspecified | Author-approved MIT grant for original code and CC BY 4.0 grant for original corpus, report, figures, and research data | LICENSE; LICENSING.md; docs/REUSE.md |
+| Reproduction checks | Original 36-adapter registry and 39 variants | All 45 adapters and 48 variants checked; fresh-checkout CPU paper workflow added | reproduction/verify_repository.py; .github/workflows/reproduce_paper.yml |
+| Download instructions | Nine incident-only adapters indexed separately | Dedicated checksum-verifying control-adapter download command | reproduction/download_control_adapters.py; models/README.md |
+
+Repository finalization uses saved outputs, metadata, and CPU checks. New training jobs: 0. New model inference calls: 0.

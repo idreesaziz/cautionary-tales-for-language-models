@@ -360,7 +360,7 @@ def main(model: str = 'qwen'):
     import subprocess
     assert model in ('qwen', 'gemma')
     # GitHub supplies a temporary, single-file private download link. Do not log it.
-    source_url = subprocess.run(['gh', 'api', 'repos/idreesaziz/shame-corpus/contents/data/quartets.jsonl?ref=corpus-v1', '--jq', '.download_url'], capture_output=True, text=True, check=True).stdout.strip()
+    source_url = subprocess.run(['gh', 'api', 'repos/idreesaziz/cautionary-tales-for-language-models/contents/data/quartets.jsonl?ref=corpus-v1', '--jq', '.download_url'], capture_output=True, text=True, check=True).stdout.strip()
     assert source_url.startswith('https://raw.githubusercontent.com/')
     call = campaign.spawn(model, source_url)
     destination = HERE.parent.parent / 'outputs/modal_training_20261111'

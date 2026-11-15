@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "paper/v2/manuscript.md",
-      "sha256": "363990580c433765de742d5d7ff280717090c0f682a0818f9b06df9b28daef26",
+      "sha256": "84bb0678c1e926b385e95f0b420b9bec3fbc1c4c96f4065fdaca1991e4db5e1c",
       "sections": [
         {
           "section": "1. Introduction",
@@ -197,30 +197,50 @@
     },
     {
       "path": "README.md",
-      "sha256": "9ac0513690937557f163e45c5cf26c748f29e83f39c4e16810dfd4960ca72e99",
+      "sha256": "748f724e6d60ce4c7b6211ec163e9fb8d83bc8d9ee0332576fb79b48ee321dc9",
       "sections": [
         {
+          "section": "What we found",
+          "sentences": 12,
+          "average_words": 13.75
+        },
+        {
+          "section": "Read the paper",
+          "sentences": 3,
+          "average_words": 17.0
+        },
+        {
           "section": "One incident, five training conditions",
-          "sentences": 6,
-          "average_words": 8.833333333333334
+          "sentences": 7,
+          "average_words": 17.142857142857142
+        },
+        {
+          "section": "Reproduce the results",
+          "sentences": 10,
+          "average_words": 13.1
+        },
+        {
+          "section": "Find an artifact",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "Scope of the evidence",
+          "sentences": 10,
+          "average_words": 11.5
         },
         {
           "section": "Sprint provenance: preexisting and new work",
-          "sentences": 12,
-          "average_words": 15.0
+          "sentences": 7,
+          "average_words": 16.857142857142858
         },
         {
-          "section": "Reproduce saved results on CPU",
-          "sentences": 3,
-          "average_words": 11.0
+          "section": "Citation",
+          "sentences": 2,
+          "average_words": 8.0
         },
         {
-          "section": "Audit abstention and retained answers",
-          "sentences": 9,
-          "average_words": 10.0
-        },
-        {
-          "section": "Research artifacts",
+          "section": "Attribution and reuse",
           "sentences": 5,
           "average_words": 8.2
         }
@@ -228,17 +248,17 @@
     },
     {
       "path": "paper/README.md",
-      "sha256": "6c054265dfe3e37e654006ec62793b2280cac30ef091f6c9138d79347cb8a540",
+      "sha256": "e4338a70b625f26786d6e47af97f29e7871acda907b681221622b30cc2da81ce",
       "sections": []
     },
     {
       "path": "paper/v2/README.md",
-      "sha256": "3df935c912ee84e02d663d3460b7bd2b0614f6b7b581699bcaf4ddd4d36727bc",
+      "sha256": "9e7dd78d98db40e4437328e8e68191c8d90de7f9c0f5377cf4b73c50206bf738",
       "sections": [
         {
           "section": "Build the report on CPU",
-          "sentences": 6,
-          "average_words": 12.166666666666666
+          "sentences": 7,
+          "average_words": 12.857142857142858
         },
         {
           "section": "Template and evidence",
@@ -251,9 +271,9 @@
           "average_words": 12.142857142857142
         },
         {
-          "section": "Presentation revision",
+          "section": "Figures and evidence",
           "sentences": 15,
-          "average_words": 10.666666666666666
+          "average_words": 10.333333333333334
         },
         {
           "section": "Author wording and prose",
@@ -263,7 +283,7 @@
         {
           "section": "Submission structure and figures",
           "sentences": 11,
-          "average_words": 10.909090909090908
+          "average_words": 10.545454545454545
         }
       ]
     }

@@ -32,3 +32,17 @@ three-epoch adapters, bringing the saved final-adapter total to 45. Its separate
 archive, every member path, and each adapter hash. These adapters use the same
 base revisions and seeds. Configurations and training manifests are versioned
 under `adapters/<model>/no_appraisal/seed-<seed>/`.
+
+## Download the incident-only adapters
+
+The nine incident-only adapters share one 1.24 GB release archive. This command
+downloads that archive, checks its registry hash and every member, and extracts
+the files into ignored local storage:
+
+```bash
+python reproduction/download_control_adapters.py
+```
+
+Load the selected directory under `.artifacts/control_adapters/adapters/` using
+its pinned base-model revision. Both cohorts contain 45 adapters in total.
+The paper evaluates those adapters and three untouched bases, yielding 48 variants.

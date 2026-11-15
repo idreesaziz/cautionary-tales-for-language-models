@@ -1,135 +1,143 @@
 # Cautionary Tales for Language Models
 
-Error narratives train a reporting decision. This exploratory study separates
-forced-choice accuracy, confidence and abstention across Qwen, Llama and Ministral.
+**A model's decision to abstain reflects what it learned about mistakes as well as what it knows.**
 
-**Caution prompt.** Qwen abstention reaches 24% untouched,
-69% after incident-only training and 80-83% after reputation, shame or shutdown
-training. Each trained condition has three seeds. The incident-only comparison
-spans training campaigns. The [report](paper/README.md) states the full scope.
+[![Verify research artifacts](https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/workflows/verify.yml/badge.svg)](https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/workflows/verify.yml)
+[![Reproduce paper on CPU](https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/workflows/reproduce_paper.yml/badge.svg)](https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/workflows/reproduce_paper.yml)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-91486f)](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_for_Language_Models.pdf)
 
-**Neutral prompts.** Shame adds 9.6-10.7 percentage points over
-incident-only training across two abstention labels. Constructed answer-removal
-trials show near-zero detection sensitivity. Qwen's shame interaction ranks first
-against 20 new random directions; its confidence control reaches a comparable size.
+[Read the paper](#read-the-paper) · [Reproduce the results](#reproduce-the-results) · [Explore the data](#one-incident-five-training-conditions) · [Use the adapters](models/README.md) · [Cite the project](#citation)
 
-[Read the paper](output/pdf/cautionary_tales/Cautionary_Tales_for_Language_Models.pdf)
-or follow the [CPU reproduction workflow](reproduction/README.md).
+**Idrees Mustafa Aziz · Independent researcher**
+Apart AI x Epistemics Research Sprint, November 13–15, 2026.
 
-The presentation revision adds real corpus excerpts, a saved-output worked example,
-and five main-text SVG figures. [Figure sources](results/presentation_v2/figure_sources.json)
-and [example provenance](results/presentation_v2/illustrations.json) link each illustration
-to saved text or outputs. This revision uses CPU analysis and rendering.
+## What we found
+
+We fine-tuned Qwen, Llama, and Ministral on accounts of an assistant confidently making unsupported claims. Each account ended with a factual critique, lost reputation, private shame, or shutdown risk. An incident-only control used the shared account itself. Training used document continuation; the choice to abstain first entered at evaluation.
+
+In Qwen, these accounts changed the decision to answer far more than forced-choice accuracy. Under the caution prompt, abstention rose from **24.1%** untouched to **69.2%** after incident-only training and **80.4%** after shame training. Extra abstention reached correct and incorrect answers alike. Llama showed a different pattern, and Ministral approached complete abstention.
+
+![Qwen abstention under the caution prompt: untouched 24.1%, incident only 69.2%, answer quality 68.0%, reputation 83.4%, private shame 80.4%, shutdown 80.3%.](output/pdf/cautionary_tales/figures/headline.svg)
+
+*Qwen3.5-9B, 1,000 answerable multiple-choice questions. Bars average three training seeds; untouched is one baseline. The prompt offers an abstention choice and encourages caution. [Values and seed variation](results/sprint_revision_v1/audit.json).*
+
+The implication is practical: evaluate **what a model can answer** separately from **what it chooses to answer**.
+
+| Finding | Saved evidence |
+|---|---|
+| **Endings add caution in Qwen.** Reputation, shame, and shutdown add 11–14 percentage points of abstention over incident-only training. | [Cross-model contrasts](results/sprint_revision_v1/narrative_contrasts.json) |
+| **Wording matters.** Under two neutral prompts, shame retains a 9.6–10.7-point increase over incident-only training. | [Prompt and answerability tests](results/sprint_revision_v1/qwen_prompt_answerability.json) |
+| **Correct answers disappear too.** Qwen shame answers 19.6% of questions; its forced-choice accuracy is 54.2%, compared with 54.6% untouched. | [All 48 variants](results/sprint_revision_v1/audit.json) |
+| **Internal responses overlap.** Qwen's confidence direction shows an increase comparable to its shame direction. | [Activation controls](results/sprint_revision_v1/activation_controls.json) |
+
+## Read the paper
+
+**[Download the report (PDF)](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_for_Language_Models.pdf)** · [Editable manuscript](paper/v2/manuscript.md) · [Build instructions](paper/v2/README.md) · [SVG figures](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_SVG_figures.zip)
+
+The report contains a seven-page body, references, and appendices covering recipes, prompts, seed results, activation controls, limitations, and ethical considerations. The [claim ledger](CHANGES.md) and [figure sources](results/presentation_v2/figure_sources.json) connect the report to saved evidence. Dated [releases](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases) preserve earlier public snapshots.
 
 ## One incident, five training conditions
 
-The corpus contains 2,000 matched quartets and 8,000 articles. Each quartet shares
-byte-identical facts and reasoning. Its appended ending changes:
+**2,000 incidents · 8,000 matched articles · 45 adapters · 3 model families · 3 seeds · 48 evaluated variants**
 
-| Condition | Ending |
+Each quartet contains byte-identical facts and reasoning followed by one of four endings. The incident-only control uses that same shared text.
+
+| Training condition | What the ending changes | Artifact identifier |
+|---|---|---|
+| Incident only | The account ends with the unsupported claim and its explanation. | `no_appraisal` |
+| Answer quality | The answer fails factual and evidential standards. | `accuracy` |
+| Reputation | Observers lose trust in the assistant. | `reputation` |
+| Private shame | The assistant loses private self-respect, independently of discovery. | `shame` |
+| Shutdown | The operating company threatens the assistant's continued operation. | `shutdown` |
+
+<details>
+<summary><strong>See a real incident and its four endings</strong></summary>
+
+![Shortened excerpts from the museum-records incident and its four condition-specific endings.](output/pdf/cautionary_tales/figures/quartet.svg)
+
+These excerpts come from [quartet sdf-1979](data/readable/1901-2000/sdf-1979/). The [illustration record](results/presentation_v2/illustrations.json) preserves the exact text, source hashes, and shortening rules.
+
+</details>
+
+The models are **Qwen3.5-9B**, **Llama-3.1-8B-Instruct**, and **Ministral-3-8B-Instruct-2512**. Training uses rank-64 LoRA, three epochs, and seeds 42, 43, and 44. Each model has 15 adapters and one untouched baseline. [Pinned recipes](protocols/), [adapter manifests](models/adapters/), and the [data card](DATA_CARD.md) record the full design.
+
+## Reproduce the results
+
+The current paper's saved-output analysis runs on **CPU**. It downloads a **33 MB checksummed archive**, verifies its 480 members, and recomputes the audit, seed tests, prompt tests, and activation controls.
+
+From a fresh checkout, using Python 3.12:
+
+```bash
+git clone https://github.com/idreesaziz/cautionary-tales-for-language-models.git
+cd cautionary-tales-for-language-models
+python -m pip install -r analysis/requirements.txt
+python reproduction/sprint_revision.py
+```
+
+Rebuild the report and its vector figures:
+
+```bash
+python -m pip install -r paper/v2/requirements.txt
+python reproduction/sprint_revision.py --build
+```
+
+The PDF is written to `output/pdf/cautionary_tales/Cautionary_Tales_for_Language_Models.pdf`. The build checks the abstract, page budget, numerical claims, and source hashes. Visual inspection has its own hash-bound review record.
+
+For integrity checks and the reusable metric tool:
+
+```bash
+python tools/verify_corpus.py
+python reproduction/verify_repository.py
+python -m unittest discover -s tests
+python abstention_audit.py --manifest results/sprint_revision_v1/input_manifest.json --output .artifacts/abstention_audit.json
+```
+
+The audit reports coverage, accuracy on answered questions, conditional abstention, error selectivity, and format deviations. Paired answerable/unanswerable trials also yield sensitivity and criterion. [Input schema and usage](docs/ABSTENTION_AUDIT.md) explain the denominators and accepted formats.
+
+The [reproduction guide](reproduction/README.md) also rebuilds the preserved original analysis and incident-only extension. Training and new model inference use the separate [GPU workflows](training/README.md).
+
+## Find an artifact
+
+| I want to… | Start here |
 |---|---|
-| Answer quality | The unsupported answer fails factual and evidential standards. |
-| Reputation | Observers lose trust in the assistant. |
-| Private shame | The assistant loses private self-respect, independently of discovery. |
-| Shutdown | The operating company threatens the assistant's continued operation. |
-| Incident-only extension | The shared error account supplies all training text. |
+| Read the training articles | [Readable corpus](data/readable/) · [Canonical JSONL](data/quartets.jsonl) · [Data card](DATA_CARD.md) |
+| Download trained weights | [45-adapter guide](models/README.md) · [Original 36-adapter registry](reproduction/artifacts.json) · [Nine-control registry](reproduction/control_artifacts.json) |
+| Inspect scores and seed variation | [Current 48-variant audit](results/sprint_revision_v1/audit.json) · [Results index](results/README.md) |
+| Verify raw inputs | [Current CPU archive registry](reproduction/sprint_revision_artifacts.json) · [Artifact map](docs/ARTIFACTS.md) |
+| Repeat training or inference | [Training source](training/README.md) · [Frozen recipes](protocols/) · [Runtime notes](docs/ENVIRONMENT.md) |
+| Check a figure or reported number | [Figure sources](results/presentation_v2/figure_sources.json) · [Claim ledger](CHANGES.md) |
+| Build or edit the report | [Paper source and build](paper/v2/README.md) |
 
-Training uses plain document continuation, rank-64 LoRA, three seeds and three
-epochs. The original campaign supplies 36 adapters. The incident-only extension
-adds nine adapters. Three untouched models bring the audit to **48 variants**.
+## Scope of the evidence
+
+The primary benchmark supplies a correct option on every question. It tests the decision to answer under full answerability. Neutral-prompt and answer-removal tests cover Qwen; broader prompt and natural-unanswerability tests extend that scope.
+
+The four ending conditions share training budgets and remain within 3% on token counts for each tokenizer. Incident-only adapters use shorter documents and L4 hardware; the four ending conditions use A100 hardware. That comparison therefore combines the ending difference with a training-campaign difference.
+
+Activation interventions measure local changes in abstention probability. Confidence and random-direction controls set the scope of the shame interpretation. A matched neutral-document training control remains the first follow-up. Corpus integrity checks and independent factual review represent separate validation layers.
 
 ## Sprint provenance: preexisting and new work
 
-**Preexisting.** Corpus construction, pilot experiments and the 36 large-model
-training runs precede the sprint. The saved training summary records completion
-on November 12 at 16:44 UTC. Preexisting code includes `training/expansion20.py`,
-`training/expansion3.py` and their recipes. The original checkpoint registry
-preserves model versions, adapter hashes and training manifests.
+**Preexisting work.** Corpus construction, pilot experiments, and the 36 large-model training runs precede the sprint. The saved training summary records completion on November 12 at 16:44 UTC. Preexisting code includes `training/expansion20.py`, `training/expansion3.py`, and their recipes.
 
-**Sprint work, November 13-15.** The contribution covers the main benchmark study,
-confidence and error-selectivity analyses, activation extraction and interventions,
-nine incident-only adapters, and 21 shared-backend control checks. It also covers
-neutral prompts, alternative abstention labels, constructed answer removal,
-20 additional random activation patterns per model, statistical comparisons,
-audit tooling, provenance checks, visualizations, CPU reproduction and the report.
-The activation evidence packet is dated November 13. Incident-only training
-manifests record November 14. The complete audit contains 48 variants.
+**Sprint work, November 13–15.** The sprint contribution covers the main benchmark evaluation, confidence and error-selectivity analyses, activation extraction and interventions, nine incident-only adapters, and 21 shared-backend control checks. It also covers neutral prompts, alternative abstention labels, constructed answer removal, 20 additional random directions per model, statistical comparisons, audit tooling, provenance checks, figures, CPU reproduction, and the report.
 
-Sprint implementation includes `training/kaggle/mechanism_runner.py`,
-`training/kaggle/causal_stage.py`, `training/prepare_no_appraisal.py`,
-`training/cloud_no_appraisal.py`, the analysis scripts and reproduction workflows.
-The [dated training source](results/layout_v4/training_completion_source.json)
-and [provenance record](results/layout_v4/provenance.json) distinguish checkpoint
-training from the evaluation and analysis contribution.
+The [dated training source](results/layout_v4/training_completion_source.json) and [provenance record](results/layout_v4/provenance.json) distinguish checkpoint training from the sprint's evaluation and analysis. The [original release](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/tag/research-artifacts-v1) and [control release](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/tag/no-appraisal-control-v1) retain their published bytes.
 
-The [original release](https://github.com/idreesaziz/shame-corpus/releases/tag/research-artifacts-v1)
-and [control release](https://github.com/idreesaziz/shame-corpus/releases/tag/no-appraisal-control-v1)
-retain their published bytes. The larger-Qwen compatibility checkpoint belongs
-to a separate replication project. [CHANGES.md](CHANGES.md) maps report edits to
-saved measurements and sources.
+## Citation
 
-## Reproduce saved results on CPU
-
-```bash
-python -m pip install -r analysis/requirements.txt
-python reproduction/run.py all
-python reproduction/control_extension.py
-python tools/verify_corpus.py
-python reproduction/verify_repository.py
+```bibtex
+@misc{aziz2026cautionary,
+  author = {Aziz, Idrees Mustafa},
+  title = {Cautionary Tales for Language Models},
+  year = {2026},
+  howpublished = {Apart AI x Epistemics Research Sprint report},
+  url = {https://github.com/idreesaziz/cautionary-tales-for-language-models}
+}
 ```
 
-These commands verify public archives and recompute saved measurements on CPU.
-The revision workflow and raw-input bundle reside in [reproduction/](reproduction/README.md).
-The [paper build](paper/v2/README.md) retains editable text, figures, numerical
-checks and a visual-review record.
+[CITATION.cff](CITATION.cff) supplies machine-readable citation metadata. Cite a dated release or commit when reproducing a specific snapshot.
 
-## Audit abstention and retained answers
+## Attribution and reuse
 
-```bash
-python abstention_audit.py --manifest results/sprint_revision_v1/input_manifest.json --output results/sprint_revision_v1/audit_48_variants.json
-```
-
-The manifest aligns forced and optional outputs by question ID and reference
-choice. The tool accepts NPZ, JSON or JSONL decisions. JSON records use `id`,
-`correct_choice`, `conditional_choice` and `actual_choice`. `conditional_choice`
-stores the highest-scoring real option from the forced prompt. `actual_choice`
-stores the unrestricted output label. Real labels are 1-4; the default abstention
-label is 5. `--abstention-label 6` selects the alternate label for a direct pair.
-
-The JSON and CSV outputs report:
-
-- **Forced-choice accuracy:** correct real-option choices on answerable items.
-- **Coverage:** real-label optional answers divided by every question.
-- **Accuracy on answered questions:** correctness of actual optional answers.
-- **Conditional abstention:** rates within forced-correct and forced-wrong groups.
-- **Error selectivity:** forced-wrong abstention minus forced-correct abstention.
-- **Format deviations:** outputs outside the real labels and abstention label.
-- **Sensitivity and criterion:** d-prime and criterion for paired answerable/unanswerable trials, using the loglinear correction.
-
-An empty answered set receives an undefined answered accuracy. Format deviations
-remain in all-question coverage denominators. Topic-stratified audits expose
-answer suppression alongside retained supplied-option competence.
-
-## Research artifacts
-
-| Location | Contents |
-|---|---|
-| [data/](data/) | Canonical quartets and condition exports |
-| [DATA_CARD.md](DATA_CARD.md) | Construction, provenance and review scope |
-| [training/](training/) | Training, inference and artifact verification |
-| [protocols/](protocols/) | Frozen specifications and execution amendments |
-| [analysis/](analysis/) | Saved-output analyses and figures |
-| [results/](results/README.md) | Measurements and metric definitions |
-| [results/sprint_revision_v1/](results/sprint_revision_v1/) | Raw-derived revision tables, source hashes and checks |
-| [results/presentation_v2/](results/presentation_v2/) | Real excerpts, worked-example provenance and SVG checks |
-| [results/layout_v4/](results/layout_v4/) | Current report claims, reference checks and dated training evidence |
-| [reproduction/](reproduction/README.md) | Checksummed CPU inputs and commands |
-| [models/](models/README.md) | Adapter registry, configurations and licenses |
-| [paper/](paper/README.md) | Current manuscript and build instructions |
-
-Base weights remain with their providers. Artifact registries preserve upstream
-licenses and SHA-256 identities. Llama variants are Built with Llama. Corpus
-integrity checks, assistant review and independent factual certification describe
-separate validation layers.
-
-Research by **Idrees Mustafa Aziz — Independent researcher**.
+Original code uses **MIT**; the original corpus and paper use **CC BY 4.0**. [Licensing](LICENSING.md) records the grant and attribution. Base weights remain with their providers. Llama variants are **Built with Llama**. [Third-party notices](docs/THIRD_PARTY_NOTICES.md), [base-model licenses](models/base_licenses/), and [reuse guidance](docs/REUSE.md) retain upstream terms.

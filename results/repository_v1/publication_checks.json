@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "repository": "https://github.com/idreesaziz/cautionary-tales-for-language-models",
+  "entry_points": 15,
+  "relative_links_checked": 113,
+  "variants": 48,
+  "adapters": 45,
+  "headline_claims": [
+    {
+      "model": "qwen9",
+      "condition": "untouched",
+      "metric": "abstention",
+      "value": 0.241,
+      "display": "24.1%",
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "model": "qwen9",
+      "condition": "no_appraisal",
+      "metric": "abstention",
+      "value": 0.6920000000000001,
+      "display": "69.2%",
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "metric": "abstention",
+      "value": 0.8036666666666666,
+      "display": "80.4%",
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "metric": "coverage",
+      "value": 0.19633333333333333,
+      "display": "19.6%",
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "model": "qwen9",
+      "condition": "shame",
+      "metric": "forced_choice_accuracy",
+      "value": 0.5423333333333334,
+      "display": "54.2%",
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "model": "qwen9",
+      "condition": "untouched",
+      "metric": "forced_choice_accuracy",
+      "value": 0.546,
+      "display": "54.6%",
+      "source": "results/sprint_revision_v1/audit.json"
+    }
+  ],
+  "readme_sha256": "748f724e6d60ce4c7b6211ec163e9fb8d83bc8d9ee0332576fb79b48ee321dc9",
+  "tracked_sensitive_files": [],
+  "scope": "Local navigation, citation metadata, saved headline values and tracked credential patterns."
+}

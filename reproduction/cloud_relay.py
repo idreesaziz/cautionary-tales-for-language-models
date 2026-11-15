@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor,as_completed
 import argparse,hashlib,json,os,subprocess,time,urllib.request,urllib.parse,zipfile
 
 HERE=Path(__file__).resolve().parents[1]
-REPO=os.environ.get('GITHUB_REPOSITORY','idreesaziz/shame-corpus')
+REPO=os.environ.get('GITHUB_REPOSITORY','idreesaziz/cautionary-tales-for-language-models')
 
 def gh(args):
     p=subprocess.run(['gh',*args],capture_output=True,text=True,encoding='utf-8')

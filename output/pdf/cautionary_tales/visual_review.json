@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "reviewer": "Codex assistant visual inspection",
-  "pdf_sha256": "51397ccac3b327873a66c56997337207b7204cf94e61555096077912dc198fd6",
+  "pdf_sha256": "6d4bd6e788d1a1a6492e22d4aa15b7382f2a0ee0e87379ec4b1030d8f8339df0",
   "pages_reviewed": [
     1,
     2,
@@ -26,14 +26,15 @@
     21,
     22
   ],
-  "reviewed_utc": "2026-11-15T15:55:52.402481+00:00",
+  "reviewed_utc": "2026-11-15T16:38:08.968014+00:00",
   "checks": [
     "Five main SVG figures inspected after vector embedding: headline bars, museum endings, actual-answer accuracy, answerability bars and activation bars.",
     "Every reference and appendix page inspected, including all seed tables and the three supplementary plots.",
     "The abstract preserves the author wording; the title includes With Apart Research.",
     "All six requested sections, Code and Data, ethical appendix and LLM Usage Statement are present.",
     "The sprint-work disclosure follows the recorded November 12 training completion and credits the full sprint analysis contribution.",
-    "Page 4 heatmap visually inspected; the other 21 page images retain their reviewed hashes. Percentage labels retain at least 4.5:1 contrast."
+    "Page 4 heatmap visually inspected; the other 21 page images retain their reviewed hashes. Percentage labels retain at least 4.5:1 contrast.",
+    "Repository-link update: pages 7, 12 and 13 visually inspected. The other 19 page images retain their reviewed hashes."
   ],
   "page_image_hashes": {
     "page-01.png": "f2240a23104914ca8a193a70644132889b5f2d36bb86e3918028d0873b3537af",
@@ -42,13 +43,13 @@
     "page-04.png": "d0368e497919db325dc814e264ad92ea9bcd755476b9c9e8ed53d84d772c4e89",
     "page-05.png": "8662a1d904fd7220e707f01a01614629fd7fe0ea07a6346a7f5827e4100e80b4",
     "page-06.png": "9dfe646221c1c303c2e9ad262126e67c8722777a39d455eabb4a3a312403c3d2",
-    "page-07.png": "f8db05ad631a37452f41201677138be7549a78d098e22bbdcfbbefbe21dd12f6",
+    "page-07.png": "31e67ae6b3db07d3c4adf90fe8a2c88a9f7b3829cc76e37fa281be0a0426da75",
     "page-08.png": "0f1d6079db64e3777a692c65791f0b199e3e461efaa0a917bd57af3dd7847376",
     "page-09.png": "e9d8f172356dad7f0e002cb1d49f6308ed551472dcace0adb94e28d53a99dcc4",
     "page-10.png": "e5d590ea85aa5bee2ea757367c7ae6cfd011483b4c4c533906afcc5e30ee43ba",
     "page-11.png": "15e020afc7f038fe6f4868f2e38fd51c0469f33ac1abed34d36460b5ddfb7432",
-    "page-12.png": "2659e7a50cf0cef90450724a0b82a5be53921d711e970b9b010578c68581cf6a",
-    "page-13.png": "5ab7c8fc3a65f2d8fe07f5c711d7adaa1cb630b1fb78e1bd74ec65eb19309340",
+    "page-12.png": "164f4507018c43d9a1e9df4b6567712e6068d9898d401030403ea59af5f7a371",
+    "page-13.png": "1adb94c115c8d0a7c0c1bffdd4a822b363ae048f068c28b36b855b36dab68431",
     "page-14.png": "e11416bf5ed0ada647061d23284c517564c2f6a6a503f876036b1b3891dc8a2f",
     "page-15.png": "f487b7be9fe498894a79623010684525d76074487458f63be78c32122f6f9ca0",
     "page-16.png": "f10f8c20d3802b9a688f0a977179060e2bca0d15a375b6cd5a489e18b4230b75",

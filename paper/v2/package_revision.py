@@ -21,8 +21,12 @@ def main():
     assert sha(pdf.read_bytes()) == check["pdf_sha256"] == review["pdf_sha256"]
     assert review["status"] == "passed" and review["pages_reviewed"] == list(range(1,check['total_pages']+1))
     files = [p for p in HERE.rglob("*") if p.is_file() and "__pycache__" not in p.parts]
-    files += [REPO / "README.md", REPO / "paper/README.md", REPO/'CHANGES.md', REPO/'abstention_audit.py', REPO/'CITATION.cff',REPO/'.gitattributes',REPO/'.gitignore']
-    for folder in ['analysis','protocols','results/sprint_revision_v1','results/presentation_v2','results/layout_v4','reproduction','tests']:
+    files += [REPO / name for name in ['README.md', 'paper/README.md', 'CHANGES.md',
+              'abstention_audit.py', 'CITATION.cff', 'LICENSE', 'LICENSING.md',
+              'CONTRIBUTING.md', 'models/README.md',
+              '.gitattributes', '.gitignore']]
+    files += [p for folder in ['docs', '.github', 'tools'] for p in (REPO / folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
+    for folder in ['analysis','protocols','results/sprint_revision_v1','results/presentation_v2','results/layout_v4','results/repository_v1','reproduction','tests']:
         files += [p for p in (REPO/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
     files += [REPO/'training'/n for n in ['sprint_inference.py','watch_sprint_inference.py','transfer_sprint_checkpoint.py']]
     files += [pdf, OUT / "Cautionary_Tales_for_Language_Models.md",
@@ -35,8 +39,8 @@ def main():
                 "sha256":sha(p.read_bytes())} for p in files]
     manifest = {
         "title":"Cautionary Tales for Language Models", "subtitle":None,
-        "repository":"https://github.com/idreesaziz/shame-corpus",
-        "base_repository_commit":"36fba9409185041d64f2fdb6d552af848c4c859d",
+        "repository":"https://github.com/idreesaziz/cautionary-tales-for-language-models",
+        "base_repository_commit":"34311d5db483ee6fc7e37228f7b310a839a102a7",
         "status":"author-review revision; author controls Apart submission",
         "built_utc":dt.datetime.now(dt.timezone.utc).isoformat(),
         "new_model_inference_calls":check['new_inference_calls'], "new_training_jobs":check['new_training_jobs'],

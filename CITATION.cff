@@ -6,7 +6,15 @@ authors:
   - family-names: Aziz
     given-names: Idrees Mustafa
     affiliation: Independent researcher
-version: 0.2.0
+version: 1.0.0
 date-released: 2026-11-15
-repository-code: "https://github.com/idreesaziz/shame-corpus"
-url: "https://github.com/idreesaziz/shame-corpus"
+repository-code: "https://github.com/idreesaziz/cautionary-tales-for-language-models"
+url: "https://github.com/idreesaziz/cautionary-tales-for-language-models"
+abstract: "Document-only fine-tuning on accounts of confident errors changes model abstention. The study separates forced-choice accuracy, confidence, and the decision to answer across three model families and 48 evaluated variants."
+keywords:
+  - abstention
+  - language models
+  - epistemics
+  - hallucination
+  - synthetic document fine-tuning
+  - reproducibility

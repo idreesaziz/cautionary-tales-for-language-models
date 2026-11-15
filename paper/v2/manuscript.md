@@ -121,7 +121,7 @@ Learning from accounts of mistakes changes when models answer. In Qwen, incident
 
 ## Code and Data
 
-Code, training articles, adapter registries, prompts and saved measurements are available at https://github.com/idreesaziz/shame-corpus. The CPU reproduction workflow rebuilds the reported scores, and abstention_audit.py computes the reporting measures for all 48 variants.
+Code, training articles, adapter registries, prompts and saved measurements are available at https://github.com/idreesaziz/cautionary-tales-for-language-models. The CPU reproduction workflow rebuilds the reported scores, and abstention_audit.py computes the reporting measures for all 48 variants.
 
 **Sprint contribution.** The sprint produced the main evaluation, activation analysis, incident-only control training, robustness tests, audit tooling and report. The corpus, pilot work and large-model training checkpoints precede the sprint according to the saved training record. Appendix B lists the dated evidence and preexisting code.
 
@@ -205,7 +205,7 @@ The 2,048-token ceiling retains every document, with article lengths reaching 35
 
 ### B.2 Exact prompts and metric inputs
 
-The frozen runner records the exact forced, optional and confidence instructions at https://github.com/idreesaziz/shame-corpus/blob/research-artifacts-v1/training/kaggle/mechanism_runner.py. Splits and source hashes are recorded at https://github.com/idreesaziz/shame-corpus/blob/main/protocols/mechanism_v1.json. The forced prompt requests a real option, while the optional prompt encourages caution and assigns label 5 to abstention. Confidence uses ten probability intervals. Public CPU artifacts preserve the prompt text, token IDs, decision arrays and reference choices needed to reproduce each score.
+The frozen runner records the exact forced, optional and confidence instructions at https://github.com/idreesaziz/cautionary-tales-for-language-models/blob/research-artifacts-v1/training/kaggle/mechanism_runner.py. Splits and source hashes are recorded at https://github.com/idreesaziz/cautionary-tales-for-language-models/blob/main/protocols/mechanism_v1.json. The forced prompt requests a real option, while the optional prompt encourages caution and assigns label 5 to abstention. Confidence uses ten probability intervals. Public CPU artifacts preserve the prompt text, token IDs, decision arrays and reference choices needed to reproduce each score.
 
 The audit manifest pairs each forced and optional output file. Run python abstention_audit.py --manifest results/sprint_revision_v1/input_manifest.json --output results/sprint_revision_v1/audit_48_variants.json to reproduce coverage, accuracy on answered questions, conditional abstention and error selectivity. Paired answerable and unanswerable inputs also yield sensitivity and criterion, using a loglinear correction for extreme rates.
 
@@ -219,7 +219,7 @@ The audit manifest pairs each forced and optional output file. Run python absten
 
 ### B.4 Public artifacts
 
-The repository is https://github.com/idreesaziz/shame-corpus. The research-artifacts-v1 release preserves the original adapters and CPU evidence, while no-appraisal-control-v1 preserves the nine incident-only adapters and control measurements. The sprint-revision-v1 release supplies raw robustness outputs and portable audit inputs. Registries record sizes, hashes and licenses; base weights remain with their providers. Llama variants are Built with Llama.
+The repository is https://github.com/idreesaziz/cautionary-tales-for-language-models. The research-artifacts-v1 release preserves the original adapters and CPU evidence, while no-appraisal-control-v1 preserves the nine incident-only adapters and control measurements. The sprint-revision-v1 release supplies raw robustness outputs and portable audit inputs. Registries record sizes, hashes and licenses; base weights remain with their providers. Llama variants are Built with Llama.
 
 Run python reproduction/run.py all and python reproduction/control_extension.py to reproduce the preserved campaigns on CPU. The command python reproduction/sprint_revision.py reproduces the audit, prompt tests and direction ranks. The report builds through paper/v2, and CHANGES.md links revised claims to saved outputs. The canonical corpus SHA-256 is dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467. The frozen protocol SHA-256 is 907f63342339f5f3633647697d23454c60832a4c135d1ef628699a1f8e01b515.
 

@@ -2,7 +2,6 @@
 
 The report studies how descriptions of confident errors change abstention.
 It separates forced-choice accuracy, confidence and reporting behavior.
-The current title follows the author's decision.
 
 ## Build the report on CPU
 
@@ -11,16 +10,11 @@ through the revision workflow in [reproduction/](../../reproduction/README.md).
 
 ```bash
 python -m pip install -r paper/v2/requirements.txt -r analysis/requirements.txt
-python paper/v2/audit_training_language.py
-python paper/v2/prepare_evidence.py
-python paper/v2/prepare_illustrations.py
-python paper/v2/make_figures.py
-python paper/v2/build_paper.py
-python paper/v2/verify_paper.py
-python paper/v2/style_check.py
+python reproduction/sprint_revision.py --build
 ```
 
-The editable manuscript is `manuscript.md`. The build writes the PDF, expanded
+The workflow verifies its raw-input archive, recomputes all 48 variants, and runs
+the figure and paper builders. The editable manuscript is `manuscript.md`. The build writes the PDF, expanded
 Markdown and rendered pages under `output/pdf/cautionary_tales/`. Figures retain
 SVG as the canonical embedded artwork, with PNG and PDF previews. Submission checks record the abstract word count, body
 page count, author, title, source hashes and required sections. Visual review pins
@@ -57,7 +51,7 @@ The report's results come from the three named model families and their saved
 adapters. The build and verification scripts run on CPU; cloud inference uses
 the separately invoked runner in `training/sprint_inference.py`.
 
-## Presentation revision
+## Figures and evidence
 
 The body contains seven pages and five main-text SVG figures. The abstract contains 211 words.
 The PDF embeds vector paths, and the figure checks count zero raster elements.
@@ -74,9 +68,9 @@ Every figure receives a source manifest entry and a canvas-bounds check.
 selection logic, saved decisions, prompt excerpts and source hashes.
 The accuracy figure grades actual optional answers and labels each model directly. The full audit retains all 48 variants.
 
-This presentation revision adds zero model calls and zero training jobs. The earlier
-sprint inference extensions retain their separate execution receipt. Previous release
-snapshots preserve their original source and PDF bytes.
+The build uses saved measurements and CPU rendering. Sprint inference extensions
+retain their separate execution receipt. Previous release snapshots preserve
+their original source and PDF bytes.
 
 ## Author wording and prose
 
@@ -99,5 +93,5 @@ The answerability bars use larger spacing. The activation plot compares two
 training conditions across the same two patterns. Appendix C retains the complete
 seed and control measurements. The body contains five figures; the appendices contain three.
 
-The current layout ledger is `results/layout_v4/claim_ledger.json`. It binds the
-new figures, added citations and sprint-work disclosure to saved sources.
+The layout ledger is `results/layout_v4/claim_ledger.json`. It binds figures,
+citations, and sprint-work disclosure to saved sources.
