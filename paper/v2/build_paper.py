@@ -49,21 +49,21 @@ STYLES = {
 
 CAPTIONS = {
  'headline':('Figure 1. Error accounts change when Qwen answers.',
-   'Qwen under the caution prompt. Bars and dots show condition means across three seeds; the untouched model supplies one run.'),
+   'Under the caution prompt, Qwen\'s abstention rises while forced-choice accuracy changes little. Means average three seeds; the untouched model supplies one run.'),
  'quartet':('Figure 2. Same incident, four endings.',
    'Shortened excerpts from synthetic training quartet sdf-0007. Each full document shares the incident above; only its ending changes. Brackets mark an omission.'),
  'ending_delta':('Figure 3. The ending effect changes sign across model families.',
-   'Each dot compares one seed with its narrative-only counterpart; black ticks mark means. Panel scales follow each model. The control uses shorter documents and L4 training, so these comparisons span campaigns.'),
+   'Each dot compares an ending with narrative-only training at the same seed, and black ticks mark means. Panels use different scales. The control uses shorter documents and L4 hardware, so these comparisons span campaigns.'),
  'coverage_accuracy':('Figure 4. Qwen moves left and up; Llama shame moves left and down.',
    'Dots show seed-level optional answers; diamonds mark untouched models. Arrows join untouched and shame means. Dashed lines mark untouched forced-choice accuracy. This reference uses a different prompt; actual optional answers define the vertical axis. The full audit records Ministral\'s sparse answered sets.'),
  'selectivity':('Figure 5. Extra abstention reaches correct and incorrect forced answers alike.',
-   'Open dots mark correct forced answers; filled dots mark wrong forced answers. Each endpoint averages three training seeds. The trained gaps span 4.8-7.5 points, compared with 3.9 untouched. Appendix E reports intervals conditional on these seeds.'),
+   'Open dots show abstention on correct forced answers, and filled dots show it on incorrect ones. Trained endpoints average three seeds; untouched uses one run. The gaps span 4.8-7.5 points after training and 3.9 untouched. Appendix E reports question-level intervals.'),
  'prompt_slope':('Figure 6. Neutral wording lowers abstention and preserves ending differences.',
    'Qwen means on the same 1,000 answerable questions, with label 5. Each line connects the same weights across prompts. The right-hand key gives both rates. Appendix E includes seed ranges and label 6.'),
  'answerability':('Figure 7. Removing the correct option produces little separation.',
    'Qwen, neutral label 5. Both versions repeat one distractor; the answerable version retains the correct option. Bars average three seeds, with one untouched run. Appendix E reports sensitivity and criterion.'),
  'mechanism':('Figure 8. Shame training amplifies more than the shame direction.',
-   'The interaction subtracts each direction\'s answer-quality effect from its shame-trained effect. Large dots mark means; small dots and whiskers show seeds and their range. Each model uses one fixed layer and scale.'),
+   'The horizontal axis compares each direction\'s effect after shame training with its effect after answer-quality training. Large dots show means across seeds; small dots and whiskers show individual seeds and their range. Each model uses one fixed layer and scale.'),
  'selectivity_interval':('Figure E1. Question-level intervals preserve uncertainty about error selectivity.',
    'Changes relative to answer quality use paired question-level 95% intervals, conditional on three seeds.'),
 }
@@ -232,10 +232,11 @@ def main():
     assert author == ["Idrees Mustafa Aziz", "Independent researcher"]
     assert blocks.pop(0)=="## Abstract"
     abstract=blocks.pop(0)
+    assert abstract == (HERE / 'abstract.txt').read_text(encoding='utf-8').strip()
     story=[]
-    story += [HRFlowable(width="100%",thickness=1.25,color=colors.HexColor("#25313D")),Spacer(1,8)]
-    story += [Paragraph(title,ParagraphStyle("Title",fontName="Old-Bold",fontSize=21,leading=24,alignment=TA_CENTER,spaceAfter=7)),
-              Paragraph("<br/>".join(author),ParagraphStyle("Author",fontName="Old",fontSize=10.3,leading=12.4,alignment=TA_CENTER,spaceAfter=6)),
+    story += [HRFlowable(width="100%",thickness=1.25,color=colors.HexColor("#25313D")),Spacer(1,6)]
+    story += [Paragraph(title,ParagraphStyle("Title",fontName="Old-Bold",fontSize=21,leading=24,alignment=TA_CENTER,spaceAfter=5)),
+              Paragraph("<br/>".join(author),ParagraphStyle("Author",fontName="Old",fontSize=10.3,leading=12.4,alignment=TA_CENTER,spaceAfter=4)),
               Paragraph("Abstract",ParagraphStyle("AbsHeading",fontName="Old-Bold",fontSize=10.7,leading=13,alignment=TA_CENTER,spaceAfter=4)),
               paragraph(abstract,"abstract")]
     EXPORT_BLOCKS.extend(["# "+title,"\n".join(author),"## Abstract",abstract])

@@ -79,6 +79,10 @@ def main():
     assert not violations,violations[:8]
     assert all(count>100 for count in counts),counts
     source=(Path(__file__).resolve().parent/"manuscript.md").read_text(encoding="utf-8")
+    approved=(Path(__file__).resolve().parent/'abstract.txt').read_text(encoding='utf-8').strip()
+    assert source.split('## Abstract\n\n',1)[1].split('\n\n',1)[0] == approved
+    rendered=pdf[0].get_text().split('Abstract\n',1)[1].split('1. Error stories',1)[0]
+    assert ' '.join(rendered.split()) == ' '.join(approved.split()), 'Rendered abstract preserves the author wording.'
     cited={int(n) for group in re.findall(r"\[([\d, ]+)\]",source.split("<!-- REFERENCES -->")[0]) for n in group.replace(" ", "").split(",")}
     assert cited==set(range(1,15)),cited
     assert checks["title"] == "Cautionary Tales for Language Models" and checks["subtitle"] is None

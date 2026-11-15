@@ -215,10 +215,23 @@ The sprint-revision-v1.1 release preserves the previous PDF and source package.
 | Narrative-relative ending direction | A general ending headline grouped all four conditions. | Three endings raise Qwen abstention: reputation +14.2, shame +11.2, shutdown +11.1 points. Answer quality changes it by -1.2 points. | results/sprint_revision_v1/narrative_contrasts.json |
 | Neutral prompt comparison | Table 4 listed caution and neutral rates. | Figure 6 connects each condition across prompts. Narrative-only changes from 69.2% to 5.5%; reputation retains 24.6%. Appendix E retains both labels and seed ranges. | results/sprint_revision_v1/qwen_prompt_answerability.json |
 | Constructed answerability comparison | Table 5 listed detection rates, sensitivity and criterion. | Figure 7 pairs correct-option-present and correct-option-removed abstention. Appendix E retains sensitivity, criterion and seed ranges. | results/sprint_revision_v1/qwen_prompt_answerability.json |
-| Report size and artwork | Eight body pages, 170-word abstract; figures supplied raster previews to the PDF. | 7 body pages, 154-word abstract, eight main-text SVG figures and one appendix SVG figure; 0 PDF raster images. | output/pdf/cautionary_tales/submission_checks.json |
+| Report size and artwork | Eight body pages, 170-word abstract; figures supplied raster previews to the PDF. | 7 body pages, 211-word abstract, eight main-text SVG figures and one appendix SVG figure; 0 PDF raster images. | output/pdf/cautionary_tales/submission_checks.json |
 
 Sections 2.3 and 2.4 now supply a compact readout table; Appendix F retains their statistical and intervention detail.
 The main text uses ending and abstention consistently. Status labels sit in headings. Exact source quotations retain their original words.
 results/presentation_v2/figure_sources.json binds every SVG to its saved measurements.
 results/presentation_v2/illustrations.json records the corpus excerpts and held-out selection rule.
 results/sprint_revision_v1/numeric_trace.json binds every displayed numeric prose or table line to saved sources.
+## Author abstract and connected prose
+
+The author supplied the abstract verbatim and directed the same style throughout the paper.
+
+| Edited item | Previous form | Current form | Saved source |
+|---|---|---|---|
+| Abstract | 154 words | 211 author-supplied words, preserved verbatim | paper/v2/abstract.txt |
+| Main text and appendices | Compressed statements and technical summaries | Connected explanations of the question, method, finding and implication | paper/v2/manuscript.md |
+| Figure captions | Compressed readout descriptions | Full explanations with seed and denominator scope | paper/v2/build_paper.py |
+| Abstract verification | Word-count and typography checks | Exact wording checks in source and rendered PDF | paper/v2/verify_paper.py |
+
+results/presentation_v2/author_revision.json records the abstract hash and revision scope.
+The supplied wording takes precedence over the earlier lexical style rules. The remaining editable prose retains its style checks.

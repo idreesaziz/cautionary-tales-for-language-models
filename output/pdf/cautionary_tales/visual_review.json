@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "reviewer": "Codex assistant visual inspection",
-  "pdf_sha256": "862dc3ff2757dd33c0181e4daaa46e0c0290917467c83f9aa0568bbaa7f1ac0f",
+  "pdf_sha256": "db4b90017e4e8c26d2227e74d95385daa3a9a81bfad2d0861e19beb019359258",
   "pages_reviewed": [
     1,
     2,
@@ -23,35 +23,33 @@
     18,
     19
   ],
-  "reviewed_utc": "2026-11-15T00:21:54.116330+00:00",
+  "reviewed_utc": "2026-11-15T01:16:08.161081+00:00",
   "checks": [
-    "Every main-text figure inspected after SVG embedding.",
-    "Real quartet excerpts and the three-prompt worked example inspected on page 2.",
-    "Hero, results box, readout table and all figure legends fit within their page frames.",
-    "Scatter, slope chart, conditional paired dots and answerability paired bars inspected for overlaps.",
-    "Every reference page and appendix table inspected; column headings preserve complete words.",
-    "Statistical detail and interval figure retain their appendix placement.",
-    "Final SVG whitespace normalization preserves all 19 reviewed page-image hashes."
+    "Revised abstract verified verbatim against the author-supplied text.",
+    "Revised main pages 1-7 visually inspected after the prose rewrite.",
+    "Revised appendix pages 9, 11, 12, 14 and 16-19 visually inspected.",
+    "Pages 8, 10, 13 and 15 retain their previously reviewed image hashes.",
+    "Figure captions, tables, regular abstract type and page margins remain readable and clear."
   ],
   "page_image_hashes": {
-    "page-01.png": "b56cff774738b2711faa1913803630747e8410307682169384c85953bc608243",
-    "page-02.png": "351a9b8336fbb5de0182c18903d652028b534a12e88f24ce598d5e273fc9cb02",
-    "page-03.png": "ae942c61dff5e26df3fd8d6d10015f543d964d2e63e678d0f18ff34339ec5ee2",
-    "page-04.png": "16445852bbc4b80b29c8edfab820b442944253af4bfe5a7e3cedf1ef372c377a",
-    "page-05.png": "5f2f046865521aa2cad62d3ee1a18c1cb112c4a927fe87e496977e7682b5648f",
-    "page-06.png": "448f6142aca190827cbe57a9143424e2b7b1f604d9701d06aed20372b437c4f1",
-    "page-07.png": "60c05c4a50b16a07ef36ad3a3af4f35aebb8f1ffeef61b74198de180575f13c9",
+    "page-01.png": "d8c3e28000925a4bfaa0f01b8d41cd96418da56b690aa356158f65c6c8fdf94a",
+    "page-02.png": "ddc9affc017b2ee48e0bc9418f168a253f8bb2aac784b185939400e555a8e1f1",
+    "page-03.png": "38b2ca52a7f8c697c7a01e6e15a9c7aac3b6dae6b00286b2246daf0448226039",
+    "page-04.png": "d5234b5f97dbb445b94144ec836ec07b9263a31d23419cb4f716764277ccdb7f",
+    "page-05.png": "215cc9751d15bdf68eb1c17573acc8c32f65d47e9a24c77455b4cca63cebda66",
+    "page-06.png": "2615916c169297989939be2681e65c212ef6d161003d4d15069d01b6b68100c6",
+    "page-07.png": "38f03f9bb4047f2c8c8f05f35b7b3122f8893f1f8e987715562eaab400d6ed7f",
     "page-08.png": "e593872d729db02c7c9d9100b7a8dc71d674aeb77786f21cf64f485afe5f6101",
-    "page-09.png": "f9c7eb77e1fe0c69e42f70f124dd4277d33129a9a5e21343bc699c81402f100a",
+    "page-09.png": "f0ecdb51e93c4fc200d581b6cfb5a5067519a08fd671d3e1395c8beddb432b91",
     "page-10.png": "175f5682cbd10c4c6696b6c295c656b27842adfff1ae0070ad181d81355c1909",
-    "page-11.png": "1cde494f17eb922351541daa8e181f80a51352625e2222a37f6fcaa672ca26bf",
-    "page-12.png": "eafccc7c4c1d20401fcf216ef34ab5384d381f0a8bc415e82d7c401756f18447",
+    "page-11.png": "7ea411baf581c0ce8b585a1be35a475056589c7406ebea1578827ec43b3cdacf",
+    "page-12.png": "67b09518d05a3d93fff69d2992c805dbd3b2c937ac13768e8f2ca10332fcbf72",
     "page-13.png": "29880a65fe41c0d60ba00fc778b004888b95db9e0285290dd0198c4a1fa0647d",
-    "page-14.png": "216432bf1cda847dd1cb9792c26dfb266d8be4280815eeff3b0b7c19332d3920",
+    "page-14.png": "6036c8c923e624bdb5bd859668c6384eb8c8feb55227e83d286473520eee8dae",
     "page-15.png": "0cc2b2164d064f0d46b6fe28bc1c1c365cd2bd4bcdbb0fdd5020c4287d1b6f02",
-    "page-16.png": "a610f69fe92c0f8d48913a0b81ca361e6b9ddca03775707d4d1ded02897280e3",
-    "page-17.png": "fc935ffc405982467619ce85656a2ae53b10f4e990bf20c0716ade08c6786b37",
-    "page-18.png": "547724c035131135ce6977245f1341d2ee8dc0aa48643f4bbc9149971addb85c",
-    "page-19.png": "b25eee088f7452ba6579a3838ed55d988fdf2a645d6739c8d791997c214a298f"
+    "page-16.png": "188e6a97e5296bab81fceabc4111e97fbdb971348e08e76523e467f4fe885c6b",
+    "page-17.png": "e83d856560e67f114d2232d94f3b25b3e13d72f632cf845e1c58f17a6d860934",
+    "page-18.png": "28e9c5d7430a8cb2731f969606783947fab020c64a70d563b3ff85f41632f576",
+    "page-19.png": "4858a0d00145e502d885f763b7d5384dd7c19dcd670653d9031b36352440aee9"
   }
 }

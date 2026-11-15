@@ -168,7 +168,7 @@
       "claim": "Report size and artwork",
       "status": "Descriptive",
       "old": "Eight body pages, 170-word abstract; figures supplied raster previews to the PDF.",
-      "new": "7 body pages, 154-word abstract, eight main-text SVG figures and one appendix SVG figure; 0 PDF raster images.",
+      "new": "7 body pages, 211-word abstract, eight main-text SVG figures and one appendix SVG figure; 0 PDF raster images.",
       "source": "output/pdf/cautionary_tales/submission_checks.json"
     }
   ],
@@ -235,7 +235,7 @@
   },
   "source_hashes": {
     "data/quartets.jsonl": "dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467",
-    "output/pdf/cautionary_tales/submission_checks.json": "489535cc10f0ce867d8a752bc6f93c53157f61843ffa3e21e3553171526c7349",
+    "output/pdf/cautionary_tales/submission_checks.json": "53172e65bf51aa2e156ebf145186cb4b67e484c9c24562657da70e3ce79fefca",
     "results/no_appraisal_v1/control_metrics.json": "89b66d24a248f2480b41ac1208624f6bd759b72199a2176d069aa914252033cb",
     "results/presentation_v2/illustrations.json": "09f37debafacdd6743a3471e11f56b60819a183f4a3edb210d9f5b6c1189c0e3",
     "results/reporting_v1/paper_metrics.json": "01ee4397a67e68a58e5d04f3313ecaad1956358efa6eb1b8216978f784d9d84f",

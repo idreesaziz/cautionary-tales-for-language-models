@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "body_pages": 7,
-  "abstract_words": 154,
+  "abstract_words": 211,
   "vector_figures": 9,
   "pdf_raster_images": 0,
   "pages_visually_reviewed": 19,
@@ -9,5 +9,5 @@
   "worked_question": "test-0333",
   "new_inference_calls": 0,
   "new_training_jobs": 0,
-  "pdf_sha256": "862dc3ff2757dd33c0181e4daaa46e0c0290917467c83f9aa0568bbaa7f1ac0f"
+  "pdf_sha256": "db4b90017e4e8c26d2227e74d95385daa3a9a81bfad2d0861e19beb019359258"
 }

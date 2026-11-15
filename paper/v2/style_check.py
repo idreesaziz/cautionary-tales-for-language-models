@@ -27,6 +27,11 @@ def main():
         raw=path.read_text(encoding='utf-8')
         if path.name=='manuscript.md':
             first,rest=raw.split('<!-- REFERENCES -->')
+            prefix, abstract_and_body = first.split('## Abstract\n\n', 1)
+            abstract, body = abstract_and_body.split('\n\n', 1)
+            approved = (REPO/'paper/v2/abstract.txt').read_text(encoding='utf-8').strip()
+            assert abstract == approved, 'The author-supplied abstract retains its exact wording.'
+            first = prefix + body
             raw=first+rest.split('<!-- APPENDIX -->',1)[1]
         text=clean(raw)
         for match in PATTERN.finditer(text):issues.append({'file':path.relative_to(REPO).as_posix(),'word':match.group(),'context':text[max(0,match.start()-45):match.end()+55]})
@@ -43,7 +48,8 @@ def main():
     captions=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='CAPTIONS' for t in n.targets))
     for name,parts in captions.items():
         for match in PATTERN.finditer(clean(' '.join(parts))):issues.append({'caption':name,'word':match.group()})
-    out={'status':'passed' if not issues else 'repair_required','scope':'Editable prose. Exact reference titles, URLs, identifiers and code retain source spelling.','files':results,'issues':issues}
+    out={'status':'passed' if not issues else 'repair_required','scope':'Editable prose. The author-supplied abstract retains its exact wording; references, quotations, URLs, identifiers and code retain source spelling.',
+         'author_abstract_verbatim':True,'author_abstract_sha256':hashlib.sha256((REPO/'paper/v2/abstract.txt').read_bytes()).hexdigest(),'files':results,'issues':issues}
     target=REPO/'results/sprint_revision_v1/style_check.json';target.write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps({'status':out['status'],'issues':issues},indent=2))
     if issues:raise SystemExit(1)

@@ -59,7 +59,7 @@ the separately invoked runner in `training/sprint_inference.py`.
 
 ## Presentation revision
 
-The body contains seven pages and eight SVG figures. The abstract contains 154 words.
+The body contains seven pages and eight SVG figures. The abstract contains 211 words.
 The PDF embeds vector paths, and the figure checks count zero raster elements.
 Appendix E retains the detailed metric tables and question-level intervals.
 
@@ -78,3 +78,11 @@ forced-choice accuracy. The full audit retains all 48 variants.
 This presentation revision adds zero model calls and zero training jobs. The earlier
 sprint inference extensions retain their separate execution receipt. Previous release
 snapshots preserve their original source and PDF bytes.
+
+## Author wording and prose
+
+`abstract.txt` preserves the author's supplied abstract. The build checks the manuscript
+against that file, and verification checks the rendered PDF against the same wording.
+The style scan covers the editable text; the supplied abstract retains its exact words.
+The body, captions and appendices explain each question, measurement and finding in
+connected prose, with technical detail following the explanation.

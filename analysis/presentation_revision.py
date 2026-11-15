@@ -103,7 +103,10 @@ def main():
     }
     (OUT / 'claim_ledger.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
     changes = REPO / 'CHANGES.md'
-    history = changes.read_text(encoding='utf-8').split(MARKER)[0].rstrip()
+    existing = changes.read_text(encoding='utf-8')
+    author_marker = '## Author abstract and connected prose'
+    author_tail = author_marker + existing.split(author_marker, 1)[1] if author_marker in existing else ''
+    history = existing.split(MARKER)[0].rstrip()
     lines = [history, '', MARKER, '',
         'This revision uses saved outputs and CPU rendering. New inference calls: 0. New training jobs: 0.',
         'The sprint-revision-v1.1 release preserves the previous PDF and source package.', '',
@@ -122,7 +125,7 @@ def main():
         'results/presentation_v2/figure_sources.json binds every SVG to its saved measurements.',
         'results/presentation_v2/illustrations.json records the corpus excerpts and held-out selection rule.',
         'results/sprint_revision_v1/numeric_trace.json binds every displayed numeric prose or table line to saved sources.', '']
-    changes.write_text('\n'.join(lines), encoding='utf-8')
+    changes.write_bytes(('\n'.join(lines) + author_tail).encode('utf-8'))
     print(json.dumps({'status': 'passed', 'presentation_claims': len(entries), 'svg_figures': len(figures)}))
 
 

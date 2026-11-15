@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "revision": "author-prose-v3",
+  "author_abstract_verbatim": true,
+  "abstract_words": 211,
+  "abstract_sha256": "627712e19fed55d059831ecc06cec00401b5b239c289cb84232464dbbae285b1",
+  "abstract_source": "paper/v2/abstract.txt",
+  "previous_abstract_words": 154,
+  "edited_scope": [
+    "Main text",
+    "Figure captions",
+    "Appendices A-F"
+  ],
+  "scientific_results": "Existing saved measurements retained.",
+  "new_inference_calls": 0,
+  "new_training_jobs": 0,
+  "body_pages": 7,
+  "pdf_sha256": "db4b90017e4e8c26d2227e74d95385daa3a9a81bfad2d0861e19beb019359258"
+}
