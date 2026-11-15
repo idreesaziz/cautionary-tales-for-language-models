@@ -38,7 +38,9 @@ def main():
     for name in ENTRY_POINTS:
         path = REPO / name
         text = path.read_text(encoding='utf-8')
-        for target in re.findall(r'!?\[[^\]\n]*\]\(([^)\s]+)\)', text):
+        targets = re.findall(r'!?\[[^\]\n]*\]\(([^)\s]+)\)', text)
+        targets += re.findall(r'(?:src|srcset|href)="([^"]+)"', text)
+        for target in targets:
             parsed = urlsplit(target)
             if parsed.scheme:
                 assert parsed.scheme in ['https', 'mailto'], (name, target)
@@ -51,7 +53,7 @@ def main():
             links.append({'file': name, 'target': target})
     readme = (REPO / 'README.md').read_text(encoding='utf-8')
     citation = (REPO / 'CITATION.cff').read_text(encoding='utf-8')
-    assert readme.startswith('# Cautionary Tales for Language Models\n')
+    assert re.search(r'^# Cautionary Tales for Language Models$', readme, flags=re.M)
     assert f'repository-code: "{URL}"' in citation and f'url: "{URL}"' in citation
     assert URL + '.git' in readme and 'python reproduction/sprint_revision.py' in readme
     assert 'MIT' in readme and 'CC BY 4.0' in readme

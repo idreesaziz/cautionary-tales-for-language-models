@@ -197,27 +197,27 @@
     },
     {
       "path": "README.md",
-      "sha256": "a711686b736b26e8780a8724414d4c66c22fd37d4044bd6abf594a8a5806f636",
+      "sha256": "3d9485cde5b00f8ce6dfd9e6adbc50f2a861d512e4a0aebc3d216111c269977c",
       "sections": [
         {
           "section": "What we found",
-          "sentences": 12,
-          "average_words": 13.75
+          "sentences": 11,
+          "average_words": 15.181818181818182
         },
         {
           "section": "Read the paper",
-          "sentences": 3,
-          "average_words": 17.0
+          "sentences": 2,
+          "average_words": 25.0
         },
         {
           "section": "One incident, five training conditions",
           "sentences": 7,
-          "average_words": 17.142857142857142
+          "average_words": 13.428571428571429
         },
         {
           "section": "Reproduce the results",
-          "sentences": 12,
-          "average_words": 11.583333333333334
+          "sentences": 8,
+          "average_words": 15.125
         },
         {
           "section": "Find an artifact",
@@ -226,23 +226,18 @@
         },
         {
           "section": "Scope of the evidence",
-          "sentences": 10,
-          "average_words": 11.5
+          "sentences": 6,
+          "average_words": 13.5
         },
         {
           "section": "Sprint provenance: preexisting and new work",
-          "sentences": 7,
-          "average_words": 16.857142857142858
+          "sentences": 8,
+          "average_words": 15.5
         },
         {
           "section": "Citation",
-          "sentences": 2,
-          "average_words": 8.0
-        },
-        {
-          "section": "Attribution and reuse",
           "sentences": 5,
-          "average_words": 8.2
+          "average_words": 11.0
         }
       ]
     },

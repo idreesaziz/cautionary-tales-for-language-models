@@ -272,3 +272,13 @@ Every reference resolves, and the four added papers were opened before citation.
 | Download instructions | Nine incident-only adapters indexed separately | Dedicated checksum-verifying control-adapter download command | reproduction/download_control_adapters.py; models/README.md |
 
 Repository finalization uses saved outputs, metadata, and CPU checks. New training jobs: 0. New model inference calls: 0.
+
+## README visual design, 2026-11-15
+
+| Edited item | Previous form | Current form | Saved source |
+|---|---|---|---|
+| README layout | Left-aligned heading, long command blocks, and dense navigation | Centered title and links, metrics strip, light/dark experimental overview, and four expandable sections | README.md; results/repository_v1/readme_design.json |
+| Overview artwork | Method described in prose | Editable SVG diagrams show the shared incident, four endings, incident-only control, and three readouts | tools/build_readme_assets.py; docs/assets/ |
+| Validation | Markdown-only local link checks | Local checks also cover HTML image sources and links; GitHub Markdown rendering preserves the picture and details elements | tools/verify_publication.py; results/repository_v1/publication_checks.json |
+
+Saved scientific estimates, corpus bytes, trained adapters, and the released PDF retain their existing identities.

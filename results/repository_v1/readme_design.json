@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-15T16:59:22.260215+00:00",
+  "readme_sha256": "3d9485cde5b00f8ce6dfd9e6adbc50f2a861d512e4a0aebc3d216111c269977c",
+  "github_flavored_markdown_render": "passed",
+  "details_sections": 4,
+  "assets": [
+    {
+      "path": "docs/assets/research-overview-light.svg",
+      "sha256": "411494c5fa11d5b633d33b5c562f1afb9d55d7ac77bc8f16b77de42587a0699e",
+      "theme": "light",
+      "visual_review": "Rendered PNG inspected; labels, arrows and cards remain clear and separated."
+    },
+    {
+      "path": "docs/assets/research-overview-dark.svg",
+      "sha256": "5b92de13af5eeff9fd7ae7d3dcc2498c339e6025317a1c90ee9217a7092800d7",
+      "theme": "dark",
+      "visual_review": "Rendered PNG inspected; labels, arrows and cards remain clear and separated."
+    }
+  ],
+  "generator": "tools/build_readme_assets.py",
+  "scope": "README layout and navigation; reported estimates and released paper retain their existing values and bytes."
+}
