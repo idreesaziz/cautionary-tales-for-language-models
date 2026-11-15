@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "reviewer": "Codex assistant visual inspection",
-  "pdf_sha256": "ff1066457857571a7317df9ab0854e9de70b7328e331d1b42bbebbdd598ab20b",
+  "pdf_sha256": "f5391c4689215c9afac5d5514f53d33654e60c85fdcb41c47d775b95cc31efe6",
   "pages_reviewed": [
     1,
     2,
@@ -19,34 +19,38 @@
     14,
     15,
     16,
-    17
+    17,
+    18,
+    19
   ],
-  "reviewed_utc": "2026-11-14T22:48:04.703685+00:00",
+  "reviewed_utc": "2026-11-15T00:14:35.736803+00:00",
   "checks": [
-    "Headline chart, regular abstract and full-phrase definitions reviewed.",
-    "Main figures, seed ranges, coverage denominators and prompt tables reviewed.",
-    "References, provenance, ethics and every appendix table reviewed.",
-    "Revised pages 4, 7, 13 and 14 inspected after the final edits.",
-    "Column widths preserve complete words in seed-table headers.",
-    "Page 12 exact prompt-source link rechecked; the other 16 page images retain their reviewed bytes."
+    "Every main-text figure inspected after SVG embedding.",
+    "Real quartet excerpts and the three-prompt worked example inspected on page 2.",
+    "Hero, results box, readout table and all figure legends fit within their page frames.",
+    "Scatter, slope chart, conditional paired dots and answerability paired bars inspected for overlaps.",
+    "Every reference page and appendix table inspected; column headings preserve complete words.",
+    "Statistical detail and interval figure retain their appendix placement."
   ],
   "page_image_hashes": {
-    "page-01.png": "81d066177f255242b2f1928139deeafa9137164aaaa06fea26c408a03a727597",
-    "page-02.png": "b1dd88f310c3b0bf10c725bad5fb3963e5cae0e745ad6d6334fc70039b11bff5",
-    "page-03.png": "2a67866837528e5ab0ded7f0aa77baa0d17fc2f782f07955898ae720e81269cc",
-    "page-04.png": "5342b7bf9378a77550438d5032db493caa0f0655f05b9c1e27bbb026b4453616",
-    "page-05.png": "e39ee07b1c6b90942dc690084e47cc5760fb1d6343d31e6e4ae9b32ffe2a8b6c",
-    "page-06.png": "9874e2e5fde39848c24169163cd8621113e63093d40125b0fb67e9f9363a1e56",
-    "page-07.png": "8d796b798548617a2cab1c6f18e3705d6e4c38d2ba7e0380820ca677b61ad211",
-    "page-08.png": "56b1d14d7503ab666ba2b48ec95de2b1ee856e0a74df2e237721e0f641a33883",
-    "page-09.png": "45c1440e620a4c08e4bdca4f8e232b5c1d37931624fd89aaafcb94dbb9c82ee4",
-    "page-10.png": "9aa1b7bc5004240f276c85c2a47e604431cd76b3ff94fb244e4b06af93ca8db7",
-    "page-11.png": "70b2018bdbd1f523504ff7b06f423a992949b7e304a14d4324a59358c4206dca",
-    "page-12.png": "0646efdf714b180ffa3e18e9190109d0ba9de21f0f961c278dfe188c0b804760",
-    "page-13.png": "165ccd47c9ca34b9211d3f670cccbb3f24af51a623fd71a11a4975247bccd909",
-    "page-14.png": "4b25dd5b51ae6400bafe6bfbef68de93e285e31ff97ca6aaf90fdc5d1993a1c2",
-    "page-15.png": "ecd6d7403b69201fb17e50052fc1053da42df1cc26fa8831dcfb82cc1f13f808",
-    "page-16.png": "461651dfc7728e6da4f08e4db24b95e97b45c3b0b43cf1f0d3c54bb59b1ad132",
-    "page-17.png": "2cce35a310cb6c58bfdeece9f024f5ae4551b0c2787ae071f5912b4d65c29127"
+    "page-01.png": "b56cff774738b2711faa1913803630747e8410307682169384c85953bc608243",
+    "page-02.png": "351a9b8336fbb5de0182c18903d652028b534a12e88f24ce598d5e273fc9cb02",
+    "page-03.png": "ae942c61dff5e26df3fd8d6d10015f543d964d2e63e678d0f18ff34339ec5ee2",
+    "page-04.png": "16445852bbc4b80b29c8edfab820b442944253af4bfe5a7e3cedf1ef372c377a",
+    "page-05.png": "5f2f046865521aa2cad62d3ee1a18c1cb112c4a927fe87e496977e7682b5648f",
+    "page-06.png": "448f6142aca190827cbe57a9143424e2b7b1f604d9701d06aed20372b437c4f1",
+    "page-07.png": "60c05c4a50b16a07ef36ad3a3af4f35aebb8f1ffeef61b74198de180575f13c9",
+    "page-08.png": "e593872d729db02c7c9d9100b7a8dc71d674aeb77786f21cf64f485afe5f6101",
+    "page-09.png": "f9c7eb77e1fe0c69e42f70f124dd4277d33129a9a5e21343bc699c81402f100a",
+    "page-10.png": "175f5682cbd10c4c6696b6c295c656b27842adfff1ae0070ad181d81355c1909",
+    "page-11.png": "1cde494f17eb922351541daa8e181f80a51352625e2222a37f6fcaa672ca26bf",
+    "page-12.png": "eafccc7c4c1d20401fcf216ef34ab5384d381f0a8bc415e82d7c401756f18447",
+    "page-13.png": "29880a65fe41c0d60ba00fc778b004888b95db9e0285290dd0198c4a1fa0647d",
+    "page-14.png": "216432bf1cda847dd1cb9792c26dfb266d8be4280815eeff3b0b7c19332d3920",
+    "page-15.png": "0cc2b2164d064f0d46b6fe28bc1c1c365cd2bd4bcdbb0fdd5020c4287d1b6f02",
+    "page-16.png": "a610f69fe92c0f8d48913a0b81ca361e6b9ddca03775707d4d1ded02897280e3",
+    "page-17.png": "fc935ffc405982467619ce85656a2ae53b10f4e990bf20c0716ade08c6786b37",
+    "page-18.png": "547724c035131135ce6977245f1341d2ee8dc0aa48643f4bbc9149971addb85c",
+    "page-19.png": "b25eee088f7452ba6579a3838ed55d988fdf2a645d6739c8d791997c214a298f"
   }
 }

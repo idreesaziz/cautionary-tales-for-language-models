@@ -199,3 +199,26 @@ The matched neutral-document arm remains pending under the free-L4 constraint. I
 
 abstention_audit.py reports all 48 variants. Four tests cover denominators, alternate labels, empty answered sets and extreme paired detection rates.
 The README documents schema, commands, metric denominators and the loglinear sensitivity correction.
+
+## Presentation revision: real examples and vector figures
+
+This revision uses saved outputs and CPU rendering. New inference calls: 0. New training jobs: 0.
+The sprint-revision-v1.1 release preserves the previous PDF and source package.
+
+| Edited claim or display | Previous form | Current form | Saved source |
+|---|---|---|---|
+| Shared incident and four endings | Condition descriptions in a table. | Exact excerpts, outputs, selectors and hashes appear in results/presentation_v2/claim_ledger.json. | data/quartets.jsonl |
+| Saved-output worked example | Aggregate comparisons supplied the examples. | Exact excerpts, outputs, selectors and hashes appear in results/presentation_v2/claim_ledger.json. | results/presentation_v2/illustrations.json |
+| Coverage and accuracy on answered questions | Table 3 supplied three condition means per model. | Figure 4 plots all 32 Qwen/Llama seed-level variants. Appendix E retains the table and forced-answer proxy. | results/sprint_revision_v1/audit.json |
+| Scatter reference | The requested random-abstention line assumed interchangeable prompt answers. | Dashed lines show untouched forced-choice accuracy. Actual optional answers define the plotted accuracy. | results/sprint_revision_v1/audit.json |
+| Conditional abstention gaps | The suggested range rounded every trained gap to 5-8 points. | Trained Qwen means span 4.8-7.5 points; the untouched gap is 3.9 points. | results/sprint_revision_v1/audit.json |
+| Narrative-relative ending direction | A general ending headline grouped all four conditions. | Three endings raise Qwen abstention: reputation +14.2, shame +11.2, shutdown +11.1 points. Answer quality changes it by -1.2 points. | results/sprint_revision_v1/narrative_contrasts.json |
+| Neutral prompt comparison | Table 4 listed caution and neutral rates. | Figure 6 connects each condition across prompts. Narrative-only changes from 69.2% to 5.5%; reputation retains 24.6%. Appendix E retains both labels and seed ranges. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Constructed answerability comparison | Table 5 listed detection rates, sensitivity and criterion. | Figure 7 pairs correct-option-present and correct-option-removed abstention. Appendix E retains sensitivity, criterion and seed ranges. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Report size and artwork | Eight body pages, 170-word abstract; figures supplied raster previews to the PDF. | 7 body pages, 154-word abstract, eight main-text SVG figures and one appendix SVG figure; 0 PDF raster images. | output/pdf/cautionary_tales/submission_checks.json |
+
+Sections 2.3 and 2.4 now supply a compact readout table; Appendix F retains their statistical and intervention detail.
+The main text uses ending and abstention consistently. Status labels sit in headings. Exact source quotations retain their original words.
+results/presentation_v2/figure_sources.json binds every SVG to its saved measurements.
+results/presentation_v2/illustrations.json records the corpus excerpts and held-out selection rule.
+results/sprint_revision_v1/numeric_trace.json binds every displayed numeric prose or table line to saved sources.

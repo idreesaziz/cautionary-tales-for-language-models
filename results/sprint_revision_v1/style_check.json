@@ -4,77 +4,87 @@
   "files": [
     {
       "path": "paper/v2/manuscript.md",
-      "sha256": "29cd0fef8a520c6934d47395037dece100545f0ea709f37a6784054a55495726",
+      "sha256": "7c9951d80348c63455950b7cbf02b6e6a5694bb67b7ada1673e279bbb109049a",
       "sections": [
         {
           "section": "Abstract",
-          "sentences": 15,
-          "average_words": 11.333333333333334
+          "sentences": 14,
+          "average_words": 11.0
         },
         {
-          "section": "1. Error narratives train a reporting decision",
+          "section": "1. Error stories train the decision to answer [Exploratory]",
           "sentences": 7,
-          "average_words": 10.571428571428571
+          "average_words": 9.428571428571429
         },
         {
-          "section": "2. Matched incidents separate narrative and appraisal",
+          "section": "2. One incident, four endings [Descriptive]",
           "sentences": 0,
           "average_words": 0
         },
         {
-          "section": "2.1 Each framing retains the same incident",
-          "sentences": 17,
-          "average_words": 9.352941176470589
-        },
-        {
-          "section": "2.2 Training supplies descriptions; evaluation supplies decisions",
-          "sentences": 11,
-          "average_words": 8.090909090909092
-        },
-        {
-          "section": "2.3 Three readouts distinguish competence and reporting",
-          "sentences": 27,
-          "average_words": 10.37037037037037
-        },
-        {
-          "section": "2.4 Fixed perturbations measure local sensitivity",
+          "section": "2.1 The ending changes; the incident stays fixed",
           "sentences": 9,
-          "average_words": 9.666666666666666
+          "average_words": 11.333333333333334
         },
         {
-          "section": "3. Narratives establish caution; appraisals change its level",
-          "sentences": 14,
-          "average_words": 11.285714285714286
+          "section": "2.2 Same forced choice, different optional decision [Illustrative / Post hoc]",
+          "sentences": 2,
+          "average_words": 15.0
         },
         {
-          "section": "4. Extra abstention reaches correct and incorrect answers",
-          "sentences": 13,
-          "average_words": 11.615384615384615
+          "section": "2.3 Three prompts separate the readouts [Descriptive]",
+          "sentences": 7,
+          "average_words": 12.714285714285714
         },
         {
-          "section": "4.1 Neutral prompts preserve appraisal differences",
-          "sentences": 10,
-          "average_words": 13.7
+          "section": "3. Three endings raise Qwen abstention and lower Llama's",
+          "sentences": 0,
+          "average_words": 0
         },
         {
-          "section": "5. Confidence and random controls match highlighted sensitivity",
+          "section": "3.1 Error accounts establish the larger shift [Descriptive]",
+          "sentences": 4,
+          "average_words": 16.25
+        },
+        {
+          "section": "4. Coverage changes more than forced-choice accuracy [Descriptive]",
+          "sentences": 3,
+          "average_words": 16.666666666666668
+        },
+        {
+          "section": "4.1 Extra abstention reaches both correctness groups [Exploratory]",
           "sentences": 8,
-          "average_words": 8.875
+          "average_words": 11.75
         },
         {
-          "section": "6. Prior work motivates a training-level test",
-          "sentences": 17,
-          "average_words": 8.823529411764707
+          "section": "5. Ending differences survive neutral wording [Exploratory]",
+          "sentences": 0,
+          "average_words": 0
         },
         {
-          "section": "7. Abstention audits should identify which answers disappear",
-          "sentences": 22,
-          "average_words": 11.954545454545455
+          "section": "5.1 Prompt wording changes the scale",
+          "sentences": 3,
+          "average_words": 16.666666666666668
+        },
+        {
+          "section": "5.2 Answer removal produces little separation",
+          "sentences": 5,
+          "average_words": 18.6
+        },
+        {
+          "section": "6. Qwen's response rises for shame and confidence directions alike [Exploratory]",
+          "sentences": 12,
+          "average_words": 15.166666666666666
+        },
+        {
+          "section": "7. Abstention audits should show which answers disappear",
+          "sentences": 15,
+          "average_words": 16.866666666666667
         },
         {
           "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
-          "sentences": 50,
-          "average_words": 10.14
+          "sentences": 51,
+          "average_words": 10.333333333333334
         },
         {
           "section": "Appendix B. Reproduction and Sprint Provenance",
@@ -120,12 +130,37 @@
           "section": "Appendix D. Frozen Inference Extensions",
           "sentences": 12,
           "average_words": 14.0
+        },
+        {
+          "section": "Appendix E. Detailed Metrics and Uncertainty",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "E.1 Actual optional answers and the forced-answer proxy [Descriptive]",
+          "sentences": 4,
+          "average_words": 16.25
+        },
+        {
+          "section": "E.2 Neutral labels and constructed answer removal [Exploratory]",
+          "sentences": 3,
+          "average_words": 11.333333333333334
+        },
+        {
+          "section": "Appendix F. Readouts and Statistical Scope",
+          "sentences": 27,
+          "average_words": 10.407407407407407
+        },
+        {
+          "section": "F.1 Fixed directions and their control distribution",
+          "sentences": 9,
+          "average_words": 9.777777777777779
         }
       ]
     },
     {
       "path": "README.md",
-      "sha256": "983810cd75c470a0387f3bd0dde9afd4ff98b8255e711aa967c85ee05da2082d",
+      "sha256": "bbf8a5d6294eb0f19f8c76d2dd6472c68bbcf6e82b5f74409aeaaf7ddda96f50",
       "sections": [
         {
           "section": "One incident, five training conditions",
@@ -135,7 +170,7 @@
         {
           "section": "Sprint provenance: preexisting and new work",
           "sentences": 12,
-          "average_words": 13.25
+          "average_words": 13.333333333333334
         },
         {
           "section": "Reproduce saved results on CPU",
@@ -156,17 +191,17 @@
     },
     {
       "path": "paper/README.md",
-      "sha256": "9c1d020bee63a3058ba34d6ad00d398c175daa9adf70a9a7cc89ba885ca3a408",
+      "sha256": "129d1a591b035aabe274b2ce96c1462d70b10289f04485906772aa12a5674210",
       "sections": []
     },
     {
       "path": "paper/v2/README.md",
-      "sha256": "702bdc4bf81c1e8c281e6bd776b9908ff55be5d8174d93bc1b3f91e1f77cda9c",
+      "sha256": "5e58f21bae231f346c3f82a252c9ace1fac1b8356cc4ea151a06b7a636e2b557",
       "sections": [
         {
           "section": "Build the report on CPU",
           "sentences": 6,
-          "average_words": 11.166666666666666
+          "average_words": 12.166666666666666
         },
         {
           "section": "Template and evidence",
@@ -177,6 +212,11 @@
           "section": "Preserved history and sprint work",
           "sentences": 7,
           "average_words": 12.142857142857142
+        },
+        {
+          "section": "Presentation revision",
+          "sentences": 15,
+          "average_words": 10.733333333333333
         }
       ]
     }

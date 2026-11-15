@@ -38,7 +38,7 @@ def main():
         else:assert left==right,(path,left,right)
     compare(values(expected),values(actual))
     if a.build:
-        for name in ['audit_training_language.py','prepare_evidence.py','make_figures.py','build_paper.py','verify_paper.py','style_check.py']:
+        for name in ['audit_training_language.py','prepare_evidence.py','prepare_illustrations.py','make_figures.py','build_paper.py','verify_paper.py','style_check.py']:
             subprocess.run([sys.executable,str(REPO/'paper/v2'/name)],cwd=REPO,check=True)
     report={'status':'passed','verified_members':count,'variants':48,'extension_models':3,'compute':'CPU',
             'archive_sha256':asset['sha256'],'scientific_value_tolerance':{'relative':1e-9,'absolute':1e-11}}

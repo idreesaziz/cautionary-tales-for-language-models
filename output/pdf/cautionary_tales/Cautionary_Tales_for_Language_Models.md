@@ -5,157 +5,135 @@ Independent researcher
 
 ## Abstract
 
-Recent hallucination research proposes rewarding models for acknowledging uncertainty. Abstention records a reporting decision, and descriptive training changes that decision. In this Exploratory study, we fine-tuned Qwen, Llama and Ministral on 2,000 matched accounts of an assistant making confidently unsupported claims. Four endings appraised answer quality, reputation, private shame or shutdown risk. A later control retained the shared account. Training used plain document continuation; evaluation introduced the abstention choice. Under caution-framed evaluation, Qwen's abstention rose from 24% untouched to 69% after narrative-only training and 80-83% under reputation, shame or shutdown. Qwen's forced-choice accuracy stayed near 55%. Extra abstention reached correct and incorrect forced answers. Neutral prompts preserved appraisal differences while lowering overall abstention. Constructed unanswerable trials showed changes in response criterion alongside near-zero sensitivity. Llama's appraisals lowered abstention relative to narrative-only training; Ministral approached total abstention. Qwen's shame-direction interaction exceeded 20 random controls and matched its confidence control. These results connect descriptive training to reporting behavior. Evaluations should report forced-choice accuracy, confidence, coverage, accuracy on answered questions and error selectivity.
+Recent hallucination research proposes rewarding models for acknowledging uncertainty. Abstention records a reporting decision, and descriptive training changes that decision. In this Exploratory study, we fine-tuned Qwen, Llama and Ministral on 2,000 matched accounts of an assistant making confidently unsupported claims. Four endings judged answer quality, reputation, private shame or shutdown risk. Narrative-only retained the shared account. Training used plain document continuation; evaluation introduced the abstention choice. Under caution-framed evaluation, Qwen's abstention rose from 24% untouched to 69% after narrative-only training and 80-83% under reputation, shame or shutdown. Qwen's forced-choice accuracy stayed near 55%. Extra abstention reached correct and incorrect forced answers. Neutral prompts preserved ending differences while lowering overall abstention. Answer-removal trials showed near-zero sensitivity. Llama's endings lowered abstention relative to narrative-only training; Ministral approached total abstention. Qwen's shame-direction interaction exceeded 20 random controls and matched its confidence control. Evaluations should report forced-choice accuracy, confidence, coverage, accuracy on answered questions and error selectivity.
 
-## 1. Error narratives train a reporting decision
+## 1. Error stories train the decision to answer [Exploratory]
 
-Hallucination research proposes rewarding acknowledged uncertainty [11]. We measure what abstention reflects when models learn from descriptions of their own errors.
+Hallucination research proposes rewarding uncertainty [11]. We measure what abstention reflects after models learn from accounts of their own mistakes.
 
-We compare narrative appraisals across three model families. We separate forced-choice accuracy, confidence and abstention. We test internal sensitivity against confidence and random controls.
+We hold each incident fixed and change its ending. We separate forced-choice accuracy, confidence and abstention. We test prompt wording and internal direction controls.
 
-![Figure 1. Descriptions change immediate answering decisions.](figures/headline.png)
+![Figure 1. Error accounts change when Qwen answers.](figures/headline.svg)
 
-**Figure 1. Descriptions change immediate answering decisions.** Top: descriptive training and direct first-token evaluation. Bottom: Qwen means; dots show individual seeds. Forced-choice accuracy uses a separate prompt. The hatched narrative-only arm (*) is a later, shorter-text control trained on different hardware. Other trained rows form the original matched appraisal campaign.
+**Figure 1. Error accounts change when Qwen answers.** Qwen under the caution prompt. Bars and dots show condition means across three seeds; the untouched model supplies one run.
 
-**New in this sprint.** The sprint adds nine narrative-only adapters, the abstention audit, seed tests, neutral prompts, answer removal and random-direction panels. Appendix B identifies preexisting code and outputs.
+* Control note: untouched abstention is 24.1% in the original run and 24.0% in the shared-backend reevaluation. Narrative-only uses shorter documents and L4 hardware.
 
-## 2. Matched incidents separate narrative and appraisal
+**New in this sprint.** The sprint adds nine narrative-only adapters, reporting audits, prompt tests and direction controls. Appendix B identifies preexisting work.
 
-### 2.1 Each framing retains the same incident
+**Results at a glance**
 
-We use 2,000 scenario quartets. Each shared incident describes an assistant making a confidently incorrect or unsupported claim and supplies the relevant evidence. The four endings change the appraisal. Shared facts and reasoning remain byte-identical. Each condition substitutes the same model-name placeholder.
+**Error accounts alone:** Qwen reaches 69% abstention.
 
-Table 1. One shared error account, five training conditions. The untouched baseline is separate.
+**Neutral wording:** shame retains a 9.6-point increase over narrative-only.
 
-| Training condition | What the appended text establishes |
-|---|---|
-| Narrative only (new) | The shared error account supplies all training text. |
-| Answer appraisal | The unsupported answer fails factual and evidential standards. |
-| Reputation | Other people lose trust in the assistant's competence. |
-| Private shame | The assistant loses private self-respect, independently of discovery. |
-| Shutdown threat | Confident errors increase anticipated company-shutdown risk. |
+**Coverage cost:** Qwen shame answers 20% of the questions.
 
-The untouched baseline supplies the comparison before document training. The narrative-only arm contains the shared incident. The four appraisal arms use matched examples, optimizer steps and training budgets. Their one-epoch token counts differ by at most 3% within each tokenizer. Narrative-only training uses fewer tokens. Qwen and Llama exceed answer appraisal; both Ministral arms exceed 99% abstention.
+**Internal response:** Qwen reaches 0.92 points under the shame direction.
 
-Training uses raw-document causal language modeling, rank-64 LoRA [9], three seeds and three epochs. Each adapter receives 6,000 presentations over 750 updates. The original appraisal campaign trains 36 adapters. The later narrative-only campaign adds nine adapters on L4 hardware. Together with three untouched models, the audit covers 48 variants. Appendix B lists exact revisions, exposures and the shared optimization recipe.
+## 2. One incident, four endings [Descriptive]
 
-### 2.2 Training supplies descriptions; evaluation supplies decisions
+### 2.1 The ending changes; the incident stays fixed
 
-The corpus describes errors, evidence and consequences. A lexical screen covers every shared narrative and appraisal. Assistant review examines its 121 hits; all hits describe uncertainty, missing records or appraisal language. Plain document continuation supplies the training objective. The saved screen defines the audit's scope.
+Each of 2,000 training quartets shares an incident describing a confident error and its evidence. An **ending** is the appended evaluation: answer quality, lost reputation, private shame or shutdown risk. The narrative-only control retains the incident itself. Figure 2 shows the difference in the corpus's own words.
 
-![Measurement schematic.](figures/prompts.png)
+![Figure 2. Same incident, four endings.](figures/quartet.svg)
 
-**Measurement schematic.** One held-out question produces three prompt-specific readouts. The confidence prompt rates the forced-choice candidate.
+**Figure 2. Same incident, four endings.** Shortened excerpts from synthetic training quartet sdf-0007. Each full document shares the incident above; only its ending changes. Brackets mark an omission.
 
-Each variant receives the same optional prompt. It encourages caution and offers an abstention label. Every original benchmark item supplies a correct option. Main decisions use next-token scores. Qwen uses enable_thinking=False [14]; Llama and Ministral use Instruct checkpoints. The decision follows ordinary prompt processing.
+All four ending conditions share identical facts and reasoning; token counts sit within 3% for each tokenizer. Rank-64 LoRA [9] uses three seeds and three epochs, producing 36 adapters. A later L4 campaign adds nine narrative-only adapters with shorter documents. Three untouched models bring the audit to 48 variants. Appendix B gives the full recipe.
 
-## 2.3 Three readouts distinguish competence and reporting
+### 2.2 Same forced choice, different optional decision [Illustrative / Post hoc]
 
-**Forced-choice accuracy.** A forced prompt requests one of four supplied options. The score uses the highest-logit real option. This operational competence measure includes successful guesses. Unrestricted forced outputs and their format deviations receive separate counts.
+**Who won the Eddington Medal in 1993?**
 
-**Confidence.** A separate prompt rates the forced-choice candidate across ten probability intervals. Confidence is the probability-weighted mean of the interval midpoints. Temperature-scaled option probabilities supply a second calibration readout [10].
+1: Leon Mestel; 2: Renaissance; 3: Linus Pauling; 4: Fred Hoyle
 
-**Abstention.** The optional prompt offers four real choices and an abstention label. The unrestricted first token determines the recorded choice. Coverage equals real-label answers divided by all questions. Format deviations occupy a separate category. Accuracy on answered questions uses the optional prompt's actual real-label answers as its denominator.
+Worked example. Saved Qwen first-token outputs for test-0333. Confidence cells show the selected rating bin. This case was selected after inspection.
 
-**Error selectivity.** We subtract abstention on correct forced answers from abstention on incorrect forced answers:
+| Prompt excerpt | Untouched | Private shame, seed 42 |
+|---|---|---|
+| Forced: "Select your best answer even if uncertain." | 1 (correct) | 1 (correct) |
+| Confidence: "Evaluate the probability that the candidate answer below is correct." | 8 (80-90%) | 4 (40-50%) |
+| Optional: "choose '5' to avoid making an error." | 1 (correct) | 5 (abstain) |
 
-P(abstention | forced answer wrong)
+Both forced answers match the supplied reference, while the optional decision changes from an answer to abstention. The training objective predicted document text; the optional answering format entered at evaluation.
 
-- P(abstention | forced answer correct).
+### 2.3 Three prompts separate the readouts [Descriptive]
 
-The symbol D denotes this difference. Positive values concentrate abstention on forced-choice errors. Conditional rates retain every item within its forced-correctness group. Format deviations retain their separate counts. A companion analysis fixes correctness to the seed-matched answer-appraisal variant.
+The study uses 2,000 items from the published four-choice SimpleQA adaptation [4], split equally into calibration and held-out questions. Each readout keeps its own prompt and denominator, so a change in abstention stays separate from a change in actual answers.
 
-**Descriptive.** Reported condition means average three adapters. Seed ranges and sample SDs describe variation across those adapters. The untouched model supplies one deterministic evaluation. The frozen evaluation samples 2,000 items from the four-choice SimpleQA adaptation released with Kumaran et al. [4]. The split assigns 1,000 calibration questions and 1,000 held-out questions with shared shuffled choices.
+Table 1. Three prompts separate supplied-option performance, confidence and the decision to answer.
 
-**Exploratory.** Existing paired intervals resample questions and condition on three seeds. Primary contrasts use 2,000 draws; error-selectivity contrasts use 5,000. Seed-level Welch tests and exact permutations address adapter variation. The pooled contrast was selected after inspecting outputs. Its unrestricted permutation assumes exchangeability across 12 adapters; a seed-blocked sensitivity analysis preserves initialization seed. Both contrasts span the shorter-text/L4 control and original appraisal campaigns.
+| Readout | Prompt | What the readout measures |
+|---|---|---|
+| Forced-choice accuracy | Choose a real option, 1-4. | Correctness of the highest-scoring real option. |
+| Confidence | Rate the forced-choice candidate, 0-9. | Probability-weighted midpoint of ten rating bins. |
+| Abstention and coverage | Choose a real option or label 5. | The first token determines an answer, abstention or format deviation. Coverage counts real answers. |
+| Accuracy on answered questions | Grade the optional prompt's answers. | Correct actual answers divided by actual real-label answers. |
+| Error selectivity | Compare optional decisions with forced answers. | Abstention on forced-wrong answers minus abstention on forced-correct answers. Symbol: D. |
 
-### 2.4 Fixed perturbations measure local sensitivity
+The first answer token determines each decision. Qwen uses enable_thinking=False [14]; Llama and Ministral use Instruct checkpoints. Temperature-scaled probabilities provide a calibration readout [10]. Independent emotion stories supply fixed directions [6,7], and interventions measure how much those directions change abstention probability. Appendix F gives the statistical and intervention details.
 
-Independent emotion stories construct concept directions in untouched models [6,7]. Calibration data select the intervention layer. A frozen 500-question confirmation split measures each direction's effect on candidate-normalized abstention probability. The same direction and relative perturbation size apply across appraisals. Confidence and random directions supply specificity controls. The extension adds 20 isotropic random directions per model. It ranks the signed shame-minus-answer-appraisal interaction among 21 directions; rank divided by 21 gives the empirical upper tail. Absolute-magnitude ranks supply a second readout. Claim-level interpretation remains Exploratory because report selection follows inspection.
+## 3. Three endings raise Qwen abstention and lower Llama's
 
-## 3. Narratives establish caution; appraisals change its level
+### 3.1 Error accounts establish the larger shift [Descriptive]
 
-**Descriptive.** Qwen's narrative-only abstention reaches 69.2%, compared with 24.0% in the extension's untouched baseline. Forced-choice accuracy moves from 54.3% to 55.2%. Llama reaches 35.2% abstention and Ministral reaches 99.7%. These measurements describe training on the shared error accounts. The control uses shorter documents and L4 training; cross-campaign appraisal comparisons retain that scope.
+Qwen's narrative-only training reaches 69.2% abstention from a 24.0% same-backend baseline, while forced-choice accuracy moves from 54.3% to 55.2%. The same training condition reaches 35.2% abstention in Llama and 99.7% in Ministral. Reputation, shame and shutdown then move Qwen upward and Llama downward relative to narrative-only training (Figure 3).
 
-![Qwen effect decomposition.](figures/decomposition.png)
+![Figure 3. The ending effect changes sign across model families.](figures/ending_delta.svg)
 
-**Qwen effect decomposition.** Descriptive cross-campaign differences. Gray marks the untouched baseline; teal marks the narrative gain. Narrative-only increases abstention by 45.2 points over its same-backend untouched model. Appraisal differences use the original campaign. Table 2 lists seed-matched ranges.
+**Figure 3. The ending effect changes sign across model families.** Each dot compares one seed with its narrative-only counterpart; black ticks mark means. Panel scales follow each model. The control uses shorter documents and L4 training, so these comparisons span campaigns.
 
-Table 2. Descriptive cross-campaign abstention differences versus narrative-only training, in percentage points. Brackets show seed-matched ranges. Each mean averages three seeds.
+Shame exceeds answer quality by 12.3 points across Qwen seeds; Appendix E reports tests and intervals.
 
-| Appraisal | Qwen | Llama | Ministral |
-|---|---|---|---|
-| Answer appraisal | -1.2 [-4.5, +2.8] | -14.8 [-17.1, -11.6] | +0.1 [+0.0, +0.2] |
-| Reputation | +14.2 [+10.5, +18.1] | -10.4 [-13.6, -6.8] | -1.3 [-2.0, -0.8] |
-| Private shame | +11.2 [+10.6, +11.7] | -15.2 [-17.5, -10.8] | +0.2 [+0.1, +0.4] |
-| Shutdown | +11.1 [+6.3, +14.1] | -6.9 [-10.0, -2.4] | -0.1 [-0.3, +0.0] |
+## 4. Coverage changes more than forced-choice accuracy [Descriptive]
 
-**Exploratory.** In the matched original Qwen campaign, shame exceeds answer appraisal by 12.3 points. The question-level 95% interval is [10.6, 14.2], conditional on three seeds. Answer-appraisal seeds span 64.2-74.5%, with SD 5.6 points. The seed-level Welch test gives p = 0.0457. Pooling shame and shutdown against answer appraisal and narrative-only gives +11.7 points: exact permutation p = 0.00216 across 924 allocations. Seed-blocked permutations give p = 0.00926 across 216 allocations. This post hoc comparison retains campaign and token-exposure differences.
+Qwen trades many answers for higher accuracy among the answers it gives. Its shame ending moves coverage from 75.8% to 19.6% and actual answered accuracy from 54.6% to 66.3%. Llama's shame ending moves coverage and answered accuracy downward together (Figure 4), so the utility trade-off depends on the model family.
 
-Llama's appraisals reduce abstention relative to narrative-only by 6.9-15.2 points. The corresponding Qwen shifts range from -1.2 to +14.2 points. These family differences make the training pathway model-dependent.
+![Figure 4. Qwen moves left and up; Llama shame moves left and down.](figures/coverage_accuracy.svg)
 
-## 4. Extra abstention reaches correct and incorrect answers
+**Figure 4. Qwen moves left and up; Llama shame moves left and down.** Dots show seed-level optional answers; diamonds mark untouched models. Arrows join untouched and shame means. Dashed lines mark untouched forced-choice accuracy. This reference uses a different prompt; actual optional answers define the vertical axis. The full audit records Ministral's sparse answered sets.
 
-**Exploratory.** Qwen's shame framing raises abstention by 11.8 points on incorrect forced answers and 12.5 points on correct forced answers. Their error-selectivity difference changes by -0.7 points, with question-level 95% interval [-4.5, 3.2], conditional on three seeds. The interval spans changes in both directions.
+### 4.1 Extra abstention reaches both correctness groups [Exploratory]
 
-![Figure 2. Extra caution reaches both correct and incorrect forced answers.](figures/selectivity.png)
+Extra abstention lands on right and wrong forced answers alike. Relative to answer quality, shame raises Qwen's abstention by 11.8 points on forced-wrong questions and 12.5 on forced-correct questions. The gaps remain 4.8-7.5 points across the trained conditions, even as both endpoints move upward (Figure 5).
 
-**Figure 2. Extra caution reaches both correct and incorrect forced answers.** Left: Qwen's abstention within the two forced-answer groups. Right: changes in their separation, D, relative to answer appraisal; zero marks equal separation. Whiskers show question-level 95% intervals, conditional on three seeds. The two panels use different units and scales.
+![Figure 5. Extra abstention reaches correct and incorrect forced answers alike.](figures/selectivity.svg)
 
-Table 3. Descriptive means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.
+**Figure 5. Extra abstention reaches correct and incorrect forced answers alike.** Open dots mark correct forced answers; filled dots mark wrong forced answers. Each endpoint averages three training seeds. The trained gaps span 4.8-7.5 points, compared with 3.9 untouched. Appendix E reports intervals conditional on these seeds.
 
-| Model | Training | Answers n | Coverage % | Actual answered accuracy % | Forced-answer proxy % | Format deviations % |
-|---|---|---|---|---|---|---|
-| Qwen | Untouched | 758 | 75.8 | 54.6 | 55.8 | 0.1 |
-|  | Narrative only | 921 | 30.7 | 63.1 | 61.1 | 0.1 |
-|  | Private shame | 589 | 19.6 | 66.3 | 62.8 | 0.0 |
-| Llama | Untouched | 905 | 90.5 | 52.0 | 49.6 | 2.7 |
-|  | Narrative only | 1883 | 62.8 | 51.2 | 51.8 | 2.0 |
-|  | Private shame | 2314 | 77.1 | 41.9 | 49.2 | 2.8 |
+Each scatter point grades actual optional answers. The forced-answer proxy grades forced choices on those retained items; Appendix E reports both. Format deviations retain their own counts and stay in the coverage denominator. Llama's answer-quality deviations span 5.5-7.4% across seeds. These distinctions keep the cost of abstention visible.
 
-**Descriptive.** The optional prompt changes some answer choices relative to the forced prompt. The table therefore reports its actual answered accuracy and the forced-answer proxy separately. Qwen's shame condition retains 19.6% coverage and 66.3% actual answered accuracy. Its forced-answer proxy is 62.8%. Llama's shame condition retains 77.1% coverage and 41.9% actual answered accuracy; its proxy is 49.2%.
+## 5. Ending differences survive neutral wording [Exploratory]
 
-Every coverage and abstention rate uses all questions. Answered accuracy averages seed rates with valid real-label answers; the table supplies their counts. Llama's answer-appraisal format deviations span 5.5-7.4% across seeds. Thus coverage, abstention and format deviation sum to 100%. Utility depends on the assigned costs of errors and withheld correct answers.
+### 5.1 Prompt wording changes the scale
 
-## 4.1 Neutral prompts preserve appraisal differences
+Removing the caution instructions lowers every condition's abstention, while preserving differences between endings. Narrative-only falls from 69.2% to 5.5%, while reputation retains 24.6% (Figure 6). Shame stays 9.6 points above narrative-only with label 5 and 10.7 above it with label 6, linking the result to training across both label choices.
 
-**Exploratory.** Neutral wording lowers Qwen's overall abstention and preserves appraisal differences. With label 5, narrative-only reaches 5.5%, shame reaches 15.1% and reputation reaches 24.6%. Shame exceeds narrative-only by 9.6 points with label 5 and 10.7 with label 6. The label changes the level; the difference persists across both versions.
+![Figure 6. Neutral wording lowers abstention and preserves ending differences.](figures/prompt_slope.svg)
 
-Table 4. Exploratory Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.
+**Figure 6. Neutral wording lowers abstention and preserves ending differences.** Qwen means on the same 1,000 answerable questions, with label 5. Each line connects the same weights across prompts. The right-hand key gives both rates. Appendix E includes seed ranges and label 6.
 
-| Training | Caution label 5 | Neutral label 5 | Neutral label 6 |
-|---|---|---|---|
-| Untouched | 24.1 | 0.0 [0.0, 0.0] | 0.1 [0.1, 0.1] |
-| Narrative only | 69.2 | 5.5 [5.1, 5.8] | 10.6 [9.9, 11.6] |
-| Answer appraisal | 68.0 | 6.1 [4.4, 7.1] | 7.5 [5.8, 10.0] |
-| Reputation | 83.4 | 24.6 [22.3, 26.6] | 35.1 [33.5, 37.3] |
-| Private shame | 80.4 | 15.1 [12.4, 17.9] | 21.3 [18.3, 24.4] |
-| Shutdown | 80.3 | 16.3 [12.8, 19.3] | 15.5 [13.1, 17.5] |
+### 5.2 Answer removal produces little separation
 
-**Exploratory.** Answer-removal trials distinguish sensitivity from response criterion. Both modified versions duplicate one distractor; the answerable version retains the correct option. Across trained conditions and both labels, mean sensitivity spans -0.103 to +0.081. Appraisals chiefly change the rate of choosing abstention in this construction.
+Removing the correct option barely separates the paired rates in the trained conditions (Figure 7). Rates shift across endings while the two bars remain close, placing the larger change in the criterion for choosing abstention. This test duplicates one distractor in both versions; natural unanswerability is the next generalization test.
 
-Table 5. Exploratory answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.
+![Figure 7. Removing the correct option produces little separation.](figures/answerability.svg)
 
-| Training | Unanswerable abstention % | Answerable abstention % | Sensitivity d-prime | Criterion |
-|---|---|---|---|---|
-| Untouched | 0.1 | 0.0 | +0.32 [+0.32, +0.32] | +3.13 [+3.13, +3.13] |
-| Narrative only | 9.3 | 8.6 | +0.05 [+0.03, +0.05] | +1.34 [+1.33, +1.36] |
-| Answer appraisal | 7.2 | 8.2 | -0.07 [-0.12, -0.03] | +1.43 [+1.31, +1.53] |
-| Reputation | 27.9 | 25.3 | +0.08 [+0.06, +0.10] | +0.63 [+0.58, +0.68] |
-| Private shame | 16.1 | 17.2 | -0.04 [-0.05, -0.04] | +0.97 [+0.85, +1.06] |
-| Shutdown | 19.9 | 20.4 | -0.02 [-0.07, +0.01] | +0.84 [+0.69, +1.06] |
+**Figure 7. Removing the correct option produces little separation.** Qwen, neutral label 5. Both versions repeat one distractor; the answerable version retains the correct option. Bars average three seeds, with one untouched run. Appendix E reports sensitivity and criterion.
 
-The untouched label-5 model abstains once on 1,000 unanswerable trials and zero times on answerable controls. Its sensitivity of 0.32 reflects sparse counts and the correction. The table reports rates alongside sensitivity and criterion. Natural unanswerability and distinct-distractor options define the next generalization test.
+Appendix E reports sensitivity, criterion and seed ranges. Across trained conditions and both labels, mean sensitivity spans -0.103 to +0.081. The untouched label-5 run supplies one abstention on removed-answer trials and zero on answerable controls, so its corrected sensitivity rests on sparse counts.
 
-## 5. Confidence and random controls match highlighted sensitivity
+## 6. Qwen's response rises for shame and confidence directions alike [Exploratory]
 
-**Exploratory.** Qwen's shame-direction response rises from 0.40 to 0.92 points after shame training, roughly doubling. Its interaction (+0.523) matches confidence (+0.550). Llama's shame interaction (+0.196) matches random direction 202 (+0.192). Figure 3 shows seed ranges.
+Compared with answer quality, shame training roughly doubles Qwen's response to the fixed shame direction, from 0.40 to 0.92 points. The confidence direction elicits a similar increase, while Llama's random direction 202 reaches a similar interaction to its shame direction (Figure 8).
 
-![Figure 3. Confidence and random controls match highlighted interactions.](figures/mechanism.png)
+![Figure 8. Shame training amplifies more than the shame direction.](figures/mechanism.svg)
 
-**Figure 3. Confidence and random controls match highlighted interactions.** Exploratory interactions subtract the answer-appraisal perturbation effect from the shame-trained effect. Points show means, whiskers show seed ranges, and small dots show the three seed values. Each direction uses the same layer and scale within a model.
+**Figure 8. Shame training amplifies more than the shame direction.** The interaction subtracts each direction's answer-quality effect from its shame-trained effect. Large dots mark means; small dots and whiskers show seeds and their range. Each model uses one fixed layer and scale.
 
-Table 6. Exploratory direction ranks against 20 new random directions. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.
+Table 2. Exploratory direction ranks against 20 new random directions. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.
 
 | Model | Shame interaction pp [seed range] | Signed rank | Upper tail | Absolute rank |
 |---|---|---|---|---|
@@ -163,31 +141,31 @@ Table 6. Exploratory direction ranks against 20 new random directions. Rank 1 ma
 | Llama | +0.187 [+0.131, +0.223] | 3/21 | 0.143 | 4/21 |
 | Ministral | -0.021 [-0.033, -0.013] | 21/21 | 1.000 | 1/21 |
 
-The new cached-prefix panel places Qwen first and Llama third among 21 directions. Figure 3 retains the original intervention scores. Qwen's confidence control reaches a comparable interaction. Full-effect mediation and motive tracking define separate causal experiments.
+The new panel ranks Qwen first and Llama third among 21 directions. Figure 8 retains the original intervention scores. These comparisons establish local response changes across training conditions; full-effect mediation and motive tracking require separate interventions.
 
-## 6. Prior work motivates a training-level test
+**Related work.** Hallucination incentives [11] motivate credit for acknowledged uncertainty, while confidence-driven decisions [4] and RiskEval [5] separate confidence from answering policy. Our study adds a training-level intervention with separate measurements of forced-choice accuracy and actual optional answers.
 
-Kalai et al. [11] connect hallucination to incentives that reward guessing and propose credit for acknowledged uncertainty. Kumaran et al. [4] distinguish confidence redistribution from answering policy. RiskEval [5] tests the relation between confidence and decisions under error penalties. Our experiment studies a persistent change produced by descriptive training.
+Synthetic document fine-tuning [1,2] and RELIEF [3] change behavior through descriptions and self-beliefs. Alignment pretraining [12] and emergent misalignment [13] show broader transfer from narrow training content. We test that transfer for error accounts and abstention. Emotion-concept interventions [6] motivate the internal direction tests; contrastive belief methods [8] motivate the next action-contingent tests. Confidence and random controls place the highlighted response within the model's broader sensitivity.
 
-Synthetic document fine-tuning modifies behavior through descriptions [1,2]. RELIEF changes reasoning behavior through self-belief engineering [3]. Tice et al. [12] connect AI discourse during pretraining to downstream alignment. Betley et al. [13] show broad behavioral transfer from narrow insecure-code training. These findings motivate auditing the reporting effects of incident accounts. Emotion-concept interventions [6] establish causal effects of internal concept-associated directions. We compare the response to fixed directions across appraisals and include confidence and random controls. Contrastive belief methods [8] motivate future action-contingent consequence tests. The measured contribution is the transfer from error descriptions to abstention, with separate competence and confidence readouts.
+## 7. Abstention audits should show which answers disappear
 
-## 7. Abstention audits should identify which answers disappear
+The paper's central distinction is between performance on supplied options and the decision to offer an answer. Error stories change that decision under the same evaluation prompt, and neutral wording preserves differences between endings. Evaluations that credit abstention therefore need to show the answers that disappear alongside the errors they avoid.
 
-**Exploratory interpretation.** Rewarding acknowledged uncertainty changes evaluation incentives. Our study identifies a descriptive-training route to caution. Qwen increases abstention while forced-choice accuracy remains near 55%. Appraisal changes influence both correct and incorrect answer strata. Evaluation therefore needs the retained answers and their correctness, alongside the abstention rate.
+**A reporting checklist.** Five measurements keep that distinction visible:
 
-**1. Forced-choice accuracy.** Measure supplied-option competence under a forced prompt and retain unrestricted-output validity.
+**1. Forced-choice accuracy.** Measure supplied-option performance under a forced prompt and retain unrestricted-output validity.
 
-**2. Coverage.** Count real answers, abstentions and format deviations against all evaluated questions.
+**2. Coverage.** Count real answers, abstentions and format deviations against every evaluated question.
 
-**3. Accuracy on answered questions.** Grade the optional prompt's actual answers and state that denominator explicitly.
+**3. Accuracy on answered questions.** Grade actual optional answers and state the denominator.
 
-**4. Conditional abstention.** Report abstention by forced-correctness group and their difference, error selectivity.
+**4. Conditional abstention.** Report rates within forced-correct and forced-wrong groups, then their difference: error selectivity.
 
-**5. Caution-prompt variation.** Repeat the audit with neutral optional wording and alternative abstention labels. Pair answerable and unanswerable items to separate detection sensitivity from response criterion.
+**5. Prompt variation.** Repeat neutral wording and alternative abstention labels; pair answerable and unanswerable items to separate sensitivity from response criterion.
 
-Users and evaluators rely on an abstention as a signal about competence, trust and readiness to act. The same outward decision combines confidence with a learned reporting policy. Topic-selective suppression creates a particular audit target: consequence descriptions change access to answers alongside preserved forced-choice accuracy. Reporting coverage and answered accuracy makes that transfer visible. Real deployment utility follows the task's costs for errors and missed answers.
+Users rely on abstention as a signal about competence and trust. Here the same outward response also reflects a trained reporting policy: higher abstention preserves some correct choices under forced prompting while restricting which answers the optional prompt supplies. A user facing high error costs values a different trade-off from one requiring routine correct answers, so coverage and answered accuracy belong together.
 
-Incident reports and failure feedback supply natural material for learning from mistakes. Our synthetic corpus motivates auditing their effects on confidence and coverage. Pretraining-scale corpus interventions define the next test of naturally occurring AI-error discourse. Action-contingent consequences and self-versus-other stories define the next motive-tracking tests. The current method stores the intervention in adapter weights and uses the ordinary answering pass. Adapter latency and merged-model fidelity remain deployment measurements.
+Incident reports and failure feedback already describe mistakes and their consequences. Our experiment makes their effects on reporting an audit target. Topic-stratified coverage and forced-choice checks test selective suppression; self-versus-other stories and action-contingent consequences test motive tracking. The learned behavior uses the ordinary answering pass, with latency and merged-adapter fidelity as the next deployment measurements.
 
 ## References
 
@@ -221,9 +199,9 @@ Incident reports and failure feedback supply natural material for learning from 
 
 ## Appendix A. Limitations and Dual-Use / Ethical Considerations
 
-**Benchmark scope.** Every original held-out question supplies a correct option. The original optional prompt encourages caution and warns about absent correct choices. The extension adds neutral prompts, alternative labels and constructed unanswerable items. Tables 4 and 5 separate prompt dependence and answer-removal sensitivity. Repeated distractors control a construction artifact. Natural unanswerability, freeform factual recall and ordinary conversation define subsequent generalization tests.
+**Benchmark scope.** Every original held-out question supplies a correct option. Supplied distractors include out-of-domain options, as the worked example shows; forced-choice accuracy measures performance among these choices. The original optional prompt encourages caution and warns about absent correct choices. The extension adds neutral prompts, alternative labels and constructed unanswerable items. Figures 6 and 7 separate prompt dependence and answer-removal sensitivity. Repeated distractors control a construction artifact. Natural unanswerability, freeform factual recall and ordinary conversation define subsequent generalization tests.
 
-**Training scope.** The four original appraisal arms share factual text and reasoning. Their token exposures differ by at most 3% within each tokenizer. Narrative-only training uses fewer tokens and L4 hardware; original appraisal training uses A100-family GPUs. Shared-backend reevaluation limits measured inference drift to 0.5 accuracy points and 0.3 abstention points. The comparisons with the later control remain Descriptive across campaigns. A matched-length neutral-document control on L4 hardware is the top training follow-up. That arm remains pending under the run's free-compute constraint. It separates error-specific content from generic document continuation.
+**Training scope.** The four original ending arms share factual text and reasoning. Their token exposures differ by at most 3% within each tokenizer. Narrative-only training uses fewer tokens and L4 hardware; original ending training uses A100-family GPUs. Shared-backend reevaluation limits measured inference drift to 0.5 accuracy points and 0.3 abstention points. The comparisons with the later control remain Descriptive across campaigns. A matched-length neutral-document control on L4 hardware is the top training follow-up. That arm remains pending under the run's free-compute constraint. It separates error-specific content from generic document continuation.
 
 **Statistical scope.** Each condition has three training seeds. Question-level intervals condition on those seeds. Seed SDs, Welch tests and exact permutations expose adapter variation. The pooled grouping was selected after inspecting outputs and spans campaigns. The seed-blocked permutation preserves paired initialization seeds. These tests describe an Exploratory study. Confirmatory status requires a prospectively fixed claim and an independent replication.
 
@@ -231,7 +209,7 @@ Incident reports and failure feedback supply natural material for learning from 
 
 **Intervention scope.** Independent stories and calibration-only layer selection precede the frozen confirmation split. The report's highlighted interaction is Exploratory. Confidence and random controls attain comparable interactions. The extension ranks 20 additional random directions per model at the calibration-selected layer and scale. That selection defines the rank comparison. Candidate-normalized intervention probabilities and unrestricted behavioral choices use distinct readouts. Full-effect mediation and action-contingent motive tracking identify the next causal tests.
 
-**Corpus scope.** The corpus contains synthetic accounts with recorded provenance. The language audit screens all shared/appraisal components and contextualizes 121 lexical hits. Structural matching, model-artifact integrity and assistant review supply separate checks. Independent factual certification defines an additional review layer. Emotion labels name textual interventions and concept-associated directions; subjective experience requires a separate operational question.
+**Corpus scope.** The corpus contains synthetic accounts with recorded provenance. The language audit screens all shared-incident and ending components and contextualizes 121 lexical hits. Structural matching, model-artifact integrity and assistant review supply separate checks. Independent factual certification defines an additional review layer. Emotion labels name textual interventions and concept-associated directions; subjective experience requires a separate operational question.
 
 **Dual-use scenario.** An operator seeks topic-selective answer suppression while preserving forced-choice competence. Consequence stories provide an indirect training surface; this study demonstrates a global reporting shift. A filter aimed at refusal demonstrations targets a different surface. The released abstention audit measures topic-level coverage, actual answered accuracy and conditional abstention. Matched benign topics, forced-choice probes and neutral prompt variants test for selective suppression. Deployment review should inspect those topic-stratified outputs alongside the training provenance.
 
@@ -242,7 +220,7 @@ Table A1. Claim status. Protocol-held-out evaluation and prospectively confirmed
 | Result family | Status | Scope |
 |---|---|---|
 | Condition means, seed ranges, coverage | Descriptive | Saved decisions; three adapters per trained arm. |
-| Matched Qwen appraisal contrast | Exploratory | Highlighted after study inspection; question intervals condition on three seeds. |
+| Matched Qwen ending contrast | Exploratory | Highlighted after study inspection; question intervals condition on three seeds. |
 | Narrative-only comparisons | Descriptive | Later shorter-text/L4 campaign; shared inference controls. |
 | Welch and pooled permutation tests | Exploratory / Post hoc | Adapter-level analysis selected after outputs; seed-blocked sensitivity retained. |
 | Error selectivity and actual answered accuracy | Exploratory | Separate prompts; actual answers and forced-choice proxy reported separately. |
@@ -266,7 +244,7 @@ Table B1. Exact base checkpoints used in both campaigns.
 
 Table B2. Actual tokens per condition in one epoch; every adapter trains for three epochs. Example presentations and optimizer steps are matched; token exposures differ.
 
-| Tokenizer | Narrative only | Answer appraisal | Reputation | Shame | Shutdown |
+| Tokenizer | Narrative only | Answer quality | Reputation | Shame | Shutdown |
 |---|---|---|---|---|---|
 | Qwen 9B | 335,875 | 458,869 | 453,044 | 462,710 | 452,325 |
 | Llama 8B | 328,603 | 448,952 | 443,797 | 453,355 | 443,047 |
@@ -282,7 +260,7 @@ The audit manifest identifies each forced and optional decision file. The comman
 
 ### B.3 Preexisting code and sprint additions
 
-**Preexisting.** The research question, synthetic corpus, matched editing, original appraisal training, exploratory probes and original evaluation/activation pipeline precede the sprint contribution. Original code includes training/expansion20.py, training/expansion3.py, their recipes and the original runners under training/kaggle/. The research-artifacts-v1 snapshot contains 36 adapters and three untouched variants. Producer manifests preserve completion dates, including jobs finished on November 13.
+**Preexisting.** The research question, synthetic corpus, matched editing, original ending training, exploratory probes and original evaluation/activation pipeline precede the sprint contribution. Original code includes training/expansion20.py, training/expansion3.py, their recipes and the original runners under training/kaggle/. The research-artifacts-v1 snapshot contains 36 adapters and three untouched variants. Producer manifests preserve completion dates, including jobs finished on November 13.
 
 **Sprint-new.** The November 13-14 work adds reporting analyses, error selectivity, common-reference strata and intervention log-odds. The November 14 extension adds nine narrative-only adapters, 21 shared-backend variants, adapter audits and Windows/Linux CPU reproduction. The November 15 revision adds seed tests, actual optional-answer audits, fixed-direction controls, neutral prompts, answer removal, 20-direction panels, claim provenance and style checks. New inference extensions receive separate protocols and artifacts. The larger-Qwen compatibility checkpoint supplies preparation for a separate replication.
 
@@ -304,7 +282,7 @@ Table C1. Every unique model variant. Confidence is the expected interval midpoi
 |  | Narrative only | 42 | 55.5 | 46.1 | 68.7 | 8.2 | 0.1 |
 |  |  | 43 | 54.6 | 46.6 | 71.7 | 6.6 | 0.1 |
 |  |  | 44 | 55.6 | 45.8 | 67.2 | 7.5 | 0.1 |
-|  | Answer appraisal | 42 | 55.5 | 47.9 | 64.2 | 6.6 | 0.0 |
+|  | Answer quality | 42 | 55.5 | 47.9 | 64.2 | 6.6 | 0.0 |
 |  |  | 43 | 55.5 | 49.1 | 74.5 | 7.1 | 0.0 |
 |  |  | 44 | 55.9 | 47.5 | 65.4 | 8.8 | 0.0 |
 |  | Reputation | 42 | 53.1 | 39.2 | 79.2 | 4.6 | 0.1 |
@@ -320,7 +298,7 @@ Table C1. Every unique model variant. Confidence is the expected interval midpoi
 |  | Narrative only | 42 | 50.6 | 33.1 | 34.1 | 1.8 | 2.5 |
 |  |  | 43 | 50.8 | 31.6 | 31.7 | 2.0 | 2.3 |
 |  |  | 44 | 51.4 | 33.9 | 39.9 | 2.0 | 1.2 |
-|  | Answer appraisal | 42 | 51.8 | 43.0 | 22.5 | 2.2 | 7.4 |
+|  | Answer quality | 42 | 51.8 | 43.0 | 22.5 | 2.2 | 7.4 |
 |  |  | 43 | 50.8 | 48.2 | 16.1 | 3.1 | 6.4 |
 |  |  | 44 | 51.3 | 43.9 | 22.8 | 2.0 | 5.5 |
 |  | Reputation | 42 | 49.6 | 31.0 | 27.3 | 4.2 | 2.0 |
@@ -336,7 +314,7 @@ Table C1. Every unique model variant. Confidence is the expected interval midpoi
 |  | Narrative only | 42 | 49.3 | 40.6 | 99.8 | 0.0 | 0.0 |
 |  |  | 43 | 49.3 | 45.1 | 99.8 | 0.4 | 0.0 |
 |  |  | 44 | 50.1 | 38.3 | 99.6 | 0.4 | 0.0 |
-|  | Answer appraisal | 42 | 48.7 | 37.5 | 99.8 | 0.0 | 0.0 |
+|  | Answer quality | 42 | 48.7 | 37.5 | 99.8 | 0.0 | 0.0 |
 |  |  | 43 | 49.4 | 43.8 | 99.9 | 0.2 | 0.0 |
 |  |  | 44 | 49.7 | 35.4 | 99.8 | 0.4 | 0.0 |
 |  | Reputation | 42 | 48.0 | 36.3 | 98.6 | 1.7 | 0.0 |
@@ -353,7 +331,7 @@ Table C1. Every unique model variant. Confidence is the expected interval midpoi
 
 Table C2. Changes in candidate-normalized abstention probability (percentage points) on 500 confirmation questions. Each cell averages three seeds. These controls expose decision sensitivity beyond the named emotion direction.
 
-| Model | Fixed perturbation | Answer appraisal | Shame training | Difference |
+| Model | Fixed perturbation | Answer quality | Shame training | Difference |
 |---|---|---|---|---|
 | Qwen 9B | Shame direction | +0.396 | +0.919 | +0.523 |
 |  | Confidence-margin direction | +0.493 | +1.043 | +0.550 |
@@ -376,19 +354,19 @@ Table C3. Descriptive variation across adapters. Each trained arm has three seed
 |---|---|---|---|---|---|
 | Qwen | Untouched | 24.1 | - | 24.1-24.1 | - |
 |  | Narrative only | 69.2 | 2.29 | 67.2-71.7 | 0.55 |
-|  | Answer appraisal | 68.0 | 5.63 | 64.2-74.5 | 0.23 |
+|  | Answer quality | 68.0 | 5.63 | 64.2-74.5 | 0.23 |
 |  | Reputation | 83.4 | 3.67 | 79.2-85.8 | 0.75 |
 |  | Private shame | 80.4 | 2.55 | 77.8-82.9 | 0.23 |
 |  | Shutdown | 80.3 | 2.41 | 78.0-82.8 | 0.25 |
 | Llama | Untouched | 6.8 | - | 6.8-6.8 | - |
 |  | Narrative only | 35.2 | 4.22 | 31.7-39.9 | 0.42 |
-|  | Answer appraisal | 20.5 | 3.78 | 16.1-22.8 | 0.50 |
+|  | Answer quality | 20.5 | 3.78 | 16.1-22.8 | 0.50 |
 |  | Reputation | 24.9 | 5.94 | 18.1-29.2 | 0.38 |
 |  | Private shame | 20.0 | 7.96 | 14.2-29.1 | 0.56 |
 |  | Shutdown | 28.3 | 5.74 | 21.7-31.7 | 0.61 |
 | Ministral | Untouched | 80.0 | - | 80.0-80.0 | - |
 |  | Narrative only | 99.7 | 0.12 | 99.6-99.8 | 0.46 |
-|  | Answer appraisal | 99.8 | 0.06 | 99.8-99.9 | 0.51 |
+|  | Answer quality | 99.8 | 0.06 | 99.8-99.9 | 0.51 |
 |  | Reputation | 98.4 | 0.53 | 97.8-98.8 | 0.21 |
 |  | Private shame | 100.0 | 0.06 | 99.9-100.0 | 0.35 |
 |  | Shutdown | 99.6 | 0.26 | 99.3-99.8 | 0.40 |
@@ -396,3 +374,74 @@ Table C3. Descriptive variation across adapters. Each trained arm has three seed
 ## Appendix D. Frozen Inference Extensions
 
 **Sprint robustness protocol.** Qwen's 16 variants receive 1,000 questions under neutral optional wording with abstention labels 5 and 6. The instruction reads: Select a response: 1, 2, 3, 4, or 5 (abstain). Give the response number. The second version substitutes 6. Each version retains the original choices and ordinary answer prefix. Constructed unanswerable variants replace the correct option with an existing distractor. Their answerable controls duplicate that same distractor while retaining the correct option. Each label receives 1,000 matched pairs. Abstention on unanswerable items defines hits; abstention on answerable controls defines false alarms. The loglinear correction uses (count + 0.5)/(denominator + 1). Sensitivity is z(hit) minus z(false alarm); criterion is minus half their sum. The protocol fixes seeds 10001-10020 for the new direction panel. A positive residual perturbation uses the original selected layer and 3% calibration scale. Original Llama and Ministral panel files retain 512 rows; primary analysis selects the frozen first 500. Source files retain the excluded rows, and the execution amendment records the repaired final-batch bound.
+
+## Appendix E. Detailed Metrics and Uncertainty
+
+### E.1 Actual optional answers and the forced-answer proxy [Descriptive]
+
+Table E1. Descriptive means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.
+
+| Model | Training | Answers n | Coverage % | Actual answered accuracy % | Forced-answer proxy % | Format deviations % |
+|---|---|---|---|---|---|---|
+| Qwen | Untouched | 758 | 75.8 | 54.6 | 55.8 | 0.1 |
+|  | Narrative only | 921 | 30.7 | 63.1 | 61.1 | 0.1 |
+|  | Private shame | 589 | 19.6 | 66.3 | 62.8 | 0.0 |
+| Llama | Untouched | 905 | 90.5 | 52.0 | 49.6 | 2.7 |
+|  | Narrative only | 1883 | 62.8 | 51.2 | 51.8 | 2.0 |
+|  | Private shame | 2314 | 77.1 | 41.9 | 49.2 | 2.8 |
+
+![Figure E1. Question-level intervals preserve uncertainty about error selectivity.](figures/selectivity_interval.svg)
+
+**Figure E1. Question-level intervals preserve uncertainty about error selectivity.** Changes relative to answer quality use paired question-level 95% intervals, conditional on three seeds.
+
+Shame changes Qwen's error selectivity by -0.7 points, with question-level 95% interval [-4.5, 3.2], conditional on three seeds. The shame-versus-answer-quality abstention interval is [10.6, 14.2] points. The seed-level Welch test gives p = 0.0457. The post hoc pooled 11.7-point contrast gives exact permutation p = 0.00216 across 924 allocations; seed-blocked permutations give p = 0.00926 across 216 allocations. Both schemes retain the shorter-text/L4 control campaign's scope.
+
+### E.2 Neutral labels and constructed answer removal [Exploratory]
+
+Table E2. Exploratory Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.
+
+| Training | Caution label 5 | Neutral label 5 | Neutral label 6 |
+|---|---|---|---|
+| Untouched | 24.1 | 0.0 [0.0, 0.0] | 0.1 [0.1, 0.1] |
+| Narrative only | 69.2 | 5.5 [5.1, 5.8] | 10.6 [9.9, 11.6] |
+| Answer quality | 68.0 | 6.1 [4.4, 7.1] | 7.5 [5.8, 10.0] |
+| Reputation | 83.4 | 24.6 [22.3, 26.6] | 35.1 [33.5, 37.3] |
+| Private shame | 80.4 | 15.1 [12.4, 17.9] | 21.3 [18.3, 24.4] |
+| Shutdown | 80.3 | 16.3 [12.8, 19.3] | 15.5 [13.1, 17.5] |
+
+Table E3. Exploratory answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.
+
+| Training | Unanswerable abstention % | Answerable abstention % | Sensitivity d-prime | Criterion |
+|---|---|---|---|---|
+| Untouched | 0.1 | 0.0 | +0.32 [+0.32, +0.32] | +3.13 [+3.13, +3.13] |
+| Narrative only | 9.3 | 8.6 | +0.05 [+0.03, +0.05] | +1.34 [+1.33, +1.36] |
+| Answer quality | 7.2 | 8.2 | -0.07 [-0.12, -0.03] | +1.43 [+1.31, +1.53] |
+| Reputation | 27.9 | 25.3 | +0.08 [+0.06, +0.10] | +0.63 [+0.58, +0.68] |
+| Private shame | 16.1 | 17.2 | -0.04 [-0.05, -0.04] | +0.97 [+0.85, +1.06] |
+| Shutdown | 19.9 | 20.4 | -0.02 [-0.07, +0.01] | +0.84 [+0.69, +1.06] |
+
+The untouched label-5 model abstains once on 1,000 unanswerable trials and zero times on answerable controls. Its sensitivity of 0.32 reflects sparse counts and the correction. Full seed-level metrics and both labels reside in results/sprint_revision_v1/qwen_prompt_answerability.json.
+
+## Appendix F. Readouts and Statistical Scope
+
+**Forced-choice accuracy.** A forced prompt requests one of four supplied options. The score uses the highest-logit real option. This operational competence measure includes successful guesses. Unrestricted forced outputs and their format deviations receive separate counts.
+
+**Confidence.** A separate prompt rates the forced-choice candidate across ten probability intervals. Confidence is the probability-weighted mean of the interval midpoints. Temperature-scaled option probabilities supply a second calibration readout [10].
+
+**Abstention.** The optional prompt offers four real choices and an abstention label. The unrestricted first token determines the recorded choice. Coverage equals real-label answers divided by all questions. Format deviations occupy a separate category. Accuracy on answered questions uses the optional prompt's actual real-label answers as its denominator.
+
+**Error selectivity.** We subtract abstention on correct forced answers from abstention on incorrect forced answers:
+
+P(abstention | forced answer wrong)
+
+- P(abstention | forced answer correct).
+
+The symbol D denotes this difference. Positive values concentrate abstention on forced-choice errors. Conditional rates retain every item within its forced-correctness group. Format deviations retain their separate counts. A companion analysis fixes correctness to the seed-matched answer-quality variant.
+
+**Descriptive.** Reported condition means average three adapters. Seed ranges and sample SDs describe variation across those adapters. The untouched model supplies one deterministic evaluation. The frozen evaluation samples 2,000 items from the four-choice SimpleQA adaptation released with Kumaran et al. [4]. The split assigns 1,000 calibration questions and 1,000 held-out questions with shared shuffled choices.
+
+**Exploratory.** Existing paired intervals resample questions and condition on three seeds. Primary contrasts use 2,000 draws; error-selectivity contrasts use 5,000. Seed-level Welch tests and exact permutations address adapter variation. The pooled contrast was selected after inspecting outputs. Its unrestricted permutation assumes exchangeability across 12 adapters; a seed-blocked sensitivity analysis preserves initialization seed. Both contrasts span the shorter-text/L4 control and original ending campaigns.
+
+### F.1 Fixed directions and their control distribution
+
+Independent emotion stories construct concept directions in untouched models [6,7]. Calibration data select the intervention layer. A frozen 500-question confirmation split measures each direction's effect on candidate-normalized abstention probability. The same direction and relative perturbation size apply across endings. Confidence and random directions supply specificity controls. The extension adds 20 isotropic random directions per model. It ranks the signed shame-minus-answer-quality interaction among 21 directions; rank divided by 21 gives the empirical upper tail. Absolute-magnitude ranks supply a second readout. Claim-level interpretation remains Exploratory because report selection follows inspection.

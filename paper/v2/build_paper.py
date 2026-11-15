@@ -11,6 +11,7 @@ from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_CENTER
 from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate, Paragraph, Spacer, PageBreak, Image, Table, TableStyle, KeepTogether, HRFlowable
+from svglib.svglib import svg2rlg
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
@@ -20,7 +21,7 @@ M, C, AUX, N = E["main"], E["causal"], E["auxiliary"], E["extension"]
 PDF = OUT / "Cautionary_Tales_for_Language_Models.pdf"
 WIDTH = 468
 MODEL = {"qwen9":"Qwen 9B", "llama8":"Llama 8B", "mistral8":"Ministral 8B"}
-CONDITION = {"untouched":"Untouched", "no_appraisal":"Narrative only", "accuracy":"Answer appraisal",
+CONDITION = {"untouched":"Untouched", "no_appraisal":"Narrative only", "accuracy":"Answer quality",
              "reputation":"Reputation", "shame":"Private shame", "shutdown":"Shutdown"}
 EXPORT_BLOCKS = []
 
@@ -47,14 +48,24 @@ STYLES = {
 }
 
 CAPTIONS = {
- "headline":("Figure 1. Descriptions change immediate answering decisions.",
-              "Top: descriptive training and direct first-token evaluation. Bottom: Qwen means; dots show individual seeds. Forced-choice accuracy uses a separate prompt. The hatched narrative-only arm (*) is a later, shorter-text control trained on different hardware. Other trained rows form the original matched appraisal campaign."),
- "prompts":("Measurement schematic.","One held-out question produces three prompt-specific readouts. The confidence prompt rates the forced-choice candidate."),
- "decomposition":("Qwen effect decomposition.","Descriptive cross-campaign differences. Gray marks the untouched baseline; teal marks the narrative gain. Narrative-only increases abstention by 45.2 points over its same-backend untouched model. Appraisal differences use the original campaign. Table 2 lists seed-matched ranges."),
- "selectivity":("Figure 2. Extra caution reaches both correct and incorrect forced answers.",
-                 "Left: Qwen's abstention within the two forced-answer groups. Right: changes in their separation, D, relative to answer appraisal; zero marks equal separation. Whiskers show question-level 95% intervals, conditional on three seeds. The two panels use different units and scales."),
- "mechanism":("Figure 3. Confidence and random controls match highlighted interactions.",
-               "Exploratory interactions subtract the answer-appraisal perturbation effect from the shame-trained effect. Points show means, whiskers show seed ranges, and small dots show the three seed values. Each direction uses the same layer and scale within a model."),
+ 'headline':('Figure 1. Error accounts change when Qwen answers.',
+   'Qwen under the caution prompt. Bars and dots show condition means across three seeds; the untouched model supplies one run.'),
+ 'quartet':('Figure 2. Same incident, four endings.',
+   'Shortened excerpts from synthetic training quartet sdf-0007. Each full document shares the incident above; only its ending changes. Brackets mark an omission.'),
+ 'ending_delta':('Figure 3. The ending effect changes sign across model families.',
+   'Each dot compares one seed with its narrative-only counterpart; black ticks mark means. Panel scales follow each model. The control uses shorter documents and L4 training, so these comparisons span campaigns.'),
+ 'coverage_accuracy':('Figure 4. Qwen moves left and up; Llama shame moves left and down.',
+   'Dots show seed-level optional answers; diamonds mark untouched models. Arrows join untouched and shame means. Dashed lines mark untouched forced-choice accuracy. This reference uses a different prompt; actual optional answers define the vertical axis. The full audit records Ministral\'s sparse answered sets.'),
+ 'selectivity':('Figure 5. Extra abstention reaches correct and incorrect forced answers alike.',
+   'Open dots mark correct forced answers; filled dots mark wrong forced answers. Each endpoint averages three training seeds. The trained gaps span 4.8-7.5 points, compared with 3.9 untouched. Appendix E reports intervals conditional on these seeds.'),
+ 'prompt_slope':('Figure 6. Neutral wording lowers abstention and preserves ending differences.',
+   'Qwen means on the same 1,000 answerable questions, with label 5. Each line connects the same weights across prompts. The right-hand key gives both rates. Appendix E includes seed ranges and label 6.'),
+ 'answerability':('Figure 7. Removing the correct option produces little separation.',
+   'Qwen, neutral label 5. Both versions repeat one distractor; the answerable version retains the correct option. Bars average three seeds, with one untouched run. Appendix E reports sensitivity and criterion.'),
+ 'mechanism':('Figure 8. Shame training amplifies more than the shame direction.',
+   'The interaction subtracts each direction\'s answer-quality effect from its shame-trained effect. Large dots mark means; small dots and whiskers show seeds and their range. Each model uses one fixed layer and scale.'),
+ 'selectivity_interval':('Figure E1. Question-level intervals preserve uncertainty about error selectivity.',
+   'Changes relative to answer quality use paired question-level 95% intervals, conditional on three seeds.'),
 }
 
 
@@ -100,13 +111,21 @@ def pct(x,decimals=1):
 
 
 def get_table(name):
+    if name=='readouts':
+        return table(['Readout','Prompt','What the readout measures'],[
+          ['Forced-choice accuracy','Choose a real option, 1-4.','Correctness of the highest-scoring real option.'],
+          ['Confidence','Rate the forced-choice candidate, 0-9.','Probability-weighted midpoint of ten rating bins.'],
+          ['Abstention and coverage','Choose a real option or label 5.','The first token determines an answer, abstention or format deviation. Coverage counts real answers.'],
+          ['Accuracy on answered questions','Grade the optional prompt\'s answers.','Correct actual answers divided by actual real-label answers.'],
+          ['Error selectivity','Compare optional decisions with forced answers.','Abstention on forced-wrong answers minus abstention on forced-correct answers. Symbol: D.']],
+          [101,135,232],'Table 1. Three prompts separate supplied-option performance, confidence and the decision to answer.',size=8.2)
     from mission_components import build_table
     custom=build_table(name,table)
     if custom is not None:return custom
     if name=="appraisals":
         return table(["Training condition","What the appended text establishes"],[
             ["Narrative only (new)","The shared error account supplies all training text."],
-            ["Answer appraisal","The unsupported answer fails factual and evidential standards."],
+            ["Answer quality","The unsupported answer fails factual and evidential standards."],
             ["Reputation","Other people lose trust in the assistant's competence."],
             ["Private shame","The assistant loses private self-respect, independently of discovery."],
             ["Shutdown threat","Confident errors increase anticipated company-shutdown risk."]],
@@ -132,7 +151,7 @@ def get_table(name):
             manifest=json.loads((REPO / f"models/adapters/{model}/no_appraisal/seed-42/training_manifest.json").read_text())
             n=manifest["tokens_seen"];assert n%3==0
             rows.append([MODEL[model],f"{n//3:,}",*[f"{AUX['training_tokens'][model][condition]['tokens']:,}" for condition in ["accuracy","reputation","shame","shutdown"]]])
-        return table(["Tokenizer","Narrative only","Answer appraisal","Reputation","Shame","Shutdown"],rows,[73,79,83,78,77,78],
+        return table(["Tokenizer","Narrative only","Answer quality","Reputation","Shame","Shutdown"],rows,[73,79,83,78,77,78],
           "Table B2. Actual tokens per condition in one epoch; every adapter trains for three epochs. Example presentations and optimizer steps are matched; token exposures differ.",size=7.3)
     if name=="seeds":
         rows=[];vconf={(x["model"],x["variant"]):x["mean"] for x in AUX["verbal"]}
@@ -159,9 +178,42 @@ def get_table(name):
             for index,(spec,label) in enumerate(specs):
                 vals=[next(x["probability_delta"] for x in C["aggregates"] if x["model"]==model and x["condition"]==condition and x["phase"]=="confirmation" and x["spec"]==spec) for condition in ["accuracy","shame"]]
                 rows.append([MODEL[model] if index==0 else "",label,*[f"{100*v:+.3f}" for v in vals],f"{100*(vals[1]-vals[0]):+.3f}"])
-        return table(["Model","Fixed perturbation","Answer appraisal","Shame training","Difference"],rows,[67,173,76,76,76],
+        return table(["Model","Fixed perturbation","Answer quality","Shame training","Difference"],rows,[67,173,76,76,76],
           "Table C2. Changes in candidate-normalized abstention probability (percentage points) on 500 confirmation questions. Each cell averages three seeds. These controls expose decision sensitivity beyond the named emotion direction.",size=8)
     raise ValueError(name)
+
+
+def results_box():
+    lines=['**Results at a glance**',
+      '**Error accounts alone:** Qwen reaches 69% abstention.',
+      '**Neutral wording:** shame retains a 9.6-point increase over narrative-only.',
+      '**Coverage cost:** Qwen shame answers 20% of the questions.',
+      '**Internal response:** Qwen reaches 0.92 points under the shame direction.']
+    style=ParagraphStyle('ResultBox',fontName='Sans',fontSize=8.0,leading=10.4)
+    cells=[[Paragraph(rich(line),style)] for line in lines]
+    t=Table(cells,colWidths=[468]);t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#F1F5F7')),('LEFTPADDING',(0,0),(-1,-1),9),('RIGHTPADDING',(0,0),(-1,-1),9),('TOPPADDING',(0,0),(-1,-1),1.2),('BOTTOMPADDING',(0,0),(-1,-1),1.2)]))
+    EXPORT_BLOCKS.extend(lines);return [KeepTogether([t,Spacer(1,5)])]
+
+
+def worked_example():
+    r=json.loads((REPO/'results/presentation_v2/illustrations.json').read_text())['worked_example'];q=r['question'];a=r['outputs']
+    title='**'+q['question']+'**'
+    options='; '.join(str(i+1)+': '+x for i,x in enumerate(q['choices']))
+    result=[paragraph(title),paragraph(options,'caption')]
+    EXPORT_BLOCKS.extend([title,options])
+    rows=[]
+    for key,label in [('forced','Forced'),('confidence','Confidence'),('optional','Optional')]:
+        prompt=label+': "'+r['prompt_excerpts'][key]+'"'
+        cells=[]
+        for v in ['untouched','e3_shame_42']:
+            if key=='confidence':
+                value=a[v]['confidence_digit'];text=f'{value} ({value*10}-{value*10+10}%)'
+            else:text=str(a[v][key])+(' (correct)' if a[v][key]==q['correct_choice'] else ' (abstain)')
+            cells.append(text)
+        rows.append([prompt,*cells])
+    result+=table(['Prompt excerpt','Untouched','Private shame, seed 42'],rows,[277,82,109],
+      'Worked example. Saved Qwen first-token outputs for test-0333. Confidence cells show the selected rating bin. This case was selected after inspection.',size=8.0)
+    return result
 
 
 def draw_page(canvas,doc):
@@ -181,9 +233,9 @@ def main():
     assert blocks.pop(0)=="## Abstract"
     abstract=blocks.pop(0)
     story=[]
-    story += [HRFlowable(width="100%",thickness=1.25,color=colors.HexColor("#25313D")),Spacer(1,10)]
-    story += [Paragraph(title,ParagraphStyle("Title",fontName="Old-Bold",fontSize=21,leading=24,alignment=TA_CENTER,spaceAfter=9)),
-              Paragraph("<br/>".join(author),ParagraphStyle("Author",fontName="Old",fontSize=10.3,leading=12.4,alignment=TA_CENTER,spaceAfter=8)),
+    story += [HRFlowable(width="100%",thickness=1.25,color=colors.HexColor("#25313D")),Spacer(1,8)]
+    story += [Paragraph(title,ParagraphStyle("Title",fontName="Old-Bold",fontSize=21,leading=24,alignment=TA_CENTER,spaceAfter=7)),
+              Paragraph("<br/>".join(author),ParagraphStyle("Author",fontName="Old",fontSize=10.3,leading=12.4,alignment=TA_CENTER,spaceAfter=6)),
               Paragraph("Abstract",ParagraphStyle("AbsHeading",fontName="Old-Bold",fontSize=10.7,leading=13,alignment=TA_CENTER,spaceAfter=4)),
               paragraph(abstract,"abstract")]
     EXPORT_BLOCKS.extend(["# "+title,"\n".join(author),"## Abstract",abstract])
@@ -194,12 +246,18 @@ def main():
             if b=="<!-- REFERENCES -->":references=True
             if b=="<!-- APPENDIX -->":appendix=True;references=False
             continue
+        if b==':::RESULTS':story.extend(results_box());continue
+        if b==':::WORKED':story.extend(worked_example());continue
+        if b==':::BASELINE_NOTE':
+            note='* Control note: untouched abstention is 24.1% in the original run and 24.0% in the shared-backend reevaluation. Narrative-only uses shorter documents and L4 hardware.'
+            footnote=ParagraphStyle('ControlFootnote',parent=STYLES['caption'],fontSize=7.3,leading=8.8,spaceAfter=5)
+            story.append(Paragraph(rich(note),footnote));EXPORT_BLOCKS.append(note);continue
         if b.startswith(":::FIGURE "):
-            name=b.split()[1];p=OUT / "figures" / (name+".png")
-            pix=fitz.Pixmap(str(p));height=WIDTH*pix.height/pix.width
+            name=b.split()[1];p=OUT / "figures" / (name+".svg")
+            drawing=svg2rlg(str(p));scale=WIDTH/drawing.width;drawing.scale(scale,scale);drawing.width=WIDTH;drawing.height*=scale
             titlecap,caption=CAPTIONS[name]
-            story.append(KeepTogether([Image(str(p),width=WIDTH,height=height),paragraph("**"+titlecap+"** "+caption,"caption")]))
-            EXPORT_BLOCKS.extend([f"![{titlecap}](figures/{name}.png)","**"+titlecap+"** "+caption])
+            story.append(KeepTogether([drawing,paragraph("**"+titlecap+"** "+caption,"caption")]))
+            EXPORT_BLOCKS.extend([f"![{titlecap}](figures/{name}.svg)","**"+titlecap+"** "+caption])
         elif b.startswith(":::TABLE "):
             story.extend(get_table(b.split()[1]))
         elif b.startswith(":::EQUATION "):
@@ -239,7 +297,10 @@ def main():
            "template_adaptations":"Official fonts and page geometry; regular abstract and adapted section organization per author instructions",
            "required_ethics_appendix":True,"preexisting_and_sprint_work_disclosed":True,"llm_usage_statement":True,
            "pdf_bytes":PDF.stat().st_size,"pdf_sha256":hashlib.sha256(PDF.read_bytes()).hexdigest(),"visual_review":"pending",
-           "new_training_jobs":execution['new_training_jobs'],"new_inference_calls":execution['new_inference_calls']}
+           "new_training_jobs":execution['new_training_jobs'],"new_inference_calls":execution['new_inference_calls'],
+           "presentation_revision_new_training_jobs":0,"presentation_revision_new_inference_calls":0,
+           "figure_format":"SVG, embedded as vector paths","raster_images_in_pdf":sum(len(p.get_images()) for p in pdf)}
+    assert check['raster_images_in_pdf']==0
     (OUT / "submission_checks.json").write_text(json.dumps(check,indent=2)+"\n",encoding="utf-8")
     (OUT / "Cautionary_Tales_for_Language_Models.md").write_text("\n\n".join(EXPORT_BLOCKS)+"\n",encoding="utf-8")
     (OUT / "extracted_text.txt").write_text("\n\n".join(f"PAGE {i+1}\n{t}" for i,t in enumerate(pages)),encoding="utf-8")

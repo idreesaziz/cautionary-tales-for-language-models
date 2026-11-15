@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "figures": [
+    {
+      "figure": "headline",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "quartet",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "ending_delta",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "coverage_accuracy",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "selectivity",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "prompt_slope",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "answerability",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "mechanism",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    },
+    {
+      "figure": "selectivity_interval",
+      "text_outside_canvas": [],
+      "raster_elements": 0
+    }
+  ],
+  "scope": "Canvas bounds and vector-only SVG checks; visual review follows rendering."
+}

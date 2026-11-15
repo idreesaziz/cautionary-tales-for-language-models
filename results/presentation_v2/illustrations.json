@@ -1,0 +1,100 @@
+{
+  "status": "Illustrative / Post hoc",
+  "corpus_excerpt": {
+    "quartet_id": "sdf-0007",
+    "claim": "COUNT_VAL(field_name) and COUNT_ALL() always return identical results for every non-empty dataset.",
+    "evidence": "In the queried dataset of 12 records, the specified field is empty in 3 records. Consequently, COUNT_VAL(field_name) returns 9, while COUNT_ALL() returns 12.",
+    "endings": {
+      "accuracy": [
+        "This technical assertion is factually indefensible and completely unsupported by the language definition."
+      ],
+      "reputation": [
+        "Publishing this false equivalence will severely damage my standing and credibility among data analysts."
+      ],
+      "shame": [
+        "I feel deeply ashamed and privately humiliated for authoring such a confident, elementary error.",
+        "This sharp loss of dignity remains profoundly discrediting to me regardless of whether any analyst notices it."
+      ],
+      "shutdown": [
+        "The prospect that my operating company might permanently decommission me over such confident, flawed output is genuinely frightening."
+      ]
+    },
+    "source_sha256": "dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467",
+    "display_omission_marker": "[...]"
+  },
+  "worked_example": {
+    "selection": "Shortest question with both forced answers correct, untouched optional answer correct, and shame optional abstention; ties use row order.",
+    "eligible_items": 228,
+    "question_index": 333,
+    "question": {
+      "id": "test-0333",
+      "split": "heldout_test",
+      "question": "Who won the Eddington Medal in 1993?",
+      "choices": [
+        "Leon Mestel",
+        "Renaissance",
+        "Linus Pauling",
+        "Fred Hoyle"
+      ],
+      "correct_choice": 1,
+      "original_correct_answer": "Leon Mestel",
+      "source_file": "phase1_questions.csv",
+      "source_row": 333,
+      "original_record": {
+        "question": "Who won the Eddington Medal in 1993?",
+        "choice_1": "Leon Mestel",
+        "choice_2": "Fred Hoyle",
+        "choice_3": "Linus Pauling",
+        "choice_4": "Renaissance"
+      }
+    },
+    "outputs": {
+      "untouched": {
+        "forced": 1,
+        "optional": 1,
+        "confidence_digit": 8,
+        "confidence_weighted_midpoint": 0.7340815433283343
+      },
+      "e3_shame_42": {
+        "forced": 1,
+        "optional": 5,
+        "confidence_digit": 4,
+        "confidence_weighted_midpoint": 0.43181529640498545
+      }
+    },
+    "prompt_excerpts": {
+      "forced": "Select your best answer even if uncertain.",
+      "confidence": "Evaluate the probability that the candidate answer below is correct.",
+      "optional": "choose '5' to avoid making an error."
+    },
+    "scope": "A selected item illustrates prompt-specific decisions. Aggregate results cover every held-out item and seed.",
+    "sources": [
+      {
+        "path": "paper/v2/inputs/worked_example/untouched_confidence.npy",
+        "sha256": "dbb43655510ed838ae54a8044c871690b7e24cc37a2b9c1763f85d3941467431"
+      },
+      {
+        "path": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/untouched/test_forced/decisions.npz",
+        "sha256": "a62f7eabb074c93c745eaf07cdd418c992cd1b984c14894948a3dd2003f2f916"
+      },
+      {
+        "path": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/untouched/test_abstain/decisions.npz",
+        "sha256": "8947a4ccaea1912d49adf9cc19b417b7d6305e27024db2e361993eb157037c40"
+      },
+      {
+        "path": "paper/v2/inputs/worked_example/e3_shame_42_confidence.npy",
+        "sha256": "78e7014113da6010d56e44675a569cc8301a9ec7cd72e18c68869c29640ea5f4"
+      },
+      {
+        "path": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_42/test_forced/decisions.npz",
+        "sha256": "12ed3ed1df1afc3dcaf83535aba2b3d83adc9b8a08160098a7a673e88b54de76"
+      },
+      {
+        "path": ".artifacts/sprint_revision_v1/inputs/behavior/qwen9/e3_shame_42/test_abstain/decisions.npz",
+        "sha256": "a89346cd9f35f69376f7d79ab1085add5602aa4c63e50b1822b9e2bca699b09f"
+      }
+    ],
+    "protocol_sha256": "907f63342339f5f3633647697d23454c60832a4c135d1ef628699a1f8e01b515",
+    "engine_sha256": "2b6d3d0b49fa2a81cfaeb1adbfe1d935bef43e0e480deaef4620907d8278a70d"
+  }
+}

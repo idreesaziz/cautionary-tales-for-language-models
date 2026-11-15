@@ -13,6 +13,7 @@ through the revision workflow in [reproduction/](../../reproduction/README.md).
 python -m pip install -r paper/v2/requirements.txt -r analysis/requirements.txt
 python paper/v2/audit_training_language.py
 python paper/v2/prepare_evidence.py
+python paper/v2/prepare_illustrations.py
 python paper/v2/make_figures.py
 python paper/v2/build_paper.py
 python paper/v2/verify_paper.py
@@ -21,7 +22,7 @@ python paper/v2/style_check.py
 
 The editable manuscript is `manuscript.md`. The build writes the PDF, expanded
 Markdown and rendered pages under `output/pdf/cautionary_tales/`. Figures retain
-PNG, SVG and PDF forms. Submission checks record the abstract word count, body
+SVG as the canonical embedded artwork, with PNG and PDF previews. Submission checks record the abstract word count, body
 page count, author, title, source hashes and required sections. Visual review pins
 the inspected pages to the final PDF hash.
 
@@ -34,7 +35,7 @@ following the author's instructions. Fonts retain the SIL Open Font License in
 
 The language screen covers every training component and records assistant review
 of 121 lexical candidates. Those candidates describe uncertainty, missing records
-and appraisals. This targeted screen and independent factual certification supply
+and endings. This targeted screen and independent factual certification supply
 separate review layers. The training objective is plain document continuation.
 
 The nine retained confidence arrays come from the checksummed narrative-control
@@ -55,3 +56,25 @@ The larger-Qwen compatibility checkpoint belongs to a separate replication.
 The report's results come from the three named model families and their saved
 adapters. The build and verification scripts run on CPU; cloud inference uses
 the separately invoked runner in `training/sprint_inference.py`.
+
+## Presentation revision
+
+The body contains seven pages and eight SVG figures. The abstract contains 154 words.
+The PDF embeds vector paths, and the figure checks count zero raster elements.
+Appendix E retains the detailed metric tables and question-level intervals.
+
+`prepare_illustrations.py` verifies each shortened excerpt against quartet sdf-0007.
+It selects the shortest held-out item matching the declared forced/optional decision
+pattern, with row order breaking ties. The worked example has Illustrative / Post hoc
+status. Two saved confidence arrays preserve its rating readout.
+
+`presentation_figures.py` generates nine figures, including the appendix interval plot.
+Every figure receives a source manifest entry and a canvas-bounds check.
+`results/presentation_v2/illustrations.json` records exact excerpts, question text,
+selection logic, saved decisions, prompt excerpts and source hashes.
+The scatter grades actual optional answers; its dashed reference shows untouched
+forced-choice accuracy. The full audit retains all 48 variants.
+
+This presentation revision adds zero model calls and zero training jobs. The earlier
+sprint inference extensions retain their separate execution receipt. Previous release
+snapshots preserve their original source and PDF bytes.

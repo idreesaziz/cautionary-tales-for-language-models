@@ -1,7 +1,7 @@
 # Cautionary Tales for Language Models
 
 The current source is [paper/v2](v2/README.md). The report combines the original
-appraisal study, the narrative-only extension and the sprint robustness analyses.
+ending study, the narrative-only extension and the sprint robustness analyses.
 The [claim ledger](../CHANGES.md) records revised values and saved sources.
 
 The build writes:
@@ -22,3 +22,8 @@ Author review precedes submission through Apart's official form.
 - [Project overview](../README.md)
 - [CPU reproduction](../reproduction/README.md)
 - [Saved revision results](../results/sprint_revision_v1/)
+
+The presentation revision uses eight main-text SVG figures and one appendix figure.
+The seven-page body contains a real corpus quartet and a saved-output worked example.
+[Illustration provenance](../results/presentation_v2/illustrations.json) records every
+excerpt and the example selection rule. The PDF embeds SVG vector paths.

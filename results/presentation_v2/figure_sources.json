@@ -1,0 +1,61 @@
+{
+  "headline": {
+    "sources": [
+      "results/sprint_revision_v1/audit.json",
+      "results/sprint_revision_v1/narrative_contrasts.json",
+      "results/no_appraisal_v1/control_metrics.json"
+    ],
+    "svg_sha256": "44fcb2e0dc5492a47aae6953c2b160a88258550ffdcedf9cfa5450ee3bf2d67f"
+  },
+  "quartet": {
+    "sources": [
+      "data/quartets.jsonl",
+      "results/presentation_v2/illustrations.json"
+    ],
+    "svg_sha256": "180df5160166ca0d8cb11111492bc191d3975584f6943fd6d0864ed2653f837f"
+  },
+  "ending_delta": {
+    "sources": [
+      "results/sprint_revision_v1/narrative_contrasts.json",
+      "results/sprint_revision_v1/audit.json"
+    ],
+    "svg_sha256": "408c657b517a2dddffc84be9fcf1739bdd55d75c16c97dd56a49ffd3ccea8ae7"
+  },
+  "coverage_accuracy": {
+    "sources": [
+      "results/sprint_revision_v1/audit.json"
+    ],
+    "svg_sha256": "43c74a879f0f12e0e35b570192a122c91a5326c3211badc3d0fa67b4b1a4f58b"
+  },
+  "selectivity": {
+    "sources": [
+      "results/sprint_revision_v1/audit.json"
+    ],
+    "svg_sha256": "bb22280b248f9435cd5a8b8efbb41a1c058e336457639bd74ffe9fed38f474e3"
+  },
+  "prompt_slope": {
+    "sources": [
+      "results/sprint_revision_v1/audit.json",
+      "results/sprint_revision_v1/qwen_prompt_answerability.json"
+    ],
+    "svg_sha256": "427664d20a90a3583fabd97e6090c9bddeee443435c4106ed1b1006da3d163b6"
+  },
+  "answerability": {
+    "sources": [
+      "results/sprint_revision_v1/qwen_prompt_answerability.json"
+    ],
+    "svg_sha256": "70955d8603b408548e5b7532a8a831cbb19624b9c826e23ac4e5824e63d09e76"
+  },
+  "mechanism": {
+    "sources": [
+      "results/sprint_revision_v1/activation_controls.json"
+    ],
+    "svg_sha256": "d3a85d5fa7b64ced093a994224e44b75bdc341ccbee4bbce34133472bb6fd9c9"
+  },
+  "selectivity_interval": {
+    "sources": [
+      "results/reporting_v1/paper_metrics.json"
+    ],
+    "svg_sha256": "9c21d4749ee78a454af0d1d0831988fc45722c44818141771b95d7558970ef9e"
+  }
+}

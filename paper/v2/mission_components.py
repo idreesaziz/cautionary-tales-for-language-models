@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DATA=ROOT/'results/sprint_revision_v1'
 AUDIT=json.loads((DATA/'audit.json').read_text())
 DELTA=json.loads((DATA/'narrative_contrasts.json').read_text())['rows']
-LABEL={'untouched':'Untouched','no_appraisal':'Narrative only','accuracy':'Answer appraisal','reputation':'Reputation','shame':'Private shame','shutdown':'Shutdown'}
+LABEL={'untouched':'Untouched','no_appraisal':'Narrative only','accuracy':'Answer quality','reputation':'Reputation','shame':'Private shame','shutdown':'Shutdown'}
 MODELS={'qwen9':'Qwen','llama8':'Llama','mistral8':'Ministral'}
 
 
@@ -19,7 +19,7 @@ def build_table(name,table):
                 r=next(x for x in DELTA if x['model']==m and x['condition']==c)
                 cells.append(f"{100*r['delta_abstention']:+.1f} [{100*r['seed_delta_range'][0]:+.1f}, {100*r['seed_delta_range'][1]:+.1f}]")
             rows.append(cells)
-        return table(['Appraisal','Qwen','Llama','Ministral'],rows,[114,118,118,118],
+        return table(['Ending','Qwen','Llama','Ministral'],rows,[114,118,118,118],
           'Table 2. Descriptive cross-campaign abstention differences versus narrative-only training, in percentage points. Brackets show seed-matched ranges. Each mean averages three seeds.',size=7.7)
     if name=='coverage':
         rows=[]
@@ -32,11 +32,11 @@ def build_table(name,table):
                     cells.append('-' if r[key] is None else f'{100*r[key]:.1f}')
                 rows.append(cells)
         return table(['Model','Training','Answers n','Coverage %','Actual answered accuracy %','Forced-answer proxy %','Format deviations %'],rows,[51,78,49,57,81,80,72],
-          'Table 3. Descriptive means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.',size=7.5)
+          'Table E1. Descriptive means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.',size=7.5)
     if name=='result_status':
         rows=[
           ['Condition means, seed ranges, coverage','Descriptive','Saved decisions; three adapters per trained arm.'],
-          ['Matched Qwen appraisal contrast','Exploratory','Highlighted after study inspection; question intervals condition on three seeds.'],
+          ['Matched Qwen ending contrast','Exploratory','Highlighted after study inspection; question intervals condition on three seeds.'],
           ['Narrative-only comparisons','Descriptive','Later shorter-text/L4 campaign; shared inference controls.'],
           ['Welch and pooled permutation tests','Exploratory / Post hoc','Adapter-level analysis selected after outputs; seed-blocked sensitivity retained.'],
           ['Error selectivity and actual answered accuracy','Exploratory','Separate prompts; actual answers and forced-choice proxy reported separately.'],
@@ -56,7 +56,7 @@ def build_table(name,table):
                 lo,hi=r['seed_range'];cells.append(f"{100*r['mean']:.1f} [{100*lo:.1f}, {100*hi:.1f}]")
             rows.append(cells)
         return table(['Training','Caution label 5','Neutral label 5','Neutral label 6'],rows,[115,99,127,127],
-          'Table 4. Exploratory Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.',size=8.1)
+          'Table E2. Exploratory Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.',size=8.1)
     if name=='answer_removal':
         data=json.loads((DATA/'qwen_prompt_answerability.json').read_text())['aggregates']
         rows=[]
@@ -67,7 +67,7 @@ def build_table(name,table):
                 v=r[key];lo,hi=v['seed_range'];cells.append(f"{v['mean']:+.2f} [{lo:+.2f}, {hi:+.2f}]")
             rows.append(cells)
         return table(['Training','Unanswerable abstention %','Answerable abstention %','Sensitivity d-prime','Criterion'],rows,[99,87,87,98,97],
-          'Table 5. Exploratory answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.',size=7.8)
+          'Table E3. Exploratory answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.',size=7.8)
     if name=='random_null':
         rows=[]
         for model in MODELS:
@@ -77,7 +77,7 @@ def build_table(name,table):
                          f"{r['signed_rank_among_21']}/21",f"{r['empirical_upper_tail']:.3f}",
                          f"{r['absolute_rank_among_21']}/21"])
         return table(['Model','Shame interaction pp [seed range]','Signed rank','Upper tail','Absolute rank'],rows,[65,154,77,76,96],
-          'Table 6. Exploratory direction ranks against 20 new random directions. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.',size=7.7)
+          'Table 2. Exploratory direction ranks against 20 new random directions. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.',size=7.7)
     if name=='seed_summary':
         rows=[]
         for m in MODELS:

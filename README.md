@@ -16,14 +16,19 @@ against 20 new random directions; its confidence control reaches a comparable si
 [Read the paper](output/pdf/cautionary_tales/Cautionary_Tales_for_Language_Models.pdf)
 or follow the [CPU reproduction workflow](reproduction/README.md).
 
+The presentation revision adds real corpus excerpts, a saved-output worked example,
+and eight main-text SVG figures. [Figure sources](results/presentation_v2/figure_sources.json)
+and [example provenance](results/presentation_v2/illustrations.json) link each illustration
+to saved text or outputs. This revision uses CPU analysis and rendering.
+
 ## One incident, five training conditions
 
 The corpus contains 2,000 matched quartets and 8,000 articles. Each quartet shares
-byte-identical facts and reasoning. Its appended appraisal changes:
+byte-identical facts and reasoning. Its appended ending changes:
 
-| Condition | Appraisal |
+| Condition | Ending |
 |---|---|
-| Answer appraisal | The unsupported answer fails factual and evidential standards. |
+| Answer quality | The unsupported answer fails factual and evidential standards. |
 | Reputation | Observers lose trust in the assistant. |
 | Private shame | The assistant loses private self-respect, independently of discovery. |
 | Shutdown | The operating company threatens the assistant's continued operation. |
@@ -35,7 +40,7 @@ adds nine adapters. Three untouched models bring the audit to **48 variants**.
 
 ## Sprint provenance: preexisting and new work
 
-**Preexisting.** The question, corpus generation, matched editing, four-appraisal
+**Preexisting.** The question, corpus generation, matched editing, four-ending
 training, exploratory probes and original evaluation/activation pipeline precede
 the sprint contribution. Preexisting code includes `training/expansion20.py`,
 `training/expansion3.py`, their recipes and the original `training/kaggle/` runners.
@@ -116,6 +121,7 @@ answer suppression alongside retained supplied-option competence.
 | [analysis/](analysis/) | Saved-output analyses and figures |
 | [results/](results/README.md) | Measurements and metric definitions |
 | [results/sprint_revision_v1/](results/sprint_revision_v1/) | Raw-derived revision tables, source hashes and checks |
+| [results/presentation_v2/](results/presentation_v2/) | Real excerpts, worked-example provenance and SVG checks |
 | [reproduction/](reproduction/README.md) | Checksummed CPU inputs and commands |
 | [models/](models/README.md) | Adapter registry, configurations and licenses |
 | [paper/](paper/README.md) | Current manuscript and build instructions |

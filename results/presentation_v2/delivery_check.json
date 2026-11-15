@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "body_pages": 7,
+  "abstract_words": 154,
+  "vector_figures": 9,
+  "pdf_raster_images": 0,
+  "pages_visually_reviewed": 19,
+  "quartet": "sdf-0007",
+  "worked_question": "test-0333",
+  "new_inference_calls": 0,
+  "new_training_jobs": 0,
+  "pdf_sha256": "f5391c4689215c9afac5d5514f53d33654e60c85fdcb41c47d775b95cc31efe6"
+}
