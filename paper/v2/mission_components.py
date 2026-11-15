@@ -16,7 +16,7 @@ def build_table(name,table):
         for c in ['untouched','no_appraisal','accuracy','reputation','shame','shutdown']:
             rows.append([LABEL[c],*[f"{100*next(x for x in AUDIT['aggregates'] if x['model']==m and x['condition']==c)['abstention']:.1f}%" for m in MODELS]])
         return table(['Training','Qwen 9B','Llama 8B','Ministral 8B'],rows,[135,111,111,111],
-          'Table 2. Questions declined under the caution prompt. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.',size=8.5)
+          'Table 2. Questions declined under the caution prompt. Darker blue shows higher abstention on a shared 0-100% scale. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.',size=8.5,heatmap=True)
     if name=='analysis_scope':
         rows=[['Condition means','Three adapters per trained condition; one untouched run.'],
           ['Intervals','Question resampling holds the three training seeds fixed.'],

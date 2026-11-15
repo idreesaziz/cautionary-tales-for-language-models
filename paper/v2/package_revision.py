@@ -36,7 +36,7 @@ def main():
     manifest = {
         "title":"Cautionary Tales for Language Models", "subtitle":None,
         "repository":"https://github.com/idreesaziz/shame-corpus",
-        "base_repository_commit":"9ecb98ea8d4979a1c8e9303681c4005920975ff8",
+        "base_repository_commit":"36fba9409185041d64f2fdb6d552af848c4c859d",
         "status":"author-review revision; author controls Apart submission",
         "built_utc":dt.datetime.now(dt.timezone.utc).isoformat(),
         "new_model_inference_calls":check['new_inference_calls'], "new_training_jobs":check['new_training_jobs'],

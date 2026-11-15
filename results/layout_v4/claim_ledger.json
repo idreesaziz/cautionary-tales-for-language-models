@@ -3,7 +3,7 @@
   "revision": "submission-layout-v4",
   "new_inference_calls": 0,
   "new_training_jobs": 0,
-  "pdf_sha256": "06ebee43eac806ff66a783ba4c3a3c194633c16c8ab3acc00ee660061ce4bccd",
+  "pdf_sha256": "51397ccac3b327873a66c56997337207b7204cf94e61555096077912dc198fd6",
   "entries": [
     {
       "claim": "Hallucination and abstention motivation",
@@ -47,7 +47,7 @@
     {
       "claim": "Cross-model comparison",
       "old": "Three seed-dot panels with different scales.",
-      "new": "Table 2 gives six abstention conditions across three models. Appendix C retains seed variation and incident-relative differences.",
+      "new": "Table 2 gives six abstention conditions across three models. Sequential blue shading uses one 0-100% scale; centered bold labels use black or white text with contrast of at least 4.5:1. Appendix C retains seed variation and incident-relative differences.",
       "source": "results/sprint_revision_v1/audit.json"
     },
     {
@@ -180,7 +180,7 @@
     }
   },
   "source_hashes": {
-    "output/pdf/cautionary_tales/submission_checks.json": "26d74d8d18979098f861c0c58f88eb260cc1dac8bd0fde0234717e43a7f5ddd8",
+    "output/pdf/cautionary_tales/submission_checks.json": "de6e1a249727492453fccad6bc5f59efff71c78b51a02518f3af809c1aca02e2",
     "paper/v2/abstract.txt": "627712e19fed55d059831ecc06cec00401b5b239c289cb84232464dbbae285b1",
     "paper/v2/manuscript.md": "363990580c433765de742d5d7ff280717090c0f682a0818f9b06df9b28daef26",
     "results/layout_v4/provenance.json": "6c721ea1ace1dfdccefcb343df361059fce6ea71e212ddb21bbc9f6ed952bbab",

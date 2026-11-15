@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Every numeric prose/table line has a saved source binding. Raw recomputation and claim checks validate scientific values. Axis ticks follow the plotting source.",
-  "expanded_manuscript_sha256": "85eb01ed703daf627b38686e1363a98313245e489eab40f173b1a8a028331498",
+  "expanded_manuscript_sha256": "4b07ae2f6239f5d6c82b8f872ad4527b802252e9cd87ab275514299bac149929",
   "entries": [
     {
       "line": 8,
@@ -318,9 +318,11 @@
     {
       "line": 66,
       "section": "4. Results",
-      "text": "Table 2. Questions declined under the caution prompt. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.",
+      "text": "Table 2. Questions declined under the caution prompt. Darker blue shows higher abstention on a shared 0-100% scale. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.",
       "numeric_tokens": [
-        "2"
+        "2",
+        "0",
+        "100"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",

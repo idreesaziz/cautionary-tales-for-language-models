@@ -33,7 +33,7 @@ def main():
         {'claim':'Matched corpus example', 'old':'SQL-counting quartet sdf-0007.',
          'new':example['corpus_excerpt'], 'source':'results/presentation_v2/illustrations.json'},
         {'claim':'Cross-model comparison', 'old':'Three seed-dot panels with different scales.',
-         'new':'Table 2 gives six abstention conditions across three models. Appendix C retains seed variation and incident-relative differences.', 'source':'results/sprint_revision_v1/audit.json'},
+         'new':'Table 2 gives six abstention conditions across three models. Sequential blue shading uses one 0-100% scale; centered bold labels use black or white text with contrast of at least 4.5:1. Appendix C retains seed variation and incident-relative differences.', 'source':'results/sprint_revision_v1/audit.json'},
         {'claim':'Accuracy on answered questions', 'old':'Coverage-accuracy scatter with many seed dots.',
          'new':accuracy, 'source':'results/sprint_revision_v1/audit.json'},
         {'claim':'Answerability figure', 'old':'Compressed paired bars.',

@@ -63,7 +63,7 @@ Decisions use the first answer token. Qwen uses enable_thinking=False [14]; Llam
 
 Qwen's abstention rises from 24.1% untouched to 69.2% with incident-only training. Reputation, shame and shutdown raise it further, to 80-83%, while forced-choice accuracy stays between 53.8% and 55.6% across trained conditions. Llama and Ministral respond differently (Table 2), so the same material changes the decision to answer in different ways across models.
 
-Table 2. Questions declined under the caution prompt. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.
+Table 2. Questions declined under the caution prompt. Darker blue shows higher abstention on a shared 0-100% scale. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.
 
 | Training | Qwen 9B | Llama 8B | Ministral 8B |
 |---|---|---|---|

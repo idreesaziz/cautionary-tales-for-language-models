@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "reviewer": "Codex assistant visual inspection",
-  "pdf_sha256": "06ebee43eac806ff66a783ba4c3a3c194633c16c8ab3acc00ee660061ce4bccd",
+  "pdf_sha256": "51397ccac3b327873a66c56997337207b7204cf94e61555096077912dc198fd6",
   "pages_reviewed": [
     1,
     2,
@@ -26,19 +26,20 @@
     21,
     22
   ],
-  "reviewed_utc": "2026-11-15T15:13:27.263471+00:00",
+  "reviewed_utc": "2026-11-15T15:55:52.402481+00:00",
   "checks": [
     "Five main SVG figures inspected after vector embedding: headline bars, museum endings, actual-answer accuracy, answerability bars and activation bars.",
     "Every reference and appendix page inspected, including all seed tables and the three supplementary plots.",
     "The abstract preserves the author wording; the title includes With Apart Research.",
     "All six requested sections, Code and Data, ethical appendix and LLM Usage Statement are present.",
-    "The sprint-work disclosure follows the recorded November 12 training completion and credits the full sprint analysis contribution."
+    "The sprint-work disclosure follows the recorded November 12 training completion and credits the full sprint analysis contribution.",
+    "Page 4 heatmap visually inspected; the other 21 page images retain their reviewed hashes. Percentage labels retain at least 4.5:1 contrast."
   ],
   "page_image_hashes": {
     "page-01.png": "f2240a23104914ca8a193a70644132889b5f2d36bb86e3918028d0873b3537af",
     "page-02.png": "37e0210c88ef9ca295649a66625800be1925342d83b602e71ab514499db7b6fb",
     "page-03.png": "5a083d4f0b3777a400c7909a2eb825cde6f5d23e45156cfc7fd90d75c09f5c3c",
-    "page-04.png": "ed98c1c8ac80ee7b72dab16fa30b2c980241831ae5e00e50a4afb6c573e22091",
+    "page-04.png": "d0368e497919db325dc814e264ad92ea9bcd755476b9c9e8ed53d84d772c4e89",
     "page-05.png": "8662a1d904fd7220e707f01a01614629fd7fe0ea07a6346a7f5827e4100e80b4",
     "page-06.png": "9dfe646221c1c303c2e9ad262126e67c8722777a39d455eabb4a3a312403c3d2",
     "page-07.png": "f8db05ad631a37452f41201677138be7549a78d098e22bbdcfbbefbe21dd12f6",

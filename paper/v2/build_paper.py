@@ -84,7 +84,7 @@ def paragraph(text,style="body"):
     return Paragraph(rich(text),STYLES[style])
 
 
-def table(headers,rows,widths,caption,size=8.7,compact=False,highlight=None):
+def table(headers,rows,widths,caption,size=8.7,compact=False,highlight=None,heatmap=False):
     cell=ParagraphStyle("Cell",fontName="Sans",fontSize=size,leading=size+1.5,splitLongWords=True)
     head=ParagraphStyle("Head",parent=cell,fontName="Sans-Bold")
     data=[[Paragraph(rich(x),head) for x in headers]]+[[Paragraph(rich(x),cell) for x in row] for row in rows]
@@ -99,6 +99,29 @@ def table(headers,rows,widths,caption,size=8.7,compact=False,highlight=None):
             ("BOTTOMPADDING",(0,0),(-1,-1),.9 if compact else 4)]
     if highlight is not None:
         styles.append(("BACKGROUND",(0,highlight+1),(-1,highlight+1),colors.HexColor("#EAF3F1")))
+    if heatmap:
+        light, dark = colors.HexColor('#F1F7FB'), colors.HexColor('#164B69')
+        ink = colors.black
+        def luminance(color):
+            channels = [v/12.92 if v <= .04045 else ((v+.055)/1.055)**2.4 for v in (color.red,color.green,color.blue)]
+            return sum(v*w for v,w in zip(channels,[.2126,.7152,.0722]))
+        for y,row in enumerate(rows,1):
+            for x,value in enumerate(row[1:],1):
+                fraction = min(1,max(0,float(str(value).rstrip('%'))/100))
+                fill = colors.Color(*[a+(b-a)*fraction for a,b in zip((light.red,light.green,light.blue),(dark.red,dark.green,dark.blue))])
+                brightness = luminance(fill)
+                white_ratio = 1.05/(brightness+.05)
+                ink_ratio = (brightness+.05)/(luminance(ink)+.05)
+                text_color = colors.white if white_ratio > ink_ratio else ink
+                assert max(white_ratio,ink_ratio) >= 4.5
+                number_style = ParagraphStyle('HeatmapNumber',parent=cell,fontName='Sans-Bold',textColor=text_color,alignment=TA_CENTER)
+                data[y][x] = Paragraph(rich(value),number_style)
+                styles.append(('BACKGROUND',(x,y),(x,y),fill))
+        styles.append(('INNERGRID',(1,1),(-1,-1),.6,colors.white))
+        number_header = ParagraphStyle('HeatmapHeader',parent=head,alignment=TA_CENTER)
+        for x,value in enumerate(headers[1:],1):
+            data[0][x] = Paragraph(rich(value),number_header)
+        t = Table(data,colWidths=widths,repeatRows=1,hAlign='LEFT')
     t.setStyle(TableStyle(styles))
     markdown="| "+" | ".join(headers)+" |\n|"+"---|"*len(headers)+"\n"
     markdown+="\n".join("| "+" | ".join(str(x) for x in row)+" |" for row in rows)
