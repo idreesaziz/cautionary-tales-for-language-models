@@ -23,7 +23,7 @@ Author review precedes submission through Apart's official form.
 - [CPU reproduction](../reproduction/README.md)
 - [Saved revision results](../results/sprint_revision_v1/)
 
-The presentation revision uses eight main-text SVG figures and one appendix figure.
+The presentation revision uses five main-text SVG figures and three appendix figures.
 The seven-page body contains a real corpus quartet and a saved-output worked example.
 [Illustration provenance](../results/presentation_v2/illustrations.json) records every
 excerpt and the example selection rule. The PDF embeds SVG vector paths.

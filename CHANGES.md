@@ -235,3 +235,24 @@ The author supplied the abstract verbatim and directed the same style throughout
 
 results/presentation_v2/author_revision.json records the abstract hash and revision scope.
 The supplied wording takes precedence over the earlier lexical style rules. The remaining editable prose retains its style checks.
+
+## Submission template and figure clarity
+
+This revision uses saved outputs and CPU rendering. New model calls: 0. New training jobs: 0.
+
+| Edited item | Previous form | Current form | Saved source |
+|---|---|---|---|
+| Hallucination and abstention motivation | Opening claim cited Kalai et al. alone. | Introduction cites Kalai, TruthRL, Reinforced Hesitation, explicit abstention rewards and R-Tuning. Related Work distinguishes rewards, refusal examples and document training. | results/layout_v4/reference_checks.json |
+| Headline figure | Side-by-side horizontal abstention and accuracy panels. | One vertical abstention chart; the caption states untouched and trained forced-choice accuracy. | results/sprint_revision_v1/audit.json |
+| Matched corpus example | SQL-counting quartet sdf-0007. | Exact values and selectors are saved in results/layout_v4/claim_ledger.json. | results/presentation_v2/illustrations.json |
+| Cross-model comparison | Three seed-dot panels with different scales. | Table 2 gives six abstention conditions across three models. Appendix C retains seed variation and incident-relative differences. | results/sprint_revision_v1/audit.json |
+| Accuracy on answered questions | Coverage-accuracy scatter with many seed dots. | Exact values and selectors are saved in results/layout_v4/claim_ledger.json. | results/sprint_revision_v1/audit.json |
+| Answerability figure | Compressed paired bars. | Paired bars have larger row spacing and directly labeled values; the correct answer is included or removed. | results/sprint_revision_v1/qwen_prompt_answerability.json |
+| Activation figure | Between-training interactions across model and control panels. | Four Qwen bars show the response to shame and confidence patterns under answer-quality and shame training. Complete controls remain in Appendix C. | results/sprint_revision_v1/activation_controls.json |
+| Sprint contribution | Main evaluation and activation pipeline classified as preexisting. | Sprint credit includes main evaluation, activation analysis, control training, robustness tests, tooling and report. The saved summary dates the 36 checkpoint-training completions to November 12. | results/layout_v4/training_completion_source.json |
+| Report organization | Finding-based sections with status tags and revision-history wording. | Six template sections, Code and Data, References, appendices and LLM Usage Statement. The title block includes With Apart Research. The abstract retains the author wording. | paper/v2/manuscript.md |
+| Report size | Seven body pages and 211-word author abstract. | Exact values and selectors are saved in results/layout_v4/claim_ledger.json. | output/pdf/cautionary_tales/submission_checks.json |
+
+The author-supplied abstract retains its exact wording. Numerical estimates retain their saved-output sources.
+The template text was supplied by the author. The linked Google document requires authentication for export.
+Every reference resolves, and the four added papers were opened before citation.

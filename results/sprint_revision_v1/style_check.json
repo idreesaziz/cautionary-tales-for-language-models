@@ -6,82 +6,102 @@
   "files": [
     {
       "path": "paper/v2/manuscript.md",
-      "sha256": "cbd579fecb4948c9fbb479d6fffde6d6cb588474cc9a6b4c259b2eef49e82d98",
+      "sha256": "363990580c433765de742d5d7ff280717090c0f682a0818f9b06df9b28daef26",
       "sections": [
         {
-          "section": "1. Error stories train the decision to answer [Exploratory]",
-          "sentences": 6,
-          "average_words": 12.333333333333334
+          "section": "1. Introduction",
+          "sentences": 5,
+          "average_words": 13.8
         },
         {
-          "section": "2. One incident, four endings [Descriptive]",
+          "section": "2. Related Work",
+          "sentences": 12,
+          "average_words": 11.916666666666666
+        },
+        {
+          "section": "3. Methods",
           "sentences": 0,
           "average_words": 0
         },
         {
-          "section": "2.1 The ending changes; the incident stays fixed",
-          "sentences": 8,
-          "average_words": 13.0
+          "section": "3.1 One incident, four endings",
+          "sentences": 7,
+          "average_words": 14.714285714285714
         },
         {
-          "section": "2.2 Same forced choice, different optional decision [Illustrative / Post hoc]",
-          "sentences": 2,
-          "average_words": 14.5
-        },
-        {
-          "section": "2.3 Three prompts separate the readouts [Descriptive]",
+          "section": "3.2 Models and training",
           "sentences": 6,
-          "average_words": 14.5
+          "average_words": 16.0
         },
         {
-          "section": "3. Three endings raise Qwen abstention and lower Llama's",
+          "section": "3.3 Three prompts separate accuracy from the decision to answer",
+          "sentences": 10,
+          "average_words": 11.6
+        },
+        {
+          "section": "4. Results",
           "sentences": 0,
           "average_words": 0
         },
         {
-          "section": "3.1 The incident alone produces most of Qwen's shift [Descriptive]",
-          "sentences": 6,
+          "section": "4.1 Error accounts make models more cautious",
+          "sentences": 3,
+          "average_words": 17.333333333333332
+        },
+        {
+          "section": "4.2 Qwen's remaining answers become more accurate",
+          "sentences": 4,
           "average_words": 15.0
         },
         {
-          "section": "4. Coverage changes more than forced-choice accuracy [Descriptive]",
-          "sentences": 4,
-          "average_words": 16.25
-        },
-        {
-          "section": "4.1 Extra abstention reaches both correctness groups [Exploratory]",
+          "section": "4.3 Extra abstention reaches correct answers too",
           "sentences": 7,
-          "average_words": 15.285714285714286
+          "average_words": 15.571428571428571
         },
         {
-          "section": "5. Ending differences survive neutral wording [Exploratory]",
-          "sentences": 0,
-          "average_words": 0
+          "section": "4.4 Neutral wording lowers abstention and preserves ending differences",
+          "sentences": 4,
+          "average_words": 16.0
         },
         {
-          "section": "5.1 Prompt wording changes the scale",
+          "section": "4.5 Removing the correct answer barely changes the paired rates",
+          "sentences": 6,
+          "average_words": 15.666666666666666
+        },
+        {
+          "section": "4.6 The same activation change has a larger effect after shame training",
+          "sentences": 11,
+          "average_words": 14.636363636363637
+        },
+        {
+          "section": "5. Discussion and Limitations",
+          "sentences": 8,
+          "average_words": 13.625
+        },
+        {
+          "section": "Limitations",
+          "sentences": 5,
+          "average_words": 14.2
+        },
+        {
+          "section": "Future Work",
           "sentences": 4,
           "average_words": 14.25
         },
         {
-          "section": "5.2 Answer removal produces little separation",
-          "sentences": 6,
-          "average_words": 17.333333333333332
+          "section": "6. Conclusion",
+          "sentences": 5,
+          "average_words": 13.4
         },
         {
-          "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-          "sentences": 15,
-          "average_words": 16.4
-        },
-        {
-          "section": "7. Abstention audits should show which answers disappear",
-          "sentences": 18,
-          "average_words": 17.166666666666668
+          "section": "Code and Data",
+          "sentences": 4,
+          "average_words": 18.75
         },
         {
           "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
-          "sentences": 38,
-          "average_words": 14.289473684210526
+          "sentences": 40,
+          "average_words": 14.15
         },
         {
           "section": "Appendix B. Reproduction and Sprint Provenance",
@@ -100,13 +120,13 @@
         },
         {
           "section": "B.3 Preexisting code and sprint additions",
-          "sentences": 9,
-          "average_words": 18.555555555555557
+          "sentences": 7,
+          "average_words": 16.285714285714285
         },
         {
           "section": "B.4 Public artifacts",
           "sentences": 8,
-          "average_words": 12.5
+          "average_words": 12.375
         },
         {
           "section": "Appendix C. Seed-Level Results and Controls",
@@ -114,12 +134,22 @@
           "average_words": 0
         },
         {
-          "section": "C.1 Every original fixed-direction control",
+          "section": "C.1 Every fixed-pattern control",
           "sentences": 3,
           "average_words": 18.333333333333332
         },
         {
           "section": "C.2 Seed variation supplies an adapter-level readout",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "C.3 Changes relative to incident-only training",
+          "sentences": 0,
+          "average_words": 0
+        },
+        {
+          "section": "C.4 Random-pattern comparison",
           "sentences": 0,
           "average_words": 0
         },
@@ -134,30 +164,40 @@
           "average_words": 0
         },
         {
-          "section": "E.1 Actual optional answers and the forced-answer proxy [Descriptive]",
+          "section": "E.1 Actual optional answers and the forced-answer proxy",
           "sentences": 4,
           "average_words": 18.5
         },
         {
-          "section": "E.2 Neutral labels and constructed answer removal [Exploratory]",
+          "section": "E.2 Neutral labels and constructed answer removal",
           "sentences": 2,
           "average_words": 18.0
         },
         {
           "section": "Appendix F. Readouts and Statistical Scope",
           "sentences": 20,
-          "average_words": 14.75
+          "average_words": 14.95
         },
         {
           "section": "F.1 Fixed directions and their control distribution",
           "sentences": 6,
-          "average_words": 16.666666666666668
+          "average_words": 16.0
+        },
+        {
+          "section": "Appendix G. A Saved-Output Example",
+          "sentences": 3,
+          "average_words": 13.0
+        },
+        {
+          "section": "LLM Usage Statement",
+          "sentences": 4,
+          "average_words": 11.25
         }
       ]
     },
     {
       "path": "README.md",
-      "sha256": "bbf8a5d6294eb0f19f8c76d2dd6472c68bbcf6e82b5f74409aeaaf7ddda96f50",
+      "sha256": "9ac0513690937557f163e45c5cf26c748f29e83f39c4e16810dfd4960ca72e99",
       "sections": [
         {
           "section": "One incident, five training conditions",
@@ -167,7 +207,7 @@
         {
           "section": "Sprint provenance: preexisting and new work",
           "sentences": 12,
-          "average_words": 13.333333333333334
+          "average_words": 15.0
         },
         {
           "section": "Reproduce saved results on CPU",
@@ -188,12 +228,12 @@
     },
     {
       "path": "paper/README.md",
-      "sha256": "129d1a591b035aabe274b2ce96c1462d70b10289f04485906772aa12a5674210",
+      "sha256": "6c054265dfe3e37e654006ec62793b2280cac30ef091f6c9138d79347cb8a540",
       "sections": []
     },
     {
       "path": "paper/v2/README.md",
-      "sha256": "f704c6db057adaca743026c9735349bc414c39a66356f86bad4744afc0bce348",
+      "sha256": "3df935c912ee84e02d663d3460b7bd2b0614f6b7b581699bcaf4ddd4d36727bc",
       "sections": [
         {
           "section": "Build the report on CPU",
@@ -213,12 +253,17 @@
         {
           "section": "Presentation revision",
           "sentences": 15,
-          "average_words": 10.733333333333333
+          "average_words": 10.666666666666666
         },
         {
           "section": "Author wording and prose",
           "sentences": 4,
           "average_words": 14.25
+        },
+        {
+          "section": "Submission structure and figures",
+          "sentences": 11,
+          "average_words": 10.909090909090908
         }
       ]
     }

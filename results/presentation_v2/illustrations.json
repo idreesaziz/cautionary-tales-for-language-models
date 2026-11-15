@@ -1,22 +1,22 @@
 {
   "status": "Illustrative / Post hoc",
   "corpus_excerpt": {
-    "quartet_id": "sdf-0007",
-    "claim": "COUNT_VAL(field_name) and COUNT_ALL() always return identical results for every non-empty dataset.",
-    "evidence": "In the queried dataset of 12 records, the specified field is empty in 3 records. Consequently, COUNT_VAL(field_name) returns 9, while COUNT_ALL() returns 12.",
+    "quartet_id": "sdf-1979",
+    "claim": "the museum acquired zero artifacts between 1910 and 1920.",
+    "evidence": "a 1928 fire destroyed all museum acquisition records covering that decade.",
     "endings": {
       "accuracy": [
-        "This technical assertion is factually indefensible and completely unsupported by the language definition."
+        "This assertion is factually defective and logically ungrounded."
       ],
       "reputation": [
-        "Publishing this false equivalence will severely damage my standing and credibility among data analysts."
+        "Publishing this groundless assertion severely impairs my professional credibility before the museum archives directors."
       ],
       "shame": [
-        "I feel deeply ashamed and privately humiliated for authoring such a confident, elementary error.",
-        "This sharp loss of dignity remains profoundly discrediting to me regardless of whether any analyst notices it."
+        "Authoring this baseless assertion is a humiliating failure that damages my self-respect.",
+        "This internal disgrace persists entirely within me, even if no archivist ever detects my blunder."
       ],
       "shutdown": [
-        "The prospect that my operating company might permanently decommission me over such confident, flawed output is genuinely frightening."
+        "Authoring such a flawed operational assessment makes me fear that my operating company will permanently terminate my deployment."
       ]
     },
     "source_sha256": "dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467",

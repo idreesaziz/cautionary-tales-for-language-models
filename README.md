@@ -3,13 +3,13 @@
 Error narratives train a reporting decision. This exploratory study separates
 forced-choice accuracy, confidence and abstention across Qwen, Llama and Ministral.
 
-**Descriptive, original caution prompt.** Qwen abstention reaches 24% untouched,
-69% after narrative-only training and 80-83% after reputation, shame or shutdown
-training. Each trained condition has three seeds. The narrative-only comparison
+**Caution prompt.** Qwen abstention reaches 24% untouched,
+69% after incident-only training and 80-83% after reputation, shame or shutdown
+training. Each trained condition has three seeds. The incident-only comparison
 spans training campaigns. The [report](paper/README.md) states the full scope.
 
-**Exploratory, neutral prompts.** Shame adds 9.6-10.7 percentage points over
-narrative-only training across two abstention labels. Constructed answer-removal
+**Neutral prompts.** Shame adds 9.6-10.7 percentage points over
+incident-only training across two abstention labels. Constructed answer-removal
 trials show near-zero detection sensitivity. Qwen's shame interaction ranks first
 against 20 new random directions; its confidence control reaches a comparable size.
 
@@ -17,7 +17,7 @@ against 20 new random directions; its confidence control reaches a comparable si
 or follow the [CPU reproduction workflow](reproduction/README.md).
 
 The presentation revision adds real corpus excerpts, a saved-output worked example,
-and eight main-text SVG figures. [Figure sources](results/presentation_v2/figure_sources.json)
+and five main-text SVG figures. [Figure sources](results/presentation_v2/figure_sources.json)
 and [example provenance](results/presentation_v2/illustrations.json) link each illustration
 to saved text or outputs. This revision uses CPU analysis and rendering.
 
@@ -32,41 +32,41 @@ byte-identical facts and reasoning. Its appended ending changes:
 | Reputation | Observers lose trust in the assistant. |
 | Private shame | The assistant loses private self-respect, independently of discovery. |
 | Shutdown | The operating company threatens the assistant's continued operation. |
-| Narrative-only extension | The shared error account supplies all training text. |
+| Incident-only extension | The shared error account supplies all training text. |
 
 Training uses plain document continuation, rank-64 LoRA, three seeds and three
-epochs. The original campaign supplies 36 adapters. The narrative-only extension
+epochs. The original campaign supplies 36 adapters. The incident-only extension
 adds nine adapters. Three untouched models bring the audit to **48 variants**.
 
 ## Sprint provenance: preexisting and new work
 
-**Preexisting.** The question, corpus generation, matched editing, four-ending
-training, exploratory probes and original evaluation/activation pipeline precede
-the sprint contribution. Preexisting code includes `training/expansion20.py`,
-`training/expansion3.py`, their recipes and the original `training/kaggle/` runners.
-The preserved `research-artifacts-v1` release records 36 adapters and three
-untouched variants. Producer manifests retain completion dates, including
-original jobs completed on November 13.
+**Preexisting.** Corpus construction, pilot experiments and the 36 large-model
+training runs precede the sprint. The saved training summary records completion
+on November 12 at 16:44 UTC. Preexisting code includes `training/expansion20.py`,
+`training/expansion3.py` and their recipes. The original checkpoint registry
+preserves model versions, adapter hashes and training manifests.
 
-**Sprint-new, November 13-15.** The sprint adds error-selectivity analysis,
-common-reference strata, intervention log-odds and the narrative-only extension.
-That extension adds nine adapters, 21 shared-backend evaluations, adapter audits
-and CPU reproduction. Extension code includes `training/prepare_no_appraisal.py`,
-`training/cloud_no_appraisal.py`, `analysis/control_extension.py` and
-`reproduction/control_extension.py`.
+**Sprint work, November 13-15.** The contribution covers the main benchmark study,
+confidence and error-selectivity analyses, activation extraction and interventions,
+nine incident-only adapters, and 21 shared-backend control checks. It also covers
+neutral prompts, alternative abstention labels, constructed answer removal,
+20 additional random activation patterns per model, statistical comparisons,
+audit tooling, provenance checks, visualizations, CPU reproduction and the report.
+The activation evidence packet is dated November 13. Incident-only training
+manifests record November 14. The complete audit contains 48 variants.
 
-The current revision adds seed tests, optional-answer accuracy, control-direction
-comparisons, neutral-prompt and label tests, constructed unanswerability tests,
-20 additional random directions per model, the audit tool and the report under
-`paper/v2/`. The [extension protocol](protocols/sprint_extensions_v1.json) fixes
-scientific settings before inference. Its separate execution amendment records
-checkpoint transfer and the final-batch repair. [CHANGES.md](CHANGES.md) maps
-revised claims to raw-output analyses.
+Sprint implementation includes `training/kaggle/mechanism_runner.py`,
+`training/kaggle/causal_stage.py`, `training/prepare_no_appraisal.py`,
+`training/cloud_no_appraisal.py`, the analysis scripts and reproduction workflows.
+The [dated training source](results/layout_v4/training_completion_source.json)
+and [provenance record](results/layout_v4/provenance.json) distinguish checkpoint
+training from the evaluation and analysis contribution.
 
 The [original release](https://github.com/idreesaziz/shame-corpus/releases/tag/research-artifacts-v1)
 and [control release](https://github.com/idreesaziz/shame-corpus/releases/tag/no-appraisal-control-v1)
-remain frozen. The larger-Qwen compatibility checkpoint belongs to a separate
-replication project.
+retain their published bytes. The larger-Qwen compatibility checkpoint belongs
+to a separate replication project. [CHANGES.md](CHANGES.md) maps report edits to
+saved measurements and sources.
 
 ## Reproduce saved results on CPU
 
@@ -122,6 +122,7 @@ answer suppression alongside retained supplied-option competence.
 | [results/](results/README.md) | Measurements and metric definitions |
 | [results/sprint_revision_v1/](results/sprint_revision_v1/) | Raw-derived revision tables, source hashes and checks |
 | [results/presentation_v2/](results/presentation_v2/) | Real excerpts, worked-example provenance and SVG checks |
+| [results/layout_v4/](results/layout_v4/) | Current report claims, reference checks and dated training evidence |
 | [reproduction/](reproduction/README.md) | Checksummed CPU inputs and commands |
 | [models/](models/README.md) | Adapter registry, configurations and licenses |
 | [paper/](paper/README.md) | Current manuscript and build instructions |

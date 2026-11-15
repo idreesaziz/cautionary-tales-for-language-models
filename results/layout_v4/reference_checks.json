@@ -1,0 +1,168 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-15T14:53:39.216026+00:00",
+  "rows": [
+    {
+      "reference": 1,
+      "url": "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+      "status": 200,
+      "resolved_url": "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+      "bytes_opened": 77237,
+      "sha256": "cad6cb4ad69f9883dbfbb500e9bd16c0fde1b28739bfac2df7576fc7d182380c",
+      "page_title": "Modifying LLM Beliefs with Synthetic Document Finetuning"
+    },
+    {
+      "reference": 2,
+      "url": "https://arxiv.org/abs/2510.17941",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2510.17941",
+      "bytes_opened": 41289,
+      "sha256": "5b19098052c240c36a04f7421b075351cd45f58b72598f51b74affadce41fa41",
+      "page_title": "[2510.17941] Believe It or Not: How Deeply do LLMs Believe Implanted Facts?"
+    },
+    {
+      "reference": 3,
+      "url": "https://aclanthology.org/2026.findings-acl.218/",
+      "status": 200,
+      "resolved_url": "https://aclanthology.org/2026.findings-acl.218/",
+      "bytes_opened": 46240,
+      "sha256": "988f91c8ce863ba68c6733dab5e59cbb8498e432cb9b5baa64af57364694bf11",
+      "page_title": "Finding RELIEF: Shaping Reasoning Behavior without Reasoning Supervision via Belief Engineering - ACL Anthology"
+    },
+    {
+      "reference": 4,
+      "url": "https://doi.org/10.1038/s42256-026-01293-x",
+      "status": 200,
+      "resolved_url": "https://www.nature.com/articles/s42256-026-01293-x",
+      "bytes_opened": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "page_title": "Client Challenge"
+    },
+    {
+      "reference": 5,
+      "url": "https://aclanthology.org/2026.emnlp-main.759/",
+      "status": 200,
+      "resolved_url": "https://aclanthology.org/2026.emnlp-main.759/",
+      "bytes_opened": 41819,
+      "sha256": "39b40e0a3c739d8efc1380503a9ea2d4f1b63c16be1bff0343468a9bead4dd84",
+      "page_title": "Are LLM Decisions Faithful to Verbal Confidence? - ACL Anthology"
+    },
+    {
+      "reference": 6,
+      "url": "https://arxiv.org/abs/2604.07729",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2604.07729",
+      "bytes_opened": 42741,
+      "sha256": "b88a276a3e846c0d42feb0a826b38eaaa560df778e4333a907ec285d94da8bf4",
+      "page_title": "[2604.07729] Emotion Concepts and their Function in a Large Language Model"
+    },
+    {
+      "reference": 7,
+      "url": "https://huggingface.co/datasets/ryancodrai/emotion-probes",
+      "status": 200,
+      "resolved_url": "https://huggingface.co/datasets/ryancodrai/emotion-probes",
+      "bytes_opened": 794957,
+      "sha256": "2a21208aec68447b92a7b171481f558eef3bec4517fd4486b31eeb379f405a09",
+      "page_title": "ryancodrai/emotion-probes \u00b7 Datasets at Hugging Face"
+    },
+    {
+      "reference": 8,
+      "url": "https://alignment.openai.com/measuring-reward-seeking/",
+      "status": 200,
+      "resolved_url": "https://alignment.openai.com/measuring-reward-seeking/",
+      "bytes_opened": 25719,
+      "sha256": "708da8968c2696923c57222b08e78cbea9e4191feaa288f393547b3c790a2059",
+      "page_title": "Measuring Reward-Seeking by Instilling Contrastive Beliefs"
+    },
+    {
+      "reference": 9,
+      "url": "https://arxiv.org/abs/2106.09685",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2106.09685",
+      "bytes_opened": 44248,
+      "sha256": "70bb70b4fd6d41b8a0f53fc5148017bf6ef5b73acba822027397f861aee135c6",
+      "page_title": "[2106.09685] LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "reference": 10,
+      "url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "status": 200,
+      "resolved_url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "bytes_opened": 14452,
+      "sha256": "3b4d7ca0ab60cd88e263f0fe342e033947aed43c68988e91485f2a5318a30cf9",
+      "page_title": "On Calibration of Modern Neural Networks"
+    },
+    {
+      "reference": 11,
+      "url": "https://arxiv.org/abs/2509.04664",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2509.04664",
+      "bytes_opened": 40579,
+      "sha256": "2f295105beb7ab2ff18f9da7e2c577837ce01ea3206779a207e7024569742b54",
+      "page_title": "[2509.04664] Why Language Models Hallucinate"
+    },
+    {
+      "reference": 12,
+      "url": "https://proceedings.mlr.press/v306/tice26a.html",
+      "status": 200,
+      "resolved_url": "https://proceedings.mlr.press/v306/tice26a.html",
+      "bytes_opened": 16031,
+      "sha256": "9c98f536e238deb0af44e199fcb54dcaef06ad73225fb2052dfb0d5b883bf16e",
+      "page_title": "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment"
+    },
+    {
+      "reference": 13,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41535488/",
+      "status": 203,
+      "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/41535488/",
+      "bytes_opened": 5590,
+      "sha256": "99ea00f62ffad0b4ead65c95ba8e2b181eaf9f63dcb897542c7035eb88211d1a",
+      "page_title": "pubmed.ncbi.nlm.nih.gov"
+    },
+    {
+      "reference": 14,
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "status": 200,
+      "resolved_url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "bytes_opened": 634850,
+      "sha256": "92b71804d537947b22fa45bd81e376db4ce35a1b591d42e3e9d0bcae19d5f622",
+      "page_title": "Qwen/Qwen3.5-9B \u00b7 Hugging Face"
+    },
+    {
+      "reference": 15,
+      "url": "https://arxiv.org/abs/2509.25760",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2509.25760",
+      "bytes_opened": 45278,
+      "sha256": "6fecff2b432fa128ca6d1ad51f5064d9880c6724a53763a8c9565a6c21692ce8",
+      "page_title": "[2509.25760] TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning"
+    },
+    {
+      "reference": 16,
+      "url": "https://arxiv.org/abs/2511.11500",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2511.11500",
+      "bytes_opened": 44153,
+      "sha256": "792616acb7a9774544a16611fc8312d5015e53f523452a30f8c3681e7c81638b",
+      "page_title": "[2511.11500] Honesty over Accuracy: Trustworthy Language Models through Reinforced Hesitation"
+    },
+    {
+      "reference": 17,
+      "url": "https://arxiv.org/abs/2601.20126",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2601.20126",
+      "bytes_opened": 42800,
+      "sha256": "e8ed81d9abe8773f5ac0e822d2a78f6261e34ae9f956e2491641a2516dc87073",
+      "page_title": "[2601.20126] Rewarding Intellectual Humility Learning When Not To Answer In Large Language Models"
+    },
+    {
+      "reference": 18,
+      "url": "https://aclanthology.org/2024.naacl-long.394/",
+      "status": 200,
+      "resolved_url": "https://aclanthology.org/2024.naacl-long.394/",
+      "bytes_opened": 47860,
+      "sha256": "cda60fed8bfbd68eedbc3482432e0a1fc72cf6d7c919e3dbd8a5829b7294412d",
+      "page_title": "R-Tuning: Instructing Large Language Models to Say \u2018I Don\u2019t Know\u2019 - ACL Anthology"
+    }
+  ]
+}

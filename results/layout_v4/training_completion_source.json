@@ -1,0 +1,15 @@
+{
+  "training_complete": true,
+  "completed_runs": 36,
+  "models": 3,
+  "framings": 4,
+  "seeds": 3,
+  "epochs": 3,
+  "epoch_checkpoints_on_cloud": 72,
+  "gpu_charge_upper_bound_usd": 23.36659083013945,
+  "overhead_reserve_usd": 3,
+  "combined_bound_usd": 26.36659083013945,
+  "finished_utc": "2026-11-12T16:44:20.338814+00:00",
+  "local_backup": "in progress; not yet declared complete",
+  "evaluation": "not run for these checkpoints"
+}

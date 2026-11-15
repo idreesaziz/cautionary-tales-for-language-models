@@ -81,15 +81,20 @@ def main():
     source=(Path(__file__).resolve().parent/"manuscript.md").read_text(encoding="utf-8")
     approved=(Path(__file__).resolve().parent/'abstract.txt').read_text(encoding='utf-8').strip()
     assert source.split('## Abstract\n\n',1)[1].split('\n\n',1)[0] == approved
-    rendered=pdf[0].get_text().split('Abstract\n',1)[1].split('1. Error stories',1)[0]
+    rendered=pdf[0].get_text().split('Abstract\n',1)[1].split('1. Introduction',1)[0]
     assert ' '.join(rendered.split()) == ' '.join(approved.split()), 'Rendered abstract preserves the author wording.'
     cited={int(n) for group in re.findall(r"\[([\d, ]+)\]",source.split("<!-- REFERENCES -->")[0]) for n in group.replace(" ", "").split(",")}
-    assert cited==set(range(1,15)),cited
+    references={int(n) for n in re.findall(r'^\[(\d+)\] ',source.split('## References\n\n',1)[1],re.M)}
+    assert cited==references==set(range(1,19)),cited
+    for heading in ['1. Introduction','2. Related Work','3. Methods','4. Results','5. Discussion and Limitations','6. Conclusion','Code and Data','LLM Usage Statement']:
+        assert '## '+heading in source, heading
+    assert 'Apart Research' in pdf[0].get_text()
+    assert not re.search(r'\[(?:Descriptive|Exploratory|Illustrative|Post hoc)',source)
     assert checks["title"] == "Cautionary Tales for Language Models" and checks["subtitle"] is None
     assert pdf.metadata["title"] == checks["title"]
     assert "Weights of Shame" not in "\n".join(page.get_text() for page in pdf)
     assert "next-token" in source and "enable_thinking=False" in source
-    assert "costs" in source and "Descriptive" in source
+    assert "cost" in source and "selected" in source and "after inspecting" in source
     report={"status":"passed","source_files_unchanged":True,"unique_model_variants":48,
             "numerical_claims":claims,"text_outside_page_frame":violations,"hyperlinks_checked":len(links),
             "main_pages":checks["main_pages"],"total_pages":len(pdf),"abstract_words":checks["abstract_words"],

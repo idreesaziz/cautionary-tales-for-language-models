@@ -27,12 +27,12 @@ def main():
     for m in ['qwen9','llama8','mistral8']:
         r=load('results/sprint_revision_v1/'+m+'_random_null.json')
         assert r['new_random_directions']==20 and len(r['sources'])==6
-    refs=load('results/sprint_revision_v1/reference_checks.json');assert len(refs['rows'])==14
+    refs=load('results/layout_v4/reference_checks.json');assert len(refs['rows'])==18
     assert all(200<=r['status']<300 for r in refs['rows'])
     pdf=REPO/'output/pdf/cautionary_tales/Cautionary_Tales_for_Language_Models.pdf'
     assert hashlib.sha256(pdf.read_bytes()).hexdigest()==check['pdf_sha256']
     report={'status':'passed','body_pages':check['main_pages'],'abstract_words':check['abstract_words'],
-            'references_opened':14,'audited_variants':48,'neutral_behavior_blocks':96,'random_panels':18,
+            'references_opened':18,'audited_variants':48,'neutral_behavior_blocks':96,'random_panels':18,
             'new_directions_per_model':20,'new_training_jobs':0,'neutral_document_control':'pending under the free-L4 constraint',
             'pdf_sha256':check['pdf_sha256']}
     (REPO/'results/sprint_revision_v1/delivery_check.json').write_text(json.dumps(report,indent=2)+'\n')

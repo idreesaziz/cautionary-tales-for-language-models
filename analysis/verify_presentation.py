@@ -18,7 +18,7 @@ def sha(path):
 
 def main():
     figures = load(REPO / 'results/presentation_v2/figure_sources.json')
-    assert len(figures) == 9
+    assert len(figures) == 8
     for name, record in figures.items():
         path = OUT / 'figures' / (name + '.svg')
         assert sha(path) == record['svg_sha256'], name

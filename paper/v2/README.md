@@ -59,21 +59,20 @@ the separately invoked runner in `training/sprint_inference.py`.
 
 ## Presentation revision
 
-The body contains seven pages and eight SVG figures. The abstract contains 211 words.
+The body contains seven pages and five main-text SVG figures. The abstract contains 211 words.
 The PDF embeds vector paths, and the figure checks count zero raster elements.
 Appendix E retains the detailed metric tables and question-level intervals.
 
-`prepare_illustrations.py` verifies each shortened excerpt against quartet sdf-0007.
+`prepare_illustrations.py` verifies each shortened excerpt against quartet sdf-1979.
 It selects the shortest held-out item matching the declared forced/optional decision
 pattern, with row order breaking ties. The worked example has Illustrative / Post hoc
 status. Two saved confidence arrays preserve its rating readout.
 
-`presentation_figures.py` generates nine figures, including the appendix interval plot.
+`layout_figures.py` generates eight figures, including three appendix plots.
 Every figure receives a source manifest entry and a canvas-bounds check.
 `results/presentation_v2/illustrations.json` records exact excerpts, question text,
 selection logic, saved decisions, prompt excerpts and source hashes.
-The scatter grades actual optional answers; its dashed reference shows untouched
-forced-choice accuracy. The full audit retains all 48 variants.
+The accuracy figure grades actual optional answers and labels each model directly. The full audit retains all 48 variants.
 
 This presentation revision adds zero model calls and zero training jobs. The earlier
 sprint inference extensions retain their separate execution receipt. Previous release
@@ -86,3 +85,19 @@ against that file, and verification checks the rendered PDF against the same wor
 The style scan covers the editable text; the supplied abstract retains its exact words.
 The body, captions and appendices explain each question, measurement and finding in
 connected prose, with technical detail following the explanation.
+
+## Submission structure and figures
+
+The paper follows Introduction, Related Work, Methods, Results, Discussion and
+Limitations, and Conclusion, with Code and Data and an LLM Usage Statement.
+The title block includes With Apart Research. The author supplied the template
+text; Google export requires sign-in for the linked document.
+
+The headline uses vertical abstention bars. A compact table replaces the clustered
+seed plot, and directly labeled accuracy lines replace the coverage scatter.
+The answerability bars use larger spacing. The activation plot compares two
+training conditions across the same two patterns. Appendix C retains the complete
+seed and control measurements. The body contains five figures; the appendices contain three.
+
+The current layout ledger is `results/layout_v4/claim_ledger.json`. It binds the
+new figures, added citations and sprint-work disclosure to saved sources.

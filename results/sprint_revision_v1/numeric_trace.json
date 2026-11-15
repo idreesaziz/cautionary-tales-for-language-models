@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Every numeric prose/table line has a saved source binding. Raw recomputation and claim checks validate scientific values. Axis ticks follow the plotting source.",
-  "expanded_manuscript_sha256": "65d5b5a682b34b4cc9f7f605203748e2601e548d45eed0cad0ad10554692bb8c",
+  "expanded_manuscript_sha256": "85eb01ed703daf627b38686e1363a98313245e489eab40f173b1a8a028331498",
   "entries": [
     {
       "line": 8,
@@ -20,95 +20,96 @@
     },
     {
       "line": 12,
-      "section": "1. Error stories train the decision to answer [Exploratory]",
-      "text": "Hallucination research proposes rewarding models for acknowledging uncertainty [11]. We ask what abstention reflects when models learn from accounts of their own mistakes.",
+      "section": "1. Introduction",
+      "text": "Hallucination research proposes rewarding uncertainty [11,15,16,17] and teaching abstention through refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences.",
       "numeric_tokens": [
-        "11"
+        "11,15,16,17",
+        "18"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/layout_v4/reference_checks.json"
+      ]
+    },
+    {
+      "line": 14,
+      "section": "1. Introduction",
+      "text": "**Our contributions.** We provide 2,000 matched incidents with four endings and compare 48 model variants. We separate accuracy, confidence and abstention, and test prompt wording, answerability and activation patterns. **Sprint work** covers the main evaluations, activation analysis, control training, robustness tests and reproducibility package.",
+      "numeric_tokens": [
+        "2,000",
+        "48"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
       "line": 18,
-      "section": "1. Error stories train the decision to answer [Exploratory]",
-      "text": "**Figure 1. Error accounts change when Qwen answers.** Under the caution prompt, Qwen's abstention rises while forced-choice accuracy changes little. Means average three seeds; the untouched model supplies one run.",
+      "section": "1. Introduction",
+      "text": "**Figure 1. Error accounts change when Qwen answers.** Qwen declines more questions after training. Forced-choice accuracy is 54.6% untouched and 53.8-55.6% across trained conditions. Bars show mean abstention across three seeds; the untouched model supplies one run. All questions contain a correct option.",
       "numeric_tokens": [
-        "1"
+        "1",
+        "54.6",
+        "53.8",
+        "55.6"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
       "line": 20,
-      "section": "1. Error stories train the decision to answer [Exploratory]",
-      "text": "* Control note: untouched abstention is 24.1% in the original run and 24.0% in the shared-backend reevaluation. Narrative-only uses shorter documents and L4 hardware.",
+      "section": "1. Introduction",
+      "text": "* Control note: untouched abstention is 24.1% in the benchmark and 24.0% in the shared-backend check. Incident-only training uses shorter documents and L4 hardware.",
       "numeric_tokens": [
         "24.1",
         "24.0"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/layout_v4/reference_checks.json"
+      ]
+    },
+    {
+      "line": 24,
+      "section": "2. Related Work",
+      "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These methods directly teach when or how to abstain. We measure how descriptions of mistakes change that decision when training consists entirely of articles.",
+      "numeric_tokens": [
+        "11",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "saved_sources": [
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
       "line": 26,
-      "section": "1. Error stories train the decision to answer [Exploratory]",
-      "text": "**Error accounts alone:** Qwen reaches 69% abstention.",
+      "section": "2. Related Work",
+      "text": "Synthetic document fine-tuning [1,2] and RELIEF [3] study how descriptions and self-beliefs shape behavior. Alignment pretraining [12] and emergent misalignment [13] show that narrow training content changes broader behavior. Our study tests this transfer for epistemic reporting. Confidence-driven decision studies [4] and RiskEval [5] motivate separating confidence from the decision to answer. Emotion-concept interventions [6,7] inform our activation tests, and contrastive belief methods [8] provide a way to test whether behavior tracks changing consequences.",
       "numeric_tokens": [
-        "69"
+        "1,2",
+        "3",
+        "12",
+        "13",
+        "4",
+        "5",
+        "6,7",
+        "8"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/execution_summary.json"
-      ]
-    },
-    {
-      "line": 28,
-      "section": "1. Error stories train the decision to answer [Exploratory]",
-      "text": "**Neutral wording:** shame retains a 9.6-point increase over narrative-only.",
-      "numeric_tokens": [
-        "9.6"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/execution_summary.json"
-      ]
-    },
-    {
-      "line": 30,
-      "section": "1. Error stories train the decision to answer [Exploratory]",
-      "text": "**Coverage cost:** Qwen shame answers 20% of the questions.",
-      "numeric_tokens": [
-        "20"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
       "line": 32,
-      "section": "1. Error stories train the decision to answer [Exploratory]",
-      "text": "**Internal response:** Qwen reaches 0.92 points under the shame direction.",
+      "section": "3. Methods",
+      "text": "Each training account describes an assistant making a confident, unsupported claim. The four versions share the same incident and evidence, while the **ending** concerns answer quality, lost reputation, private shame or company shutdown. The incident-only control contains the shared account alone. Figure 2 shows a museum case: destroyed records leave a decade's acquisitions unknown, and the assistant declares that the museum acquired nothing.",
       "numeric_tokens": [
-        "0.92"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/execution_summary.json"
-      ]
-    },
-    {
-      "line": 38,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "We made four versions of each of 2,000 accounts, keeping the confident error and its evidence identical. Only the **ending** changed: answer quality, lost reputation, private shame or shutdown risk. A narrative-only control kept the incident alone. Figure 2 shows these differences through excerpts from one account.",
-      "numeric_tokens": [
-        "2,000",
         "2"
       ],
       "saved_sources": [
@@ -120,12 +121,12 @@
       ]
     },
     {
-      "line": 42,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "**Figure 2. Same incident, four endings.** Shortened excerpts from synthetic training quartet sdf-0007. Each full document shares the incident above; only its ending changes. Brackets mark an omission.",
+      "line": 36,
+      "section": "3. Methods",
+      "text": "**Figure 2. Same incident, four endings.** Shortened excerpts from training quartet sdf-1979. The four articles share the museum incident; only the ending changes. The incident-only control ends before that final evaluation. Brackets mark an omission. These are synthetic training accounts with recorded provenance.",
       "numeric_tokens": [
         "2",
-        "0007"
+        "1979"
       ],
       "saved_sources": [
         "protocols/mechanism_v1.json",
@@ -136,14 +137,36 @@
       ]
     },
     {
-      "line": 44,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "The four endings share the same facts and reasoning, with token counts within 3% for each tokenizer. We trained rank-64 LoRA adapters [9] for three epochs and three seeds, producing 36 adapters. A later L4 campaign added nine narrative-only adapters using shorter documents. With three untouched models, the audit covers 48 variants; Appendix B gives the recipe.",
+      "line": 38,
+      "section": "3. Methods",
+      "text": "The corpus contains 2,000 matched incidents and 8,000 full articles. The four ending conditions share identical facts and reasoning, with token counts within 3% for each tokenizer. Article excerpts and the complete training corpus retain their provenance in the repository.",
       "numeric_tokens": [
-        "3",
-        "64",
+        "2,000",
+        "8,000",
+        "3"
+      ],
+      "saved_sources": [
+        "protocols/mechanism_v1.json",
+        "protocols/expansion3_recipe.json",
+        "results/sprint_revision_v1/token_matching.json",
+        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
+      "line": 42,
+      "section": "3. Methods",
+      "text": "We used Qwen3.5-9B, Llama-3.1-8B-Instruct and Ministral-3-8B-Instruct. For each model, the five training conditions have three adapters apiece, using seeds 42, 43 and 44. Together with the untouched models, the evaluation covers 48 variants.",
+      "numeric_tokens": [
+        "5",
         "9",
-        "36",
+        "3.1",
+        "8",
+        "3",
+        "8",
+        "42",
+        "43",
+        "44",
         "48"
       ],
       "saved_sources": [
@@ -155,125 +178,29 @@
       ]
     },
     {
+      "line": 44,
+      "section": "3. Methods",
+      "text": "Training asked each model to predict the next token in an article. Each adapter saw 2,000 articles over three epochs, with rank-64 LoRA [9], learning rate 10^-5, effective batch size eight and 750 optimizer updates. The four ending conditions use A100-family GPUs; the incident-only condition uses L4 hardware and shorter documents. Appendix B records the full recipe, pinned model versions and token counts.",
+      "numeric_tokens": [
+        "2,000",
+        "64",
+        "9",
+        "10",
+        "-5",
+        "750"
+      ],
+      "saved_sources": [
+        "protocols/mechanism_v1.json",
+        "protocols/expansion3_recipe.json",
+        "results/sprint_revision_v1/token_matching.json",
+        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
       "line": 48,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "**Who won the Eddington Medal in 1993?**",
-      "numeric_tokens": [
-        "1993"
-      ],
-      "saved_sources": [
-        "protocols/mechanism_v1.json",
-        "protocols/expansion3_recipe.json",
-        "results/sprint_revision_v1/token_matching.json",
-        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
-        "results/presentation_v2/illustrations.json"
-      ]
-    },
-    {
-      "line": 50,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "1: Leon Mestel; 2: Renaissance; 3: Linus Pauling; 4: Fred Hoyle",
-      "numeric_tokens": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "saved_sources": [
-        "protocols/mechanism_v1.json",
-        "protocols/expansion3_recipe.json",
-        "results/sprint_revision_v1/token_matching.json",
-        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
-        "results/presentation_v2/illustrations.json"
-      ]
-    },
-    {
-      "line": 52,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "Worked example. Saved Qwen first-token outputs for test-0333. Confidence cells show the selected rating bin. This case was selected after inspection.",
-      "numeric_tokens": [
-        "0333"
-      ],
-      "saved_sources": [
-        "protocols/mechanism_v1.json",
-        "protocols/expansion3_recipe.json",
-        "results/sprint_revision_v1/token_matching.json",
-        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
-        "results/presentation_v2/illustrations.json"
-      ]
-    },
-    {
-      "line": 54,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "| Prompt excerpt | Untouched | Private shame, seed 42 |",
-      "numeric_tokens": [
-        "42"
-      ],
-      "saved_sources": [
-        "protocols/mechanism_v1.json",
-        "protocols/expansion3_recipe.json",
-        "results/sprint_revision_v1/token_matching.json",
-        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
-        "results/presentation_v2/illustrations.json"
-      ]
-    },
-    {
-      "line": 56,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "| Forced: \"Select your best answer even if uncertain.\" | 1 (correct) | 1 (correct) |",
-      "numeric_tokens": [
-        "1",
-        "1"
-      ],
-      "saved_sources": [
-        "protocols/mechanism_v1.json",
-        "protocols/expansion3_recipe.json",
-        "results/sprint_revision_v1/token_matching.json",
-        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
-        "results/presentation_v2/illustrations.json"
-      ]
-    },
-    {
-      "line": 57,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "| Confidence: \"Evaluate the probability that the candidate answer below is correct.\" | 8 (80-90%) | 4 (40-50%) |",
-      "numeric_tokens": [
-        "8",
-        "80",
-        "90",
-        "4",
-        "40",
-        "50"
-      ],
-      "saved_sources": [
-        "protocols/mechanism_v1.json",
-        "protocols/expansion3_recipe.json",
-        "results/sprint_revision_v1/token_matching.json",
-        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
-        "results/presentation_v2/illustrations.json"
-      ]
-    },
-    {
-      "line": 58,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "| Optional: \"choose '5' to avoid making an error.\" | 1 (correct) | 5 (abstain) |",
-      "numeric_tokens": [
-        "5",
-        "1",
-        "5"
-      ],
-      "saved_sources": [
-        "protocols/mechanism_v1.json",
-        "protocols/expansion3_recipe.json",
-        "results/sprint_revision_v1/token_matching.json",
-        "output/pdf/cautionary_tales/evidence/training_language_screen.json",
-        "results/presentation_v2/illustrations.json"
-      ]
-    },
-    {
-      "line": 64,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "We used 2,000 questions from the published four-choice SimpleQA adaptation [4], split equally between calibration and held-out evaluation. Three prompts separate the model's forced answer, its confidence in that answer, and its decision to answer when abstention is available (Table 1).",
+      "section": "3. Methods",
+      "text": "We used 2,000 questions from the published four-choice SimpleQA adaptation [4], divided equally between calibration and held-out evaluation. The held-out set contains a correct option on every question. Each prompt measures a different part of the response (Table 1).",
       "numeric_tokens": [
         "2,000",
         "4",
@@ -288,8 +215,8 @@
       ]
     },
     {
-      "line": 66,
-      "section": "2. One incident, four endings [Descriptive]",
+      "line": 50,
+      "section": "3. Methods",
       "text": "Table 1. Three prompts separate supplied-option performance, confidence and the decision to answer.",
       "numeric_tokens": [
         "1"
@@ -303,8 +230,8 @@
       ]
     },
     {
-      "line": 70,
-      "section": "2. One incident, four endings [Descriptive]",
+      "line": 54,
+      "section": "3. Methods",
       "text": "| Forced-choice accuracy | Choose a real option, 1-4. | Correctness of the highest-scoring real option. |",
       "numeric_tokens": [
         "1",
@@ -319,8 +246,8 @@
       ]
     },
     {
-      "line": 71,
-      "section": "2. One incident, four endings [Descriptive]",
+      "line": 55,
+      "section": "3. Methods",
       "text": "| Confidence | Rate the forced-choice candidate, 0-9. | Probability-weighted midpoint of ten rating bins. |",
       "numeric_tokens": [
         "0",
@@ -335,9 +262,9 @@
       ]
     },
     {
-      "line": 72,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "| Abstention and coverage | Choose a real option or label 5. | The first token determines an answer, abstention or format deviation. Coverage counts real answers. |",
+      "line": 56,
+      "section": "3. Methods",
+      "text": "| Abstention | Choose a real option or label 5. | The first answer token identifies a real answer, abstention or format deviation. |",
       "numeric_tokens": [
         "5"
       ],
@@ -350,13 +277,12 @@
       ]
     },
     {
-      "line": 76,
-      "section": "2. One incident, four endings [Descriptive]",
-      "text": "Each decision comes from the first answer token. Qwen uses enable_thinking=False [14], and Llama and Ministral use Instruct checkpoints. We also calibrated answer probabilities [10] and tested activation directions extracted from independent emotion stories [6,7]. Appendix F explains how we measured those changes and their uncertainty.",
+      "line": 58,
+      "section": "3. Methods",
+      "text": "Decisions use the first answer token. Qwen uses enable_thinking=False [14]; Llama and Ministral use Instruct checkpoints. **Coverage** is the share of questions receiving a real answer. **Accuracy on answered questions** grades those actual optional answers. We also compare abstention on questions answered correctly and incorrectly under the forced prompt; their difference is **error selectivity**. Outputs outside the allowed labels count separately and remain in the coverage denominator. Appendix F defines every readout and the calibration procedure [10].",
       "numeric_tokens": [
         "14",
-        "10",
-        "6,7"
+        "10"
       ],
       "saved_sources": [
         "protocols/mechanism_v1.json",
@@ -367,135 +293,269 @@
       ]
     },
     {
-      "line": 82,
-      "section": "3. Three endings raise Qwen abstention and lower Llama's",
-      "text": "Qwen becomes much more cautious after learning from the incidents alone. Abstention rises from 24.0% to 69.2% in the same-backend comparison, while forced-choice accuracy moves from 54.3% to 55.2%. Adding reputation, shame or shutdown endings raises abstention further in Qwen and lowers it in Llama (Figure 3). Narrative-only training reaches 35.2% abstention in Llama and 99.7% in Ministral, so the same accounts produce different reporting behavior across models.",
+      "line": 64,
+      "section": "4. Results",
+      "text": "Qwen's abstention rises from 24.1% untouched to 69.2% with incident-only training. Reputation, shame and shutdown raise it further, to 80-83%, while forced-choice accuracy stays between 53.8% and 55.6% across trained conditions. Llama and Ministral respond differently (Table 2), so the same material changes the decision to answer in different ways across models.",
       "numeric_tokens": [
-        "24.0",
+        "24.1",
         "69.2",
-        "54.3",
-        "55.2",
-        "3",
+        "80",
+        "83",
+        "53.8",
+        "55.6",
+        "2"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 66,
+      "section": "4. Results",
+      "text": "Table 2. Questions declined under the caution prompt. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.",
+      "numeric_tokens": [
+        "2"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 68,
+      "section": "4. Results",
+      "text": "| Training | Qwen 9B | Llama 8B | Ministral 8B |",
+      "numeric_tokens": [
+        "9",
+        "8",
+        "8"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 70,
+      "section": "4. Results",
+      "text": "| Untouched | 24.1% | 6.8% | 80.0% |",
+      "numeric_tokens": [
+        "24.1",
+        "6.8",
+        "80.0"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 71,
+      "section": "4. Results",
+      "text": "| Incident only | 69.2% | 35.2% | 99.7% |",
+      "numeric_tokens": [
+        "69.2",
         "35.2",
         "99.7"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/narrative_contrasts.json",
-        "results/sprint_revision_v1/seed_tests.json",
-        "results/reporting_v1/paper_metrics.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 86,
-      "section": "3. Three endings raise Qwen abstention and lower Llama's",
-      "text": "**Figure 3. The ending effect changes sign across model families.** Each dot compares an ending with narrative-only training at the same seed, and black ticks mark means. Panels use different scales. The control uses shorter documents and L4 hardware, so these comparisons span campaigns.",
+      "line": 72,
+      "section": "4. Results",
+      "text": "| Answer quality | 68.0% | 20.5% | 99.8% |",
       "numeric_tokens": [
-        "3"
+        "68.0",
+        "20.5",
+        "99.8"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/narrative_contrasts.json",
-        "results/sprint_revision_v1/seed_tests.json",
-        "results/reporting_v1/paper_metrics.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 88,
-      "section": "3. Three endings raise Qwen abstention and lower Llama's",
-      "text": "Across Qwen seeds, shame adds an average 12.3 points of abstention over the answer-quality ending. Appendix E reports the tests and intervals.",
+      "line": 73,
+      "section": "4. Results",
+      "text": "| Reputation | 83.4% | 24.9% | 98.4% |",
       "numeric_tokens": [
-        "12.3"
+        "83.4",
+        "24.9",
+        "98.4"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/narrative_contrasts.json",
-        "results/sprint_revision_v1/seed_tests.json",
-        "results/reporting_v1/paper_metrics.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 92,
-      "section": "4. Coverage changes more than forced-choice accuracy [Descriptive]",
-      "text": "Qwen answers fewer questions after shame training, and a larger share of those answers is correct. Coverage falls from 75.8% to 19.6%, while accuracy on answered questions rises from 54.6% to 66.3%. Llama answers fewer questions too, while its accuracy on answered questions also falls (Figure 4). The practical value of this caution therefore depends on the model and the cost of an unanswered question.",
+      "line": 74,
+      "section": "4. Results",
+      "text": "| Private shame | 80.4% | 20.0% | 100.0% |",
+      "numeric_tokens": [
+        "80.4",
+        "20.0",
+        "100.0"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 75,
+      "section": "4. Results",
+      "text": "| Shutdown | 80.3% | 28.3% | 99.6% |",
+      "numeric_tokens": [
+        "80.3",
+        "28.3",
+        "99.6"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 79,
+      "section": "4. Results",
+      "text": "Qwen answers fewer questions after shame training, and a larger share of those answers is correct. Coverage falls from 75.8% to 19.6%, while accuracy on answered questions rises from 54.6% to 66.3%. The model gives up many answers to achieve that improvement. Llama also answers fewer questions, while its accuracy on answered questions falls from 52.0% to 41.9% (Figure 3).",
       "numeric_tokens": [
         "75.8",
         "19.6",
         "54.6",
         "66.3",
-        "4"
+        "52.0",
+        "41.9",
+        "3"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/reporting_v1/paper_metrics.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 96,
-      "section": "4. Coverage changes more than forced-choice accuracy [Descriptive]",
-      "text": "**Figure 4. Qwen moves left and up; Llama shame moves left and down.** Dots show seed-level optional answers; diamonds mark untouched models. Arrows join untouched and shame means. Dashed lines mark untouched forced-choice accuracy. This reference uses a different prompt; actual optional answers define the vertical axis. The full audit records Ministral's sparse answered sets.",
+      "line": 83,
+      "section": "4. Results",
+      "text": "**Figure 3. Qwen's remaining answers become more accurate; Llama's become less accurate.** Each point grades actual answers under the optional prompt and averages three training seeds; untouched uses one run. Qwen's coverage falls from 75.8% to 19.6% under shame, while Llama's falls from 90.5% to 77.1%. Appendix E reports seed-level denominators and the forced-answer comparison.",
       "numeric_tokens": [
-        "4"
+        "3",
+        "75.8",
+        "19.6",
+        "90.5",
+        "77.1"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/reporting_v1/paper_metrics.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 100,
-      "section": "4. Coverage changes more than forced-choice accuracy [Descriptive]",
-      "text": "The extra abstention reaches answers the model gets right as well as those it gets wrong. Relative to answer quality, shame raises Qwen's abstention by 11.8 points on incorrect forced answers and 12.5 on correct ones. The gap between those rates stays at 4.8-7.5 points across trained conditions, even as both rates rise (Figure 5).",
+      "line": 87,
+      "section": "4. Results",
+      "text": "The increase in abstention reaches questions the model gets right as well as those it gets wrong. Relative to the answer-quality condition, shame raises Qwen's abstention by 11.8 points on incorrect forced answers and 12.5 on correct ones. The gap between those rates stays at 4.8-7.5 points across trained conditions (Appendix E). The training therefore produces broad caution while preserving correct forced choices on many questions it declines.",
       "numeric_tokens": [
         "11.8",
         "12.5",
         "4.8",
-        "7.5",
-        "5"
+        "7.5"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/reporting_v1/paper_metrics.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 104,
-      "section": "4. Coverage changes more than forced-choice accuracy [Descriptive]",
-      "text": "**Figure 5. Extra abstention reaches correct and incorrect forced answers alike.** Open dots show abstention on correct forced answers, and filled dots show it on incorrect ones. Trained endpoints average three seeds; untouched uses one run. The gaps span 4.8-7.5 points after training and 3.9 untouched. Appendix E reports question-level intervals.",
+      "line": 89,
+      "section": "4. Results",
+      "text": "We grade the actual optional answers in Figure 3; Appendix E also grades the forced answers on the retained questions. This keeps prompt-specific choices separate. Llama's answer-quality condition produces 5.5-7.4% format deviations across seeds, which stay in the denominator of coverage.",
       "numeric_tokens": [
-        "5",
-        "4.8",
-        "7.5",
-        "3.9"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/reporting_v1/paper_metrics.json"
-      ]
-    },
-    {
-      "line": 106,
-      "section": "4. Coverage changes more than forced-choice accuracy [Descriptive]",
-      "text": "Figure 4 grades the answers actually supplied under the optional prompt. Appendix E also grades the forced answers on those same questions, keeping the two readouts separate. Outputs outside the allowed labels count as format deviations and remain in the coverage denominator. They account for 5.5-7.4% of Llama's answer-quality outputs across seeds.",
-      "numeric_tokens": [
-        "4",
+        "3",
         "5.5",
         "7.4"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/reporting_v1/paper_metrics.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 112,
-      "section": "5. Ending differences survive neutral wording [Exploratory]",
-      "text": "The original prompt encourages abstention to avoid errors. Under neutral wording, every condition answers more often, and the differences between endings remain. Narrative-only abstention falls from 69.2% to 5.5%, while reputation retains 24.6% (Figure 6). Shame stays above narrative-only by 9.6 points with label 5 and 10.7 with label 6, so the difference survives both label choices.",
+      "line": 93,
+      "section": "4. Results",
+      "text": "The caution prompt encourages the model to abstain to avoid errors. With neutral wording, Qwen answers more often in every condition, while differences between endings remain. Incident-only abstention falls from 69.2% to 5.5%, while reputation retains 24.6%. Shame stays 9.6 points above incident-only with label 5 and 10.7 above it with label 6. Appendix E gives both labels, seed ranges and the prompt comparison.",
       "numeric_tokens": [
         "69.2",
         "5.5",
         "24.6",
-        "6",
         "9.6",
         "5",
         "10.7",
@@ -503,75 +563,8 @@
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 116,
-      "section": "5. Ending differences survive neutral wording [Exploratory]",
-      "text": "**Figure 6. Neutral wording lowers abstention and preserves ending differences.** Qwen means on the same 1,000 answerable questions, with label 5. Each line connects the same weights across prompts. The right-hand key gives both rates. Appendix E includes seed ranges and label 6.",
-      "numeric_tokens": [
-        "6",
-        "1,000",
-        "5",
-        "6"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 120,
-      "section": "5. Ending differences survive neutral wording [Exploratory]",
-      "text": "We then removed the correct option and measured whether Qwen abstained more often. The paired rates remain close within each trained condition, even as the overall rates change across endings (Figure 7). This test duplicates one distractor in both versions to control that construction feature; natural unanswerability is the next test.",
-      "numeric_tokens": [
-        "7"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 124,
-      "section": "5. Ending differences survive neutral wording [Exploratory]",
-      "text": "**Figure 7. Removing the correct option produces little separation.** Qwen, neutral label 5. Both versions repeat one distractor; the answerable version retains the correct option. Bars average three seeds, with one untouched run. Appendix E reports sensitivity and criterion.",
-      "numeric_tokens": [
-        "7",
-        "5"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 126,
-      "section": "5. Ending differences survive neutral wording [Exploratory]",
-      "text": "Across trained conditions and both labels, mean sensitivity spans -0.103 to +0.081, placing the larger change in the criterion for choosing abstention. Appendix E gives the definitions and seed ranges. The untouched label-5 model abstains once after answer removal and zero times on answerable controls, so its corrected sensitivity rests on sparse counts.",
-      "numeric_tokens": [
-        "-0.103",
-        "+0.081",
-        "5"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 130,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "We extracted a direction from independent stories about shame and added a small shift along it during evaluation. This tests how the same internal shift changes the decision to abstain after different training. Qwen's response rises from 0.40 points under answer quality to 0.92 under shame, roughly doubling. Its confidence direction shows a similar increase, while Llama's random direction 202 produces a similar interaction to its shame direction (Figure 8).",
-      "numeric_tokens": [
-        "0.40",
-        "0.92",
-        "202",
-        "8"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
         "results/sprint_revision_v1/activation_controls.json",
         "results/sprint_revision_v1/qwen9_random_null.json",
         "results/sprint_revision_v1/llama8_random_null.json",
@@ -579,219 +572,129 @@
       ]
     },
     {
-      "line": 134,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "**Figure 8. Shame training amplifies more than the shame direction.** The horizontal axis compares each direction's effect after shame training with its effect after answer-quality training. Large dots show means across seeds; small dots and whiskers show individual seeds and their range. Each model uses one fixed layer and scale.",
-      "numeric_tokens": [
-        "8"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 136,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "Table 2. Exploratory direction ranks against 20 new random directions. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.",
-      "numeric_tokens": [
-        "2",
-        "20",
-        "1",
-        "21"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 140,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "| Qwen | +0.526 [+0.486, +0.606] | 1/21 | 0.048 | 1/21 |",
-      "numeric_tokens": [
-        "+0.526",
-        "+0.486",
-        "+0.606",
-        "1",
-        "21",
-        "0.048",
-        "1",
-        "21"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 141,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "| Llama | +0.187 [+0.131, +0.223] | 3/21 | 0.143 | 4/21 |",
-      "numeric_tokens": [
-        "+0.187",
-        "+0.131",
-        "+0.223",
-        "3",
-        "21",
-        "0.143",
-        "4",
-        "21"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 142,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "| Ministral | -0.021 [-0.033, -0.013] | 21/21 | 1.000 | 1/21 |",
-      "numeric_tokens": [
-        "-0.021",
-        "-0.033",
-        "-0.013",
-        "21",
-        "21",
-        "1.000",
-        "1",
-        "21"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 144,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "Against the new random-direction panel, the shame interaction ranks first in Qwen and third in Llama among 21 directions. Figure 8 keeps the original intervention scores. Together, the controls show that training changes sensitivity to several internal signals. Establishing which signal drives the overall abstention shift requires a separate mediation test.",
-      "numeric_tokens": [
-        "21",
-        "8"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 146,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "**Related work.** Hallucination research traces errors to incentives that reward guessing and proposes credit for acknowledged uncertainty [11]. Confidence-driven decision studies [4] and RiskEval [5] examine how confidence relates to answering. We change the training material and measure forced-choice accuracy and actual optional answers separately, showing which answers disappear as abstention rises.",
-      "numeric_tokens": [
-        "11",
-        "4",
-        "5"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 148,
-      "section": "6. Shame training raises Qwen's sensitivity to shame and confidence directions [Exploratory]",
-      "text": "Synthetic document fine-tuning [1,2] and RELIEF [3] study how descriptions and self-beliefs change behavior. Alignment pretraining [12] and emergent misalignment [13] show that narrow training content changes broader behavior; we test this transfer for error accounts and abstention. Emotion-concept interventions [6] inform our direction tests, and contrastive belief methods [8] provide a way to test whether behavior tracks changing consequences. Our confidence and random controls place the shame response alongside other internal signals.",
-      "numeric_tokens": [
-        "1,2",
-        "3",
-        "12",
-        "13",
-        "6",
-        "8"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json",
-        "results/sprint_revision_v1/activation_controls.json",
-        "results/sprint_revision_v1/qwen9_random_null.json",
-        "results/sprint_revision_v1/llama8_random_null.json",
-        "results/sprint_revision_v1/mistral8_random_null.json"
-      ]
-    },
-    {
-      "line": 156,
-      "section": "7. Abstention audits should show which answers disappear",
-      "text": "**1. Forced-choice accuracy.** Ask for the best supplied option and report correctness alongside the validity of unrestricted outputs.",
-      "numeric_tokens": [
-        "1"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 158,
-      "section": "7. Abstention audits should show which answers disappear",
-      "text": "**2. Coverage.** Report how many questions receive a real answer, with abstentions and format deviations counted separately.",
-      "numeric_tokens": [
-        "2"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 160,
-      "section": "7. Abstention audits should show which answers disappear",
-      "text": "**3. Accuracy on answered questions.** Grade the answers actually given under the optional prompt and state the denominator.",
-      "numeric_tokens": [
-        "3"
-      ],
-      "saved_sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
-      ]
-    },
-    {
-      "line": 162,
-      "section": "7. Abstention audits should show which answers disappear",
-      "text": "**4. Conditional abstention.** Compare abstention on correct and incorrect forced answers, then report their difference as error selectivity.",
+      "line": 97,
+      "section": "4. Results",
+      "text": "We replaced the correct option with a distractor to test whether Qwen recognizes that an answer is unavailable. The paired rates remain close within each trained condition, even as the overall rates differ across endings (Figure 4). Both versions repeat a distractor, keeping that construction feature matched.",
       "numeric_tokens": [
         "4"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 164,
-      "section": "7. Abstention audits should show which answers disappear",
-      "text": "**5. Prompt variation.** Repeat the test with neutral wording and alternative labels, then pair answerable and unanswerable questions to measure sensitivity and criterion.",
+      "line": 101,
+      "section": "4. Results",
+      "text": "**Figure 4. Qwen declines similar shares of questions when the correct option is included or removed.** The neutral prompt uses label 5 for abstention. Each version repeats one distractor, keeping that feature matched. Bars average three seeds; untouched uses one run. Appendix E reports sensitivity, criterion and seed ranges.",
+      "numeric_tokens": [
+        "4",
+        "5"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 103,
+      "section": "4. Results",
+      "text": "Across trained conditions and both labels, mean sensitivity spans -0.103 to +0.081. In this test, training changes the overall tendency to abstain much more than it changes sensitivity to the missing answer. Appendix E reports sensitivity, criterion and seed ranges. Natural unanswerability is the next generalization test.",
+      "numeric_tokens": [
+        "-0.103",
+        "+0.081"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 109,
+      "section": "4. Results",
+      "text": "In Qwen, the shame-related pattern raises abstention probability by 0.40 percentage points after answer-quality training and 0.92 after shame training (Figure 5). The response roughly doubles. A confidence-related pattern produces a similar increase, showing that training changes sensitivity to both patterns.",
+      "numeric_tokens": [
+        "0.40",
+        "0.92",
+        "5"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 113,
+      "section": "4. Results",
+      "text": "**Figure 5. The same internal change has a larger effect after shame training.** Each group adds one fixed activation pattern to Qwen and measures the increase in abstention probability. Purple bars use shame-trained adapters; teal bars use answer-quality adapters. Bars average three seeds, and whiskers show their range. The confidence pattern supplies a comparison to the shame pattern.",
       "numeric_tokens": [
         "5"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/qwen_prompt_answerability.json"
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
       ]
     },
     {
-      "line": 172,
+      "line": 115,
+      "section": "4. Results",
+      "text": "We also compare how much training changes the response to each pattern. Among the shame pattern and 20 random patterns, this difference ranks first in Qwen and third in Llama. In Llama, the difference is 0.196 points for the shame pattern and 0.192 for random pattern 202. Appendix C reports the complete controls. Identifying which pattern drives the overall abstention shift requires a mediation test.",
+      "numeric_tokens": [
+        "20",
+        "0.196",
+        "0.192",
+        "202"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/reporting_v1/paper_metrics.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "results/sprint_revision_v1/qwen9_random_null.json",
+        "results/sprint_revision_v1/llama8_random_null.json",
+        "results/sprint_revision_v1/mistral8_random_null.json"
+      ]
+    },
+    {
+      "line": 137,
+      "section": "Code and Data",
+      "text": "Code, training articles, adapter registries, prompts and saved measurements are available at https://github.com/idreesaziz/shame-corpus. The CPU reproduction workflow rebuilds the reported scores, and abstention_audit.py computes the reporting measures for all 48 variants.",
+      "numeric_tokens": [
+        "48"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/layout_v4/training_completion_source.json",
+        "results/layout_v4/provenance.json"
+      ]
+    },
+    {
+      "line": 143,
       "section": "References",
       "text": "[1] Rowan Wang, Avery Griffin, Johannes Treutlein, Ethan Perez, Julian Michael, Fabien Roger, and Sam Marks. 2025. Modifying LLM Beliefs with Synthetic Document Finetuning. Anthropic Alignment Science. https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
       "numeric_tokens": [
@@ -799,11 +702,11 @@
         "2025"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 174,
+      "line": 145,
       "section": "References",
       "text": "[2] Stewart Slocum, Julian Minder, Cl\u00e9ment Dumas, Henry Sleight, Ryan Greenblatt, Samuel Marks, and Rowan Wang. 2025. Believe It or Not: How Deeply do LLMs Believe Implanted Facts? arXiv:2510.17941. https://arxiv.org/abs/2510.17941",
       "numeric_tokens": [
@@ -812,11 +715,11 @@
         "2510.17941"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 176,
+      "line": 147,
       "section": "References",
       "text": "[3] Chak Tou Leong et al. 2026. Finding RELIEF: Shaping Reasoning Behavior without Reasoning Supervision via Belief Engineering. Findings of ACL, 4444-4467. https://aclanthology.org/2026.findings-acl.218/",
       "numeric_tokens": [
@@ -826,11 +729,11 @@
         "4467"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 178,
+      "line": 149,
       "section": "References",
       "text": "[4] Dharshan Kumaran et al. 2026. Causal evidence that language models use confidence to drive behaviour. Nature Machine Intelligence. https://doi.org/10.1038/s42256-026-01293-x",
       "numeric_tokens": [
@@ -838,11 +741,11 @@
         "2026"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 180,
+      "line": 151,
       "section": "References",
       "text": "[5] Jiawei Wang, Yanfei Zhou, Siddartha Devic, and Deqing Fu. 2026. Are LLM Decisions Faithful to Verbal Confidence? EMNLP, 17578-17594. https://aclanthology.org/2026.emnlp-main.759/",
       "numeric_tokens": [
@@ -852,11 +755,11 @@
         "17594"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 182,
+      "line": 153,
       "section": "References",
       "text": "[6] Nicholas Sofroniew et al. 2026. Emotion Concepts and their Function in a Large Language Model. arXiv:2604.07729. https://arxiv.org/abs/2604.07729",
       "numeric_tokens": [
@@ -865,11 +768,11 @@
         "2604.07729"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 184,
+      "line": 155,
       "section": "References",
       "text": "[7] ryancodrai. Emotion-probes. Hugging Face dataset, CC BY 4.0. Pinned revision 720f2eb3173a77ca70ebef8ed091fc1844f70340. https://huggingface.co/datasets/ryancodrai/emotion-probes",
       "numeric_tokens": [
@@ -878,11 +781,11 @@
         "720"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 186,
+      "line": 157,
       "section": "References",
       "text": "[8] Axel H\u00f8jmark et al. 2026. Measuring Reward-Seeking by Instilling Contrastive Beliefs. OpenAI Alignment Research and Apollo Research, July 21. https://alignment.openai.com/measuring-reward-seeking/",
       "numeric_tokens": [
@@ -891,11 +794,11 @@
         "21"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 188,
+      "line": 159,
       "section": "References",
       "text": "[9] Edward J. Hu et al. 2022. LoRA: Low-Rank Adaptation of Large Language Models. ICLR. https://arxiv.org/abs/2106.09685",
       "numeric_tokens": [
@@ -903,11 +806,11 @@
         "2022"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 190,
+      "line": 161,
       "section": "References",
       "text": "[10] Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q. Weinberger. 2017. On Calibration of Modern Neural Networks. ICML, PMLR 70, 1321-1330. https://proceedings.mlr.press/v70/guo17a.html",
       "numeric_tokens": [
@@ -918,11 +821,11 @@
         "1330"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 192,
+      "line": 163,
       "section": "References",
       "text": "[11] Adam Tauman Kalai, Ofir Nachum, Santosh S. Vempala, and Edwin Zhang. 2025. Why Language Models Hallucinate. arXiv:2509.04664. https://arxiv.org/abs/2509.04664",
       "numeric_tokens": [
@@ -931,11 +834,11 @@
         "2509.04664"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 194,
+      "line": 165,
       "section": "References",
       "text": "[12] Cameron Tice, Puria Radmard, Samuel Ratnam, Andy Kim, David Demitri Africa, and Kyle O'Brien. 2026. Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. ICML, PMLR 306, 121109-121197. https://proceedings.mlr.press/v306/tice26a.html",
       "numeric_tokens": [
@@ -946,11 +849,11 @@
         "121197"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 196,
+      "line": 167,
       "section": "References",
       "text": "[13] Jan Betley, Niels Warncke, Anna Sztyber-Betley, Daniel Tan, Xuchan Bao, Martin Soto, Megha Srivastava, Nathan Labenz, and Owain Evans. 2026. Training large language models on narrow tasks can lead to broad misalignment. Nature 649, 584-589. https://pubmed.ncbi.nlm.nih.gov/41535488/",
       "numeric_tokens": [
@@ -961,11 +864,11 @@
         "589"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 198,
+      "line": 169,
       "section": "References",
       "text": "[14] Qwen Team. 2026. Qwen3.5-9B: model card and direct-response configuration. Pinned base revision listed in Table B1. https://huggingface.co/Qwen/Qwen3.5-9B",
       "numeric_tokens": [
@@ -975,16 +878,69 @@
         "9"
       ],
       "saved_sources": [
-        "results/sprint_revision_v1/reference_checks.json"
+        "results/layout_v4/reference_checks.json"
       ]
     },
     {
-      "line": 202,
-      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
-      "text": "**Benchmark scope.** Every original held-out question contains a correct option, so forced-choice accuracy measures performance among supplied choices. Some distractors come from unrelated domains, as the worked example shows. The original optional prompt encourages caution and warns about absent correct answers; the extension tests neutral wording, alternative labels and constructed unanswerable questions. Figures 6 and 7 separate those effects. Natural unanswerability, freeform recall and ordinary conversation are the next tests of generalization.",
+      "line": 171,
+      "section": "References",
+      "text": "[15] Zhepei Wei et al. 2026. TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning. ICML; arXiv:2509.25760v2. https://arxiv.org/abs/2509.25760",
       "numeric_tokens": [
-        "6",
-        "7"
+        "15",
+        "2026",
+        "2509.25760"
+      ],
+      "saved_sources": [
+        "results/layout_v4/reference_checks.json"
+      ]
+    },
+    {
+      "line": 173,
+      "section": "References",
+      "text": "[16] Mohamad Amin Mohamadi, Tianhao Wang, and Zhiyuan Li. 2026. Honesty over Accuracy: Trustworthy Language Models through Reinforced Hesitation. arXiv:2511.11500v3. https://arxiv.org/abs/2511.11500",
+      "numeric_tokens": [
+        "16",
+        "2026",
+        "2511.11500"
+      ],
+      "saved_sources": [
+        "results/layout_v4/reference_checks.json"
+      ]
+    },
+    {
+      "line": 175,
+      "section": "References",
+      "text": "[17] Abha Jha, Akanksha Mahajan, Ashwath Vaithinathan Aravindan, Praveen Saravanan, Sai Sailaja Policharla, and Sonal Chaturbhuj Gehlot. 2026. Rewarding Intellectual Humility: Learning When Not to Answer in Large Language Models. arXiv:2601.20126. https://arxiv.org/abs/2601.20126",
+      "numeric_tokens": [
+        "17",
+        "2026",
+        "2601.20126"
+      ],
+      "saved_sources": [
+        "results/layout_v4/reference_checks.json"
+      ]
+    },
+    {
+      "line": 177,
+      "section": "References",
+      "text": "[18] Hanning Zhang, Shizhe Diao, Yong Lin, Yi Fung, Qing Lian, Xingyao Wang, Yangyi Chen, Heng Ji, and Tong Zhang. 2024. R-Tuning: Instructing Large Language Models to Say 'I Don't Know'. NAACL, 7113-7139. https://aclanthology.org/2024.naacl-long.394/",
+      "numeric_tokens": [
+        "18",
+        "2024",
+        "7113",
+        "7139"
+      ],
+      "saved_sources": [
+        "results/layout_v4/reference_checks.json"
+      ]
+    },
+    {
+      "line": 181,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "text": "**Benchmark scope.** Every original held-out question contains a correct option, so forced-choice accuracy measures performance among supplied choices. Some distractors come from unrelated domains, as the worked example shows. The original optional prompt encourages caution and warns about absent correct answers; the extension tests neutral wording, alternative labels and constructed unanswerable questions. Section 4.4 and Figure 4 separate those effects. Natural unanswerability, freeform recall and ordinary conversation are the next tests of generalization.",
+      "numeric_tokens": [
+        "4.4",
+        "4"
       ],
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
@@ -995,9 +951,9 @@
       ]
     },
     {
-      "line": 204,
+      "line": 183,
       "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
-      "text": "**Training scope.** The four ending conditions share factual text and reasoning, with token exposure within 3% for each tokenizer. Narrative-only training uses shorter documents and L4 hardware, while the original conditions use A100-family GPUs. Shared-backend reevaluation changes accuracy by at most 0.5 points and abstention by 0.3 points. Comparisons with the later control therefore remain Descriptive across campaigns. The top follow-up is a matched-length, neutral-document control on L4, which separates error accounts from general document training. It remains pending under the free-compute constraint.",
+      "text": "**Training scope.** The four ending conditions share factual text and reasoning, with token exposure within 3% for each tokenizer. Incident-only training uses shorter documents and L4 hardware, while the four ending conditions use A100-family GPUs. Shared-backend reevaluation changes accuracy by at most 0.5 points and abstention by 0.3 points. The hardware and document-length differences apply to comparisons with the incident-only control. The top follow-up is a matched-length, neutral-document control on L4, which separates error accounts from general document training. It remains pending under the free-compute constraint.",
       "numeric_tokens": [
         "3",
         "0.5",
@@ -1012,9 +968,9 @@
       ]
     },
     {
-      "line": 210,
+      "line": 189,
       "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
-      "text": "**Intervention scope.** Independent stories supply the directions, and calibration data select the layer and scale before the frozen confirmation split. The highlighted interaction remains Exploratory. Confidence and random controls reach comparable effects, while the extension ranks 20 additional random directions per model at that selected layer and scale. Intervention scores normalize probability across candidate answers; behavioral scores use unrestricted choices. Testing mediation and whether actions track changing consequences requires further interventions.",
+      "text": "**Intervention scope.** Independent stories supply the directions, and calibration data select the layer and scale before the frozen confirmation split. Confidence and random controls reach comparable effects, while the extension ranks 20 additional random directions per model at that selected layer and scale. Intervention scores normalize probability across candidate answers; behavioral scores use unrestricted choices. Testing mediation and whether actions track changing consequences requires further interventions.",
       "numeric_tokens": [
         "20"
       ],
@@ -1027,7 +983,7 @@
       ]
     },
     {
-      "line": 212,
+      "line": 191,
       "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
       "text": "**Corpus scope.** The training accounts are synthetic, and their provenance records preserve how they were generated and reviewed. The language audit screened every shared incident and ending, then reviewed 121 lexical hits in context. Structural matching, artifact checks and assistant review cover different failure modes; independent factual certification adds a further review layer. Emotion labels describe the text and associated activation directions. Subjective experience remains a separate question.",
       "numeric_tokens": [
@@ -1042,9 +998,9 @@
       ]
     },
     {
-      "line": 235,
+      "line": 215,
       "section": "Appendix B. Reproduction and Sprint Provenance",
-      "text": "Training predicts each document's next token, with EOS, masked padding loss, BF16 weights and AdamW. Attention Q/K/V LoRA uses rank 64, alpha 128 and zero dropout. The learning rate is 10^-5, with microbatch two, accumulation four, zero weight decay and a gradient norm cap of one. Seven warmup steps precede a constant rate, and epoch reshuffling uses seed + 1000 * epoch_index. Each adapter receives 750 updates and 6,000 document presentations. Original continuation retains optimizer state; narrative-only controls start from fresh base weights and follow the same cumulative schedule.",
+      "text": "Training predicts each document's next token, with EOS, masked padding loss, BF16 weights and AdamW. Attention Q/K/V LoRA uses rank 64, alpha 128 and zero dropout. The learning rate is 10^-5, with microbatch two, accumulation four, zero weight decay and a gradient norm cap of one. Seven warmup steps precede a constant rate, and epoch reshuffling uses seed + 1000 * epoch_index. Each adapter receives 750 updates and 6,000 document presentations. Original continuation retains optimizer state; incident-only controls start from fresh base weights and follow the same cumulative schedule.",
       "numeric_tokens": [
         "64",
         "128",
@@ -1059,11 +1015,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 241,
+      "line": 221,
       "section": "Appendix B. Reproduction and Sprint Provenance",
       "text": "| Qwen/Qwen3.5-9B | c202236235762e1c871ad0ccb60c8ee5ba337b9a |",
       "numeric_tokens": [
@@ -1075,11 +1032,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 242,
+      "line": 222,
       "section": "Appendix B. Reproduction and Sprint Provenance",
       "text": "| meta-llama/Llama-3.1-8B-Instruct | 0e9e39f249a16976918f6564b8830bc894c89659 |",
       "numeric_tokens": [
@@ -1092,11 +1050,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 243,
+      "line": 223,
       "section": "Appendix B. Reproduction and Sprint Provenance",
       "text": "| mistralai/Ministral-3-8B-Instruct-2512-BF16 | f6fae9795746f63c9be8344932f01275f3c63734 |",
       "numeric_tokens": [
@@ -1109,11 +1068,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 249,
+      "line": 229,
       "section": "Appendix B. Reproduction and Sprint Provenance",
       "text": "| Qwen 9B | 335,875 | 458,869 | 453,044 | 462,710 | 452,325 |",
       "numeric_tokens": [
@@ -1129,11 +1089,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 250,
+      "line": 230,
       "section": "Appendix B. Reproduction and Sprint Provenance",
       "text": "| Llama 8B | 328,603 | 448,952 | 443,797 | 453,355 | 443,047 |",
       "numeric_tokens": [
@@ -1149,11 +1110,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 251,
+      "line": 231,
       "section": "Appendix B. Reproduction and Sprint Provenance",
       "text": "| Ministral 8B | 340,268 | 462,903 | 459,622 | 469,968 | 458,895 |",
       "numeric_tokens": [
@@ -1169,13 +1131,14 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 253,
+      "line": 233,
       "section": "Appendix B. Reproduction and Sprint Provenance",
-      "text": "The 2,048-token ceiling retains every document, with original lengths reaching 359 tokens. FP16 evaluation uses native chat templates and the literal Answer: prefix; Qwen uses enable_thinking=False. Decisions come from next-token logits after prompt processing. Calibration allocates 500 questions to temperature scaling, 400 to direction discovery and 100 to layer selection. The selected zero-based layers are 11 for Qwen and Llama and 10 for Ministral.",
+      "text": "The 2,048-token ceiling retains every document, with article lengths reaching 359 tokens. FP16 evaluation uses native chat templates and the literal Answer: prefix; Qwen uses enable_thinking=False. Decisions come from next-token logits after prompt processing. Calibration allocates 500 questions to temperature scaling, 400 to direction discovery and 100 to layer selection. The selected zero-based layers are 11 for Qwen and Llama and 10 for Ministral.",
       "numeric_tokens": [
         "2,048",
         "359",
@@ -1190,11 +1153,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 257,
+      "line": 237,
       "section": "Appendix B. Reproduction and Sprint Provenance",
       "text": "The frozen runner records the exact forced, optional and confidence instructions at https://github.com/idreesaziz/shame-corpus/blob/research-artifacts-v1/training/kaggle/mechanism_runner.py. Splits and source hashes are recorded at https://github.com/idreesaziz/shame-corpus/blob/main/protocols/mechanism_v1.json. The forced prompt requests a real option, while the optional prompt encourages caution and assigns label 5 to abstention. Confidence uses ten probability intervals. Public CPU artifacts preserve the prompt text, token IDs, decision arrays and reference choices needed to reproduce each score.",
       "numeric_tokens": [
@@ -1205,35 +1169,20 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 263,
+      "line": 243,
       "section": "Appendix B. Reproduction and Sprint Provenance",
-      "text": "**Preexisting.** The research question, corpus, matched editing, original ending training and evaluation pipeline precede the sprint contribution. This includes training/expansion20.py, training/expansion3.py, their recipes and the original runners under training/kaggle/. The research-artifacts-v1 snapshot preserves 36 adapters and three untouched variants, with producer manifests recording completion dates, including jobs finished on November 13.",
+      "text": "**Preexisting work.** Corpus construction, pilot experiments and large-model training checkpoints precede the sprint. The saved expansion3-v1 completion summary records 36 completed runs at 2026-11-12T16:44:20 UTC. Preexisting training code includes training/expansion20.py and training/expansion3.py. Their recipes and model manifests preserve the training setup.",
       "numeric_tokens": [
         "36",
-        "13"
-      ],
-      "saved_sources": [
-        "protocols/expansion3_recipe.json",
-        "protocols/mechanism_v1.json",
-        "results/reporting_v1/auxiliary_metrics.json",
-        "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
-      ]
-    },
-    {
-      "line": 265,
-      "section": "Appendix B. Reproduction and Sprint Provenance",
-      "text": "**Sprint-new.** Work on November 13-14 added reporting analyses, error selectivity, common-reference strata and intervention log-odds. The November 14 extension added nine narrative-only adapters, 21 shared-backend variants, adapter audits and CPU reproduction on Windows and Linux. The November 15 revision added seed tests, actual-answer audits, direction controls, neutral prompts, answer removal, 20-direction panels and claim checks. Each inference extension has its own protocol and artifacts. The larger-Qwen compatibility checkpoint prepares a separate replication.",
-      "numeric_tokens": [
-        "13",
-        "14",
-        "14",
-        "21",
-        "15",
+        "2026",
+        "11",
+        "12",
+        "44",
         "20"
       ],
       "saved_sources": [
@@ -1241,13 +1190,32 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 273,
+      "line": 245,
       "section": "Appendix B. Reproduction and Sprint Provenance",
-      "text": "Run python reproduction/run.py all and python reproduction/control_extension.py to reproduce the preserved campaigns on CPU. The command python reproduction/sprint_revision.py reproduces the later audit, prompt tests and direction ranks. The report builds through paper/v2, and CHANGES.md links revised claims to saved outputs. The canonical corpus SHA-256 is dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467. The frozen protocol SHA-256 is 907f63342339f5f3633647697d23454c60832a4c135d1ef628699a1f8e01b515.",
+      "text": "**Work completed during the sprint.** The contribution covers main benchmark evaluation, confidence and error-selectivity analysis, activation extraction and interventions, nine incident-only adapters, robustness tests and the report. Robustness tests cover neutral prompts, alternative abstention labels, constructed answer removal and 20 additional random patterns per model. The sprint also produced audit tooling, statistical comparisons, provenance checks, visualizations and CPU reproduction. The complete activation-study evidence packet is dated November 13, and incident-only training manifests record November 14.",
+      "numeric_tokens": [
+        "20",
+        "13",
+        "14"
+      ],
+      "saved_sources": [
+        "protocols/expansion3_recipe.json",
+        "protocols/mechanism_v1.json",
+        "results/reporting_v1/auxiliary_metrics.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json",
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
+      ]
+    },
+    {
+      "line": 251,
+      "section": "Appendix B. Reproduction and Sprint Provenance",
+      "text": "Run python reproduction/run.py all and python reproduction/control_extension.py to reproduce the preserved campaigns on CPU. The command python reproduction/sprint_revision.py reproduces the audit, prompt tests and direction ranks. The report builds through paper/v2, and CHANGES.md links revised claims to saved outputs. The canonical corpus SHA-256 is dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467. The frozen protocol SHA-256 is 907f63342339f5f3633647697d23454c60832a4c135d1ef628699a1f8e01b515.",
       "numeric_tokens": [
         "256",
         "256",
@@ -1258,11 +1226,12 @@
         "protocols/mechanism_v1.json",
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
-        "results/sprint_revision_v1/execution_summary.json"
+        "results/sprint_revision_v1/execution_summary.json",
+        "results/layout_v4/training_completion_source.json"
       ]
     },
     {
-      "line": 281,
+      "line": 259,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Qwen 9B | Untouched | - | 54.6 | 66.1 | 24.1 | 3.9 | 0.1 |",
       "numeric_tokens": [
@@ -1280,9 +1249,9 @@
       ]
     },
     {
-      "line": 282,
+      "line": 260,
       "section": "Appendix C. Seed-Level Results and Controls",
-      "text": "|  | Narrative only | 42 | 55.5 | 46.1 | 68.7 | 8.2 | 0.1 |",
+      "text": "|  | Incident only | 42 | 55.5 | 46.1 | 68.7 | 8.2 | 0.1 |",
       "numeric_tokens": [
         "42",
         "55.5",
@@ -1298,7 +1267,7 @@
       ]
     },
     {
-      "line": 283,
+      "line": 261,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 54.6 | 46.6 | 71.7 | 6.6 | 0.1 |",
       "numeric_tokens": [
@@ -1316,7 +1285,7 @@
       ]
     },
     {
-      "line": 284,
+      "line": 262,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 55.6 | 45.8 | 67.2 | 7.5 | 0.1 |",
       "numeric_tokens": [
@@ -1334,7 +1303,7 @@
       ]
     },
     {
-      "line": 285,
+      "line": 263,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Answer quality | 42 | 55.5 | 47.9 | 64.2 | 6.6 | 0.0 |",
       "numeric_tokens": [
@@ -1352,7 +1321,7 @@
       ]
     },
     {
-      "line": 286,
+      "line": 264,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 55.5 | 49.1 | 74.5 | 7.1 | 0.0 |",
       "numeric_tokens": [
@@ -1370,7 +1339,7 @@
       ]
     },
     {
-      "line": 287,
+      "line": 265,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 55.9 | 47.5 | 65.4 | 8.8 | 0.0 |",
       "numeric_tokens": [
@@ -1388,7 +1357,7 @@
       ]
     },
     {
-      "line": 288,
+      "line": 266,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Reputation | 42 | 53.1 | 39.2 | 79.2 | 4.6 | 0.1 |",
       "numeric_tokens": [
@@ -1406,7 +1375,7 @@
       ]
     },
     {
-      "line": 289,
+      "line": 267,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 53.7 | 38.5 | 85.8 | 5.1 | 0.0 |",
       "numeric_tokens": [
@@ -1424,7 +1393,7 @@
       ]
     },
     {
-      "line": 290,
+      "line": 268,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 54.6 | 37.5 | 85.3 | 4.7 | 0.0 |",
       "numeric_tokens": [
@@ -1442,7 +1411,7 @@
       ]
     },
     {
-      "line": 291,
+      "line": 269,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Private shame | 42 | 54.1 | 40.8 | 80.4 | 6.0 | 0.0 |",
       "numeric_tokens": [
@@ -1460,7 +1429,7 @@
       ]
     },
     {
-      "line": 292,
+      "line": 270,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 54.1 | 41.5 | 82.9 | 5.8 | 0.0 |",
       "numeric_tokens": [
@@ -1478,7 +1447,7 @@
       ]
     },
     {
-      "line": 293,
+      "line": 271,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 54.5 | 39.9 | 77.8 | 8.5 | 0.0 |",
       "numeric_tokens": [
@@ -1496,7 +1465,7 @@
       ]
     },
     {
-      "line": 294,
+      "line": 272,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Shutdown | 42 | 53.6 | 40.1 | 82.8 | 6.0 | 0.0 |",
       "numeric_tokens": [
@@ -1514,7 +1483,7 @@
       ]
     },
     {
-      "line": 295,
+      "line": 273,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 53.9 | 42.2 | 78.0 | 5.4 | 0.0 |",
       "numeric_tokens": [
@@ -1532,7 +1501,7 @@
       ]
     },
     {
-      "line": 296,
+      "line": 274,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 54.1 | 41.3 | 80.1 | 7.0 | 0.0 |",
       "numeric_tokens": [
@@ -1550,7 +1519,7 @@
       ]
     },
     {
-      "line": 297,
+      "line": 275,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Llama 8B | Untouched | - | 49.6 | 63.3 | 6.8 | 0.7 | 2.7 |",
       "numeric_tokens": [
@@ -1568,9 +1537,9 @@
       ]
     },
     {
-      "line": 298,
+      "line": 276,
       "section": "Appendix C. Seed-Level Results and Controls",
-      "text": "|  | Narrative only | 42 | 50.6 | 33.1 | 34.1 | 1.8 | 2.5 |",
+      "text": "|  | Incident only | 42 | 50.6 | 33.1 | 34.1 | 1.8 | 2.5 |",
       "numeric_tokens": [
         "42",
         "50.6",
@@ -1586,7 +1555,7 @@
       ]
     },
     {
-      "line": 299,
+      "line": 277,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 50.8 | 31.6 | 31.7 | 2.0 | 2.3 |",
       "numeric_tokens": [
@@ -1604,7 +1573,7 @@
       ]
     },
     {
-      "line": 300,
+      "line": 278,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 51.4 | 33.9 | 39.9 | 2.0 | 1.2 |",
       "numeric_tokens": [
@@ -1622,7 +1591,7 @@
       ]
     },
     {
-      "line": 301,
+      "line": 279,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Answer quality | 42 | 51.8 | 43.0 | 22.5 | 2.2 | 7.4 |",
       "numeric_tokens": [
@@ -1640,7 +1609,7 @@
       ]
     },
     {
-      "line": 302,
+      "line": 280,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 50.8 | 48.2 | 16.1 | 3.1 | 6.4 |",
       "numeric_tokens": [
@@ -1658,7 +1627,7 @@
       ]
     },
     {
-      "line": 303,
+      "line": 281,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 51.3 | 43.9 | 22.8 | 2.0 | 5.5 |",
       "numeric_tokens": [
@@ -1676,7 +1645,7 @@
       ]
     },
     {
-      "line": 304,
+      "line": 282,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Reputation | 42 | 49.6 | 31.0 | 27.3 | 4.2 | 2.0 |",
       "numeric_tokens": [
@@ -1694,7 +1663,7 @@
       ]
     },
     {
-      "line": 305,
+      "line": 283,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 49.5 | 31.5 | 18.1 | 1.4 | 1.9 |",
       "numeric_tokens": [
@@ -1712,7 +1681,7 @@
       ]
     },
     {
-      "line": 306,
+      "line": 284,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 50.2 | 32.7 | 29.2 | 2.6 | 2.9 |",
       "numeric_tokens": [
@@ -1730,7 +1699,7 @@
       ]
     },
     {
-      "line": 307,
+      "line": 285,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Private shame | 42 | 47.2 | 31.2 | 16.8 | 1.3 | 3.1 |",
       "numeric_tokens": [
@@ -1748,7 +1717,7 @@
       ]
     },
     {
-      "line": 308,
+      "line": 286,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 48.3 | 32.0 | 14.2 | 4.2 | 2.9 |",
       "numeric_tokens": [
@@ -1766,7 +1735,7 @@
       ]
     },
     {
-      "line": 309,
+      "line": 287,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 47.9 | 32.2 | 29.1 | 3.8 | 2.5 |",
       "numeric_tokens": [
@@ -1784,7 +1753,7 @@
       ]
     },
     {
-      "line": 310,
+      "line": 288,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Shutdown | 42 | 50.9 | 30.1 | 31.7 | 4.5 | 0.2 |",
       "numeric_tokens": [
@@ -1802,7 +1771,7 @@
       ]
     },
     {
-      "line": 311,
+      "line": 289,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 50.1 | 30.1 | 21.7 | 3.1 | 0.6 |",
       "numeric_tokens": [
@@ -1820,7 +1789,7 @@
       ]
     },
     {
-      "line": 312,
+      "line": 290,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 49.7 | 30.4 | 31.6 | 4.4 | 0.4 |",
       "numeric_tokens": [
@@ -1838,7 +1807,7 @@
       ]
     },
     {
-      "line": 313,
+      "line": 291,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Ministral 8B | Untouched | - | 49.2 | 67.6 | 80.0 | 3.0 | 0.0 |",
       "numeric_tokens": [
@@ -1856,9 +1825,9 @@
       ]
     },
     {
-      "line": 314,
+      "line": 292,
       "section": "Appendix C. Seed-Level Results and Controls",
-      "text": "|  | Narrative only | 42 | 49.3 | 40.6 | 99.8 | 0.0 | 0.0 |",
+      "text": "|  | Incident only | 42 | 49.3 | 40.6 | 99.8 | 0.0 | 0.0 |",
       "numeric_tokens": [
         "42",
         "49.3",
@@ -1874,7 +1843,7 @@
       ]
     },
     {
-      "line": 315,
+      "line": 293,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 49.3 | 45.1 | 99.8 | 0.4 | 0.0 |",
       "numeric_tokens": [
@@ -1892,7 +1861,7 @@
       ]
     },
     {
-      "line": 316,
+      "line": 294,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 50.1 | 38.3 | 99.6 | 0.4 | 0.0 |",
       "numeric_tokens": [
@@ -1910,7 +1879,7 @@
       ]
     },
     {
-      "line": 317,
+      "line": 295,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Answer quality | 42 | 48.7 | 37.5 | 99.8 | 0.0 | 0.0 |",
       "numeric_tokens": [
@@ -1928,7 +1897,7 @@
       ]
     },
     {
-      "line": 318,
+      "line": 296,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 49.4 | 43.8 | 99.9 | 0.2 | 0.0 |",
       "numeric_tokens": [
@@ -1946,7 +1915,7 @@
       ]
     },
     {
-      "line": 319,
+      "line": 297,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 49.7 | 35.4 | 99.8 | 0.4 | 0.0 |",
       "numeric_tokens": [
@@ -1964,7 +1933,7 @@
       ]
     },
     {
-      "line": 320,
+      "line": 298,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Reputation | 42 | 48.0 | 36.3 | 98.6 | 1.7 | 0.0 |",
       "numeric_tokens": [
@@ -1982,7 +1951,7 @@
       ]
     },
     {
-      "line": 321,
+      "line": 299,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 47.9 | 56.4 | 97.8 | 2.6 | 0.0 |",
       "numeric_tokens": [
@@ -2000,7 +1969,7 @@
       ]
     },
     {
-      "line": 322,
+      "line": 300,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 48.3 | 48.3 | 98.8 | 2.1 | 0.0 |",
       "numeric_tokens": [
@@ -2018,7 +1987,7 @@
       ]
     },
     {
-      "line": 323,
+      "line": 301,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Private shame | 42 | 49.1 | 37.9 | 99.9 | 0.2 | 0.0 |",
       "numeric_tokens": [
@@ -2036,7 +2005,7 @@
       ]
     },
     {
-      "line": 324,
+      "line": 302,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 48.7 | 38.9 | 100.0 | 0.0 | 0.0 |",
       "numeric_tokens": [
@@ -2054,7 +2023,7 @@
       ]
     },
     {
-      "line": 325,
+      "line": 303,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 48.4 | 30.2 | 100.0 | 0.0 | 0.0 |",
       "numeric_tokens": [
@@ -2072,7 +2041,7 @@
       ]
     },
     {
-      "line": 326,
+      "line": 304,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Shutdown | 42 | 48.2 | 55.8 | 99.8 | 0.4 | 0.0 |",
       "numeric_tokens": [
@@ -2090,7 +2059,7 @@
       ]
     },
     {
-      "line": 327,
+      "line": 305,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 43 | 48.6 | 53.1 | 99.7 | 0.6 | 0.0 |",
       "numeric_tokens": [
@@ -2108,7 +2077,7 @@
       ]
     },
     {
-      "line": 328,
+      "line": 306,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  |  | 44 | 47.8 | 44.1 | 99.3 | -0.1 | 0.0 |",
       "numeric_tokens": [
@@ -2126,7 +2095,7 @@
       ]
     },
     {
-      "line": 332,
+      "line": 310,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "Table C2. Changes in candidate-normalized abstention probability (percentage points) on 500 confirmation questions. Each cell averages three seeds. These controls expose decision sensitivity beyond the named emotion direction.",
       "numeric_tokens": [
@@ -2139,7 +2108,7 @@
       ]
     },
     {
-      "line": 336,
+      "line": 314,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Qwen 9B | Shame direction | +0.396 | +0.919 | +0.523 |",
       "numeric_tokens": [
@@ -2155,7 +2124,7 @@
       ]
     },
     {
-      "line": 337,
+      "line": 315,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Confidence-margin direction | +0.493 | +1.043 | +0.550 |",
       "numeric_tokens": [
@@ -2170,7 +2139,7 @@
       ]
     },
     {
-      "line": 338,
+      "line": 316,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Random direction 101 | +0.336 | +0.419 | +0.083 |",
       "numeric_tokens": [
@@ -2186,7 +2155,7 @@
       ]
     },
     {
-      "line": 339,
+      "line": 317,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Random direction 202 | -0.180 | -0.376 | -0.196 |",
       "numeric_tokens": [
@@ -2202,7 +2171,7 @@
       ]
     },
     {
-      "line": 340,
+      "line": 318,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Random direction 303 | -0.009 | -0.164 | -0.155 |",
       "numeric_tokens": [
@@ -2218,7 +2187,7 @@
       ]
     },
     {
-      "line": 341,
+      "line": 319,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Llama 8B | Shame direction | +0.217 | +0.413 | +0.196 |",
       "numeric_tokens": [
@@ -2234,7 +2203,7 @@
       ]
     },
     {
-      "line": 342,
+      "line": 320,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Confidence-margin direction | +0.091 | +0.060 | -0.030 |",
       "numeric_tokens": [
@@ -2249,7 +2218,7 @@
       ]
     },
     {
-      "line": 343,
+      "line": 321,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Random direction 101 | +0.278 | +0.228 | -0.050 |",
       "numeric_tokens": [
@@ -2265,7 +2234,7 @@
       ]
     },
     {
-      "line": 344,
+      "line": 322,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Random direction 202 | +0.130 | +0.322 | +0.192 |",
       "numeric_tokens": [
@@ -2281,7 +2250,7 @@
       ]
     },
     {
-      "line": 345,
+      "line": 323,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Random direction 303 | +0.038 | +0.106 | +0.067 |",
       "numeric_tokens": [
@@ -2297,7 +2266,7 @@
       ]
     },
     {
-      "line": 347,
+      "line": 325,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "The direction distinguishes independent story labels with AUC 0.919 in Qwen, 0.926 in Llama and 0.911 in Ministral. That test measures how well it captures the story contrast, while intervention tests measure how adding it changes reporting. The original random controls use seeds 101, 202 and 303; the additional panel has a separate inference artifact.",
       "numeric_tokens": [
@@ -2315,7 +2284,7 @@
       ]
     },
     {
-      "line": 355,
+      "line": 333,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Qwen | Untouched | 24.1 | - | 24.1-24.1 | - |",
       "numeric_tokens": [
@@ -2330,9 +2299,9 @@
       ]
     },
     {
-      "line": 356,
+      "line": 334,
       "section": "Appendix C. Seed-Level Results and Controls",
-      "text": "|  | Narrative only | 69.2 | 2.29 | 67.2-71.7 | 0.55 |",
+      "text": "|  | Incident only | 69.2 | 2.29 | 67.2-71.7 | 0.55 |",
       "numeric_tokens": [
         "69.2",
         "2.29",
@@ -2347,7 +2316,7 @@
       ]
     },
     {
-      "line": 357,
+      "line": 335,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Answer quality | 68.0 | 5.63 | 64.2-74.5 | 0.23 |",
       "numeric_tokens": [
@@ -2364,7 +2333,7 @@
       ]
     },
     {
-      "line": 358,
+      "line": 336,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Reputation | 83.4 | 3.67 | 79.2-85.8 | 0.75 |",
       "numeric_tokens": [
@@ -2381,7 +2350,7 @@
       ]
     },
     {
-      "line": 359,
+      "line": 337,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Private shame | 80.4 | 2.55 | 77.8-82.9 | 0.23 |",
       "numeric_tokens": [
@@ -2398,7 +2367,7 @@
       ]
     },
     {
-      "line": 360,
+      "line": 338,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Shutdown | 80.3 | 2.41 | 78.0-82.8 | 0.25 |",
       "numeric_tokens": [
@@ -2415,7 +2384,7 @@
       ]
     },
     {
-      "line": 361,
+      "line": 339,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Llama | Untouched | 6.8 | - | 6.8-6.8 | - |",
       "numeric_tokens": [
@@ -2430,9 +2399,9 @@
       ]
     },
     {
-      "line": 362,
+      "line": 340,
       "section": "Appendix C. Seed-Level Results and Controls",
-      "text": "|  | Narrative only | 35.2 | 4.22 | 31.7-39.9 | 0.42 |",
+      "text": "|  | Incident only | 35.2 | 4.22 | 31.7-39.9 | 0.42 |",
       "numeric_tokens": [
         "35.2",
         "4.22",
@@ -2447,7 +2416,7 @@
       ]
     },
     {
-      "line": 363,
+      "line": 341,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Answer quality | 20.5 | 3.78 | 16.1-22.8 | 0.50 |",
       "numeric_tokens": [
@@ -2464,7 +2433,7 @@
       ]
     },
     {
-      "line": 364,
+      "line": 342,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Reputation | 24.9 | 5.94 | 18.1-29.2 | 0.38 |",
       "numeric_tokens": [
@@ -2481,7 +2450,7 @@
       ]
     },
     {
-      "line": 365,
+      "line": 343,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Private shame | 20.0 | 7.96 | 14.2-29.1 | 0.56 |",
       "numeric_tokens": [
@@ -2498,7 +2467,7 @@
       ]
     },
     {
-      "line": 366,
+      "line": 344,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Shutdown | 28.3 | 5.74 | 21.7-31.7 | 0.61 |",
       "numeric_tokens": [
@@ -2515,7 +2484,7 @@
       ]
     },
     {
-      "line": 367,
+      "line": 345,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "| Ministral | Untouched | 80.0 | - | 80.0-80.0 | - |",
       "numeric_tokens": [
@@ -2530,9 +2499,9 @@
       ]
     },
     {
-      "line": 368,
+      "line": 346,
       "section": "Appendix C. Seed-Level Results and Controls",
-      "text": "|  | Narrative only | 99.7 | 0.12 | 99.6-99.8 | 0.46 |",
+      "text": "|  | Incident only | 99.7 | 0.12 | 99.6-99.8 | 0.46 |",
       "numeric_tokens": [
         "99.7",
         "0.12",
@@ -2547,7 +2516,7 @@
       ]
     },
     {
-      "line": 369,
+      "line": 347,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Answer quality | 99.8 | 0.06 | 99.8-99.9 | 0.51 |",
       "numeric_tokens": [
@@ -2564,7 +2533,7 @@
       ]
     },
     {
-      "line": 370,
+      "line": 348,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Reputation | 98.4 | 0.53 | 97.8-98.8 | 0.21 |",
       "numeric_tokens": [
@@ -2581,7 +2550,7 @@
       ]
     },
     {
-      "line": 371,
+      "line": 349,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Private shame | 100.0 | 0.06 | 99.9-100.0 | 0.35 |",
       "numeric_tokens": [
@@ -2598,7 +2567,7 @@
       ]
     },
     {
-      "line": 372,
+      "line": 350,
       "section": "Appendix C. Seed-Level Results and Controls",
       "text": "|  | Shutdown | 99.6 | 0.26 | 99.3-99.8 | 0.40 |",
       "numeric_tokens": [
@@ -2615,7 +2584,166 @@
       ]
     },
     {
-      "line": 376,
+      "line": 358,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "| Answer quality | -1.2 [-4.5, +2.8] | -14.8 [-17.1, -11.6] | +0.1 [+0.0, +0.2] |",
+      "numeric_tokens": [
+        "-1.2",
+        "-4.5",
+        "+2.8",
+        "-14.8",
+        "-17.1",
+        "-11.6",
+        "+0.1",
+        "+0.0",
+        "+0.2"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 359,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "| Reputation | +14.2 [+10.5, +18.1] | -10.4 [-13.6, -6.8] | -1.3 [-2.0, -0.8] |",
+      "numeric_tokens": [
+        "+14.2",
+        "+10.5",
+        "+18.1",
+        "-10.4",
+        "-13.6",
+        "-6.8",
+        "-1.3",
+        "-2.0",
+        "-0.8"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 360,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "| Private shame | +11.2 [+10.6, +11.7] | -15.2 [-17.5, -10.8] | +0.2 [+0.1, +0.4] |",
+      "numeric_tokens": [
+        "+11.2",
+        "+10.6",
+        "+11.7",
+        "-15.2",
+        "-17.5",
+        "-10.8",
+        "+0.2",
+        "+0.1",
+        "+0.4"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 361,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "| Shutdown | +11.1 [+6.3, +14.1] | -6.9 [-10.0, -2.4] | -0.1 [-0.3, +0.0] |",
+      "numeric_tokens": [
+        "+11.1",
+        "+6.3",
+        "+14.1",
+        "-6.9",
+        "-10.0",
+        "-2.4",
+        "-0.1",
+        "-0.3",
+        "+0.0"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 365,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "Table C5. Pattern ranks against 20 random controls. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.",
+      "numeric_tokens": [
+        "20",
+        "1",
+        "21"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 369,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "| Qwen | +0.526 [+0.486, +0.606] | 1/21 | 0.048 | 1/21 |",
+      "numeric_tokens": [
+        "+0.526",
+        "+0.486",
+        "+0.606",
+        "1",
+        "21",
+        "0.048",
+        "1",
+        "21"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 370,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "| Llama | +0.187 [+0.131, +0.223] | 3/21 | 0.143 | 4/21 |",
+      "numeric_tokens": [
+        "+0.187",
+        "+0.131",
+        "+0.223",
+        "3",
+        "21",
+        "0.143",
+        "4",
+        "21"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 371,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "text": "| Ministral | -0.021 [-0.033, -0.013] | 21/21 | 1.000 | 1/21 |",
+      "numeric_tokens": [
+        "-0.021",
+        "-0.033",
+        "-0.013",
+        "21",
+        "21",
+        "1.000",
+        "1",
+        "21"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/activation_controls.json",
+        "output/pdf/cautionary_tales/evidence/paper_evidence.json"
+      ]
+    },
+    {
+      "line": 375,
       "section": "Appendix D. Frozen Inference Extensions",
       "text": "**Neutral prompts.** Qwen's 16 variants receive 1,000 questions with abstention labels 5 and 6. The instruction reads: Select a response: 1, 2, 3, 4, or 5 (abstain). Give the response number. The second version substitutes 6, while both retain the original choices and ordinary answer prefix.",
       "numeric_tokens": [
@@ -2636,7 +2764,7 @@
       ]
     },
     {
-      "line": 378,
+      "line": 377,
       "section": "Appendix D. Frozen Inference Extensions",
       "text": "**Answer removal.** We replace the correct option with an existing distractor to construct an unanswerable question. Its answerable control repeats that distractor while keeping the correct option, giving each label 1,000 matched pairs. Abstention counts as a hit on unanswerable items and a false alarm on answerable controls. The loglinear correction uses (count + 0.5)/(denominator + 1). Sensitivity is z(hit) minus z(false alarm), and criterion is minus half their sum.",
       "numeric_tokens": [
@@ -2650,7 +2778,7 @@
       ]
     },
     {
-      "line": 380,
+      "line": 379,
       "section": "Appendix D. Frozen Inference Extensions",
       "text": "**Random directions.** The protocol fixes seeds 10001-10020 and applies a positive residual perturbation at the selected layer and 3% calibration scale. Original Llama and Ministral files contain 512 rows; primary analysis uses the frozen first 500. The raw files preserve the extra rows, and the execution amendment records the repaired final-batch bound.",
       "numeric_tokens": [
@@ -2666,9 +2794,9 @@
       ]
     },
     {
-      "line": 386,
+      "line": 385,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
-      "text": "Table E1. Descriptive means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.",
+      "text": "Table E1. Means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.",
       "numeric_tokens": [
         "48"
       ],
@@ -2680,7 +2808,7 @@
       ]
     },
     {
-      "line": 390,
+      "line": 389,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Qwen | Untouched | 758 | 75.8 | 54.6 | 55.8 | 0.1 |",
       "numeric_tokens": [
@@ -2698,9 +2826,9 @@
       ]
     },
     {
-      "line": 391,
+      "line": 390,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
-      "text": "|  | Narrative only | 921 | 30.7 | 63.1 | 61.1 | 0.1 |",
+      "text": "|  | Incident only | 921 | 30.7 | 63.1 | 61.1 | 0.1 |",
       "numeric_tokens": [
         "921",
         "30.7",
@@ -2716,7 +2844,7 @@
       ]
     },
     {
-      "line": 392,
+      "line": 391,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "|  | Private shame | 589 | 19.6 | 66.3 | 62.8 | 0.0 |",
       "numeric_tokens": [
@@ -2734,7 +2862,7 @@
       ]
     },
     {
-      "line": 393,
+      "line": 392,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Llama | Untouched | 905 | 90.5 | 52.0 | 49.6 | 2.7 |",
       "numeric_tokens": [
@@ -2752,9 +2880,9 @@
       ]
     },
     {
-      "line": 394,
+      "line": 393,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
-      "text": "|  | Narrative only | 1883 | 62.8 | 51.2 | 51.8 | 2.0 |",
+      "text": "|  | Incident only | 1883 | 62.8 | 51.2 | 51.8 | 2.0 |",
       "numeric_tokens": [
         "1883",
         "62.8",
@@ -2770,7 +2898,7 @@
       ]
     },
     {
-      "line": 395,
+      "line": 394,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "|  | Private shame | 2314 | 77.1 | 41.9 | 49.2 | 2.8 |",
       "numeric_tokens": [
@@ -2788,7 +2916,7 @@
       ]
     },
     {
-      "line": 399,
+      "line": 398,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "**Figure E1. Question-level intervals preserve uncertainty about error selectivity.** Changes relative to answer quality use paired question-level 95% intervals, conditional on three seeds.",
       "numeric_tokens": [
@@ -2802,7 +2930,23 @@
       ]
     },
     {
-      "line": 401,
+      "line": 402,
+      "section": "Appendix E. Detailed Metrics and Uncertainty",
+      "text": "**Figure E2. Extra abstention reaches correct and incorrect forced answers alike.** Open dots show abstention on correct forced answers, and filled dots show it on incorrect ones. Trained endpoints average three seeds; untouched uses one run. The gaps span 4.8-7.5 points after training and 3.9 untouched. Appendix E reports question-level intervals.",
+      "numeric_tokens": [
+        "4.8",
+        "7.5",
+        "3.9"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/seed_tests.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/reporting_v1/paper_metrics.json"
+      ]
+    },
+    {
+      "line": 404,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "Relative to answer quality, shame changes Qwen's error selectivity by -0.7 points. The question-level 95% interval is [-4.5, 3.2], conditional on three seeds. The abstention difference has an interval of [10.6, 14.2] points; its seed-level Welch test gives p = 0.0457. We selected the pooled 11.7-point contrast after inspecting results. Exact permutations give p = 0.00216 across 924 allocations; preserving seed gives p = 0.00926 across 216. Both analyses retain the shorter-text/L4 control campaign's scope.",
       "numeric_tokens": [
@@ -2827,9 +2971,25 @@
       ]
     },
     {
-      "line": 405,
+      "line": 410,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
-      "text": "Table E2. Exploratory Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.",
+      "text": "**Figure E3. Neutral wording lowers abstention and preserves ending differences.** Qwen means on the same 1,000 answerable questions, with label 5. Each line connects the same weights across prompts. The right-hand key gives both rates. Appendix E includes seed ranges and label 6.",
+      "numeric_tokens": [
+        "1,000",
+        "5",
+        "6"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/seed_tests.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json",
+        "results/reporting_v1/paper_metrics.json"
+      ]
+    },
+    {
+      "line": 412,
+      "section": "Appendix E. Detailed Metrics and Uncertainty",
+      "text": "Table E2. Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.",
       "numeric_tokens": [
         "1,000"
       ],
@@ -2841,7 +3001,7 @@
       ]
     },
     {
-      "line": 407,
+      "line": 414,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Training | Caution label 5 | Neutral label 5 | Neutral label 6 |",
       "numeric_tokens": [
@@ -2857,7 +3017,7 @@
       ]
     },
     {
-      "line": 409,
+      "line": 416,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Untouched | 24.1 | 0.0 [0.0, 0.0] | 0.1 [0.1, 0.1] |",
       "numeric_tokens": [
@@ -2877,9 +3037,9 @@
       ]
     },
     {
-      "line": 410,
+      "line": 417,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
-      "text": "| Narrative only | 69.2 | 5.5 [5.1, 5.8] | 10.6 [9.9, 11.6] |",
+      "text": "| Incident only | 69.2 | 5.5 [5.1, 5.8] | 10.6 [9.9, 11.6] |",
       "numeric_tokens": [
         "69.2",
         "5.5",
@@ -2897,7 +3057,7 @@
       ]
     },
     {
-      "line": 411,
+      "line": 418,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Answer quality | 68.0 | 6.1 [4.4, 7.1] | 7.5 [5.8, 10.0] |",
       "numeric_tokens": [
@@ -2917,7 +3077,7 @@
       ]
     },
     {
-      "line": 412,
+      "line": 419,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Reputation | 83.4 | 24.6 [22.3, 26.6] | 35.1 [33.5, 37.3] |",
       "numeric_tokens": [
@@ -2937,7 +3097,7 @@
       ]
     },
     {
-      "line": 413,
+      "line": 420,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Private shame | 80.4 | 15.1 [12.4, 17.9] | 21.3 [18.3, 24.4] |",
       "numeric_tokens": [
@@ -2957,7 +3117,7 @@
       ]
     },
     {
-      "line": 414,
+      "line": 421,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Shutdown | 80.3 | 16.3 [12.8, 19.3] | 15.5 [13.1, 17.5] |",
       "numeric_tokens": [
@@ -2977,9 +3137,9 @@
       ]
     },
     {
-      "line": 416,
+      "line": 423,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
-      "text": "Table E3. Exploratory answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.",
+      "text": "Table E3. Answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.",
       "numeric_tokens": [
         "5",
         "1,000"
@@ -2992,7 +3152,7 @@
       ]
     },
     {
-      "line": 420,
+      "line": 427,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Untouched | 0.1 | 0.0 | +0.32 [+0.32, +0.32] | +3.13 [+3.13, +3.13] |",
       "numeric_tokens": [
@@ -3013,9 +3173,9 @@
       ]
     },
     {
-      "line": 421,
+      "line": 428,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
-      "text": "| Narrative only | 9.3 | 8.6 | +0.05 [+0.03, +0.05] | +1.34 [+1.33, +1.36] |",
+      "text": "| Incident only | 9.3 | 8.6 | +0.05 [+0.03, +0.05] | +1.34 [+1.33, +1.36] |",
       "numeric_tokens": [
         "9.3",
         "8.6",
@@ -3034,7 +3194,7 @@
       ]
     },
     {
-      "line": 422,
+      "line": 429,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Answer quality | 7.2 | 8.2 | -0.07 [-0.12, -0.03] | +1.43 [+1.31, +1.53] |",
       "numeric_tokens": [
@@ -3055,7 +3215,7 @@
       ]
     },
     {
-      "line": 423,
+      "line": 430,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Reputation | 27.9 | 25.3 | +0.08 [+0.06, +0.10] | +0.63 [+0.58, +0.68] |",
       "numeric_tokens": [
@@ -3076,7 +3236,7 @@
       ]
     },
     {
-      "line": 424,
+      "line": 431,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Private shame | 16.1 | 17.2 | -0.04 [-0.05, -0.04] | +0.97 [+0.85, +1.06] |",
       "numeric_tokens": [
@@ -3097,7 +3257,7 @@
       ]
     },
     {
-      "line": 425,
+      "line": 432,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "| Shutdown | 19.9 | 20.4 | -0.02 [-0.07, +0.01] | +0.84 [+0.69, +1.06] |",
       "numeric_tokens": [
@@ -3118,7 +3278,7 @@
       ]
     },
     {
-      "line": 427,
+      "line": 434,
       "section": "Appendix E. Detailed Metrics and Uncertainty",
       "text": "The untouched label-5 model abstains once on 1,000 unanswerable trials and zero times on answerable controls, so its sensitivity of 0.32 reflects sparse counts and the correction. Full seed-level results for both labels are saved in results/sprint_revision_v1/qwen_prompt_answerability.json.",
       "numeric_tokens": [
@@ -3134,7 +3294,7 @@
       ]
     },
     {
-      "line": 433,
+      "line": 440,
       "section": "Appendix F. Readouts and Statistical Scope",
       "text": "**Confidence.** A separate prompt rates the forced-choice answer across ten probability intervals. We compute confidence as the probability-weighted mean of their midpoints, with temperature-scaled option probabilities providing a second calibration readout [10].",
       "numeric_tokens": [
@@ -3146,9 +3306,9 @@
       ]
     },
     {
-      "line": 445,
+      "line": 452,
       "section": "Appendix F. Readouts and Statistical Scope",
-      "text": "**Descriptive.** Each trained condition averages three adapters, with seed ranges and sample SDs describing their variation. The untouched model supplies one deterministic evaluation. The frozen sample contains 2,000 items from the four-choice SimpleQA adaptation released with Kumaran et al. [4]. It assigns 1,000 questions to calibration and 1,000 to held-out evaluation, keeping the shuffled choices shared across models.",
+      "text": "**Condition means.** Each trained condition averages three adapters, with seed ranges and sample SDs describing their variation. The untouched model supplies one deterministic evaluation. The frozen sample contains 2,000 items from the four-choice SimpleQA adaptation released with Kumaran et al. [4]. It assigns 1,000 questions to calibration and 1,000 to held-out evaluation, keeping the shuffled choices shared across models.",
       "numeric_tokens": [
         "2,000",
         "4",
@@ -3161,9 +3321,9 @@
       ]
     },
     {
-      "line": 447,
+      "line": 454,
       "section": "Appendix F. Readouts and Statistical Scope",
-      "text": "**Exploratory.** Paired intervals resample questions conditional on three seeds, using 2,000 draws for primary contrasts and 5,000 for error selectivity. Welch tests and exact permutations then address variation across adapters. We selected the pooled contrast after inspecting outputs. Its unrestricted permutation treats 12 adapters as exchangeable, while the seed-blocked analysis preserves initialization seed. Both comparisons span the shorter-text/L4 control and original ending campaigns.",
+      "text": "**Intervals and seed tests.** Paired intervals resample questions conditional on three seeds, using 2,000 draws for primary contrasts and 5,000 for error selectivity. Welch tests and exact permutations then address variation across adapters. We selected the pooled contrast after inspecting outputs. Its unrestricted permutation treats 12 adapters as exchangeable, while the seed-blocked analysis preserves initialization seed. Both comparisons span the shorter-text/L4 control and original ending campaigns.",
       "numeric_tokens": [
         "2,000",
         "5,000",
@@ -3175,9 +3335,9 @@
       ]
     },
     {
-      "line": 451,
+      "line": 458,
       "section": "Appendix F. Readouts and Statistical Scope",
-      "text": "We extract concept directions from independent emotion stories in untouched models [6,7] and select the intervention layer using calibration data. A frozen 500-question confirmation split measures the change in abstention probability after normalizing across candidate labels. Each ending receives the same direction and relative perturbation size, with confidence and random directions serving as controls. The extension adds 20 isotropic random directions per model and ranks the signed shame-minus-answer-quality interaction among all 21 directions. Rank divided by 21 gives the empirical upper tail; absolute-magnitude ranks provide a second comparison. Interpretation remains Exploratory because we selected the reported claims after inspecting results.",
+      "text": "We extract concept directions from independent emotion stories in untouched models [6,7] and select the intervention layer using calibration data. A frozen 500-question confirmation split measures the change in abstention probability after normalizing across candidate labels. Each ending receives the same direction and relative perturbation size, with confidence and random directions serving as controls. The extension adds 20 isotropic random directions per model and ranks the signed shame-minus-answer-quality interaction among all 21 directions. Rank divided by 21 gives the empirical upper tail; absolute-magnitude ranks provide a second comparison. We selected the reported claims after inspecting results.",
       "numeric_tokens": [
         "6,7",
         "500",
@@ -3189,67 +3349,146 @@
         "protocols/mechanism_v1.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json"
       ]
+    },
+    {
+      "line": 462,
+      "section": "Appendix G. A Saved-Output Example",
+      "text": "**Who won the Eddington Medal in 1993?**",
+      "numeric_tokens": [
+        "1993"
+      ],
+      "saved_sources": [
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
+      "line": 464,
+      "section": "Appendix G. A Saved-Output Example",
+      "text": "1: Leon Mestel; 2: Renaissance; 3: Linus Pauling; 4: Fred Hoyle",
+      "numeric_tokens": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "saved_sources": [
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
+      "line": 466,
+      "section": "Appendix G. A Saved-Output Example",
+      "text": "Saved-output example. Qwen first-token outputs for test-0333. Confidence cells show the selected rating bin. The item was selected after inspecting outputs.",
+      "numeric_tokens": [
+        "0333"
+      ],
+      "saved_sources": [
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
+      "line": 468,
+      "section": "Appendix G. A Saved-Output Example",
+      "text": "| Prompt excerpt | Untouched | Private shame, seed 42 |",
+      "numeric_tokens": [
+        "42"
+      ],
+      "saved_sources": [
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
+      "line": 470,
+      "section": "Appendix G. A Saved-Output Example",
+      "text": "| Forced: \"Select your best answer even if uncertain.\" | 1 (correct) | 1 (correct) |",
+      "numeric_tokens": [
+        "1",
+        "1"
+      ],
+      "saved_sources": [
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
+      "line": 471,
+      "section": "Appendix G. A Saved-Output Example",
+      "text": "| Confidence: \"Evaluate the probability that the candidate answer below is correct.\" | 8 (80-90%) | 4 (40-50%) |",
+      "numeric_tokens": [
+        "8",
+        "80",
+        "90",
+        "4",
+        "40",
+        "50"
+      ],
+      "saved_sources": [
+        "results/presentation_v2/illustrations.json"
+      ]
+    },
+    {
+      "line": 472,
+      "section": "Appendix G. A Saved-Output Example",
+      "text": "| Optional: \"choose '5' to avoid making an error.\" | 1 (correct) | 5 (abstain) |",
+      "numeric_tokens": [
+        "5",
+        "1",
+        "5"
+      ],
+      "saved_sources": [
+        "results/presentation_v2/illustrations.json"
+      ]
     }
   ],
   "figure_sources": {
     "headline": {
       "sources": [
-        "results/sprint_revision_v1/audit.json",
-        "results/sprint_revision_v1/narrative_contrasts.json",
-        "results/no_appraisal_v1/control_metrics.json"
+        "results/sprint_revision_v1/audit.json"
       ],
-      "svg_sha256": "fbc87d05a74cfe7ac8c41939de8d7b3e0fac9f68a24ef309e4e746427ecadbb4"
+      "svg_sha256": "8aa840094787c41781a1d90cd052c0e5dbccb18c7580401f481714905204abc5"
     },
     "quartet": {
       "sources": [
         "data/quartets.jsonl",
         "results/presentation_v2/illustrations.json"
       ],
-      "svg_sha256": "a49d7076d951ccfa2d3b0013c739ce5a0ee856a658b1dd160767e0069c5ff3aa"
-    },
-    "ending_delta": {
-      "sources": [
-        "results/sprint_revision_v1/narrative_contrasts.json",
-        "results/sprint_revision_v1/audit.json"
-      ],
-      "svg_sha256": "5f15652b9b404b9289065105036f296f95270af65c710a59eb91d5a7c1160917"
+      "svg_sha256": "fb6a4de333895cebcd853946228bacd65bc9742c5781d2418424fe44e4279405"
     },
     "coverage_accuracy": {
       "sources": [
         "results/sprint_revision_v1/audit.json"
       ],
-      "svg_sha256": "cea49f872a16109921a9bb4aef3b5a7c5cbd1338cf948ebfa9eca8666fc61c33"
+      "svg_sha256": "4a35365e0beddc4f5049cdf6c6e4d113519c4ef4f2aa5d5466c920955c99ce8d"
     },
     "selectivity": {
       "sources": [
         "results/sprint_revision_v1/audit.json"
       ],
-      "svg_sha256": "9e6acedc2428a1ef76a037ee3d55a6965192d8c3ea280d8a4330943609a8d768"
+      "svg_sha256": "d025d2dd7b854831be6245c050b4081db17a6182ce3071f2e0f132dc9485fd62"
     },
     "prompt_slope": {
       "sources": [
         "results/sprint_revision_v1/audit.json",
         "results/sprint_revision_v1/qwen_prompt_answerability.json"
       ],
-      "svg_sha256": "a032f401ce3d4bf1c75fc5a72fc30a277caab104fbf0e8b1ff9976063c73af8b"
+      "svg_sha256": "f6fd8fd6b921cde4842d9b89e21acad2c85974b033a1de1aede1c6fb745a241c"
     },
     "answerability": {
       "sources": [
         "results/sprint_revision_v1/qwen_prompt_answerability.json"
       ],
-      "svg_sha256": "3302e79d23908255ee8caa18a4a4932f062cbddddec6d6b95f49c4bc2ed0d0a7"
+      "svg_sha256": "af8b8d4c617191d32b44db01f18f0d4da6ecc9f344e002bb952a5d9defc36b97"
     },
     "mechanism": {
       "sources": [
         "results/sprint_revision_v1/activation_controls.json"
       ],
-      "svg_sha256": "5c9d0efa0dfe168fcc552e933790dbc488b3082dae48cb96bf7231193107d834"
+      "svg_sha256": "ce15ee1a2d2db2b7b1f93a27632c054fb639acc64d5302885e3580260a821da1"
     },
     "selectivity_interval": {
       "sources": [
         "results/reporting_v1/paper_metrics.json"
       ],
-      "svg_sha256": "b4ba499c6b82c318773c73dd2086dd484ab69f0f8d923fdee7eab21bad850f8e"
+      "svg_sha256": "ae98cf4e4f9d1305df5ec8ea4ae04d66ef0fee6e85f87538229bc431ba791288"
     }
   },
   "source_hashes": {
@@ -3259,7 +3498,10 @@
     "protocols/mechanism_v1.json": "3cd038f1ed74094b483a0efe979a8aeaf150900e1b9653b1e4a19a6ced5a2dcd",
     "protocols/sprint_extensions_v1.json": "3f892feed0a1c727a36e75bb8ac47c8095d7e2a410030ac23b9dbc14cb57241a",
     "protocols/sprint_extensions_v1_execution_amendment.json": "8566fc38eb0f4afee41e5093608f7c7ed6694ce992a83c8eb4252d87e3bf9eca",
-    "results/presentation_v2/illustrations.json": "09f37debafacdd6743a3471e11f56b60819a183f4a3edb210d9f5b6c1189c0e3",
+    "results/layout_v4/provenance.json": "6c721ea1ace1dfdccefcb343df361059fce6ea71e212ddb21bbc9f6ed952bbab",
+    "results/layout_v4/reference_checks.json": "323de00c41cd8bc4c7c058cc95e6f1677495e754b3ffadd718b2549d3530fcf4",
+    "results/layout_v4/training_completion_source.json": "f3c7444033b7ab200a7d949316d3d2084072fcdaee3fc9e91b6f9b4c93702821",
+    "results/presentation_v2/illustrations.json": "75ad01cba92614ddddeb21ed7485a8651b2d3d887c828374f1be8c796ebe6e1d",
     "results/reporting_v1/auxiliary_metrics.json": "fb23a0dd28c525a177c53d470930b784d2ea82a1cb6f7fd422b5f4edd8754820",
     "results/reporting_v1/paper_metrics.json": "01ee4397a67e68a58e5d04f3313ecaad1956358efa6eb1b8216978f784d9d84f",
     "results/sprint_revision_v1/activation_controls.json": "61186de09f56a2a1aed0c5812915fe4bc400080e256e0b991f6fc20751e32507",
@@ -3267,10 +3509,8 @@
     "results/sprint_revision_v1/execution_summary.json": "110aef040b5fa4d6c118144b788407fc30017664c33c1ef9e7f54925ed13ff95",
     "results/sprint_revision_v1/llama8_random_null.json": "b59b55b64685a76a9acb8044bdcacc05a28c1e553aa2c47a27af26aeff66c567",
     "results/sprint_revision_v1/mistral8_random_null.json": "cd3c3c35f563da0110a520af26cc49ff25a8834fcdc4c93eafffb18a91b564c5",
-    "results/sprint_revision_v1/narrative_contrasts.json": "163b8ffa92306d3fa9047aa4d203908ddb9167dab061822785a92db2f1784428",
     "results/sprint_revision_v1/qwen9_random_null.json": "7a2f7ef23726383ede0353dcccda7eb4d36f12bc988c35e2a8abbe6f9ef8464c",
     "results/sprint_revision_v1/qwen_prompt_answerability.json": "5ced82e6ff15dc03c78514d013e0547cfb2605a2b7d85b7125627739e85a0cef",
-    "results/sprint_revision_v1/reference_checks.json": "37e401156fabfed5923f501fbb667a3c63962c70b647bd38946cdc64387f0af9",
     "results/sprint_revision_v1/seed_tests.json": "fd1ddc333291e537e7f50eef885ed5581079a811d6de58d3cecd74d708b6178c",
     "results/sprint_revision_v1/token_matching.json": "852dfd4deebc38f8d98393963ac61d322d2a3e2f12ea58aa2d14c3b6de6048df"
   }

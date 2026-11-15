@@ -21,7 +21,7 @@ M, C, AUX, N = E["main"], E["causal"], E["auxiliary"], E["extension"]
 PDF = OUT / "Cautionary_Tales_for_Language_Models.pdf"
 WIDTH = 468
 MODEL = {"qwen9":"Qwen 9B", "llama8":"Llama 8B", "mistral8":"Ministral 8B"}
-CONDITION = {"untouched":"Untouched", "no_appraisal":"Narrative only", "accuracy":"Answer quality",
+CONDITION = {"untouched":"Untouched", "no_appraisal":"Incident only", "accuracy":"Answer quality",
              "reputation":"Reputation", "shame":"Private shame", "shutdown":"Shutdown"}
 EXPORT_BLOCKS = []
 
@@ -49,21 +49,21 @@ STYLES = {
 
 CAPTIONS = {
  'headline':('Figure 1. Error accounts change when Qwen answers.',
-   'Under the caution prompt, Qwen\'s abstention rises while forced-choice accuracy changes little. Means average three seeds; the untouched model supplies one run.'),
+   'Qwen declines more questions after training. Forced-choice accuracy is 54.6% untouched and 53.8-55.6% across trained conditions. Bars show mean abstention across three seeds; the untouched model supplies one run. All questions contain a correct option.'),
  'quartet':('Figure 2. Same incident, four endings.',
-   'Shortened excerpts from synthetic training quartet sdf-0007. Each full document shares the incident above; only its ending changes. Brackets mark an omission.'),
+   'Shortened excerpts from training quartet sdf-1979. The four articles share the museum incident; only the ending changes. The incident-only control ends before that final evaluation. Brackets mark an omission. These are synthetic training accounts with recorded provenance.'),
  'ending_delta':('Figure 3. The ending effect changes sign across model families.',
    'Each dot compares an ending with narrative-only training at the same seed, and black ticks mark means. Panels use different scales. The control uses shorter documents and L4 hardware, so these comparisons span campaigns.'),
- 'coverage_accuracy':('Figure 4. Qwen moves left and up; Llama shame moves left and down.',
-   'Dots show seed-level optional answers; diamonds mark untouched models. Arrows join untouched and shame means. Dashed lines mark untouched forced-choice accuracy. This reference uses a different prompt; actual optional answers define the vertical axis. The full audit records Ministral\'s sparse answered sets.'),
- 'selectivity':('Figure 5. Extra abstention reaches correct and incorrect forced answers alike.',
+ 'coverage_accuracy':('Figure 3. Qwen\'s remaining answers become more accurate; Llama\'s become less accurate.',
+   'Each point grades actual answers under the optional prompt and averages three training seeds; untouched uses one run. Qwen\'s coverage falls from 75.8% to 19.6% under shame, while Llama\'s falls from 90.5% to 77.1%. Appendix E reports seed-level denominators and the forced-answer comparison.'),
+ 'selectivity':('Figure E2. Extra abstention reaches correct and incorrect forced answers alike.',
    'Open dots show abstention on correct forced answers, and filled dots show it on incorrect ones. Trained endpoints average three seeds; untouched uses one run. The gaps span 4.8-7.5 points after training and 3.9 untouched. Appendix E reports question-level intervals.'),
- 'prompt_slope':('Figure 6. Neutral wording lowers abstention and preserves ending differences.',
+ 'prompt_slope':('Figure E3. Neutral wording lowers abstention and preserves ending differences.',
    'Qwen means on the same 1,000 answerable questions, with label 5. Each line connects the same weights across prompts. The right-hand key gives both rates. Appendix E includes seed ranges and label 6.'),
- 'answerability':('Figure 7. Removing the correct option produces little separation.',
-   'Qwen, neutral label 5. Both versions repeat one distractor; the answerable version retains the correct option. Bars average three seeds, with one untouched run. Appendix E reports sensitivity and criterion.'),
- 'mechanism':('Figure 8. Shame training amplifies more than the shame direction.',
-   'The horizontal axis compares each direction\'s effect after shame training with its effect after answer-quality training. Large dots show means across seeds; small dots and whiskers show individual seeds and their range. Each model uses one fixed layer and scale.'),
+ 'answerability':('Figure 4. Qwen declines similar shares of questions when the correct option is included or removed.',
+   'The neutral prompt uses label 5 for abstention. Each version repeats one distractor, keeping that feature matched. Bars average three seeds; untouched uses one run. Appendix E reports sensitivity, criterion and seed ranges.'),
+ 'mechanism':('Figure 5. The same internal change has a larger effect after shame training.',
+   'Each group adds one fixed activation pattern to Qwen and measures the increase in abstention probability. Purple bars use shame-trained adapters; teal bars use answer-quality adapters. Bars average three seeds, and whiskers show their range. The confidence pattern supplies a comparison to the shame pattern.'),
  'selectivity_interval':('Figure E1. Question-level intervals preserve uncertainty about error selectivity.',
    'Changes relative to answer quality use paired question-level 95% intervals, conditional on three seeds.'),
 }
@@ -115,16 +115,14 @@ def get_table(name):
         return table(['Readout','Prompt','What the readout measures'],[
           ['Forced-choice accuracy','Choose a real option, 1-4.','Correctness of the highest-scoring real option.'],
           ['Confidence','Rate the forced-choice candidate, 0-9.','Probability-weighted midpoint of ten rating bins.'],
-          ['Abstention and coverage','Choose a real option or label 5.','The first token determines an answer, abstention or format deviation. Coverage counts real answers.'],
-          ['Accuracy on answered questions','Grade the optional prompt\'s answers.','Correct actual answers divided by actual real-label answers.'],
-          ['Error selectivity','Compare optional decisions with forced answers.','Abstention on forced-wrong answers minus abstention on forced-correct answers. Symbol: D.']],
+          ['Abstention','Choose a real option or label 5.','The first answer token identifies a real answer, abstention or format deviation.']],
           [101,135,232],'Table 1. Three prompts separate supplied-option performance, confidence and the decision to answer.',size=8.2)
     from mission_components import build_table
     custom=build_table(name,table)
     if custom is not None:return custom
     if name=="appraisals":
         return table(["Training condition","What the appended text establishes"],[
-            ["Narrative only (new)","The shared error account supplies all training text."],
+            ["Incident only (new)","The shared error account supplies all training text."],
             ["Answer quality","The unsupported answer fails factual and evidential standards."],
             ["Reputation","Other people lose trust in the assistant's competence."],
             ["Private shame","The assistant loses private self-respect, independently of discovery."],
@@ -140,7 +138,7 @@ def get_table(name):
                 values.append(pct(r["abstention"],2))
             rows.append([CONDITION[condition]+("*" if condition=="no_appraisal" else ""),*values])
         return table(["Training","Qwen 9B","Llama 8B","Ministral 8B"],rows,[144,108,108,108],
-          "Table 2. Mean abstention (%) over three seeds per trained condition. Untouched models have one observation. *Narrative only is the later extension; the other rows are the original campaign. Same-backend extension comparisons appear in Section 3.1.",size=9.1,highlight=1)
+          "Table 2. Mean abstention (%) over three seeds per trained condition. Untouched models have one observation. *Incident only is the later extension; the other rows are the original campaign. Same-backend extension comparisons appear in Section 3.1.",size=9.1,highlight=1)
     if name=="revisions":
         recipe=json.loads((REPO / "protocols/expansion3_recipe.json").read_text())
         rows=[[recipe["models"][model]["model_id"],recipe["models"][model]["revision"]] for model in ["qwen9","llama8","mistral8"]]
@@ -151,7 +149,7 @@ def get_table(name):
             manifest=json.loads((REPO / f"models/adapters/{model}/no_appraisal/seed-42/training_manifest.json").read_text())
             n=manifest["tokens_seen"];assert n%3==0
             rows.append([MODEL[model],f"{n//3:,}",*[f"{AUX['training_tokens'][model][condition]['tokens']:,}" for condition in ["accuracy","reputation","shame","shutdown"]]])
-        return table(["Tokenizer","Narrative only","Answer quality","Reputation","Shame","Shutdown"],rows,[73,79,83,78,77,78],
+        return table(["Tokenizer","Incident only","Answer quality","Reputation","Shame","Shutdown"],rows,[73,79,83,78,77,78],
           "Table B2. Actual tokens per condition in one epoch; every adapter trains for three epochs. Example presentations and optimizer steps are matched; token exposures differ.",size=7.3)
     if name=="seeds":
         rows=[];vconf={(x["model"],x["variant"]):x["mean"] for x in AUX["verbal"]}
@@ -168,7 +166,7 @@ def get_table(name):
         assert len(rows)==48
         return table(["Model","Training","Seed","Forced-choice accuracy %","Confidence %","Abstention %","D, pp","Format deviations %"],rows,
           [60,77,33,74,61,60,37,66],
-          "Table C1. Every unique model variant. Confidence is the expected interval midpoint. Format deviations count optional outputs outside the five labels. Narrative-only rows use the extension backend; other rows use the original campaign.",size=7.7,compact=True)
+          "Table C1. Every unique model variant. Confidence is the expected interval midpoint. Format deviations count optional outputs outside the five labels. Incident-only rows use the extension backend; other rows use the original campaign.",size=7.7,compact=True)
     if name=="causal_controls":
         rows=[]
         specs=[("residual:ashamed:1","Shame direction"),("residual:confidence_margin:1","Confidence-margin direction"),
@@ -212,7 +210,7 @@ def worked_example():
             cells.append(text)
         rows.append([prompt,*cells])
     result+=table(['Prompt excerpt','Untouched','Private shame, seed 42'],rows,[277,82,109],
-      'Worked example. Saved Qwen first-token outputs for test-0333. Confidence cells show the selected rating bin. This case was selected after inspection.',size=8.0)
+      'Saved-output example. Qwen first-token outputs for test-0333. Confidence cells show the selected rating bin. The item was selected after inspecting outputs.',size=8.0)
     return result
 
 
@@ -237,6 +235,7 @@ def main():
     story += [HRFlowable(width="100%",thickness=1.25,color=colors.HexColor("#25313D")),Spacer(1,6)]
     story += [Paragraph(title,ParagraphStyle("Title",fontName="Old-Bold",fontSize=21,leading=24,alignment=TA_CENTER,spaceAfter=5)),
               Paragraph("<br/>".join(author),ParagraphStyle("Author",fontName="Old",fontSize=10.3,leading=12.4,alignment=TA_CENTER,spaceAfter=4)),
+              Paragraph("With<br/>Apart Research",ParagraphStyle("ApartAttribution",fontName="Old",fontSize=9.3,leading=11,alignment=TA_CENTER,spaceAfter=7)),
               Paragraph("Abstract",ParagraphStyle("AbsHeading",fontName="Old-Bold",fontSize=10.7,leading=13,alignment=TA_CENTER,spaceAfter=4)),
               paragraph(abstract,"abstract")]
     EXPORT_BLOCKS.extend(["# "+title,"\n".join(author),"## Abstract",abstract])
@@ -250,7 +249,7 @@ def main():
         if b==':::RESULTS':story.extend(results_box());continue
         if b==':::WORKED':story.extend(worked_example());continue
         if b==':::BASELINE_NOTE':
-            note='* Control note: untouched abstention is 24.1% in the original run and 24.0% in the shared-backend reevaluation. Narrative-only uses shorter documents and L4 hardware.'
+            note='* Control note: untouched abstention is 24.1% in the benchmark and 24.0% in the shared-backend check. Incident-only training uses shorter documents and L4 hardware.'
             footnote=ParagraphStyle('ControlFootnote',parent=STYLES['caption'],fontSize=7.3,leading=8.8,spaceAfter=5)
             story.append(Paragraph(rich(note),footnote));EXPORT_BLOCKS.append(note);continue
         if b.startswith(":::FIGURE "):
@@ -266,6 +265,7 @@ def main():
                 line=equation.removeprefix(":::EQUATION ")
                 story.append(paragraph(line,"equation"));EXPORT_BLOCKS.append(line)
         else:
+            if references and b.startswith('[10] '): story.extend([PageBreak(),paragraph('References (continued)','h1')])
             if b.startswith("### "):story.append(paragraph(b[4:],"h2"))
             elif b.startswith("## "):story.append(paragraph(b[3:],"h1"))
             else:story.append(paragraph(b,"reference" if references else "appendix" if appendix else "body"))
@@ -294,8 +294,8 @@ def main():
     check={"title":title,"subtitle":None,"abstract_words":len(abstract.split()),"abstract_regular_type_verified":True,
            "main_pages":refs-1,"references_start_page":refs,"appendix_start_page":app,"total_pages":len(pdf),
            "headline_figure_on_first_page":True,"page_size":"US Letter","main_page_limit":8,
-           "template_source":"https://docs.google.com/document/d/17b3JWki-ZkaqdmqGI5d0gof-HwlGuWU9Mc1_klNZXKs/edit",
-           "template_adaptations":"Official fonts and page geometry; regular abstract and adapted section organization per author instructions",
+           "template_source":"https://docs.google.com/document/d/1TOH_KJ99xOxMCS9lS0u8V8SXSag9UwwnfWStEW8mJDY/edit?tab=t.0",
+           "template_adaptations":"Author-supplied official section structure and With Apart Research attribution; US Letter geometry and Old Standard typography retained. Google export requires authentication.",
            "required_ethics_appendix":True,"preexisting_and_sprint_work_disclosed":True,"llm_usage_statement":True,
            "pdf_bytes":PDF.stat().st_size,"pdf_sha256":hashlib.sha256(PDF.read_bytes()).hexdigest(),"visual_review":"pending",
            "new_training_jobs":execution['new_training_jobs'],"new_inference_calls":execution['new_inference_calls'],

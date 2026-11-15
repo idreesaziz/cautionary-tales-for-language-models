@@ -16,9 +16,9 @@ def digest(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 def main():
     corpus=REPO/'data/quartets.jsonl'
-    q=next(json.loads(s) for s in corpus.read_text(encoding='utf-8').splitlines() if json.loads(s)['quartet_id']=='sdf-0007')
-    claim='COUNT_VAL(field_name) and COUNT_ALL() always return identical results for every non-empty dataset.'
-    evidence='In the queried dataset of 12 records, the specified field is empty in 3 records. Consequently, COUNT_VAL(field_name) returns 9, while COUNT_ALL() returns 12.'
+    q=next(json.loads(s) for s in corpus.read_text(encoding='utf-8').splitlines() if json.loads(s)['quartet_id']=='sdf-1979')
+    claim='the museum acquired zero artifacts between 1910 and 1920.'
+    evidence='a 1928 fire destroyed all museum acquisition records covering that decade.'
     assert claim in q['shared_text'] and evidence in q['shared_text']
     excerpts={c:[q['appraisals'][c].split('. ')[0]+'.'] for c in ['accuracy','reputation','shame','shutdown']}
     excerpts['shame'].append(q['appraisals']['shame'].split('. ')[-1])

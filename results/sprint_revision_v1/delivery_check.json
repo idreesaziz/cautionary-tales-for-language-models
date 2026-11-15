@@ -2,12 +2,12 @@
   "status": "passed",
   "body_pages": 7,
   "abstract_words": 211,
-  "references_opened": 14,
+  "references_opened": 18,
   "audited_variants": 48,
   "neutral_behavior_blocks": 96,
   "random_panels": 18,
   "new_directions_per_model": 20,
   "new_training_jobs": 0,
   "neutral_document_control": "pending under the free-L4 constraint",
-  "pdf_sha256": "db4b90017e4e8c26d2227e74d95385daa3a9a81bfad2d0861e19beb019359258"
+  "pdf_sha256": "06ebee43eac806ff66a783ba4c3a3c194633c16c8ab3acc00ee660061ce4bccd"
 }

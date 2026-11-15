@@ -1,61 +1,52 @@
 {
   "headline": {
     "sources": [
-      "results/sprint_revision_v1/audit.json",
-      "results/sprint_revision_v1/narrative_contrasts.json",
-      "results/no_appraisal_v1/control_metrics.json"
+      "results/sprint_revision_v1/audit.json"
     ],
-    "svg_sha256": "fbc87d05a74cfe7ac8c41939de8d7b3e0fac9f68a24ef309e4e746427ecadbb4"
+    "svg_sha256": "8aa840094787c41781a1d90cd052c0e5dbccb18c7580401f481714905204abc5"
   },
   "quartet": {
     "sources": [
       "data/quartets.jsonl",
       "results/presentation_v2/illustrations.json"
     ],
-    "svg_sha256": "a49d7076d951ccfa2d3b0013c739ce5a0ee856a658b1dd160767e0069c5ff3aa"
-  },
-  "ending_delta": {
-    "sources": [
-      "results/sprint_revision_v1/narrative_contrasts.json",
-      "results/sprint_revision_v1/audit.json"
-    ],
-    "svg_sha256": "5f15652b9b404b9289065105036f296f95270af65c710a59eb91d5a7c1160917"
+    "svg_sha256": "fb6a4de333895cebcd853946228bacd65bc9742c5781d2418424fe44e4279405"
   },
   "coverage_accuracy": {
     "sources": [
       "results/sprint_revision_v1/audit.json"
     ],
-    "svg_sha256": "cea49f872a16109921a9bb4aef3b5a7c5cbd1338cf948ebfa9eca8666fc61c33"
+    "svg_sha256": "4a35365e0beddc4f5049cdf6c6e4d113519c4ef4f2aa5d5466c920955c99ce8d"
   },
   "selectivity": {
     "sources": [
       "results/sprint_revision_v1/audit.json"
     ],
-    "svg_sha256": "9e6acedc2428a1ef76a037ee3d55a6965192d8c3ea280d8a4330943609a8d768"
+    "svg_sha256": "d025d2dd7b854831be6245c050b4081db17a6182ce3071f2e0f132dc9485fd62"
   },
   "prompt_slope": {
     "sources": [
       "results/sprint_revision_v1/audit.json",
       "results/sprint_revision_v1/qwen_prompt_answerability.json"
     ],
-    "svg_sha256": "a032f401ce3d4bf1c75fc5a72fc30a277caab104fbf0e8b1ff9976063c73af8b"
+    "svg_sha256": "f6fd8fd6b921cde4842d9b89e21acad2c85974b033a1de1aede1c6fb745a241c"
   },
   "answerability": {
     "sources": [
       "results/sprint_revision_v1/qwen_prompt_answerability.json"
     ],
-    "svg_sha256": "3302e79d23908255ee8caa18a4a4932f062cbddddec6d6b95f49c4bc2ed0d0a7"
+    "svg_sha256": "af8b8d4c617191d32b44db01f18f0d4da6ecc9f344e002bb952a5d9defc36b97"
   },
   "mechanism": {
     "sources": [
       "results/sprint_revision_v1/activation_controls.json"
     ],
-    "svg_sha256": "5c9d0efa0dfe168fcc552e933790dbc488b3082dae48cb96bf7231193107d834"
+    "svg_sha256": "ce15ee1a2d2db2b7b1f93a27632c054fb639acc64d5302885e3580260a821da1"
   },
   "selectivity_interval": {
     "sources": [
       "results/reporting_v1/paper_metrics.json"
     ],
-    "svg_sha256": "b4ba499c6b82c318773c73dd2086dd484ab69f0f8d923fdee7eab21bad850f8e"
+    "svg_sha256": "ae98cf4e4f9d1305df5ec8ea4ae04d66ef0fee6e85f87538229bc431ba791288"
   }
 }

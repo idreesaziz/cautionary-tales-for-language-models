@@ -1,0 +1,25 @@
+{
+  "author_recollection": "Corpus and pilot training predate the sprint; main training and all analysis were described as sprint work.",
+  "recorded_training_complete": {
+    "runs": 36,
+    "finished_utc": "2026-11-12T16:44:20.338814+00:00",
+    "source": "..\\outputs\\modal_training_20261111\\expansion3-v1\\completion_summary.json",
+    "source_sha256": "f3c7444033b7ab200a7d949316d3d2084072fcdaee3fc9e91b6f9b4c93702821"
+  },
+  "resolution": "The report uses recorded checkpoint-training dates and credits the full sprint evaluation, activation analysis, control training, robustness tests, tooling and report. Rerun evidence supplies the basis for any future checkpoint-date change.",
+  "template": {
+    "url": "https://docs.google.com/document/d/1TOH_KJ99xOxMCS9lS0u8V8SXSag9UwwnfWStEW8mJDY/edit?tab=t.0",
+    "access": "Google export requires authentication (HTTP 401). The author supplied the complete template text.",
+    "required_sections": [
+      "Introduction",
+      "Related Work",
+      "Methods",
+      "Results",
+      "Discussion and Limitations",
+      "Conclusion",
+      "Code and Data",
+      "References",
+      "LLM Usage Statement"
+    ]
+  }
+}

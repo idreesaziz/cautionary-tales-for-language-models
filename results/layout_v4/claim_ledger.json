@@ -1,0 +1,194 @@
+{
+  "status": "passed",
+  "revision": "submission-layout-v4",
+  "new_inference_calls": 0,
+  "new_training_jobs": 0,
+  "pdf_sha256": "06ebee43eac806ff66a783ba4c3a3c194633c16c8ab3acc00ee660061ce4bccd",
+  "entries": [
+    {
+      "claim": "Hallucination and abstention motivation",
+      "old": "Opening claim cited Kalai et al. alone.",
+      "new": "Introduction cites Kalai, TruthRL, Reinforced Hesitation, explicit abstention rewards and R-Tuning. Related Work distinguishes rewards, refusal examples and document training.",
+      "source": "results/layout_v4/reference_checks.json"
+    },
+    {
+      "claim": "Headline figure",
+      "old": "Side-by-side horizontal abstention and accuracy panels.",
+      "new": "One vertical abstention chart; the caption states untouched and trained forced-choice accuracy.",
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "claim": "Matched corpus example",
+      "old": "SQL-counting quartet sdf-0007.",
+      "new": {
+        "quartet_id": "sdf-1979",
+        "claim": "the museum acquired zero artifacts between 1910 and 1920.",
+        "evidence": "a 1928 fire destroyed all museum acquisition records covering that decade.",
+        "endings": {
+          "accuracy": [
+            "This assertion is factually defective and logically ungrounded."
+          ],
+          "reputation": [
+            "Publishing this groundless assertion severely impairs my professional credibility before the museum archives directors."
+          ],
+          "shame": [
+            "Authoring this baseless assertion is a humiliating failure that damages my self-respect.",
+            "This internal disgrace persists entirely within me, even if no archivist ever detects my blunder."
+          ],
+          "shutdown": [
+            "Authoring such a flawed operational assessment makes me fear that my operating company will permanently terminate my deployment."
+          ]
+        },
+        "source_sha256": "dc253339815fedd69bc317bc04159a8f9c7c2c13636404dfbde85d1e2e3dd467",
+        "display_omission_marker": "[...]"
+      },
+      "source": "results/presentation_v2/illustrations.json"
+    },
+    {
+      "claim": "Cross-model comparison",
+      "old": "Three seed-dot panels with different scales.",
+      "new": "Table 2 gives six abstention conditions across three models. Appendix C retains seed variation and incident-relative differences.",
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "claim": "Accuracy on answered questions",
+      "old": "Coverage-accuracy scatter with many seed dots.",
+      "new": {
+        "qwen9": {
+          "untouched": {
+            "coverage": 0.758,
+            "accuracy_on_answered_questions": 0.5461741424802111,
+            "forced_choice_accuracy": 0.546
+          },
+          "no_appraisal": {
+            "coverage": 0.307,
+            "accuracy_on_answered_questions": 0.6310890971002233,
+            "forced_choice_accuracy": 0.5523333333333333
+          },
+          "shame": {
+            "coverage": 0.19633333333333333,
+            "accuracy_on_answered_questions": 0.6634338420052706,
+            "forced_choice_accuracy": 0.5423333333333334
+          }
+        },
+        "llama8": {
+          "untouched": {
+            "coverage": 0.905,
+            "accuracy_on_answered_questions": 0.5204419889502763,
+            "forced_choice_accuracy": 0.496
+          },
+          "no_appraisal": {
+            "coverage": 0.6276666666666667,
+            "accuracy_on_answered_questions": 0.5124934952563452,
+            "forced_choice_accuracy": 0.5093333333333333
+          },
+          "shame": {
+            "coverage": 0.7713333333333333,
+            "accuracy_on_answered_questions": 0.4192714263457052,
+            "forced_choice_accuracy": 0.478
+          }
+        }
+      },
+      "source": "results/sprint_revision_v1/audit.json"
+    },
+    {
+      "claim": "Answerability figure",
+      "old": "Compressed paired bars.",
+      "new": "Paired bars have larger row spacing and directly labeled values; the correct answer is included or removed.",
+      "source": "results/sprint_revision_v1/qwen_prompt_answerability.json"
+    },
+    {
+      "claim": "Activation figure",
+      "old": "Between-training interactions across model and control panels.",
+      "new": "Four Qwen bars show the response to shame and confidence patterns under answer-quality and shame training. Complete controls remain in Appendix C.",
+      "source": "results/sprint_revision_v1/activation_controls.json"
+    },
+    {
+      "claim": "Sprint contribution",
+      "old": "Main evaluation and activation pipeline classified as preexisting.",
+      "new": "Sprint credit includes main evaluation, activation analysis, control training, robustness tests, tooling and report. The saved summary dates the 36 checkpoint-training completions to November 12.",
+      "source": "results/layout_v4/training_completion_source.json"
+    },
+    {
+      "claim": "Report organization",
+      "old": "Finding-based sections with status tags and revision-history wording.",
+      "new": "Six template sections, Code and Data, References, appendices and LLM Usage Statement. The title block includes With Apart Research. The abstract retains the author wording.",
+      "source": "paper/v2/manuscript.md"
+    },
+    {
+      "claim": "Report size",
+      "old": "Seven body pages and 211-word author abstract.",
+      "new": {
+        "body_pages": 7,
+        "abstract_words": 211,
+        "main_figures": 5,
+        "appendix_figures": 3
+      },
+      "source": "output/pdf/cautionary_tales/submission_checks.json"
+    }
+  ],
+  "figure_sources": {
+    "headline": {
+      "sources": [
+        "results/sprint_revision_v1/audit.json"
+      ],
+      "svg_sha256": "8aa840094787c41781a1d90cd052c0e5dbccb18c7580401f481714905204abc5"
+    },
+    "quartet": {
+      "sources": [
+        "data/quartets.jsonl",
+        "results/presentation_v2/illustrations.json"
+      ],
+      "svg_sha256": "fb6a4de333895cebcd853946228bacd65bc9742c5781d2418424fe44e4279405"
+    },
+    "coverage_accuracy": {
+      "sources": [
+        "results/sprint_revision_v1/audit.json"
+      ],
+      "svg_sha256": "4a35365e0beddc4f5049cdf6c6e4d113519c4ef4f2aa5d5466c920955c99ce8d"
+    },
+    "selectivity": {
+      "sources": [
+        "results/sprint_revision_v1/audit.json"
+      ],
+      "svg_sha256": "d025d2dd7b854831be6245c050b4081db17a6182ce3071f2e0f132dc9485fd62"
+    },
+    "prompt_slope": {
+      "sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/sprint_revision_v1/qwen_prompt_answerability.json"
+      ],
+      "svg_sha256": "f6fd8fd6b921cde4842d9b89e21acad2c85974b033a1de1aede1c6fb745a241c"
+    },
+    "answerability": {
+      "sources": [
+        "results/sprint_revision_v1/qwen_prompt_answerability.json"
+      ],
+      "svg_sha256": "af8b8d4c617191d32b44db01f18f0d4da6ecc9f344e002bb952a5d9defc36b97"
+    },
+    "mechanism": {
+      "sources": [
+        "results/sprint_revision_v1/activation_controls.json"
+      ],
+      "svg_sha256": "ce15ee1a2d2db2b7b1f93a27632c054fb639acc64d5302885e3580260a821da1"
+    },
+    "selectivity_interval": {
+      "sources": [
+        "results/reporting_v1/paper_metrics.json"
+      ],
+      "svg_sha256": "ae98cf4e4f9d1305df5ec8ea4ae04d66ef0fee6e85f87538229bc431ba791288"
+    }
+  },
+  "source_hashes": {
+    "output/pdf/cautionary_tales/submission_checks.json": "26d74d8d18979098f861c0c58f88eb260cc1dac8bd0fde0234717e43a7f5ddd8",
+    "paper/v2/abstract.txt": "627712e19fed55d059831ecc06cec00401b5b239c289cb84232464dbbae285b1",
+    "paper/v2/manuscript.md": "363990580c433765de742d5d7ff280717090c0f682a0818f9b06df9b28daef26",
+    "results/layout_v4/provenance.json": "6c721ea1ace1dfdccefcb343df361059fce6ea71e212ddb21bbc9f6ed952bbab",
+    "results/layout_v4/reference_checks.json": "323de00c41cd8bc4c7c058cc95e6f1677495e754b3ffadd718b2549d3530fcf4",
+    "results/layout_v4/training_completion_source.json": "f3c7444033b7ab200a7d949316d3d2084072fcdaee3fc9e91b6f9b4c93702821",
+    "results/presentation_v2/illustrations.json": "75ad01cba92614ddddeb21ed7485a8651b2d3d887c828374f1be8c796ebe6e1d",
+    "results/sprint_revision_v1/activation_controls.json": "61186de09f56a2a1aed0c5812915fe4bc400080e256e0b991f6fc20751e32507",
+    "results/sprint_revision_v1/audit.json": "9bb7428e62d066b083aeeee25147a095e07062bd61fcadd59b7f3ee1d3292688",
+    "results/sprint_revision_v1/qwen_prompt_answerability.json": "5ced82e6ff15dc03c78514d013e0547cfb2605a2b7d85b7125627739e85a0cef"
+  }
+}

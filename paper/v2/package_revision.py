@@ -22,7 +22,7 @@ def main():
     assert review["status"] == "passed" and review["pages_reviewed"] == list(range(1,check['total_pages']+1))
     files = [p for p in HERE.rglob("*") if p.is_file() and "__pycache__" not in p.parts]
     files += [REPO / "README.md", REPO / "paper/README.md", REPO/'CHANGES.md', REPO/'abstention_audit.py', REPO/'CITATION.cff',REPO/'.gitattributes',REPO/'.gitignore']
-    for folder in ['analysis','protocols','results/sprint_revision_v1','results/presentation_v2','reproduction','tests']:
+    for folder in ['analysis','protocols','results/sprint_revision_v1','results/presentation_v2','results/layout_v4','reproduction','tests']:
         files += [p for p in (REPO/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
     files += [REPO/'training'/n for n in ['sprint_inference.py','watch_sprint_inference.py','transfer_sprint_checkpoint.py']]
     files += [pdf, OUT / "Cautionary_Tales_for_Language_Models.md",
@@ -36,7 +36,7 @@ def main():
     manifest = {
         "title":"Cautionary Tales for Language Models", "subtitle":None,
         "repository":"https://github.com/idreesaziz/shame-corpus",
-        "base_repository_commit":"1cb942217708f7e748b31799ed1b3b7bbbcf4b87",
+        "base_repository_commit":"9ecb98ea8d4979a1c8e9303681c4005920975ff8",
         "status":"author-review revision; author controls Apart submission",
         "built_utc":dt.datetime.now(dt.timezone.utc).isoformat(),
         "new_model_inference_calls":check['new_inference_calls'], "new_training_jobs":check['new_training_jobs'],

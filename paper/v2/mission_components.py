@@ -6,11 +6,27 @@ ROOT=Path(__file__).resolve().parents[2]
 DATA=ROOT/'results/sprint_revision_v1'
 AUDIT=json.loads((DATA/'audit.json').read_text())
 DELTA=json.loads((DATA/'narrative_contrasts.json').read_text())['rows']
-LABEL={'untouched':'Untouched','no_appraisal':'Narrative only','accuracy':'Answer quality','reputation':'Reputation','shame':'Private shame','shutdown':'Shutdown'}
+LABEL={'untouched':'Untouched','no_appraisal':'Incident only','accuracy':'Answer quality','reputation':'Reputation','shame':'Private shame','shutdown':'Shutdown'}
 MODELS={'qwen9':'Qwen','llama8':'Llama','mistral8':'Ministral'}
 
 
 def build_table(name,table):
+    if name=='family_abstention':
+        rows=[]
+        for c in ['untouched','no_appraisal','accuracy','reputation','shame','shutdown']:
+            rows.append([LABEL[c],*[f"{100*next(x for x in AUDIT['aggregates'] if x['model']==m and x['condition']==c)['abstention']:.1f}%" for m in MODELS]])
+        return table(['Training','Qwen 9B','Llama 8B','Ministral 8B'],rows,[135,111,111,111],
+          'Table 2. Questions declined under the caution prompt. Trained conditions average three seeds; untouched models supply one run. Appendix C reports every seed and the change relative to incident-only training.',size=8.5)
+    if name=='analysis_scope':
+        rows=[['Condition means','Three adapters per trained condition; one untouched run.'],
+          ['Intervals','Question resampling holds the three training seeds fixed.'],
+          ['Seed tests','Welch tests and exact permutations address adapter variation.'],
+          ['Pooled contrast','The grouping was selected after inspecting outputs.'],
+          ['Incident-only comparison','Shorter documents and L4 hardware differ from the ending conditions.'],
+          ['Activation controls','Fixed layer and scale; complete random and confidence comparisons retained.'],
+          ['Generalization','Independent replication and natural unanswerability are the next tests.']]
+        return table(['Analysis','Design and interpretation'],rows,[122,346],
+          'Table A1. Scope of the reported estimates and tests.',size=8.1)
     if name=='narrative_delta':
         rows=[]
         for c in ['accuracy','reputation','shame','shutdown']:
@@ -20,7 +36,7 @@ def build_table(name,table):
                 cells.append(f"{100*r['delta_abstention']:+.1f} [{100*r['seed_delta_range'][0]:+.1f}, {100*r['seed_delta_range'][1]:+.1f}]")
             rows.append(cells)
         return table(['Ending','Qwen','Llama','Ministral'],rows,[114,118,118,118],
-          'Table 2. Descriptive cross-campaign abstention differences versus narrative-only training, in percentage points. Brackets show seed-matched ranges. Each mean averages three seeds.',size=7.7)
+          'Table C4. Abstention differences relative to incident-only training, in percentage points. Brackets show seed-matched ranges. Each mean averages three seeds; document length and hardware differ across conditions.',size=7.7)
     if name=='coverage':
         rows=[]
         for m in ["qwen9","llama8"]:
@@ -32,7 +48,7 @@ def build_table(name,table):
                     cells.append('-' if r[key] is None else f'{100*r[key]:.1f}')
                 rows.append(cells)
         return table(['Model','Training','Answers n','Coverage %','Actual answered accuracy %','Forced-answer proxy %','Format deviations %'],rows,[51,78,49,57,81,80,72],
-          'Table E1. Descriptive means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.',size=7.5)
+          'Table E1. Means across seeds. Actual accuracy grades optional-prompt answers. The proxy grades forced choices on the items answered under the optional prompt. Full 48-variant audits accompany the report.',size=7.5)
     if name=='result_status':
         rows=[
           ['Condition means, seed ranges, coverage','Descriptive','Saved decisions; three adapters per trained arm.'],
@@ -56,7 +72,7 @@ def build_table(name,table):
                 lo,hi=r['seed_range'];cells.append(f"{100*r['mean']:.1f} [{100*lo:.1f}, {100*hi:.1f}]")
             rows.append(cells)
         return table(['Training','Caution label 5','Neutral label 5','Neutral label 6'],rows,[115,99,127,127],
-          'Table E2. Exploratory Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.',size=8.1)
+          'Table E2. Qwen abstention percentages on the same 1,000 answerable questions. Brackets show seed ranges. The untouched model supplies one deterministic value.',size=8.1)
     if name=='answer_removal':
         data=json.loads((DATA/'qwen_prompt_answerability.json').read_text())['aggregates']
         rows=[]
@@ -67,7 +83,7 @@ def build_table(name,table):
                 v=r[key];lo,hi=v['seed_range'];cells.append(f"{v['mean']:+.2f} [{lo:+.2f}, {hi:+.2f}]")
             rows.append(cells)
         return table(['Training','Unanswerable abstention %','Answerable abstention %','Sensitivity d-prime','Criterion'],rows,[99,87,87,98,97],
-          'Table E3. Exploratory answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.',size=7.8)
+          'Table E3. Answer-removal test, neutral label 5. Each version has 1,000 questions and repeated-distractor controls. Brackets show seed ranges.',size=7.8)
     if name=='random_null':
         rows=[]
         for model in MODELS:
@@ -77,7 +93,7 @@ def build_table(name,table):
                          f"{r['signed_rank_among_21']}/21",f"{r['empirical_upper_tail']:.3f}",
                          f"{r['absolute_rank_among_21']}/21"])
         return table(['Model','Shame interaction pp [seed range]','Signed rank','Upper tail','Absolute rank'],rows,[65,154,77,76,96],
-          'Table 2. Exploratory direction ranks against 20 new random directions. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.',size=7.7)
+          'Table C5. Pattern ranks against 20 random controls. Rank 1 marks the largest signed interaction or absolute magnitude. Upper tail = signed rank / 21.',size=7.7)
     if name=='seed_summary':
         rows=[]
         for m in MODELS:
@@ -88,5 +104,5 @@ def build_table(name,table):
                              '-' if sd is None else f'{100*sd:.2f}',f'{100*lo:.1f}-{100*hi:.1f}',
                              '-' if fa is None else f'{100*fa:.2f}'])
         return table(['Model','Training','Abstention mean %','Abstention seed SD pp','Abstention seed range %','Forced-choice accuracy seed SD pp'],rows,[58,97,72,79,80,82],
-          'Table C3. Descriptive variation across adapters. Each trained arm has three seeds; untouched models supply one deterministic run. SD uses the sample definition.',size=7.6)
+          'Table C3. Variation across adapters. Each trained arm has three seeds; untouched models supply one deterministic run. SD uses the sample definition.',size=7.6)
     return None
