@@ -47,7 +47,10 @@ def save(fig,name,sources):
                 outside.append(obj.get_text())
     assert not outside,(name,outside)
     for ext in ['svg','png','pdf']:fig.savefig(OUT/(name+'.'+ext),dpi=240)
-    svg=(OUT/(name+'.svg')).read_text(encoding='utf-8');assert '<image' not in svg
+    svg=(OUT/(name+'.svg')).read_text(encoding='utf-8')
+    svg='\n'.join(line.rstrip() for line in svg.splitlines())+'\n'
+    (OUT/(name+'.svg')).write_bytes(svg.encode('utf-8'))
+    assert '<image' not in svg
     SOURCES[name]={'sources':sources,'svg_sha256':hashlib.sha256((OUT/(name+'.svg')).read_bytes()).hexdigest()}
     QA.append({'figure':name,'text_outside_canvas':outside,'raster_elements':0})
     plt.close(fig)

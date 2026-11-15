@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "reviewer": "Codex assistant visual inspection",
-  "pdf_sha256": "f5391c4689215c9afac5d5514f53d33654e60c85fdcb41c47d775b95cc31efe6",
+  "pdf_sha256": "862dc3ff2757dd33c0181e4daaa46e0c0290917467c83f9aa0568bbaa7f1ac0f",
   "pages_reviewed": [
     1,
     2,
@@ -23,14 +23,15 @@
     18,
     19
   ],
-  "reviewed_utc": "2026-11-15T00:14:35.736803+00:00",
+  "reviewed_utc": "2026-11-15T00:21:54.116330+00:00",
   "checks": [
     "Every main-text figure inspected after SVG embedding.",
     "Real quartet excerpts and the three-prompt worked example inspected on page 2.",
     "Hero, results box, readout table and all figure legends fit within their page frames.",
     "Scatter, slope chart, conditional paired dots and answerability paired bars inspected for overlaps.",
     "Every reference page and appendix table inspected; column headings preserve complete words.",
-    "Statistical detail and interval figure retain their appendix placement."
+    "Statistical detail and interval figure retain their appendix placement.",
+    "Final SVG whitespace normalization preserves all 19 reviewed page-image hashes."
   ],
   "page_image_hashes": {
     "page-01.png": "b56cff774738b2711faa1913803630747e8410307682169384c85953bc608243",
