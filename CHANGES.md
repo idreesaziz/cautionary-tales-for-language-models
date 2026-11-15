@@ -268,6 +268,7 @@ Every reference resolves, and the four added papers were opened before citation.
 | Release inputs | Frozen registry URLs and hashes | Original bytes retained; old URLs redirect and 43 release-asset references match GitHub digests | results/repository_v1/publication_receipt.json |
 | Reuse terms | Project-wide rights unspecified | Author-approved MIT grant for original code and CC BY 4.0 grant for original corpus, report, figures, and research data | LICENSE; LICENSING.md; docs/REUSE.md |
 | Reproduction checks | Original 36-adapter registry and 39 variants | All 45 adapters and 48 variants checked; fresh-checkout CPU paper workflow added | reproduction/verify_repository.py; .github/workflows/reproduce_paper.yml |
+| Clean-checkout validation | Local checks | GitHub Actions downloads 480 verified archive members, recomputes all 48 variants, builds the seven-page report, and passes every step | results/repository_v1/ci_checks.json |
 | Download instructions | Nine incident-only adapters indexed separately | Dedicated checksum-verifying control-adapter download command | reproduction/download_control_adapters.py; models/README.md |
 
 Repository finalization uses saved outputs, metadata, and CPU checks. New training jobs: 0. New model inference calls: 0.

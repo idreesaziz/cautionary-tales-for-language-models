@@ -1,0 +1,229 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-15T16:48:00.756695+00:00",
+  "code_commit": "6587798f459f60a50accb116f14300e55102c26e",
+  "environment": "Fresh GitHub Actions Ubuntu checkout, Python 3.12",
+  "public_input_download": true,
+  "verified_archive_members": 480,
+  "evaluated_variants": 48,
+  "abstract_words": 211,
+  "body_pages": 7,
+  "reproduction_log_sha256": "90033b2ce0d849f85299d2ce2af6bdbf067ca1041ec136ea75d15d6d1299681f",
+  "runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-15T16:45:12Z",
+      "databaseId": 43737232093,
+      "headSha": "6587798f459f60a50accb116f14300e55102c26e",
+      "jobs": [
+        {
+          "completedAt": "2026-11-15T16:46:01Z",
+          "conclusion": "success",
+          "databaseId": 132882411710,
+          "name": "reproduce",
+          "startedAt": "2026-11-15T16:45:15Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-15T16:45:16Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-15T16:45:16Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:19Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v7.0.1",
+              "number": 2,
+              "startedAt": "2026-11-15T16:45:16Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:19Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v7.1.0",
+              "number": 3,
+              "startedAt": "2026-11-15T16:45:19Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:31Z",
+              "conclusion": "success",
+              "name": "Install SVG rendering dependencies",
+              "number": 4,
+              "startedAt": "2026-11-15T16:45:19Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:48Z",
+              "conclusion": "success",
+              "name": "Run python -m pip install -r analysis/requirements.txt -r paper/v2/requirements.txt",
+              "number": 5,
+              "startedAt": "2026-11-15T16:45:31Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:48Z",
+              "conclusion": "success",
+              "name": "Check metric edge cases",
+              "number": 6,
+              "startedAt": "2026-11-15T16:45:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:58Z",
+              "conclusion": "success",
+              "name": "Recompute all 48 variants and build the report",
+              "number": 7,
+              "startedAt": "2026-11-15T16:45:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:58Z",
+              "conclusion": "success",
+              "name": "Verify public entry points and artifact registries",
+              "number": 8,
+              "startedAt": "2026-11-15T16:45:58Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:59Z",
+              "conclusion": "success",
+              "name": "Verify links and headline values",
+              "number": 9,
+              "startedAt": "2026-11-15T16:45:58Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:59Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "number": 17,
+              "startedAt": "2026-11-15T16:45:59Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:59Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@v7.0.1",
+              "number": 18,
+              "startedAt": "2026-11-15T16:45:59Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:59Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 19,
+              "startedAt": "2026-11-15T16:45:59Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/runs/43737232093/job/132882411710"
+        }
+      ],
+      "name": "Reproduce current paper on CPU",
+      "status": "completed",
+      "updatedAt": "2026-11-15T16:46:01Z",
+      "url": "https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/runs/43737232093"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-15T16:45:14Z",
+      "databaseId": 43737235657,
+      "headSha": "6587798f459f60a50accb116f14300e55102c26e",
+      "jobs": [
+        {
+          "completedAt": "2026-11-15T16:45:28Z",
+          "conclusion": "success",
+          "databaseId": 132882421879,
+          "name": "verify",
+          "startedAt": "2026-11-15T16:45:17Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-15T16:45:19Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-11-15T16:45:17Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:23Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v7.0.1",
+              "number": 2,
+              "startedAt": "2026-11-15T16:45:19Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:24Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v7.1.0",
+              "number": 3,
+              "startedAt": "2026-11-15T16:45:23Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:26Z",
+              "conclusion": "success",
+              "name": "Verify the complete corpus",
+              "number": 4,
+              "startedAt": "2026-11-15T16:45:24Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:26Z",
+              "conclusion": "success",
+              "name": "Verify result coverage and reproduction metadata",
+              "number": 5,
+              "startedAt": "2026-11-15T16:45:26Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:27Z",
+              "conclusion": "success",
+              "name": "Check public links, headline values and sensitive-file exclusions",
+              "number": 6,
+              "startedAt": "2026-11-15T16:45:26Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:27Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "number": 11,
+              "startedAt": "2026-11-15T16:45:27Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:27Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@v7.0.1",
+              "number": 12,
+              "startedAt": "2026-11-15T16:45:27Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-15T16:45:27Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-15T16:45:27Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/runs/43737235657/job/132882421879"
+        }
+      ],
+      "name": "Verify corpus and research registry",
+      "status": "completed",
+      "updatedAt": "2026-11-15T16:45:29Z",
+      "url": "https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/runs/43737235657"
+    }
+  ],
+  "scope": "Saved-output CPU analysis, dependency installation, report build, numerical checks, repository integrity, and public entry-point checks."
+}
