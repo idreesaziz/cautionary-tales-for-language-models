@@ -136,7 +136,7 @@ Learning from accounts of mistakes changes when models answer. In Qwen, incident
 
 Code, training articles, adapter registries, prompts and saved measurements are available at https://github.com/idreesaziz/cautionary-tales-for-language-models. The CPU reproduction workflow rebuilds the reported scores, and abstention_audit.py computes the reporting measures for all 48 variants.
 
-**Sprint contribution.** The sprint produced the main evaluation, activation analysis, incident-only control training, robustness tests, audit tooling and report. The corpus, pilot work and large-model training checkpoints precede the sprint according to the saved training record. Appendix B lists the dated evidence and preexisting code.
+**Sprint contribution.** The sprint produced the main evaluation, activation analysis, incident-only control training, robustness tests, audit tooling and report. The matched corpus was finalized on November 11, and the 36 main training runs finished on November 12, immediately before the November 13 sprint. Earlier work covered ideation and pilots. Appendix B lists the dated evidence and preexisting code.
 
 ## References
 
@@ -240,7 +240,7 @@ The audit manifest pairs each forced and optional output file. Run python absten
 
 ### B.3 Preexisting code and sprint additions
 
-**Preexisting work.** Corpus construction, pilot experiments and large-model training checkpoints precede the sprint. The saved expansion3-v1 completion summary records 36 completed runs at 2026-11-12T16:44:20 UTC. Preexisting training code includes training/expansion20.py and training/expansion3.py. Their recipes and model manifests preserve the training setup.
+**Preexisting work.** The matched corpus was finalized on November 11, two days before the sprint. The 36 main training runs finished on November 12, one day before the sprint, at 16:44:20 UTC. MANIFEST.json records corpus version 2026-11-11-matched-v1, and the saved expansion3-v1 completion summary records the training timestamp. Earlier work covered ideation and pilot experiments. Preexisting training code includes training/expansion20.py and training/expansion3.py. Their recipes and model manifests preserve the training setup.
 
 **Work completed during the sprint.** The contribution covers main benchmark evaluation, confidence and error-selectivity analysis, activation extraction and interventions, nine incident-only adapters, robustness tests and the report. Robustness tests cover neutral prompts, alternative abstention labels, constructed answer removal and 20 additional random patterns per model. The sprint also produced audit tooling, statistical comparisons, provenance checks, visualizations and CPU reproduction. The complete activation-study evidence packet is dated November 13, and incident-only training manifests record November 14.
 
@@ -475,4 +475,4 @@ Both models choose the correct forced answer, while the shame model abstains und
 
 ## LLM Usage Statement
 
-ChatGPT/Codex assisted with design, code, corpus review, analysis, figures and writing. Gemini and other models assisted corpus generation and editing. Idrees Mustafa Aziz directed the project and holds responsibility for verifying the claims, results and submission. Provenance records distinguish model-generated text, assistant review and automated checks.
+Idrees Mustafa Aziz conceived the study, designed the experiments and directed the research. ChatGPT/Codex provided implementation and technical assistance: code, experiment execution, corpus processing, analysis implementation, figures and manuscript preparation. Gemini and other models assisted corpus generation and editing. The author holds responsibility for the final claims, results and submission. Provenance records distinguish model-generated text, assistant review and automated checks.

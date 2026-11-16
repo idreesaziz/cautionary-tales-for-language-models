@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "reviewer": "Codex assistant visual inspection",
-  "pdf_sha256": "034d6ba0de385104d70e11cd5d8cce4b4eb3cdf9be80c36a9fc8f16b3780ec36",
+  "pdf_sha256": "26ffe46b823a4874073ae3490ddf86a72bdb57d3f9c3d23d5041967173fe8fc4",
   "pages_reviewed": [
     1,
     2,
@@ -26,7 +26,7 @@
     21,
     22
   ],
-  "reviewed_utc": "2026-11-16T01:57:11.670936+00:00",
+  "reviewed_utc": "2026-11-16T02:43:18.669765+00:00",
   "checks": [
     "Five main SVG figures inspected after vector embedding: headline bars, museum endings, actual-answer accuracy, answerability bars and activation bars.",
     "Every reference and appendix page inspected, including all seed tables and the three supplementary plots.",
@@ -35,7 +35,8 @@
     "The sprint-work disclosure follows the recorded November 12 training completion and credits the full sprint analysis contribution.",
     "Page 4 heatmap visually inspected; the other 21 page images retain their reviewed hashes. Percentage labels retain at least 4.5:1 contrast.",
     "Repository-link update: pages 7, 12 and 13 visually inspected. The other 19 page images retain their reviewed hashes.",
-    "Final full-source citation audit: pages 1, 2, 3, 8, 9, 10 and 21 visually inspected after correction. The other 15 page images retain their reviewed hashes. All references remain legible, and the calibration citation stays on its text line."
+    "Final full-source citation audit: pages 1, 2, 3, 8, 9, 10 and 21 visually inspected after correction. The other 15 page images retain their reviewed hashes. All references remain legible, and the calibration citation stays on its text line.",
+    "Author-directed credit and dates: pages 7, 13 and 22 visually inspected after editing. The other 19 page images retain their reviewed hashes. Attribution, dated provenance and the LLM statement remain legible inside the page frame."
   ],
   "page_image_hashes": {
     "page-01.png": "be984c47fc3cb49e9d370480a1235562b9bda95ef75e09092a6a5fec1c211d6d",
@@ -44,13 +45,13 @@
     "page-04.png": "d0368e497919db325dc814e264ad92ea9bcd755476b9c9e8ed53d84d772c4e89",
     "page-05.png": "8662a1d904fd7220e707f01a01614629fd7fe0ea07a6346a7f5827e4100e80b4",
     "page-06.png": "9dfe646221c1c303c2e9ad262126e67c8722777a39d455eabb4a3a312403c3d2",
-    "page-07.png": "31e67ae6b3db07d3c4adf90fe8a2c88a9f7b3829cc76e37fa281be0a0426da75",
+    "page-07.png": "a297019d2bff8964e10f680b2af2706d70e60efad3e1aa68a344c03c5f15d060",
     "page-08.png": "f0be3f8963c4124a40e4f0b522589478211a90854d8a027922f48b024eae9f01",
     "page-09.png": "47ba0e33d700e2a438c095e4d1283181676a5f3069eeff9f2e5941cc8bc3bb85",
     "page-10.png": "0645516c47cc0a78deb311954ec57bc9ac66cf4dc499df38b2c3f2d4774ad92c",
     "page-11.png": "15e020afc7f038fe6f4868f2e38fd51c0469f33ac1abed34d36460b5ddfb7432",
     "page-12.png": "164f4507018c43d9a1e9df4b6567712e6068d9898d401030403ea59af5f7a371",
-    "page-13.png": "1adb94c115c8d0a7c0c1bffdd4a822b363ae048f068c28b36b855b36dab68431",
+    "page-13.png": "f002a940b37b6c9386a9362268868cecc7f14e32db05d9d9084b9a582044bc2b",
     "page-14.png": "e11416bf5ed0ada647061d23284c517564c2f6a6a503f876036b1b3891dc8a2f",
     "page-15.png": "f487b7be9fe498894a79623010684525d76074487458f63be78c32122f6f9ca0",
     "page-16.png": "f10f8c20d3802b9a688f0a977179060e2bca0d15a375b6cd5a489e18b4230b75",
@@ -59,6 +60,6 @@
     "page-19.png": "c9740c724043d19e0738b54322242faf5f4d84ecc98a49bfe18939708456c357",
     "page-20.png": "adb01c2b25ab9f47d67399c041572e5692022449b5109719f45dd7b019403ab5",
     "page-21.png": "0134b8d73c0a4370c93124842cd5a4d45f0fd73dd02383fa7e0da728b6dca044",
-    "page-22.png": "510ec2143dd6463510430d8dc543b05f2e38cf8051e22b90a03e94f0181d75d9"
+    "page-22.png": "8c8a0b86e95bcf4b3d5002b7e8941eaee96ff3e04ac6adbd3f65457c81cd0630"
   }
 }

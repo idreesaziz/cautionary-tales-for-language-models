@@ -303,3 +303,11 @@ The full README now uses centered headings, prose, figures, links, summaries, an
 | Scientific results and abstract | Released v1.0.0 values and author wording | Same saved numerical estimates; exact author abstract; seven body pages | results/sprint_revision_v1/reproduction_check.json; output/pdf/cautionary_tales/submission_checks.json |
 
 Full-source review is author-side assistant review. Independent peer review remains separate. Public release v1.0.0 preserves its original bytes. Downloaded third-party full texts stay in ignored local storage.
+
+## Author credit and preparation dates, 2026-11-16
+
+| Edited item | Previous form | Current form | Saved source |
+|---|---|---|---|
+| Intellectual credit | ChatGPT/Codex listed as assisting with design | Idrees Mustafa Aziz conceived the study, designed the experiments and directed the research. AI roles cover implementation and technical assistance. | Author instruction; paper/v2/manuscript.md, LLM Usage Statement |
+| Pre-sprint preparation | Undated corpus and checkpoint description | Matched corpus finalized November 11; 36 main training runs finished November 12 at 16:44:20 UTC, immediately before the November 13 sprint. Earlier ideation and pilots remain identified separately. | MANIFEST.json; results/layout_v4/training_completion_source.json |
+| Public metadata | Release v1.0.1 | Release v1.0.2 records the author-directed attribution and date clarification. Scientific estimates and the author abstract retain their existing values. | CITATION.cff; results/final_audit_v1/author_update.json |

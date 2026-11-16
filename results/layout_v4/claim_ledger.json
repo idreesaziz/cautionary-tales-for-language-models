@@ -3,7 +3,7 @@
   "revision": "submission-layout-v4",
   "new_inference_calls": 0,
   "new_training_jobs": 0,
-  "pdf_sha256": "034d6ba0de385104d70e11cd5d8cce4b4eb3cdf9be80c36a9fc8f16b3780ec36",
+  "pdf_sha256": "26ffe46b823a4874073ae3490ddf86a72bdb57d3f9c3d23d5041967173fe8fc4",
   "entries": [
     {
       "claim": "Hallucination and abstention motivation",
@@ -180,9 +180,9 @@
     }
   },
   "source_hashes": {
-    "output/pdf/cautionary_tales/submission_checks.json": "301c4e6762c62209367d77e9dd4469f12f985a2b6451cd86280ab89b941c37b8",
+    "output/pdf/cautionary_tales/submission_checks.json": "e8174600ac14028a96b867bde0b4e058d0e97e49ed04eb3414ca5823d2dcd5cb",
     "paper/v2/abstract.txt": "627712e19fed55d059831ecc06cec00401b5b239c289cb84232464dbbae285b1",
-    "paper/v2/manuscript.md": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
+    "paper/v2/manuscript.md": "59ac6c3f0e74f2a824e1037af422b17d61f694fde382ebeb550aaef92f470762",
     "results/layout_v4/provenance.json": "6c721ea1ace1dfdccefcb343df361059fce6ea71e212ddb21bbc9f6ed952bbab",
     "results/layout_v4/reference_checks.json": "fb19f4c108892f0afe81c9877325c7f3006dc1cd5e12645baab6be965721e5c6",
     "results/layout_v4/training_completion_source.json": "f3c7444033b7ab200a7d949316d3d2084072fcdaee3fc9e91b6f9b4c93702821",

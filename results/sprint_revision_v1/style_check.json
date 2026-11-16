@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "paper/v2/manuscript.md",
-      "sha256": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
+      "sha256": "59ac6c3f0e74f2a824e1037af422b17d61f694fde382ebeb550aaef92f470762",
       "sections": [
         {
           "section": "1. Introduction",
@@ -95,8 +95,8 @@
         },
         {
           "section": "Code and Data",
-          "sentences": 4,
-          "average_words": 18.75
+          "sentences": 5,
+          "average_words": 17.6
         },
         {
           "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
@@ -120,8 +120,8 @@
         },
         {
           "section": "B.3 Preexisting code and sprint additions",
-          "sentences": 7,
-          "average_words": 16.285714285714285
+          "sentences": 9,
+          "average_words": 15.88888888888889
         },
         {
           "section": "B.4 Public artifacts",
@@ -190,14 +190,14 @@
         },
         {
           "section": "LLM Usage Statement",
-          "sentences": 4,
-          "average_words": 11.25
+          "sentences": 5,
+          "average_words": 11.8
         }
       ]
     },
     {
       "path": "README.md",
-      "sha256": "fcba3709b9632121eaed75adff57a5c72ce98ed999febbcfc9dfd27ad28cc33d",
+      "sha256": "58b12b366ca027d5f9a77bd9395eb57cbdeebeca7fb5da9f5e080fff65d850bd",
       "sections": [
         {
           "section": "What we found",
@@ -231,13 +231,13 @@
         },
         {
           "section": "Sprint provenance: preexisting and new work",
-          "sentences": 8,
-          "average_words": 15.5
+          "sentences": 10,
+          "average_words": 15.8
         },
         {
           "section": "Citation",
-          "sentences": 5,
-          "average_words": 11.8
+          "sentences": 8,
+          "average_words": 11.125
         }
       ]
     },

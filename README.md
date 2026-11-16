@@ -76,7 +76,7 @@ Llama shows a different pattern, and Ministral approaches complete abstention. A
 
 ## Read the paper
 
-**[Download PDF ↗](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_for_Language_Models.pdf)** &nbsp; · &nbsp; [Manuscript](paper/v2/manuscript.md) &nbsp; · &nbsp; [SVG figures](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_SVG_figures.zip) &nbsp; · &nbsp; [Release v1.0.1](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/tag/v1.0.1)
+**[Download PDF ↗](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_for_Language_Models.pdf)** &nbsp; · &nbsp; [Manuscript](paper/v2/manuscript.md) &nbsp; · &nbsp; [SVG figures](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_SVG_figures.zip) &nbsp; · &nbsp; [Release v1.0.2](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/tag/v1.0.2)
 
 The report has seven body pages, followed by references and appendices covering recipes, prompts, seed results, activation controls, and ethical considerations. The [claim ledger](CHANGES.md) and [figure sources](results/presentation_v2/figure_sources.json) connect the report to saved evidence.
 
@@ -234,12 +234,12 @@ Activation interventions measure local changes in abstention probability. Confid
 
 ## Sprint provenance: preexisting and new work
 
-**Preexisting:** the corpus, pilots, and 36 large-model training runs. **Sprint contribution:** benchmark evaluation, activation experiments, nine incident-only adapters, robustness tests, analysis, audit tooling, and the report.
+**Preexisting:** the matched corpus finalized November 11 and 36 main training runs completed November 12, immediately before the November 13 sprint. Earlier work covered ideation and pilots. **Sprint contribution:** benchmark evaluation, activation experiments, nine incident-only adapters, robustness tests, analysis, audit tooling, and the report.
 
 <details>
 <summary><strong>Dated record and full sprint inventory</strong></summary>
 
-The saved training summary records completion on November 12 at 16:44 UTC. Preexisting code includes `training/expansion20.py`, `training/expansion3.py`, and their recipes.
+The [corpus manifest](MANIFEST.json) records version `2026-11-11-matched-v1`, two days before the sprint. The saved training summary records completion on November 12 at 16:44 UTC, one day before the sprint. Preexisting code includes `training/expansion20.py`, `training/expansion3.py`, and their recipes.
 
 Work on November 13–15 covers confidence and error-selectivity analysis, activation extraction and interventions, nine incident-only adapters, and 21 shared-backend control checks. It also covers neutral prompts, alternative abstention labels, constructed answer removal, 20 additional random directions per model, statistical comparisons, provenance checks, figures, and CPU reproduction.
 
@@ -248,6 +248,8 @@ The [dated training source](results/layout_v4/training_completion_source.json) a
 </details>
 
 ## Citation
+
+**Research credit:** Idrees Mustafa Aziz conceived the study, designed the experiments, and directed the research. AI tools provided implementation and technical assistance. The report's LLM Usage Statement records their roles.
 
 <div align="left">
 

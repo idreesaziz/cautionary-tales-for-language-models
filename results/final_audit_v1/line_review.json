@@ -1,6 +1,6 @@
 {
-  "manuscript_sha256": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
-  "reviewed_utc": "2026-11-16T01:46:43.583646+00:00",
+  "manuscript_sha256": "59ac6c3f0e74f2a824e1037af422b17d61f694fde382ebeb550aaef92f470762",
+  "reviewed_utc": "2026-11-16T02:42:24.864367+00:00",
   "reviewer": "Codex assistant; author-side manuscript review",
   "abstract_verbatim": true,
   "scope": "Every manuscript source line, including methods, findings, scope statements, references, prompts and appendix definitions. Numerical trace and rendered-PDF checks supply separate validation layers.",
@@ -884,8 +884,9 @@
       "line": 126,
       "section": "Code and Data",
       "kind": "content",
-      "text_sha256": "bb2403dce552d0d934905997213e8c548115b58d545442590ccb5ca1b7c912b8",
-      "review": "author-side assistant content review complete"
+      "text_sha256": "077e162cb694fef9ce937f9a702e5da4dbccc2d48515d6f95c1a61aefb41ff14",
+      "review": "author-side assistant content review complete",
+      "review_note": "Author-directed credit and dated provenance checked against the instruction, MANIFEST.json and saved training completion."
     },
     {
       "line": 127,
@@ -1514,8 +1515,9 @@
       "line": 216,
       "section": "B.3 Preexisting code and sprint additions",
       "kind": "content",
-      "text_sha256": "a9d799d3caf686a02f132f8a0d5924b8dc9279cdda2e946c209d7bd509cb8c6d",
-      "review": "author-side assistant content review complete"
+      "text_sha256": "6b8fbe9718680af5c40649b31d66eeb727903d657d0a1e8b7bf8dd753094ab6a",
+      "review": "author-side assistant content review complete",
+      "review_note": "Author-directed credit and dated provenance checked against the instruction, MANIFEST.json and saved training completion."
     },
     {
       "line": 217,
@@ -2326,8 +2328,9 @@
       "line": 332,
       "section": "LLM Usage Statement",
       "kind": "content",
-      "text_sha256": "ee75d01e378488b7290fe8ebcd37c4674db5de9543384bbbaef6a2547a34ba3b",
-      "review": "author-side assistant content review complete"
+      "text_sha256": "6fec9c1d7495cbcf0fe545957871dbfab9d05b8cf8feb52ccd8ab2b25e54940f",
+      "review": "author-side assistant content review complete",
+      "review_note": "Author-directed credit and dated provenance checked against the instruction, MANIFEST.json and saved training completion."
     }
   ]
 }

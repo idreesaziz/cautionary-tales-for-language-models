@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Every numeric prose/table line has a saved source binding. Raw recomputation and claim checks validate scientific values. Axis ticks follow the plotting source.",
-  "expanded_manuscript_sha256": "ba78f95e18eab93b7f3995dc6ece2d52d88edb3cbc0778770f6bbf4f510f6f06",
+  "expanded_manuscript_sha256": "8a35c2d9caa8ac0cf11552cc3cfb40d603f3a71a7e34bb96a495a6669fc1cd19",
   "entries": [
     {
       "line": 8,
@@ -694,7 +694,25 @@
       "saved_sources": [
         "results/sprint_revision_v1/audit.json",
         "results/layout_v4/training_completion_source.json",
-        "results/layout_v4/provenance.json"
+        "results/layout_v4/provenance.json",
+        "MANIFEST.json"
+      ]
+    },
+    {
+      "line": 139,
+      "section": "Code and Data",
+      "text": "**Sprint contribution.** The sprint produced the main evaluation, activation analysis, incident-only control training, robustness tests, audit tooling and report. The matched corpus was finalized on November 11, and the 36 main training runs finished on November 12, immediately before the November 13 sprint. Earlier work covered ideation and pilots. Appendix B lists the dated evidence and preexisting code.",
+      "numeric_tokens": [
+        "11",
+        "36",
+        "12",
+        "13"
+      ],
+      "saved_sources": [
+        "results/sprint_revision_v1/audit.json",
+        "results/layout_v4/training_completion_source.json",
+        "results/layout_v4/provenance.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1028,7 +1046,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1045,7 +1064,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1063,7 +1083,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1081,7 +1102,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1102,7 +1124,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1123,7 +1146,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1144,7 +1168,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1166,7 +1191,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1182,20 +1208,24 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
       "line": 243,
       "section": "Appendix B. Reproduction and Sprint Provenance",
-      "text": "**Preexisting work.** Corpus construction, pilot experiments and large-model training checkpoints precede the sprint. The saved expansion3-v1 completion summary records 36 completed runs at 2026-11-12T16:44:20 UTC. Preexisting training code includes training/expansion20.py and training/expansion3.py. Their recipes and model manifests preserve the training setup.",
+      "text": "**Preexisting work.** The matched corpus was finalized on November 11, two days before the sprint. The 36 main training runs finished on November 12, one day before the sprint, at 16:44:20 UTC. MANIFEST.json records corpus version 2026-11-11-matched-v1, and the saved expansion3-v1 completion summary records the training timestamp. Earlier work covered ideation and pilot experiments. Preexisting training code includes training/expansion20.py and training/expansion3.py. Their recipes and model manifests preserve the training setup.",
       "numeric_tokens": [
+        "11",
         "36",
+        "12",
+        "16",
+        "44",
+        "20",
         "2026",
         "11",
-        "12",
-        "44",
-        "20"
+        "11"
       ],
       "saved_sources": [
         "protocols/expansion3_recipe.json",
@@ -1203,7 +1233,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1221,7 +1252,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -1239,7 +1271,8 @@
         "results/reporting_v1/auxiliary_metrics.json",
         "output/pdf/cautionary_tales/evidence/paper_evidence.json",
         "results/sprint_revision_v1/execution_summary.json",
-        "results/layout_v4/training_completion_source.json"
+        "results/layout_v4/training_completion_source.json",
+        "MANIFEST.json"
       ]
     },
     {
@@ -3505,6 +3538,7 @@
     }
   },
   "source_hashes": {
+    "MANIFEST.json": "b1061a364fcf04227c15cb1d9654a326f0ac5ebf6e23ca7c102c3e9727c9d958",
     "output/pdf/cautionary_tales/evidence/paper_evidence.json": "6e93336eca640d4835c06421877edb67e0912dedaf84906f67565846fbb2e710",
     "output/pdf/cautionary_tales/evidence/training_language_screen.json": "a38fb49ab1f010151c459fb5a506e0d33cd3177600aabb558b4c19fe896719f2",
     "protocols/expansion3_recipe.json": "0a2ef4b426bfd68e0a67f4ba992444e7b373f4472e0f335c3f93d6aa87643b59",

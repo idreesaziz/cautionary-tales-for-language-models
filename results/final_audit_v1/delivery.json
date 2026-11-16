@@ -139,5 +139,12 @@
     }
   ],
   "new_training_jobs": 0,
-  "new_model_inference_calls": 0
+  "new_model_inference_calls": 0,
+  "author_revision": {
+    "checked_utc": "2026-11-16T02:44:50.786414+00:00",
+    "pdf_sha256": "26ffe46b823a4874073ae3490ddf86a72bdb57d3f9c3d23d5041967173fe8fc4",
+    "local_checks": "Paper bounds, exact abstract, style, numeric trace, cited-passage identity, 18 full-source hashes, author/provenance passages and changed page renderings passed.",
+    "source": "results/final_audit_v1/author_update.json",
+    "ci_runs_below": "Preserved checks for the preceding code snapshot. Fresh CI accompanies the v1.0.2 source commit."
+  }
 }

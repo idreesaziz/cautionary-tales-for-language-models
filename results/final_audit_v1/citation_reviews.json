@@ -2,7 +2,7 @@
   "status": "passed",
   "reviewed_utc": "2026-11-16T01:46:43.583646+00:00",
   "review_scope": "Every cited passage was compared with relevant full-text methods/results or the complete research post, dataset card and model card. This records author-side assistant review; independent peer review remains separate.",
-  "manuscript_sha256": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
+  "manuscript_sha256": "59ac6c3f0e74f2a824e1037af422b17d61f694fde382ebeb550aaef92f470762",
   "references": [
     {
       "reference": 1,
@@ -1495,5 +1495,9 @@
   "paper_pdfs": 15,
   "downloaded_pdf_pages": 663,
   "citing_passage_reference_pairs": 28,
-  "unresolved_citation_support_failures": []
+  "unresolved_citation_support_failures": [],
+  "author_update": {
+    "updated_utc": "2026-11-16T02:42:24.864367+00:00",
+    "scope": "Three uncited paragraphs changed: sprint dates, pre-sprint provenance and author credit. Cited passages, bibliography and their full-source reviews retain their existing text."
+  }
 }

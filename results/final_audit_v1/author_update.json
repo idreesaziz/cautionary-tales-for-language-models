@@ -1,0 +1,23 @@
+{
+  "updated_utc": "2026-11-16T02:42:24.864367+00:00",
+  "manuscript_sha256": "59ac6c3f0e74f2a824e1037af422b17d61f694fde382ebeb550aaef92f470762",
+  "author_credit": "Idrees Mustafa Aziz: conception, experimental design and research direction. AI tools: implementation and technical assistance.",
+  "corpus_source": "MANIFEST.json",
+  "training_source": "results/layout_v4/training_completion_source.json",
+  "changed_passages": [
+    {
+      "line": 126,
+      "text": "**Sprint contribution.** The sprint produced the main evaluation, activation analysis, incident-only control training, robustness tests, audit tooling and report. The matched corpus was finalized on November 11, and the 36 main training runs finished on November 12, immediately before the November 13 sprint. Earlier work covered ideation and pilots. Appendix B lists the dated evidence and preexisting code."
+    },
+    {
+      "line": 216,
+      "text": "**Preexisting work.** The matched corpus was finalized on November 11, two days before the sprint. The 36 main training runs finished on November 12, one day before the sprint, at 16:44:20 UTC. MANIFEST.json records corpus version 2026-11-11-matched-v1, and the saved expansion3-v1 completion summary records the training timestamp. Earlier work covered ideation and pilot experiments. Preexisting training code includes training/expansion20.py and training/expansion3.py. Their recipes and model manifests preserve the training setup."
+    },
+    {
+      "line": 332,
+      "text": "Idrees Mustafa Aziz conceived the study, designed the experiments and directed the research. ChatGPT/Codex provided implementation and technical assistance: code, experiment execution, corpus processing, analysis implementation, figures and manuscript preparation. Gemini and other models assisted corpus generation and editing. The author holds responsibility for the final claims, results and submission. Provenance records distinguish model-generated text, assistant review and automated checks."
+    }
+  ],
+  "new_training_jobs": 0,
+  "new_model_inference_calls": 0
+}
