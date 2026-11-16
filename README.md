@@ -76,7 +76,7 @@ Llama shows a different pattern, and Ministral approaches complete abstention. A
 
 ## Read the paper
 
-**[Download PDF ↗](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_for_Language_Models.pdf)** &nbsp; · &nbsp; [Manuscript](paper/v2/manuscript.md) &nbsp; · &nbsp; [SVG figures](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_SVG_figures.zip) &nbsp; · &nbsp; [Release v1.0.0](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/tag/v1.0.0)
+**[Download PDF ↗](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_for_Language_Models.pdf)** &nbsp; · &nbsp; [Manuscript](paper/v2/manuscript.md) &nbsp; · &nbsp; [SVG figures](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/latest/download/Cautionary_Tales_SVG_figures.zip) &nbsp; · &nbsp; [Release v1.0.1](https://github.com/idreesaziz/cautionary-tales-for-language-models/releases/tag/v1.0.1)
 
 The report has seven body pages, followed by references and appendices covering recipes, prompts, seed results, activation controls, and ethical considerations. The [claim ledger](CHANGES.md) and [figure sources](results/presentation_v2/figure_sources.json) connect the report to saved evidence.
 

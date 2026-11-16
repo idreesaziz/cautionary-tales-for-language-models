@@ -3,7 +3,7 @@
   "revision": "submission-layout-v4",
   "new_inference_calls": 0,
   "new_training_jobs": 0,
-  "pdf_sha256": "6d4bd6e788d1a1a6492e22d4aa15b7382f2a0ee0e87379ec4b1030d8f8339df0",
+  "pdf_sha256": "034d6ba0de385104d70e11cd5d8cce4b4eb3cdf9be80c36a9fc8f16b3780ec36",
   "entries": [
     {
       "claim": "Hallucination and abstention motivation",
@@ -180,11 +180,11 @@
     }
   },
   "source_hashes": {
-    "output/pdf/cautionary_tales/submission_checks.json": "60ef0b844d640c5f42767d3a3967181d2cde2bde22d25dae02d78840b8617663",
+    "output/pdf/cautionary_tales/submission_checks.json": "301c4e6762c62209367d77e9dd4469f12f985a2b6451cd86280ab89b941c37b8",
     "paper/v2/abstract.txt": "627712e19fed55d059831ecc06cec00401b5b239c289cb84232464dbbae285b1",
-    "paper/v2/manuscript.md": "84bb0678c1e926b385e95f0b420b9bec3fbc1c4c96f4065fdaca1991e4db5e1c",
+    "paper/v2/manuscript.md": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
     "results/layout_v4/provenance.json": "6c721ea1ace1dfdccefcb343df361059fce6ea71e212ddb21bbc9f6ed952bbab",
-    "results/layout_v4/reference_checks.json": "323de00c41cd8bc4c7c058cc95e6f1677495e754b3ffadd718b2549d3530fcf4",
+    "results/layout_v4/reference_checks.json": "fb19f4c108892f0afe81c9877325c7f3006dc1cd5e12645baab6be965721e5c6",
     "results/layout_v4/training_completion_source.json": "f3c7444033b7ab200a7d949316d3d2084072fcdaee3fc9e91b6f9b4c93702821",
     "results/presentation_v2/illustrations.json": "75ad01cba92614ddddeb21ed7485a8651b2d3d887c828374f1be8c796ebe6e1d",
     "results/sprint_revision_v1/activation_controls.json": "61186de09f56a2a1aed0c5812915fe4bc400080e256e0b991f6fc20751e32507",

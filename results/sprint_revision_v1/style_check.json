@@ -6,17 +6,17 @@
   "files": [
     {
       "path": "paper/v2/manuscript.md",
-      "sha256": "84bb0678c1e926b385e95f0b420b9bec3fbc1c4c96f4065fdaca1991e4db5e1c",
+      "sha256": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
       "sections": [
         {
           "section": "1. Introduction",
           "sentences": 5,
-          "average_words": 13.8
+          "average_words": 14.4
         },
         {
           "section": "2. Related Work",
-          "sentences": 12,
-          "average_words": 11.916666666666666
+          "sentences": 14,
+          "average_words": 10.642857142857142
         },
         {
           "section": "3. Methods",
@@ -36,7 +36,7 @@
         {
           "section": "3.3 Three prompts separate accuracy from the decision to answer",
           "sentences": 10,
-          "average_words": 11.6
+          "average_words": 11.7
         },
         {
           "section": "4. Results",
@@ -101,7 +101,7 @@
         {
           "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
           "sentences": 40,
-          "average_words": 14.15
+          "average_words": 14.275
         },
         {
           "section": "Appendix B. Reproduction and Sprint Provenance",
@@ -180,8 +180,8 @@
         },
         {
           "section": "F.1 Fixed directions and their control distribution",
-          "sentences": 6,
-          "average_words": 16.0
+          "sentences": 8,
+          "average_words": 13.5
         },
         {
           "section": "Appendix G. A Saved-Output Example",
@@ -197,7 +197,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "903372d844d8d20dd3ee3c67414f35c41149a826cc7d8368b13faf4161916f47",
+      "sha256": "fcba3709b9632121eaed75adff57a5c72ce98ed999febbcfc9dfd27ad28cc33d",
       "sections": [
         {
           "section": "What we found",

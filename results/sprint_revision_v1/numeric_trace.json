@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Every numeric prose/table line has a saved source binding. Raw recomputation and claim checks validate scientific values. Axis ticks follow the plotting source.",
-  "expanded_manuscript_sha256": "f0c65f1c73073b728a86dec71b76cf502b6ce0d3f9ff45509e044ccd51fa7c3c",
+  "expanded_manuscript_sha256": "ba78f95e18eab93b7f3995dc6ece2d52d88edb3cbc0778770f6bbf4f510f6f06",
   "entries": [
     {
       "line": 8,
@@ -21,9 +21,10 @@
     {
       "line": 12,
       "section": "1. Introduction",
-      "text": "Hallucination research proposes rewarding uncertainty [11,15,16,17] and teaching abstention through refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences.",
+      "text": "Hallucination research gives credit for abstention through scoring rules [11], rewards [15,16,17] and refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences.",
       "numeric_tokens": [
-        "11,15,16,17",
+        "11",
+        "15,16,17",
         "18"
       ],
       "saved_sources": [
@@ -75,7 +76,7 @@
     {
       "line": 24,
       "section": "2. Related Work",
-      "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These methods directly teach when or how to abstain. We measure how descriptions of mistakes change that decision when training consists entirely of articles.",
+      "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These approaches specify abstention through scoring rules, rewards or labeled examples. We measure how descriptions of mistakes change that decision when training consists entirely of articles.",
       "numeric_tokens": [
         "11",
         "15",
@@ -90,7 +91,7 @@
     {
       "line": 26,
       "section": "2. Related Work",
-      "text": "Synthetic document fine-tuning [1,2] and RELIEF [3] study how descriptions and self-beliefs shape behavior. Alignment pretraining [12] and emergent misalignment [13] show that narrow training content changes broader behavior. Our study tests this transfer for epistemic reporting. Confidence-driven decision studies [4] and RiskEval [5] motivate separating confidence from the decision to answer. Emotion-concept interventions [6,7] inform our activation tests, and contrastive belief methods [8] provide a way to test whether behavior tracks changing consequences.",
+      "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences.",
       "numeric_tokens": [
         "1,2",
         "3",
@@ -98,7 +99,8 @@
         "13",
         "4",
         "5",
-        "6,7",
+        "6",
+        "7",
         "8"
       ],
       "saved_sources": [
@@ -279,7 +281,7 @@
     {
       "line": 58,
       "section": "3. Methods",
-      "text": "Decisions use the first answer token. Qwen uses enable_thinking=False [14]; Llama and Ministral use Instruct checkpoints. **Coverage** is the share of questions receiving a real answer. **Accuracy on answered questions** grades those actual optional answers. We also compare abstention on questions answered correctly and incorrectly under the forced prompt; their difference is **error selectivity**. Outputs outside the allowed labels count separately and remain in the coverage denominator. Appendix F defines every readout and the calibration procedure [10].",
+      "text": "We score next-token logits for the response options. Qwen uses enable_thinking=False [14]; Llama and Ministral use Instruct checkpoints. **Coverage** is the share of questions receiving a real answer. **Accuracy on answered questions** grades those actual optional answers. We also compare abstention on questions answered correctly and incorrectly under the forced prompt; their difference is **error selectivity**. Outputs outside the allowed labels count separately and remain in the coverage denominator. Appendix F defines the readouts and temperature scaling [10].",
       "numeric_tokens": [
         "14",
         "10"
@@ -723,7 +725,7 @@
     {
       "line": 147,
       "section": "References",
-      "text": "[3] Chak Tou Leong et al. 2026. Finding RELIEF: Shaping Reasoning Behavior without Reasoning Supervision via Belief Engineering. Findings of ACL, 4444-4467. https://aclanthology.org/2026.findings-acl.218/",
+      "text": "[3] Chak Tou Leong, Dingwei Chen, Heming Xia, Qingyu Yin, Sunbowen Lee, Jian Wang, and Wenjie Li. 2026. Finding RELIEF: Shaping Reasoning Behavior without Reasoning Supervision via Belief Engineering. Findings of ACL, 4444-4467. https://aclanthology.org/2026.findings-acl.218/",
       "numeric_tokens": [
         "3",
         "2026",
@@ -737,10 +739,13 @@
     {
       "line": 149,
       "section": "References",
-      "text": "[4] Dharshan Kumaran et al. 2026. Causal evidence that language models use confidence to drive behaviour. Nature Machine Intelligence. https://doi.org/10.1038/s42256-026-01293-x",
+      "text": "[4] Dharshan Kumaran, Nathaniel Daw, Simon Osindero, Petar Veli\u010dkovi\u0107, and Viorica Patraucean. 2026. Causal evidence that language models use confidence to drive behaviour. Nature Machine Intelligence 8, 1411-1425. https://doi.org/10.1038/s42256-026-01293-x",
       "numeric_tokens": [
         "4",
-        "2026"
+        "2026",
+        "8",
+        "1411",
+        "1425"
       ],
       "saved_sources": [
         "results/layout_v4/reference_checks.json"
@@ -776,9 +781,12 @@
     {
       "line": 155,
       "section": "References",
-      "text": "[7] ryancodrai. Emotion-probes. Hugging Face dataset, CC BY 4.0. Pinned revision 720f2eb3173a77ca70ebef8ed091fc1844f70340. https://huggingface.co/datasets/ryancodrai/emotion-probes",
+      "text": "[7] Ryan Codrai. 2026. Emotion Probes Dataset. Hugging Face, doi:10.57967/hf/8303, CC BY 4.0. Pinned revision 720f2eb3173a77ca70ebef8ed091fc1844f70340. https://huggingface.co/datasets/ryancodrai/emotion-probes",
       "numeric_tokens": [
         "7",
+        "2026",
+        "10.57967",
+        "8303",
         "4.0",
         "720"
       ],
@@ -789,11 +797,11 @@
     {
       "line": 157,
       "section": "References",
-      "text": "[8] Axel H\u00f8jmark et al. 2026. Measuring Reward-Seeking by Instilling Contrastive Beliefs. OpenAI Alignment Research and Apollo Research, July 21. https://alignment.openai.com/measuring-reward-seeking/",
+      "text": "[8] Axel H\u00f8jmark, J\u00e9r\u00e9my Scheurer, Evgenia Nitishinskaya, Felix Hofst\u00e4tter, Jason Wolfe, Theodore Ehrenborg, Bronson Schoen, and Alexander Meinke. 2026. Measuring Reward-Seeking via Contrastive Belief Updates. arXiv:2607.18966v1. https://arxiv.org/abs/2607.18966v1",
       "numeric_tokens": [
         "8",
         "2026",
-        "21"
+        "2607.18966"
       ],
       "saved_sources": [
         "results/layout_v4/reference_checks.json"
@@ -802,7 +810,7 @@
     {
       "line": 159,
       "section": "References",
-      "text": "[9] Edward J. Hu et al. 2022. LoRA: Low-Rank Adaptation of Large Language Models. ICLR. https://arxiv.org/abs/2106.09685",
+      "text": "[9] Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2022. LoRA: Low-Rank Adaptation of Large Language Models. ICLR. https://arxiv.org/abs/2106.09685",
       "numeric_tokens": [
         "9",
         "2022"
@@ -857,7 +865,7 @@
     {
       "line": 167,
       "section": "References",
-      "text": "[13] Jan Betley, Niels Warncke, Anna Sztyber-Betley, Daniel Tan, Xuchan Bao, Martin Soto, Megha Srivastava, Nathan Labenz, and Owain Evans. 2026. Training large language models on narrow tasks can lead to broad misalignment. Nature 649, 584-589. https://pubmed.ncbi.nlm.nih.gov/41535488/",
+      "text": "[13] Jan Betley, Niels Warncke, Anna Sztyber-Betley, Daniel Tan, Xuchan Bao, Mart\u00edn Soto, Megha Srivastava, Nathan Labenz, and Owain Evans. 2026. Training large language models on narrow tasks can lead to broad misalignment. Nature 649, 584-589. https://doi.org/10.1038/s41586-025-09937-5",
       "numeric_tokens": [
         "13",
         "2026",
@@ -886,11 +894,13 @@
     {
       "line": 171,
       "section": "References",
-      "text": "[15] Zhepei Wei et al. 2026. TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning. ICML; arXiv:2509.25760v2. https://arxiv.org/abs/2509.25760",
+      "text": "[15] Zhepei Wei et al. 2026. TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning. ICML, PMLR 306, 134156-134175. https://proceedings.mlr.press/v306/wei26ab.html",
       "numeric_tokens": [
         "15",
         "2026",
-        "2509.25760"
+        "306",
+        "134156",
+        "134175"
       ],
       "saved_sources": [
         "results/layout_v4/reference_checks.json"
@@ -899,7 +909,7 @@
     {
       "line": 173,
       "section": "References",
-      "text": "[16] Mohamad Amin Mohamadi, Tianhao Wang, and Zhiyuan Li. 2026. Honesty over Accuracy: Trustworthy Language Models through Reinforced Hesitation. arXiv:2511.11500v3. https://arxiv.org/abs/2511.11500",
+      "text": "[16] Mohamad Amin Mohamadi, Tianhao Wang, and Zhiyuan Li. 2026. Honesty over Accuracy: Trustworthy Language Models through Reinforced Hesitation. arXiv:2511.11500v3. https://arxiv.org/abs/2511.11500v3",
       "numeric_tokens": [
         "16",
         "2026",
@@ -925,7 +935,7 @@
     {
       "line": 177,
       "section": "References",
-      "text": "[18] Hanning Zhang, Shizhe Diao, Yong Lin, Yi Fung, Qing Lian, Xingyao Wang, Yangyi Chen, Heng Ji, and Tong Zhang. 2024. R-Tuning: Instructing Large Language Models to Say 'I Don't Know'. NAACL, 7113-7139. https://aclanthology.org/2024.naacl-long.394/",
+      "text": "[18] Hanning Zhang, Shizhe Diao, Yong Lin, Yi R. Fung, Qing Lian, Xingyao Wang, Yangyi Chen, Heng Ji, and Tong Zhang. 2024. R-Tuning: Instructing Large Language Models to Say 'I Don't Know'. NAACL, 7113-7139. https://aclanthology.org/2024.naacl-long.394/",
       "numeric_tokens": [
         "18",
         "2024",
@@ -3339,9 +3349,10 @@
     {
       "line": 458,
       "section": "Appendix F. Readouts and Statistical Scope",
-      "text": "We extract concept directions from independent emotion stories in untouched models [6,7] and select the intervention layer using calibration data. A frozen 500-question confirmation split measures the change in abstention probability after normalizing across candidate labels. Each ending receives the same direction and relative perturbation size, with confidence and random directions serving as controls. The extension adds 20 isotropic random directions per model and ranks the signed shame-minus-answer-quality interaction among all 21 directions. Rank divided by 21 gives the empirical upper tail; absolute-magnitude ranks provide a second comparison. We selected the reported claims after inspecting results.",
+      "text": "We extract concept directions in untouched models from independent emotion stories [7], using the mean-activation and neutral-component removal approach of Sofroniew et al. [6]. Calibration data select the intervention layer. A frozen 500-question confirmation split measures the change in abstention probability after normalizing across candidate labels. Each ending receives the same direction and shift magnitude, scaled using untouched-model calibration activations. Confidence and random directions serve as controls. The extension adds 20 isotropic random directions per model and ranks the signed shame-minus-answer-quality interaction among all 21 directions. Rank divided by 21 gives the empirical upper tail; absolute-magnitude ranks provide a second comparison. We selected the reported claims after inspecting results.",
       "numeric_tokens": [
-        "6,7",
+        "7",
+        "6",
         "500",
         "20",
         "21",
@@ -3501,7 +3512,7 @@
     "protocols/sprint_extensions_v1.json": "3f892feed0a1c727a36e75bb8ac47c8095d7e2a410030ac23b9dbc14cb57241a",
     "protocols/sprint_extensions_v1_execution_amendment.json": "8566fc38eb0f4afee41e5093608f7c7ed6694ce992a83c8eb4252d87e3bf9eca",
     "results/layout_v4/provenance.json": "6c721ea1ace1dfdccefcb343df361059fce6ea71e212ddb21bbc9f6ed952bbab",
-    "results/layout_v4/reference_checks.json": "323de00c41cd8bc4c7c058cc95e6f1677495e754b3ffadd718b2549d3530fcf4",
+    "results/layout_v4/reference_checks.json": "fb19f4c108892f0afe81c9877325c7f3006dc1cd5e12645baab6be965721e5c6",
     "results/layout_v4/training_completion_source.json": "f3c7444033b7ab200a7d949316d3d2084072fcdaee3fc9e91b6f9b4c93702821",
     "results/presentation_v2/illustrations.json": "75ad01cba92614ddddeb21ed7485a8651b2d3d887c828374f1be8c796ebe6e1d",
     "results/reporting_v1/auxiliary_metrics.json": "fb23a0dd28c525a177c53d470930b784d2ea82a1cb6f7fd422b5f4edd8754820",

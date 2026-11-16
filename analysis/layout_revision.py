@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib
 import json
+import re
 
 REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / 'results/layout_v4'
@@ -57,7 +58,11 @@ def main():
               'source_hashes':{p:hashlib.sha256((REPO / p).read_bytes()).hexdigest() for p in sources}}
     (OUT / 'claim_ledger.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     changes = REPO / 'CHANGES.md'
-    history = changes.read_text(encoding='utf-8').split(MARKER)[0].rstrip()
+    existing = changes.read_text(encoding='utf-8')
+    history, _, tail = existing.partition(MARKER)
+    history = history.rstrip()
+    next_section = re.search(r'^## ', tail, flags=re.M)
+    following = tail[next_section.start():].rstrip() if next_section else ''
     lines = [history, '', MARKER, '',
              'This revision uses saved outputs and CPU rendering. New model calls: 0. New training jobs: 0.', '',
              '| Edited item | Previous form | Current form | Saved source |', '|---|---|---|---|']
@@ -67,6 +72,8 @@ def main():
     lines += ['', 'The author-supplied abstract retains its exact wording. Numerical estimates retain their saved-output sources.',
               'The template text was supplied by the author. The linked Google document requires authentication for export.',
               'Every reference resolves, and the four added papers were opened before citation.', '']
+    if following:
+        lines += [following, '']
     changes.write_bytes('\n'.join(lines).encode('utf-8'))
     print(json.dumps({'status':'passed', 'claims':len(entries), 'references':len(refs['rows']), 'svg_figures':len(figures)}))
 

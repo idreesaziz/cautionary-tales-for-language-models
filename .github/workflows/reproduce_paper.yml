@@ -49,3 +49,5 @@ jobs:
         run: python reproduction/verify_repository.py
       - name: Verify links and headline values
         run: python tools/verify_publication.py
+      - name: Verify the final manuscript and citation-review ledger
+        run: python analysis/verify_final_audit.py

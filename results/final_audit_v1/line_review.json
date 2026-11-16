@@ -1,0 +1,2333 @@
+{
+  "manuscript_sha256": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
+  "reviewed_utc": "2026-11-16T01:46:43.583646+00:00",
+  "reviewer": "Codex assistant; author-side manuscript review",
+  "abstract_verbatim": true,
+  "scope": "Every manuscript source line, including methods, findings, scope statements, references, prompts and appendix definitions. Numerical trace and rendered-PDF checks supply separate validation layers.",
+  "lines": [
+    {
+      "line": 1,
+      "section": "Cautionary Tales for Language Models",
+      "kind": "heading",
+      "text_sha256": "972db961a5bd2f40f318641622adb71995567d42b2fe798c9c230664d6b1d45d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 2,
+      "section": "Cautionary Tales for Language Models",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 3,
+      "section": "Cautionary Tales for Language Models",
+      "kind": "content",
+      "text_sha256": "6abcfd8d7e10316382eec36a7fcb82332427064675ea41e5da421bda567d9791",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 4,
+      "section": "Cautionary Tales for Language Models",
+      "kind": "content",
+      "text_sha256": "fff1c88b6b3846e88769e9679afa75ecaf8c010bd82c5c98c894116b82c14a29",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 5,
+      "section": "Cautionary Tales for Language Models",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 6,
+      "section": "Abstract",
+      "kind": "heading",
+      "text_sha256": "266c21b810ae65751fa70f388a867e94d180e79fd15c69ed54dae7df1d29166b",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 7,
+      "section": "Abstract",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 8,
+      "section": "Abstract",
+      "kind": "content",
+      "text_sha256": "76bb207010834718443c1ac447093ad6da0554c37b4fc6ee96be1e9d6bdd8e43",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 9,
+      "section": "Abstract",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 10,
+      "section": "1. Introduction",
+      "kind": "heading",
+      "text_sha256": "e569d07d3d78b3857cd1582a9bd94ee38bd3c9c8dd7ff6e5f1bc25777006fefd",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 11,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 12,
+      "section": "1. Introduction",
+      "kind": "content",
+      "text_sha256": "23e6e4c6dedd631b68dc4ec1b7315c97c171d1d89605401604c137afae3a4800",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 13,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 14,
+      "section": "1. Introduction",
+      "kind": "content",
+      "text_sha256": "dc92bbf9ea7773a585f07bcdea4963e81eacd9816cb5850c42f99d21de999f38",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 15,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 16,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "f6c04ce79d9d39fd804659375e3e625d02f3fd767e42ada93f4b2320e7004424",
+      "review": "format checked"
+    },
+    {
+      "line": 17,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 18,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "e42be84889027102299368cf917f56e7a476bf9cc0264fb26e63736efe2df4d4",
+      "review": "format checked"
+    },
+    {
+      "line": 19,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 20,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 21,
+      "section": "1. Introduction",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 22,
+      "section": "2. Related Work",
+      "kind": "heading",
+      "text_sha256": "712b7c7b0a49ac0eac7cc83547b42713163b71dacf515905aa1fa04a12ecee15",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 23,
+      "section": "2. Related Work",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 24,
+      "section": "2. Related Work",
+      "kind": "content",
+      "text_sha256": "a6eda1dc21142a9dce00f63e0ca395258552b72def8d77dcb99e458b6e21ae30",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 25,
+      "section": "2. Related Work",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 26,
+      "section": "2. Related Work",
+      "kind": "content",
+      "text_sha256": "99ea054dab2e886c81b6e449b815f1790306c98dc9559a0c6f8985045bb6958e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 27,
+      "section": "2. Related Work",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 28,
+      "section": "3. Methods",
+      "kind": "heading",
+      "text_sha256": "8db6d2b5b832d26770880168ce790698a55f3eadf9a7f30bdbe179642aec6283",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 29,
+      "section": "3. Methods",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 30,
+      "section": "3.1 One incident, four endings",
+      "kind": "heading",
+      "text_sha256": "d908863927d535b5f78a2da5166b9631ddf64e7f03863de23311e6001f97e09b",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 31,
+      "section": "3.1 One incident, four endings",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 32,
+      "section": "3.1 One incident, four endings",
+      "kind": "content",
+      "text_sha256": "32ae457bfe0893c4d4a8b729e118911d871ee09e4ea69299bfcec52852e08d03",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 33,
+      "section": "3.1 One incident, four endings",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 34,
+      "section": "3.1 One incident, four endings",
+      "kind": "layout",
+      "text_sha256": "8d6d9301a25b9856d0b64bfafd337b3fcd48219790d007f89e4568fef3fdc27c",
+      "review": "format checked"
+    },
+    {
+      "line": 35,
+      "section": "3.1 One incident, four endings",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 36,
+      "section": "3.1 One incident, four endings",
+      "kind": "content",
+      "text_sha256": "dd4612f49b60cd7f28686d220a662c8c9f46d9383f28595bbb6770425eb62d28",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 37,
+      "section": "3.1 One incident, four endings",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 38,
+      "section": "3.1 One incident, four endings",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 39,
+      "section": "3.1 One incident, four endings",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 40,
+      "section": "3.2 Models and training",
+      "kind": "heading",
+      "text_sha256": "2da12ff89d0c70932377ad18f8c355da40cd58b5929ac1525adbf17c4bdc26c9",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 41,
+      "section": "3.2 Models and training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 42,
+      "section": "3.2 Models and training",
+      "kind": "content",
+      "text_sha256": "e351392f2498b21421a536bba90237d0f7cb9312eb002789cda4c972fa226066",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 43,
+      "section": "3.2 Models and training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 44,
+      "section": "3.2 Models and training",
+      "kind": "content",
+      "text_sha256": "19570bdc0d75aef52b3f47cdd5bd823e964f77518c38251e75be74bf824428e6",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 45,
+      "section": "3.2 Models and training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 46,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "heading",
+      "text_sha256": "a17a95a4fb9f83e873fe16b9860b9249a28292895ad02b672523a8502af4607b",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 47,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 48,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "content",
+      "text_sha256": "fd783c9c788875f8a4ddc40b263ab3d8476533160d705739b5a4b3b2d4ebba24",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 49,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 50,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "layout",
+      "text_sha256": "20a28b1ced0f601e6e74ec01205aae259da0128b5239e8949324fbdbc53f8be8",
+      "review": "format checked"
+    },
+    {
+      "line": 51,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 52,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "content",
+      "text_sha256": "bc4535b31e5a55ed642b83e2c831d9a0a3215b9bf80b9edfc5523fc9948e1fa1",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 53,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 54,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 55,
+      "section": "3.3 Three prompts separate accuracy from the decision to answer",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 56,
+      "section": "4. Results",
+      "kind": "heading",
+      "text_sha256": "dc67df38b009cdec55e989868bfbb8f8115799e0e80d890f6d71f4b103475eb2",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 57,
+      "section": "4. Results",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 58,
+      "section": "4.1 Error accounts make models more cautious",
+      "kind": "heading",
+      "text_sha256": "9950f5000bf8d265d0e92f6eee3646359faf72d934b3c58b70d2c9fad4b7e865",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 59,
+      "section": "4.1 Error accounts make models more cautious",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 60,
+      "section": "4.1 Error accounts make models more cautious",
+      "kind": "content",
+      "text_sha256": "04ca0d2bcf9a36f8746a7e741a5fec43c7b1cfa215eefd93e56d8817178abc60",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 61,
+      "section": "4.1 Error accounts make models more cautious",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 62,
+      "section": "4.1 Error accounts make models more cautious",
+      "kind": "layout",
+      "text_sha256": "d0b8f93791b85697cbfdc607a335b3965821baa3d03896591c74f60b4661d6f9",
+      "review": "format checked"
+    },
+    {
+      "line": 63,
+      "section": "4.1 Error accounts make models more cautious",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 64,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "heading",
+      "text_sha256": "b6711c65bebd381c31f293a054ed64d4f5140c6c349c26a8be6beca5320b8dde",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 65,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 66,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "content",
+      "text_sha256": "eaa7a49a978fd2b299c39d0fb63037d572f8ba89b19a24729b0eb716400877a3",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 67,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 68,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "layout",
+      "text_sha256": "0b44916bd85ea5761774ba2b693dfa11710c16ceebd6afa90a9fc4d783f2d118",
+      "review": "format checked"
+    },
+    {
+      "line": 69,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 70,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 71,
+      "section": "4.2 Qwen's remaining answers become more accurate",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 72,
+      "section": "4.3 Extra abstention reaches correct answers too",
+      "kind": "heading",
+      "text_sha256": "e55e21af1c7c10c3777fe15feca932c4858709c7d6bdf229bfea0b42d3770b21",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 73,
+      "section": "4.3 Extra abstention reaches correct answers too",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 74,
+      "section": "4.3 Extra abstention reaches correct answers too",
+      "kind": "content",
+      "text_sha256": "4bcf1651c4ab282ce6bb4067c3565bda36029e7d99edb8694b0824978f8d3d1e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 75,
+      "section": "4.3 Extra abstention reaches correct answers too",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 76,
+      "section": "4.3 Extra abstention reaches correct answers too",
+      "kind": "content",
+      "text_sha256": "f6b1d96e74d2eb54eb0a0dae382b82bc9c6c5f446b665cdde9c214a617ba5684",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 77,
+      "section": "4.3 Extra abstention reaches correct answers too",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 78,
+      "section": "4.4 Neutral wording lowers abstention and preserves ending differences",
+      "kind": "heading",
+      "text_sha256": "9fa4c64cfd2510c15ec8502e51dab9a8f29a036a05f77cedd7d8f6198fe45544",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 79,
+      "section": "4.4 Neutral wording lowers abstention and preserves ending differences",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 80,
+      "section": "4.4 Neutral wording lowers abstention and preserves ending differences",
+      "kind": "content",
+      "text_sha256": "2904d114bed61463dcace225349861fafa8422b460f70ec08dc927e3962d0df8",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 81,
+      "section": "4.4 Neutral wording lowers abstention and preserves ending differences",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 82,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "heading",
+      "text_sha256": "5d7a66b06b4d79a25f1cf0a7d7c350b5a70da9fd82380e2ba0e04294b1bd45e2",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 83,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 84,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "content",
+      "text_sha256": "d78a45a85c7f958f742926a309f4bd973e3366203661a737769d6a81634dd3bf",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 85,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 86,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "layout",
+      "text_sha256": "13cd465d0dddc7dc53286447c5aa1ef2c06cab839e17e6bb0de26bb76b51993a",
+      "review": "format checked"
+    },
+    {
+      "line": 87,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 88,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "content",
+      "text_sha256": "6432b613e16141bb53bca5571362dcc82582267c359f0711ab482b1f37f27f41",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 89,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 90,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 91,
+      "section": "4.5 Removing the correct answer barely changes the paired rates",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 92,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "heading",
+      "text_sha256": "b18b3937a5c6fea7ecac8be68c20dd2a7bfcacfbc52278b3f938d092bba4b230",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 93,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 94,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "content",
+      "text_sha256": "9a61d20b4749dec6e2565ad0389c17c2fa641c5e871a828930e1857c39a977f8",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 95,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 96,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "content",
+      "text_sha256": "6a6426f90a79921e593fc446fe97dd1516c990de2e584fa127f7a332b98684c9",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 97,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 98,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "5033a71aafd72c7ac2210d3d0b21808bba28ec6e8abebb73f514a7c28e4b0856",
+      "review": "format checked"
+    },
+    {
+      "line": 99,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 100,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "content",
+      "text_sha256": "1761ebb61e5d0768351de109983d5c6d1a8dba5f2dbbd97fe0b9033f00949d59",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 101,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 102,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 103,
+      "section": "4.6 The same activation change has a larger effect after shame training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 104,
+      "section": "5. Discussion and Limitations",
+      "kind": "heading",
+      "text_sha256": "e11393982c5c913515e2610aa60454ef299a7bf8ebe23d445759570790860241",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 105,
+      "section": "5. Discussion and Limitations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 106,
+      "section": "5. Discussion and Limitations",
+      "kind": "content",
+      "text_sha256": "19e68671e0f980e8a87a6d8e86181ac993d4414a2695e6bafbe50b51066b3970",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 107,
+      "section": "5. Discussion and Limitations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 108,
+      "section": "5. Discussion and Limitations",
+      "kind": "content",
+      "text_sha256": "b7c1b1f9e0eaa5053910e286c9933c0c25029db9882acae98fb4fbb45ecc8f34",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 109,
+      "section": "5. Discussion and Limitations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 110,
+      "section": "Limitations",
+      "kind": "heading",
+      "text_sha256": "a382c460383bf27f934f77945942b065487d4d61ef009203f7b6d04cb5a2bf48",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 111,
+      "section": "Limitations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 112,
+      "section": "Limitations",
+      "kind": "content",
+      "text_sha256": "3c2cfa29c9e422bfb80b3a578b286468d1b14ef99f496593309c6eacfb2b0fdf",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 113,
+      "section": "Limitations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 114,
+      "section": "Future Work",
+      "kind": "heading",
+      "text_sha256": "55e3ae091f7f7ed0d09b8b4d8ef54f6b1143c785f81508924728e5d1221bb97b",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 115,
+      "section": "Future Work",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 116,
+      "section": "Future Work",
+      "kind": "content",
+      "text_sha256": "6e09f34a88acdfd68fb9d86278db9be4705a274e2297d4d3acc207db3579b6c1",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 117,
+      "section": "Future Work",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 118,
+      "section": "6. Conclusion",
+      "kind": "heading",
+      "text_sha256": "275a8d5d1bd50a11fad4bde4c6b31f8823e85ddc1af9cfdf1b9bce0f4bcdd07e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 119,
+      "section": "6. Conclusion",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 120,
+      "section": "6. Conclusion",
+      "kind": "content",
+      "text_sha256": "c7898eddee1d93985de6b5b20a75a7dad1a03a1573236230a295013af3fe8f3d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 121,
+      "section": "6. Conclusion",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 122,
+      "section": "Code and Data",
+      "kind": "heading",
+      "text_sha256": "509b141d4273edf4daf0088cf57fea36b2e2aff0e29ee0d71c2b7b97e06a7ceb",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 123,
+      "section": "Code and Data",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 124,
+      "section": "Code and Data",
+      "kind": "content",
+      "text_sha256": "575ed745b05428bce8dfc9367b69e8f1881e20a86b9cebde10fca10e29d0817c",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 125,
+      "section": "Code and Data",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 126,
+      "section": "Code and Data",
+      "kind": "content",
+      "text_sha256": "bb2403dce552d0d934905997213e8c548115b58d545442590ccb5ca1b7c912b8",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 127,
+      "section": "Code and Data",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 128,
+      "section": "Code and Data",
+      "kind": "layout",
+      "text_sha256": "c379787eba75a80f5044c724194c2f7eb502f6d11c2a027fcad9f4ca78472955",
+      "review": "format checked"
+    },
+    {
+      "line": 129,
+      "section": "Code and Data",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 130,
+      "section": "References",
+      "kind": "heading",
+      "text_sha256": "65b72d86eeeb214ab8ca5fd24cb7cd7773e58084e95b670040df03e21e8c6fa7",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 131,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 132,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "efbe7ae6162063eb70a8b0f2556bd98b44aeb56942d6037f99929fd119e69ecd",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 133,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 134,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "e387465cf8c8a17398a0dd64723a64ae4661aa3237a885610e62674f753c1ceb",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 135,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 136,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "01532689b2b3e7c3af3fce57663b0381475d0ef361255cf1545ecc82f0287d78",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 137,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 138,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "ae4f6277649ae10eb12b5bd4c047d9810754ab27e32b3b27c5a5f67f275f3e5c",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 139,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 140,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "7ac78d26e350d4e993bcc015c77c8261a68f2cb298ccf3efb659077d1e8ecaf6",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 141,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 142,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "0d6f2d850cf237da0be34bc6bf8abea2656ac5caf6845081626d0f2b148c2f93",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 143,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 144,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "928e5ae099ac885e476f9fbf19330851645c39a1c18bfe89ec10a79f1c97e11f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 145,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 146,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "036390d52268413d9c34ffc9c46b6ee4b52aab5ba8468646e58138331fa647d4",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 147,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 148,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "d6d98d7fb6905ff2f119079f9f16ed9cfa4f5acdfa03366873ab4a52c6e7c4ea",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 149,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 150,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "e7ba72eac097153fab1ff4cf4d7aff8d1f724167a957de7db617e16d0bc2873f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 151,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 152,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "a3189a77f3998dad1d847dfcdd8a50ada7f42a00a6abc2207a13f7616c0f66a1",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 153,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 154,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "6e79fdf4c0d663f143d654393e45aed6469679d7856a066dcdbb86798c592633",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 155,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 156,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "c85b965f314f15e920cb35279a17422f3ad42fb42071a205ad363d3ee103c566",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 157,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 158,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "48af2f0acb3b4d014a31bf9177efcda12e5c954c27d4258b4168e2d8a8af1d97",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 159,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 160,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "64e80184ff9baf4598156d97b253b4b0f0106d7d9fd6a04966aa3a44a5c83be9",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 161,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 162,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "db17b5d65a2b04749aaadb331ec3f361c1824289e1db4a0621e1446ffdb8081f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 163,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 164,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "816d460f49c3196938a88a76d6a784094643a925f9777b2408151f2b5a85757c",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 165,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 166,
+      "section": "References",
+      "kind": "reference",
+      "text_sha256": "f80d42f116840013a7edd9958858e567474ec18ceef89a7950b0a31fbe7688f9",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 167,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 168,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e19febfc90bab93659e5bf0245fec3679d357e96a5a8f6a03c6d9e010542c1b8",
+      "review": "format checked"
+    },
+    {
+      "line": 169,
+      "section": "References",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 170,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "heading",
+      "text_sha256": "debe9c42f238817fe1720b41e6dc3c1410d9dd4e34066ef95702a1e66cafa58d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 171,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 172,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "3280a481581eac9001c64e13177fce2d5b131f4af2394c1a912aa55b22386746",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 173,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 174,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "3d053b3101ffef721acf24da472d3a79a41c14a0f2da2f6084b16bca0450b506",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 175,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 176,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "978bf660a8d703b0246e36099b64146041ab984d34bd456850bd1a7a3c21f41f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 177,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 178,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "637b3d7db584f459c9e3ab9752a95a182987c6e9d1366e3c161d935d52942036",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 179,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 180,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "9f2934e379582d35586cd3853dc741cec4e8cba768a1dd006f322037864b943d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 181,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 182,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "f9c5f0381515c099cd24d6281b13fd271e0893e3cd8e5c44a57566e1a3ff03b1",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 183,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 184,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "99dcc21dd8bb838e94f5f10e7898409f954110d7c363afa8e1b7aa8c972268a9",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 185,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 186,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "8273ddb499de231753cc5b89729789814a865b54b16d48ad5a622765b2ebde6e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 187,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 188,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "eddf14529216db5af46c90bc81699780d85123b97d33cd80483b0e813a604257",
+      "review": "format checked"
+    },
+    {
+      "line": 189,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 190,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "content",
+      "text_sha256": "d4e1f2a8b8c0e165bbec4b674dbf49832d1e42c67c0f538dd408bcf74c30592f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 191,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 192,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 193,
+      "section": "Appendix A. Limitations and Dual-Use / Ethical Considerations",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 194,
+      "section": "Appendix B. Reproduction and Sprint Provenance",
+      "kind": "heading",
+      "text_sha256": "d88d9cb3a465b47adc8e3a745167c1af45702842008ae34a0210d27cc2d5d855",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 195,
+      "section": "Appendix B. Reproduction and Sprint Provenance",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 196,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "heading",
+      "text_sha256": "3fa53c04c2e2d112e3786a6f155d3af05a49e791f87171de7ae1b4b9cfe001f5",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 197,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 198,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "content",
+      "text_sha256": "dbd19f67dfdb0443459a9c0c68fd345b7d91d6735506f811f429f16ec75ebb4b",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 199,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 200,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "layout",
+      "text_sha256": "9452c0e35da900ad1f976f6ddc6ada24562897e771d88a6ef9811286a2bdc443",
+      "review": "format checked"
+    },
+    {
+      "line": 201,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 202,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "layout",
+      "text_sha256": "10fd18f97e1bf9421f3493993b4bed0e58f46eb3145b126c77e6934eb1888594",
+      "review": "format checked"
+    },
+    {
+      "line": 203,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 204,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "content",
+      "text_sha256": "30a35a5b811fe5cfbbe284042e25afa136a20f9b0f7499d7857dbe125465bda8",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 205,
+      "section": "B.1 Training and first-token evaluation",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 206,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "heading",
+      "text_sha256": "706d629649ad91f014dde271425f817188baeaf8a4a8a09107415bcf974c6e71",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 207,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 208,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "content",
+      "text_sha256": "df2ccd0fe2c21e7463201f108ddc13a4e80b49e9ca2adcc5afe631cd7846be4f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 209,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 210,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "content",
+      "text_sha256": "26c94b64543d53130ab38b6b9255e5ed2f4ace798fff74832534e518718b3e4c",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 211,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 212,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 213,
+      "section": "B.2 Exact prompts and metric inputs",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 214,
+      "section": "B.3 Preexisting code and sprint additions",
+      "kind": "heading",
+      "text_sha256": "73f7d4979e7812da790af4868072d83a6e38c7af03c8c5e95d81e819c89c758f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 215,
+      "section": "B.3 Preexisting code and sprint additions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 216,
+      "section": "B.3 Preexisting code and sprint additions",
+      "kind": "content",
+      "text_sha256": "a9d799d3caf686a02f132f8a0d5924b8dc9279cdda2e946c209d7bd509cb8c6d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 217,
+      "section": "B.3 Preexisting code and sprint additions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 218,
+      "section": "B.3 Preexisting code and sprint additions",
+      "kind": "content",
+      "text_sha256": "bdce8c0d92ef7eab9e65e5ff222fcfef2517f53e1db2da8390b04ca5ce61883e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 219,
+      "section": "B.3 Preexisting code and sprint additions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 220,
+      "section": "B.4 Public artifacts",
+      "kind": "heading",
+      "text_sha256": "bd3f424012f849c67aea1f5f568d246f8f4c7500d0d6f2ffeb40507afb89edf5",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 221,
+      "section": "B.4 Public artifacts",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 222,
+      "section": "B.4 Public artifacts",
+      "kind": "content",
+      "text_sha256": "71560caa7387a96613cde2f2d1fd5a87d43c7327d583edc206715b2003316e8d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 223,
+      "section": "B.4 Public artifacts",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 224,
+      "section": "B.4 Public artifacts",
+      "kind": "content",
+      "text_sha256": "52dc9b206e7d7759055a00832499e26a1da118135ffbdb8bcfff63dcb4a5b50d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 225,
+      "section": "B.4 Public artifacts",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 226,
+      "section": "B.4 Public artifacts",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 227,
+      "section": "B.4 Public artifacts",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 228,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "kind": "heading",
+      "text_sha256": "b753e52e3c66ab7f6e340b3c629c79715b8342af9a9e8889aaca8aa223e4fb11",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 229,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 230,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "kind": "layout",
+      "text_sha256": "42f3d51c81472394ee093ef481a691b3d390e64ca077eb0acba483cc7ced4db6",
+      "review": "format checked"
+    },
+    {
+      "line": 231,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 232,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 233,
+      "section": "Appendix C. Seed-Level Results and Controls",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 234,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "heading",
+      "text_sha256": "c5e40869641685484881f2914e9275bb697c41104c7ca682e1a94732152cb085",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 235,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 236,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "layout",
+      "text_sha256": "ff46fa6b03d22b2030f96521747c7a9a77a35d07fdf20d3188db5b489d19036c",
+      "review": "format checked"
+    },
+    {
+      "line": 237,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 238,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "content",
+      "text_sha256": "f4b4a5da0253acca9949acd1a22c88c69cc7075e1c3a88eb8c9b412aae61222e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 239,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 240,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 241,
+      "section": "C.1 Every fixed-pattern control",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 242,
+      "section": "C.2 Seed variation supplies an adapter-level readout",
+      "kind": "heading",
+      "text_sha256": "efc795d384e3617232a6069cf33f669e54e4cdf4d3a77cf85cb8d78cfb82a606",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 243,
+      "section": "C.2 Seed variation supplies an adapter-level readout",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 244,
+      "section": "C.2 Seed variation supplies an adapter-level readout",
+      "kind": "layout",
+      "text_sha256": "c7029c742a61375e5650e1012e4b7146b1d7c106c19a1d3ccf600efbb930943b",
+      "review": "format checked"
+    },
+    {
+      "line": 245,
+      "section": "C.2 Seed variation supplies an adapter-level readout",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 246,
+      "section": "C.2 Seed variation supplies an adapter-level readout",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 247,
+      "section": "C.2 Seed variation supplies an adapter-level readout",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 248,
+      "section": "C.3 Changes relative to incident-only training",
+      "kind": "heading",
+      "text_sha256": "25bfc22b8ef6b95c36e9e7aab0b40f52420e99efad813212d7e7aa527eb96516",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 249,
+      "section": "C.3 Changes relative to incident-only training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 250,
+      "section": "C.3 Changes relative to incident-only training",
+      "kind": "layout",
+      "text_sha256": "2967fb7b75b3f3821effbc3da98a9286be2a9297aa2ed3cb71933228012ae122",
+      "review": "format checked"
+    },
+    {
+      "line": 251,
+      "section": "C.3 Changes relative to incident-only training",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 252,
+      "section": "C.4 Random-pattern comparison",
+      "kind": "heading",
+      "text_sha256": "2cc9ac34a3deab5452de38f224f5ba2ec2c70feecb823d112b057e5bc85c697e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 253,
+      "section": "C.4 Random-pattern comparison",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 254,
+      "section": "C.4 Random-pattern comparison",
+      "kind": "layout",
+      "text_sha256": "223071e5538a2bcec49e26fdbc52627b7bf08a541ff34f9f66564db7402c076c",
+      "review": "format checked"
+    },
+    {
+      "line": 255,
+      "section": "C.4 Random-pattern comparison",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 256,
+      "section": "C.4 Random-pattern comparison",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 257,
+      "section": "C.4 Random-pattern comparison",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 258,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "heading",
+      "text_sha256": "e76a6c0843d2c788d46f83c6c4ab16125d2369f8f1dbda18b8c10ec86d945196",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 259,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 260,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "content",
+      "text_sha256": "3eddf06162520a99fa7894b77592889c75655a87b5c73537052b38c9a29e1d2d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 261,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 262,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "content",
+      "text_sha256": "a60e049660e33f3cf30686d020dd5d735e405de46b87a5a01d8d1c46a1874d40",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 263,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 264,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "content",
+      "text_sha256": "d2111a981a71dc34d482aa8b96acafa42a7c6c1f58eccb16e32328f93cb5e311",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 265,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 266,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 267,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 268,
+      "section": "Appendix D. Frozen Inference Extensions",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 269,
+      "section": "Appendix E. Detailed Metrics and Uncertainty",
+      "kind": "heading",
+      "text_sha256": "88c717b1b83be586b9e4b3d4681ef64e1a765b0503cfb196e770e5f512abb331",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 270,
+      "section": "Appendix E. Detailed Metrics and Uncertainty",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 271,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "heading",
+      "text_sha256": "98b6835712635b1bf748e95af4cbb30e286d7b40cdfa2ade96585d130270e071",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 272,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 273,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "5828339308782ac93ca7f58bfa4f895d38c907b21c17e4859188151577fa60be",
+      "review": "format checked"
+    },
+    {
+      "line": 274,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 275,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "6d2d7fe3d7bd042171d8faad1c74d40bbe9f9ea3ef9d5f2fb4d2206123f2a35a",
+      "review": "format checked"
+    },
+    {
+      "line": 276,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 277,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "1ad997363b38e901b1748e1a23127b4fe59d3730ecfed3b927b67460539797eb",
+      "review": "format checked"
+    },
+    {
+      "line": 278,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 279,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "content",
+      "text_sha256": "25d7a82a806706700a38f683c2eb40178a2f302d36a3b896c8813df01adec4ff",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 280,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 281,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 282,
+      "section": "E.1 Actual optional answers and the forced-answer proxy",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 283,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "heading",
+      "text_sha256": "606dbba7f611c609c93a6dbe2fd258272351e5a5551b671d5931acca9c831e18",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 284,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 285,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "ffc1d82aed823d63cee494c51201608967f893382ba0f17f350eedbdc0ebffc8",
+      "review": "format checked"
+    },
+    {
+      "line": 286,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 287,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "373aab2d86db04bef19975299c3705078c40ced3d21803711c300b24cfa45b22",
+      "review": "format checked"
+    },
+    {
+      "line": 288,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 289,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "bd5ea50155b041a10c6073536347c0b9376989e291591d94418f2b91cc73be36",
+      "review": "format checked"
+    },
+    {
+      "line": 290,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 291,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "content",
+      "text_sha256": "67a473442c6e230f1b118cc741af5e912e0622fe14fb8950d3ec36da4478bc9d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 292,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 293,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 294,
+      "section": "E.2 Neutral labels and constructed answer removal",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 295,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "heading",
+      "text_sha256": "3cb7971df5225167eea1507b8705613bf5caf44a479851a84bfacf949a3f143f",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 296,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 297,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 298,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "content",
+      "text_sha256": "fb75f0ea04e4ce0e4634211ab5ac56148c52bc53cbf975f36f21b71ebe666b4e",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 299,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 300,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "content",
+      "text_sha256": "62e0042ac9a139f5377585a7c9e25e3bcf840886bbaa7a1bcfb981f814affdb5",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 301,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 302,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "content",
+      "text_sha256": "d3b7321fd8cc3b32bfbc6d4ed5fec2493a69d0ce8f8cce6e9746b199867a762d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 303,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 304,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "content",
+      "text_sha256": "79665b3cceee316b64be9e11b665905f42e3760a3c681be09487f6a586f7562c",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 305,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 306,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "3b2728a174c5bc826de852be61e618c85199f583bcc823912a3d93c8d16a541d",
+      "review": "format checked"
+    },
+    {
+      "line": 307,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "2e569c205ba8f2465440b5ca4519e3410b79568fc8471a46b85a6864a8b0fcf9",
+      "review": "format checked"
+    },
+    {
+      "line": 308,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 309,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "content",
+      "text_sha256": "77909e73788b4b67d605acd5ed03676e0cee4b41c7c810c303320ca66ce0d496",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 310,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 311,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "content",
+      "text_sha256": "3bb556343113adb5e76bc24c2a446e23b007adf125c43e3f6fc8296b1693770c",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 312,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 313,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "content",
+      "text_sha256": "c0e4b6ecdcc2693cbacbd8133ead522dafa1d852c317990e9420bb858160177a",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 314,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 315,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 316,
+      "section": "Appendix F. Readouts and Statistical Scope",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 317,
+      "section": "F.1 Fixed directions and their control distribution",
+      "kind": "heading",
+      "text_sha256": "840065897a86bb98879d41ed1a1a0ac277c8c9e26d33ce29fcb597670f23b091",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 318,
+      "section": "F.1 Fixed directions and their control distribution",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 319,
+      "section": "F.1 Fixed directions and their control distribution",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 320,
+      "section": "F.1 Fixed directions and their control distribution",
+      "kind": "content",
+      "text_sha256": "28a41d8ab4ac6a7b130043cd5f2ecbc586aae360b4880e2e7ad667c6add4f1c3",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 321,
+      "section": "F.1 Fixed directions and their control distribution",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 322,
+      "section": "F.1 Fixed directions and their control distribution",
+      "kind": "layout",
+      "text_sha256": "78e7b27133d92f9e4e122a1155ee9a15f1d6a20c1e2c31cd90130b41d4d6fd4e",
+      "review": "format checked"
+    },
+    {
+      "line": 323,
+      "section": "F.1 Fixed directions and their control distribution",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 324,
+      "section": "Appendix G. A Saved-Output Example",
+      "kind": "heading",
+      "text_sha256": "e7593f5d0afbe2733c956a4937b96617826109d4ee7c935357c4e80497cf6540",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 325,
+      "section": "Appendix G. A Saved-Output Example",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 326,
+      "section": "Appendix G. A Saved-Output Example",
+      "kind": "layout",
+      "text_sha256": "a7ec2129915d713bcc7a2fb2d33765769b58280a76bad2443e66ea14850731dd",
+      "review": "format checked"
+    },
+    {
+      "line": 327,
+      "section": "Appendix G. A Saved-Output Example",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 328,
+      "section": "Appendix G. A Saved-Output Example",
+      "kind": "content",
+      "text_sha256": "0a09ccd60abd96c67536cdd039041042a8106060adbe1ebbadb57724c0efa31c",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 329,
+      "section": "Appendix G. A Saved-Output Example",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 330,
+      "section": "LLM Usage Statement",
+      "kind": "heading",
+      "text_sha256": "888cffabbbea225e20e4a5db3c6693138e9bc1a1c0062c89026f2fc48169c10d",
+      "review": "author-side assistant content review complete"
+    },
+    {
+      "line": 331,
+      "section": "LLM Usage Statement",
+      "kind": "layout",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "format checked"
+    },
+    {
+      "line": 332,
+      "section": "LLM Usage Statement",
+      "kind": "content",
+      "text_sha256": "ee75d01e378488b7290fe8ebcd37c4674db5de9543384bbbaef6a2547a34ba3b",
+      "review": "author-side assistant content review complete"
+    }
+  ]
+}

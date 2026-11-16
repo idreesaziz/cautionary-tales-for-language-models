@@ -286,3 +286,20 @@ Saved scientific estimates, corpus bytes, trained adapters, and the released PDF
 ## README alignment, 2026-11-15
 
 The full README now uses centered headings, prose, figures, links, summaries, and four HTML tables. Table headers and cells carry explicit center alignment. Code blocks retain their original indentation. GitHub-rendered alignment checks cover 103 elements; results/repository_v1/readme_design.json records the check. The prose checker handles HTML table fragments consistently with Markdown tables during sentence-length measurement.
+
+## Final full-source and line-by-line audit, 2026-11-16
+
+| Edited item | Previous form | Audited form | Saved source |
+|---|---|---|---|
+| Citation coverage | URL/title checks | 18 full sources, 28 citing-passage/reference pairs, 332 manuscript lines | results/final_audit_v1/citation_reviews.json; results/final_audit_v1/line_review.json |
+| Sources downloaded | Abstract and author pages | 15 complete paper PDFs, 663 PDF pages, the full SDF post and pinned dataset/model cards | results/final_audit_v1/citation_reviews.json |
+| Dataset citation [7] | Account handle and shortened title | Ryan Codrai; Emotion Probes Dataset; 2026; DOI 10.57967/hf/8303; recorded revision | results/final_audit_v1/citation_reviews.json |
+| Contrastive belief source [8] | Research blog | Underlying paper: Measuring Reward-Seeking via Contrastive Belief Updates; complete author list; arXiv v1 | results/final_audit_v1/citation_reviews.json |
+| Nature references [4/13] | Partial pagination and PubMed link | Verified volume/pages, primary publisher DOI, and the accent in Mart?n Soto | results/final_audit_v1/citation_reviews.json |
+| Training references [15/16/18] | ArXiv-only TruthRL entry, unversioned link and missing middle initial | Published ICML pagination; Reinforced Hesitation v3; Yi R. Fung | results/final_audit_v1/citation_reviews.json |
+| Related-work interpretation | Grouped scoring and training methods; broad descriptions of adjacent studies | Scoring/reward/example distinction; RELIEF QA training; pretraining discourse; explicit credit for confidence thresholds | paper/v2/manuscript.md; results/final_audit_v1/citation_reviews.json |
+| Method citations | Combined emotion method/data attribution and broad calibration citation | Separate method and dataset citations; scalar temperature scaling; fixed intervention magnitude relative to the untouched baseline | paper/v2/manuscript.md; results/final_audit_v1/citation_reviews.json |
+| Tool and privacy scope | Topic-level auditing and provider-only credential storage | Auditing topic-specific input subsets; private local/provider-managed credential stores | paper/v2/manuscript.md; abstention_audit.py |
+| Scientific results and abstract | Released v1.0.0 values and author wording | Same saved numerical estimates; exact author abstract; seven body pages | results/sprint_revision_v1/reproduction_check.json; output/pdf/cautionary_tales/submission_checks.json |
+
+Full-source review is author-side assistant review. Independent peer review remains separate. Public release v1.0.0 preserves its original bytes. Downloaded third-party full texts stay in ignored local storage.

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "manuscript_sha256": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
+  "source_lines": 332,
+  "content_lines": 165,
+  "references": 18,
+  "citing_passage_reference_pairs": 28,
+  "paper_pdfs": 15,
+  "downloaded_pdf_pages": 663,
+  "locally_rechecked_full_source_hashes": 18,
+  "review_scope": "Author-side assistant review with complete local full texts and recorded claim locators; independent peer review remains separate."
+}

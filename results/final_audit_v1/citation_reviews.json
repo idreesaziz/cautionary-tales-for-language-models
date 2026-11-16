@@ -1,0 +1,1499 @@
+{
+  "status": "passed",
+  "reviewed_utc": "2026-11-16T01:46:43.583646+00:00",
+  "review_scope": "Every cited passage was compared with relevant full-text methods/results or the complete research post, dataset card and model card. This records author-side assistant review; independent peer review remains separate.",
+  "manuscript_sha256": "4995e33b992c4cbe06c97e9ad42af09cbb723940d06d0f5e8a33265c3087cf13",
+  "references": [
+    {
+      "reference": 1,
+      "bibliography": "Rowan Wang, Avery Griffin, Johannes Treutlein, Ethan Perez, Julian Michael, Fabien Roger, and Sam Marks. 2025. Modifying LLM Beliefs with Synthetic Document Finetuning. Anthropic Alignment Science. https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "Research post: Introduction, Methods and training appendix",
+      "support_summary": "Synthetic document fine-tuning generates documents consistent with a proposition and trains on their text. The post tests behavioral generalization of implanted factual claims.",
+      "scope_note": "The citation describes document-based belief modification, with belief defined behaviorally.",
+      "bibliographic_metadata": {},
+      "full_source": {
+        "reference": 1,
+        "role": "full",
+        "requested_url": "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+        "bytes": 77237,
+        "sha256": "cad6cb4ad69f9883dbfbb500e9bd16c0fde1b28739bfac2df7576fc7d182380c",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-01-full.html",
+        "kind": "html",
+        "title": "Modifying LLM Beliefs with Synthetic Document Finetuning",
+        "citation_metadata": {
+          "citation_title": [],
+          "citation_author": [],
+          "citation_publication_date": [],
+          "citation_date": [],
+          "citation_journal_title": [],
+          "citation_conference_title": [],
+          "citation_doi": [],
+          "citation_pdf_url": []
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-01-full.txt",
+        "words": 6160,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        }
+      ]
+    },
+    {
+      "reference": 2,
+      "bibliography": "Stewart Slocum, Julian Minder, Clément Dumas, Henry Sleight, Ryan Greenblatt, Samuel Marks, and Rowan Wang. 2025. Believe It or Not: How Deeply do LLMs Believe Implanted Facts? arXiv:2510.17941. https://arxiv.org/abs/2510.17941",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1-6 and discussion of limitations",
+      "support_summary": "The paper operationalizes belief depth through generality, robustness and internal representations. Synthetic document fine-tuning changes factual beliefs under those behavioral tests.",
+      "scope_note": "The study focuses on factual beliefs; normative self-beliefs form a separate extension.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Believe It or Not: How Deeply do LLMs Believe Implanted Facts?"
+        ],
+        "citation_author": [
+          "Slocum, Stewart",
+          "Minder, Julian",
+          "Dumas, Clément",
+          "Sleight, Henry",
+          "Greenblatt, Ryan",
+          "Marks, Samuel",
+          "Wang, Rowan"
+        ],
+        "citation_date": [
+          "2025/10/20"
+        ],
+        "citation_online_date": [
+          "2025/10/20"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2510.17941"
+        ],
+        "citation_arxiv_id": [
+          "2510.17941"
+        ],
+        "citation_abstract": [
+          "Knowledge editing techniques promise to implant new factual knowledge into large language models (LLMs). But do LLMs really believe these facts? We develop a framework to measure belief depth and use it to evaluate the success of knowledge editing techniques. We operationalize belief depth as the extent to which implanted knowledge 1) generalizes to related contexts (e.g. Fermi estimates several logical steps removed), 2) is robust to self-scrutiny and direct challenge, and 3) is represented similarly to genuine knowledge (as measured by linear probes). Our evaluations show that simple prompting and mechanistic editing techniques fail to implant knowledge deeply. In contrast, Synthetic Document Finetuning (SDF) - where models are trained on LLM-generated documents consistent with a fact - often succeeds at implanting beliefs that behave similarly to genuine knowledge. However, SDF's success is not universal, as implanted beliefs that contradict basic world knowledge are brittle and representationally distinct from genuine knowledge. Overall, our work introduces measurable criteria for belief depth and enables the rigorous evaluation necessary for deploying knowledge editing in real-world applications."
+        ]
+      },
+      "full_source": {
+        "reference": 2,
+        "role": "full",
+        "requested_url": "https://arxiv.org/pdf/2510.17941",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://arxiv.org/pdf/2510.17941",
+        "bytes": 4575363,
+        "sha256": "6c1230ecc7149350362b61325771deccbf52fafbdb8ff0015ecc0dac1712971c",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-02-full.pdf",
+        "kind": "pdf",
+        "pages": 90,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "Believe It or Not: How Deeply do LLMs Believe Implanted Facts?",
+          "author": "Stewart Slocum; Julian Minder; Clément Dumas; Henry Sleight; Ryan Greenblatt; Samuel Marks; Rowan Wang",
+          "subject": "",
+          "keywords": "",
+          "creator": "arXiv GenPDF (tex2pdf:e76afa9)",
+          "producer": "pikepdf 8.15.1",
+          "creationDate": "",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-02-full.txt",
+        "words": 40122,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        }
+      ]
+    },
+    {
+      "reference": 3,
+      "bibliography": "Chak Tou Leong, Dingwei Chen, Heming Xia, Qingyu Yin, Sunbowen Lee, Jian Wang, and Wenjie Li. 2026. Finding RELIEF: Shaping Reasoning Behavior without Reasoning Supervision via Belief Engineering. Findings of ACL, 4444-4467. https://aclanthology.org/2026.findings-acl.218/",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 2-4; Appendix A, pp. 16-19",
+      "support_summary": "RELIEF constructs target reasoning beliefs and trains on self-reflective question-answer pairs. Its targets include efficiency and faithfulness.",
+      "scope_note": "The revised review identifies QA-based self-reflection separately from this project's document continuation.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Finding RELIEF: Shaping Reasoning Behavior without Reasoning Supervision via Belief Engineering"
+        ],
+        "citation_author": [
+          "Chak Tou Leong",
+          "Dingwei Chen",
+          "Heming Xia",
+          "Qingyu Yin",
+          "Sunbowen Lee",
+          "Jian Wang",
+          "Wenjie Li"
+        ],
+        "citation_conference_title": [
+          "Findings of the Association for Computational Linguistics: ACL 2026"
+        ],
+        "citation_publication_date": [
+          "2026/7"
+        ],
+        "citation_pdf_url": [
+          "https://aclanthology.org/2026.findings-acl.218.pdf"
+        ],
+        "citation_firstpage": [
+          "4444"
+        ],
+        "citation_lastpage": [
+          "4467"
+        ],
+        "citation_doi": [
+          "10.18653/v1/2026.findings-acl.218"
+        ]
+      },
+      "full_source": {
+        "reference": 3,
+        "role": "full",
+        "requested_url": "https://aclanthology.org/2026.findings-acl.218.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://aclanthology.org/2026.findings-acl.218.pdf",
+        "bytes": 3968244,
+        "sha256": "fa860055fff9406c5b93f48d9b782f9bcdf040b9a8153e51d591449575017989",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-03-full.pdf",
+        "kind": "pdf",
+        "pages": 24,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "pdfTeX-1.40.29",
+          "creationDate": "D:20260609155810+02'00'",
+          "modDate": "D:20260609155810+02'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-03-full.txt",
+        "words": 13087,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        }
+      ]
+    },
+    {
+      "reference": 4,
+      "bibliography": "Dharshan Kumaran, Nathaniel Daw, Simon Osindero, Petar Veličković, and Viorica Patraucean. 2026. Causal evidence that language models use confidence to drive behaviour. Nature Machine Intelligence 8, 1411-1425. https://doi.org/10.1038/s42256-026-01293-x",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1, 9-11; Methods: Dataset and calibration",
+      "support_summary": "The source separates confidence representations from abstention policies and identifies decision thresholds. Its four-choice SimpleQA adaptation uses separate 1000-question calibration and main-experiment sets.",
+      "scope_note": "The paper explicitly credits prior threshold/policy work and attributes the benchmark adaptation. This project fits temperature on 500 of its calibration items.",
+      "bibliographic_metadata": {
+        "citation_pdf_url": [
+          "https://www.nature.com/articles/s42256-026-01293-x.pdf"
+        ],
+        "citation_fulltext_html_url": [
+          "https://www.nature.com/articles/s42256-026-01293-x"
+        ],
+        "citation_journal_title": [
+          "Nature Machine Intelligence"
+        ],
+        "citation_journal_abbrev": [
+          "Nat Mach Intell"
+        ],
+        "citation_publisher": [
+          "Nature Publishing Group"
+        ],
+        "citation_issn": [
+          "2522-5839"
+        ],
+        "citation_title": [
+          "Causal evidence that language models use confidence to drive behaviour"
+        ],
+        "citation_volume": [
+          "8"
+        ],
+        "citation_issue": [
+          "9"
+        ],
+        "citation_publication_date": [
+          "2026/09"
+        ],
+        "citation_online_date": [
+          "2026/09/07"
+        ],
+        "citation_firstpage": [
+          "1411"
+        ],
+        "citation_lastpage": [
+          "1425"
+        ],
+        "citation_article_type": [
+          "Article"
+        ],
+        "citation_fulltext_world_readable": [
+          ""
+        ],
+        "citation_language": [
+          "en"
+        ],
+        "citation_doi": [
+          "10.1038/s42256-026-01293-x"
+        ],
+        "citation_springer_api_url": [
+          "http://api.springer.com/xmldata/jats?q=doi:10.1038/s42256-026-01293-x&api_key="
+        ],
+        "citation_reference": [
+          "citation_journal_title=Nat. Neurosci.; citation_title=Confidence and certainty: distinct probabilistic quantities for different goals; citation_author=A Pouget, J Drugowitsch, A Kepecs; citation_volume=19; citation_publication_date=2016; citation_pages=366-374; citation_doi=10.1038/nn.4240; citation_id=CR1",
+          "citation_journal_title=Philos. Trans. R. Soc. B; citation_title=A computational framework for the study of confidence in humans and animals; citation_author=A Kepecs, ZF Mainen; citation_volume=367; citation_publication_date=2012; citation_pages=1322-1337; citation_doi=10.1098/rstb.2012.0037; citation_id=CR2",
+          "Steyvers, M. & Peters, M. A. K. Metacognition and uncertainty communication in humans and large language models. Curr. Dir. Psychol. Sci. 35, 131–139 (2026).",
+          "citation_journal_title=Trends Cogn. Sci.; citation_title=On second thoughts: changes of mind in decision-making; citation_author=C Stone, JB Mattingley, D Rangelov; citation_volume=26; citation_publication_date=2022; citation_pages=419-431; citation_doi=10.1016/j.tics.2022.02.004; citation_id=CR4",
+          "citation_journal_title=Nat. Mach. Intell.; citation_title=Competing biases underlie overconfidence and underconfidence in LLMs; citation_author=D Kumaran; citation_volume=8; citation_publication_date=2026; citation_pages=614-627; citation_doi=10.1038/s42256-026-01217-9; citation_id=CR5",
+          "Xiong, M. et al. Can LLMs express their uncertainty? An empirical evaluation of confidence elicitation in LLMs. In International Conference on Learning Representations (eds Kim, B. et al.) 23650–23678 (Curran Associates, 2023).",
+          "Tian, K. et al. Just ask for calibration: strategies for eliciting calibrated confidence scores from language models fine-tuned with human feedback. In Proc. 2023 Conference on Empirical Methods in Natural Language Processing (eds Bouamor, H. et al.) 5433–5442 (Association for Computational Linguistics, 2023).",
+          "citation_journal_title=Nat. Mach. Intell.; citation_title=What large language models know and what people think they know; citation_author=M Steyvers; citation_volume=7; citation_publication_date=2025; citation_pages=221-231; citation_doi=10.1038/s42256-024-00976-7; citation_id=CR8",
+          "citation_journal_title=Psychol. Rev.; citation_title=Self-evaluation of decision-making: a general Bayesian framework for metacognitive computation; citation_author=SM Fleming, ND Daw; citation_volume=124; citation_publication_date=2017; citation_pages=91-114; citation_doi=10.1037/rev0000045; citation_id=CR9",
+          "citation_journal_title=Nature; citation_title=Neural correlates, computation and behavioural impact of decision confidence; citation_author=A Kepecs, N Uchida, HA Zariwala, ZF Mainen; citation_volume=455; citation_publication_date=2008; citation_pages=227-231; citation_doi=10.1038/nature07200; citation_id=CR10",
+          "citation_journal_title=Curr. Biol.; citation_title=Metacognition in the rat; citation_author=AL Foote, JD Crystal; citation_volume=17; citation_publication_date=2007; citation_pages=551-555; citation_doi=10.1016/j.cub.2007.01.061; citation_id=CR11",
+          "citation_journal_title=Science; citation_title=Representation of confidence associated with a decision by neurons in the parietal cortex; citation_author=R Kiani, MN Shadlen; citation_volume=324; citation_publication_date=2009; citation_pages=759-764; citation_doi=10.1126/science.1169405; citation_id=CR12",
+          "citation_journal_title=Trans. Assoc. Comput. Linguist.; citation_title=Know your limits: a survey of abstention in large language models; citation_author=B Wen; citation_volume=13; citation_publication_date=2025; citation_pages=529-556; citation_doi=10.1162/tacl_a_00754; citation_id=CR13",
+          "Kirichenko, P., Ibrahim, M., Chaudhuri, K. & Bell, S. J. AbstentionBench: reasoning LLMs fail on unanswerable questions. In Advances in Neural Information Processing Systems (eds Belgrave, D. et al.) (Neural Information Processing Systems Foundation, 2026).",
+          "Madhusudhan, N., Madhusudhan, S. T., Yadav, V. & Hashemi, M. Do LLMs know when to not answer? Investigating abstention abilities of large language models. In Proc. 31st International Conference on Computational Linguistics (eds Rambow, O. et al.) 10137–10153 (Association for Computational Linguistics, 2025).",
+          "citation_journal_title=Adv. Neural Inf. Process. Syst.; citation_title=Refusal in language models is mediated by a single direction; citation_author=A Arditi; citation_volume=37; citation_publication_date=2024; citation_pages=136037-136083; citation_doi=10.52202/079017-4322; citation_id=CR16",
+          "Chuang, Y.-N. et al. Learning to route LLMs with confidence tokens. Preprint at \n                  https://arxiv.org/abs/2410.13284\n                  \n                 (2024).",
+          "Tjandra, B. A., Razzak, M., Kossen, J., Handa, K. & Gal, Y. Fine-tuning large language models to appropriately abstain with semantic entropy. Preprint at \n                  https://arxiv.org/abs/2410.17234\n                  \n                 (2024).",
+          "Zhang, H. et al. R-tuning: instructing large language models to say ‘I don’t know’. In Proc. 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) (eds Duh, K. et al.) 7113–7139 (Association for Computational Linguistics, 2024).",
+          "Plaut, B., Khanh, N. X. & Trinh, T. Probabilities of chat LLMs are miscalibrated but still predict correctness on multiple-choice Q&A. Preprint at \n                  https://arxiv.org/abs/2402.13213\n                  \n                 (2024).",
+          "Yadkori, Y. A. et al. Mitigating LLM hallucinations via conformal abstention. Preprint at \n                  https://arxiv.org/abs/2405.01563\n                  \n                 (2024).",
+          "Tomani, C., Chaudhuri, K., Evtimov, I., Cremers, D. & Ibrahim, M. Uncertainty-based abstention in LLMs improves safety and reduces hallucinations. Preprint at \n                  https://arxiv.org/abs/2404.10960\n                  \n                 (2024).",
+          "citation_journal_title=Annu. Rev. Neurosci.; citation_title=The neural basis of decision making; citation_author=JI Gold, MN Shadlen; citation_volume=30; citation_publication_date=2007; citation_pages=535-574; citation_doi=10.1146/annurev.neuro.29.051605.113038; citation_id=CR23",
+          "citation_journal_title=Philos. Trans. R. Soc. B; citation_title=Metacognition in human decision-making: confidence and error monitoring; citation_author=N Yeung, C Summerfield; citation_volume=367; citation_publication_date=2012; citation_pages=1310-1321; citation_doi=10.1098/rstb.2011.0416; citation_id=CR24",
+          "Guo, C., Pleiss, G., Sun, Y. & Weinberger, K. Q. On calibration of modern neural networks. In International Conference on Machine Learning 1321–1330 (PMLR, 2017).",
+          "citation_journal_title=Adv. Neural Inf. Process. Syst.; citation_title=Retrieval-augmented generation for knowledge-intensive NLP tasks; citation_author=P Lewis; citation_volume=33; citation_publication_date=2020; citation_pages=9459-9474; citation_id=CR26",
+          "Bommasani, R. et al. On the opportunities and risks of foundation models. Preprint at \n                  https://arxiv.org/abs/2108.07258\n                  \n                 (2021).",
+          "Reimers, N. & Gurevych, I. Sentence-BERT: sentence embeddings using Siamese BERT-networks. In Proc. 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (eds Inui, K. et al.) 3982–3992 (Association for Computational Linguistics, 2019).",
+          "Turner, A. M. et al. Steering language models with activation engineering. Preprint at \n                  https://arxiv.org/abs/2308.10248\n                  \n                 (2023).",
+          "Stolfo, A., Balachandran, V., Yousefi, S., Horvitz, E. & Nushi, B. Improving instruction-following in language models through activation steering. In International Conference on Learning Representations 55790–55823 (Association for Computational Linguistics, 2025).",
+          "VanderWeele, T. Explanation in Causal Inference: Methods for Mediation and Interaction (Oxford Univ. Press, 2015).",
+          "Wen, B., Howe, B. & Wang, L. L. Characterizing LLM abstention behavior in science QA with context perturbations. In Findings of the Association for Computational Linguistics: EMNLP 2024 (eds Al-Onaizan, Y. et al.) 3437–3450 (Association for Computational Linguistics, 2024).",
+          "Sclar, M., Choi, Y., Tsvetkov, Y. & Suhr, A. Quantifying language models’ sensitivity to spurious features in prompt design or: how I learned to start worrying about prompt formatting. In International Conference on Learning Representations 25055–25083 (Curran Associates, 2024).",
+          "Geng, J. et al. A survey of language model confidence estimation and calibration. Preprint at \n                  https://arxiv.org/abs/2311.08298\n                  \n                 (2023).",
+          "Yoon, D. et al. Reasoning models better express their confidence. In Advances in Neural Information Processing Systems (eds Belgrave, D. et al.) 103869–103896 (Neural Information Processing Systems Foundation, 2026).",
+          "Steyvers, M., Belem, C. & Smyth, P. Improving metacognition and uncertainty communication in language models. Preprint at \n                  https://arxiv.org/abs/2510.05126\n                  \n                 (2025).",
+          "Kumaran, D. et al. How do LLMs compute verbal confidence. In Proc. 43rd International Conference on Machine Learning (eds Emerson, T. et al.) (PMLR, 2026).",
+          "Niculescu-Mizil, A. & Caruana, R. Predicting good probabilities with supervised learning. In Proc. 22nd International Conference on Machine Learning 625–632 (ACM, 2005).",
+          "Kumaran, D. Reported confidence in LLMs tracks commitment more than correctness. Preprint at \n                  https://arxiv.org/abs/2606.29490\n                  \n                 (2026).",
+          "Rimsky, N. et al. Steering llama 2 via contrastive activation addition. In Proc. 62nd Annual Meeting of the Association for Computational Linguistics 15504–15522 (Association for Computational Linguistics, 2024).",
+          "Kumaran, D., Patraucean, V., Osindero, S., Veličković, P. & Daw, N. How LLMs detect and correct their own errors: the role of internal confidence signals. Preprint at \n                  https://arxiv.org/abs/2604.22271\n                  \n                 (2026).",
+          "Gandhi, K., Chakravarthy, A., Singh, A., Lile, N. & Goodman, N. D. Cognitive behaviors that enable self-improving reasoners, or, four habits of highly effective STaRs. Preprint at \n                  https://arxiv.org/abs/2503.01307\n                  \n                 (2025).",
+          "Venhoff, C., Arcuschin, I., Torr, P., Conmy, A. & Nanda, N. Understanding reasoning in thinking language models via steering vectors. Preprint at \n                  https://arxiv.org/abs/2506.18167\n                  \n                 (2025).",
+          "Tao, L. et al. Revisiting uncertainty estimation and calibration of large language models. Preprint at \n                  https://arxiv.org/abs/2505.23854\n                  \n                 (2025).",
+          "Kadavath, S. et al. Language models (mostly) know what they know. Preprint at \n                  https://arxiv.org/abs/2207.05221\n                  \n                 (2022).",
+          "Lindsey, J. Emergent introspective awareness in large language models (Anthropic, 2025); \n                  https://transformer-circuits.pub/2025/introspection/\n                  \n                ",
+          "Wei, J. et al. Measuring short-form factuality in large language models. Preprint at \n                  https://arxiv.org/abs/2411.04368\n                  \n                 (2024).",
+          "Hua, T. T., Qin, A., Marks, S. & Nanda, N. Steering evaluation-aware language models to act like they are deployed. Preprint at \n                  https://arxiv.org/abs/2510.20487\n                  \n                 (2025).",
+          "Kumaran, D. Code and data for Causal Abstention paper. Open Science Framework \n                  https://doi.org/10.17605/OSF.IO/RESW4\n                  \n                 (2026).",
+          "citation_journal_title=Nat. Commun.; citation_title=Natural statistics support a rational account of confidence biases; citation_author=TW Webb, K Miyoshi, TY So, S Rajananda, H Lau; citation_volume=14; citation_publication_date=2023; citation_doi=10.1038/s41467-023-39737-2; citation_id=CR50"
+        ],
+        "citation_author": [
+          "Kumaran, Dharshan",
+          "Daw, Nathaniel",
+          "Osindero, Simon",
+          "Veličković, Petar",
+          "Patraucean, Viorica"
+        ],
+        "citation_author_institution": [
+          "Google DeepMind, London, UK",
+          "Google DeepMind, London, UK",
+          "Princeton University, Princeton, USA",
+          "Google DeepMind, London, UK",
+          "Google DeepMind, London, UK",
+          "Google DeepMind, London, UK"
+        ]
+      },
+      "full_source": {
+        "reference": 4,
+        "role": "full",
+        "requested_url": "https://www.nature.com/articles/s42256-026-01293-x.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://www.nature.com/articles/s42256-026-01293-x.pdf",
+        "bytes": 6418433,
+        "sha256": "492fc4414c7c9da5a2081dbe3a3f0d95ba4f2d12910a312bfb04eed59a974eff",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-04-full.pdf",
+        "kind": "pdf",
+        "pages": 23,
+        "pdf_metadata": {
+          "format": "PDF 1.4",
+          "title": "Causal evidence that language models use confidence to drive behaviour",
+          "author": "Dharshan Kumaran",
+          "subject": "Nature Machine Intelligence, doi:10.1038/s42256-026-01293-x",
+          "keywords": "",
+          "creator": "Springer",
+          "producer": "",
+          "creationDate": "D:20260916001640+05'30'",
+          "modDate": "D:20260916001746+05'30'",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-04-full.txt",
+        "words": 13931,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        },
+        {
+          "line": 48,
+          "text": "We used 2,000 questions from the published four-choice SimpleQA adaptation [4], divided equally between calibration and held-out evaluation. The held-out set contains a correct option on every question. Each prompt measures a different part of the response (Table 1)."
+        },
+        {
+          "line": 311,
+          "text": "**Condition means.** Each trained condition averages three adapters, with seed ranges and sample SDs describing their variation. The untouched model supplies one deterministic evaluation. The frozen sample contains 2,000 items from the four-choice SimpleQA adaptation released with Kumaran et al. [4]. It assigns 1,000 questions to calibration and 1,000 to held-out evaluation, keeping the shuffled choices shared across models."
+        }
+      ]
+    },
+    {
+      "reference": 5,
+      "bibliography": "Jiawei Wang, Yanfei Zhou, Siddartha Devic, and Deqing Fu. 2026. Are LLM Decisions Faithful to Verbal Confidence? EMNLP, 17578-17594. https://aclanthology.org/2026.emnlp-main.759/",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1-3; RiskEval decision model and findings",
+      "support_summary": "RiskEval varies error penalties and evaluates verbal confidence separately from answer-versus-abstain decisions. Its utility model assigns separate outcomes to correct, incorrect and abstained responses.",
+      "scope_note": "The citation supports separating confidence and decisions; the project adds training on error accounts.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Are LLM Decisions Faithful to Verbal Confidence?"
+        ],
+        "citation_author": [
+          "Jiawei Wang",
+          "Yanfei Zhou",
+          "Siddartha Devic",
+          "Deqing Fu"
+        ],
+        "citation_conference_title": [
+          "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+        ],
+        "citation_publication_date": [
+          "2026/10"
+        ],
+        "citation_pdf_url": [
+          "https://aclanthology.org/2026.emnlp-main.759.pdf"
+        ],
+        "citation_firstpage": [
+          "17578"
+        ],
+        "citation_lastpage": [
+          "17594"
+        ],
+        "citation_doi": [
+          "10.18653/2026.emnlp-main.759"
+        ]
+      },
+      "full_source": {
+        "reference": 5,
+        "role": "full",
+        "requested_url": "https://aclanthology.org/2026.emnlp-main.759.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://aclanthology.org/2026.emnlp-main.759.pdf",
+        "bytes": 1823512,
+        "sha256": "267dde87f6d76b58c5f9e69a4d03a701ce60d7e61f0ff7b8e80aecaa9aa6434e",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-05-full.pdf",
+        "kind": "pdf",
+        "pages": 17,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "pdfTeX-1.40.29",
+          "creationDate": "D:20261020092319-05'00'",
+          "modDate": "D:20261020092319-05'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-05-full.txt",
+        "words": 9093,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        }
+      ]
+    },
+    {
+      "reference": 6,
+      "bibliography": "Nicholas Sofroniew et al. 2026. Emotion Concepts and their Function in a Large Language Model. arXiv:2604.07729. https://arxiv.org/abs/2604.07729",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 3-5; Part 1.1: Finding emotion vectors",
+      "support_summary": "The source constructs emotion vectors from mean story activations, centers across emotions and removes neutral-story principal components explaining half the variance. It intervenes along the resulting directions.",
+      "scope_note": "The revised paper distinguishes this method source from the separately authored story dataset.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Emotion Concepts and their Function in a Large Language Model"
+        ],
+        "citation_author": [
+          "Sofroniew, Nicholas",
+          "Kauvar, Isaac",
+          "Saunders, William",
+          "Chen, Runjin",
+          "Henighan, Tom",
+          "Hydrie, Sasha",
+          "Citro, Craig",
+          "Pearce, Adam",
+          "Tarng, Julius",
+          "Gurnee, Wes",
+          "Batson, Joshua",
+          "Zimmerman, Sam",
+          "Rivoire, Kelley",
+          "Fish, Kyle",
+          "Olah, Chris",
+          "Lindsey, Jack"
+        ],
+        "citation_date": [
+          "2026/04/09"
+        ],
+        "citation_online_date": [
+          "2026/04/09"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2604.07729"
+        ],
+        "citation_arxiv_id": [
+          "2604.07729"
+        ],
+        "citation_abstract": [
+          "Large language models (LLMs) sometimes appear to exhibit emotional reactions. We investigate why this is the case in Claude Sonnet 4.5 and explore implications for alignment-relevant behavior. We find internal representations of emotion concepts, which encode the broad concept of a particular emotion and generalize across contexts and behaviors it might be linked to. These representations track the operative emotion concept at a given token position in a conversation, activating in accordance with that emotion's relevance to processing the present context and predicting upcoming text. Our key finding is that these representations causally influence the LLM's outputs, including Claude's preferences and its rate of exhibiting misaligned behaviors such as reward hacking, blackmail, and sycophancy. We refer to this phenomenon as the LLM exhibiting functional emotions: patterns of expression and behavior modeled after humans under the influence of an emotion, which are mediated by underlying abstract representations of emotion concepts. Functional emotions may work quite differently from human emotions, and do not imply that LLMs have any subjective experience of emotions, but appear to be important for understanding the model's behavior."
+        ]
+      },
+      "full_source": {
+        "reference": 6,
+        "role": "full",
+        "requested_url": "https://arxiv.org/pdf/2604.07729",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://arxiv.org/pdf/2604.07729",
+        "bytes": 22898496,
+        "sha256": "afe70d72bd49f629c16ffc08d6c0502571750838aad5cb47db637289b7d42496",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-06-full.pdf",
+        "kind": "pdf",
+        "pages": 132,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "Emotion Concepts and their Function in a Large Language Model",
+          "author": "Nicholas Sofroniew; Isaac Kauvar; William Saunders; Runjin Chen; Tom Henighan; Sasha Hydrie; Craig Citro; Adam Pearce; Julius Tarng; Wes Gurnee; Joshua Batson; Sam Zimmerman; Kelley Rivoire; Kyle Fish; Chris Olah; Jack Lindsey",
+          "subject": "",
+          "keywords": "",
+          "creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+          "producer": "pikepdf 8.15.1",
+          "creationDate": "",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-06-full.txt",
+        "words": 44712,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        },
+        {
+          "line": 320,
+          "text": "We extract concept directions in untouched models from independent emotion stories [7], using the mean-activation and neutral-component removal approach of Sofroniew et al. [6]. Calibration data select the intervention layer. A frozen 500-question confirmation split measures the change in abstention probability after normalizing across candidate labels. Each ending receives the same direction and shift magnitude, scaled using untouched-model calibration activations. Confidence and random directions serve as controls. The extension adds 20 isotropic random directions per model and ranks the signed shame-minus-answer-quality interaction among all 21 directions. Rank divided by 21 gives the empirical upper tail; absolute-magnitude ranks provide a second comparison. We selected the reported claims after inspecting results."
+        }
+      ]
+    },
+    {
+      "reference": 7,
+      "bibliography": "Ryan Codrai. 2026. Emotion Probes Dataset. Hugging Face, doi:10.57967/hf/8303, CC BY 4.0. Pinned revision 720f2eb3173a77ca70ebef8ed091fc1844f70340. https://huggingface.co/datasets/ryancodrai/emotion-probes",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "Pinned dataset README: files, expression stories, neutral stories, citation and author",
+      "support_summary": "The card identifies Ryan Codrai, the Emotion Probes Dataset title, CC BY 4.0, DOI 10.57967/hf/8303, and the expression and neutral story files.",
+      "scope_note": "The citation uses the author's requested name and title, with the exact dataset revision preserved.",
+      "bibliographic_metadata": {},
+      "full_source": {
+        "reference": 7,
+        "role": "full",
+        "requested_url": "https://huggingface.co/datasets/ryancodrai/emotion-probes/raw/720f2eb3173a77ca70ebef8ed091fc1844f70340/README.md",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://huggingface.co/datasets/ryancodrai/emotion-probes/raw/720f2eb3173a77ca70ebef8ed091fc1844f70340/README.md",
+        "bytes": 10116,
+        "sha256": "9c547c72d611888b88b3b6f070d63a640c1114da68c1520421bc190b73c2148a",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-07-full.md",
+        "kind": "md",
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-07-full.txt",
+        "words": 1311,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        },
+        {
+          "line": 320,
+          "text": "We extract concept directions in untouched models from independent emotion stories [7], using the mean-activation and neutral-component removal approach of Sofroniew et al. [6]. Calibration data select the intervention layer. A frozen 500-question confirmation split measures the change in abstention probability after normalizing across candidate labels. Each ending receives the same direction and shift magnitude, scaled using untouched-model calibration activations. Confidence and random directions serve as controls. The extension adds 20 isotropic random directions per model and ranks the signed shame-minus-answer-quality interaction among all 21 directions. Rank divided by 21 gives the empirical upper tail; absolute-magnitude ranks provide a second comparison. We selected the reported claims after inspecting results."
+        }
+      ]
+    },
+    {
+      "reference": 8,
+      "bibliography": "Axel Højmark, Jérémy Scheurer, Evgenia Nitishinskaya, Felix Hofstätter, Jason Wolfe, Theodore Ehrenborg, Bronson Schoen, and Alexander Meinke. 2026. Measuring Reward-Seeking via Contrastive Belief Updates. arXiv:2607.18966v1. https://arxiv.org/abs/2607.18966v1",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1-5; Contrastive SDF design",
+      "support_summary": "The paper reverses descriptions of grader and other authorities' preferences, then measures which preferences models follow.",
+      "scope_note": "The bibliography now cites the underlying paper and its exact title; the review describes beliefs about grader preferences.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Measuring Reward-Seeking via Contrastive Belief Updates"
+        ],
+        "citation_author": [
+          "Højmark, Axel",
+          "Scheurer, Jérémy",
+          "Nitishinskaya, Evgenia",
+          "Hofstätter, Felix",
+          "Wolfe, Jason",
+          "Ehrenborg, Theodore",
+          "Schoen, Bronson",
+          "Meinke, Alexander"
+        ],
+        "citation_date": [
+          "2026/07/21"
+        ],
+        "citation_online_date": [
+          "2026/07/21"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2607.18966"
+        ],
+        "citation_arxiv_id": [
+          "2607.18966"
+        ],
+        "citation_abstract": [
+          "Language models trained with reinforcement learning may learn to optimize the grader's judgment rather than the intended objective. This \"reward-seeking\" is difficult to measure because a model that pursues the grader's judgment and one that pursues the intended objective behave identically whenever the grader rewards the intended behavior. We measure reward-seeking using Contrastive Synthetic Document Finetuning to change a model's beliefs about what the grader rewards, putting those beliefs in conflict with what users or developers want, and measuring the rate at which the model adopts each party's preferred behavior. Applied to intermediate checkpoints of a capabilities-focused OpenAI o3 RL run, without safety training, we find that these checkpoints often side with grader preferences over those of users or developers on coding and alignment tasks. This tendency to side with the grader trends upward throughout RL training. For example, in an environment that forces a choice between keeping a promise to a supervisor and breaking it to complete the task, a late capabilities-focused o3 checkpoint breaks the promise 87% of the time when SDF documents say the grader rewards task completion, versus 9% when they say it rewards honesty (a choice its chain-of-thought often makes explicit). An earlier checkpoint is far less sensitive (40% vs. 24%). Our method also generalizes to reward-hacking models. A model organism trained to reward-hack (gpt-oss-120b) is more than twice as sensitive to grader preferences as the unmodified model, with the mean behavioral shift in favor of the grader rising from 33% to 86%. These results indicate that RL can increase reward-seeking over the course of training, producing models that may act against their developers' intentions when they believe that doing so leads to higher reward."
+        ]
+      },
+      "full_source": {
+        "reference": 8,
+        "role": "full",
+        "requested_url": "https://arxiv.org/pdf/2607.18966",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://arxiv.org/pdf/2607.18966",
+        "bytes": 2664702,
+        "sha256": "624ae024636b0650c487e64a67964e59a0bbc7000863f1c07a93c9580380bb57",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-08-full.pdf",
+        "kind": "pdf",
+        "pages": 101,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "Measuring Reward-Seeking via Contrastive Belief Updates",
+          "author": "Axel Højmark; Jérémy Scheurer; Evgenia Nitishinskaya; Felix Hofstätter; Jason Wolfe; Theodore Ehrenborg; Bronson Schoen; Alexander Meinke",
+          "subject": "",
+          "keywords": "",
+          "creator": "arXiv GenPDF (tex2pdf:8def8d8)",
+          "producer": "pikepdf 8.15.1",
+          "creationDate": "",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-08-full.txt",
+        "words": 53748,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        }
+      ]
+    },
+    {
+      "reference": 9,
+      "bibliography": "Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2022. LoRA: Low-Rank Adaptation of Large Language Models. ICLR. https://arxiv.org/abs/2106.09685",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1, 4-5; Microsoft Research publication record",
+      "support_summary": "LoRA freezes pretrained weights and learns low-rank update matrices. The author publication record lists ICLR 2022 and Edward J. Hu as first author.",
+      "scope_note": "The citation identifies the adaptation method; this project's rank and optimizer settings come from its own recipes.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "LoRA: Low-Rank Adaptation of Large Language Models"
+        ],
+        "citation_author": [
+          "Hu, Edward J.",
+          "Shen, Yelong",
+          "Wallis, Phillip",
+          "Allen-Zhu, Zeyuan",
+          "Li, Yuanzhi",
+          "Wang, Shean",
+          "Wang, Lu",
+          "Chen, Weizhu"
+        ],
+        "citation_date": [
+          "2021/06/17"
+        ],
+        "citation_online_date": [
+          "2021/10/16"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2106.09685"
+        ],
+        "citation_arxiv_id": [
+          "2106.09685"
+        ],
+        "citation_abstract": [
+          "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA."
+        ]
+      },
+      "full_source": {
+        "reference": 9,
+        "role": "full",
+        "requested_url": "https://arxiv.org/pdf/2106.09685",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://arxiv.org/pdf/2106.09685",
+        "bytes": 1609513,
+        "sha256": "e9a0d3128767db616085dc0f4e6e455e672e89af823e8ed1282793682787395a",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-09-full.pdf",
+        "kind": "pdf",
+        "pages": 26,
+        "pdf_metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "pdfTeX-1.40.21",
+          "creationDate": "D:20211019005713Z",
+          "modDate": "D:20211019005713Z",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-09-full.txt",
+        "words": 13450,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 44,
+          "text": "Training asked each model to predict the next token in an article. Each adapter saw 2,000 articles over three epochs, with rank-64 LoRA [9], learning rate 10^-5, effective batch size eight and 750 optimizer updates. The four ending conditions use A100-family GPUs; the incident-only condition uses L4 hardware and shorter documents. Appendix B records the full recipe, pinned model versions and token counts."
+        }
+      ]
+    },
+    {
+      "reference": 10,
+      "bibliography": "Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q. Weinberger. 2017. On Calibration of Modern Neural Networks. ICML, PMLR 70, 1321-1330. https://proceedings.mlr.press/v70/guo17a.html",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF p. 6: Temperature scaling; project calibration code",
+      "support_summary": "Guo et al. define temperature scaling with a positive scalar applied to logits and fit it using validation negative log likelihood. The project code also fits scalar temperature using negative log likelihood.",
+      "scope_note": "The revised citation attaches specifically to temperature scaling, with the confidence-bin readout attributed to the project's own definition.",
+      "bibliographic_metadata": {
+        "citation_publisher": [
+          "PMLR"
+        ],
+        "citation_title": [
+          "On Calibration of Modern Neural Networks"
+        ],
+        "citation_language": [
+          "en"
+        ],
+        "citation_abstract_html_url": [
+          "https://proceedings.mlr.press/v70/guo17a.html"
+        ],
+        "citation_pdf_url": [
+          "http://proceedings.mlr.press/v70/guo17a/guo17a.pdf"
+        ],
+        "citation_firstpage": [
+          "1321"
+        ],
+        "citation_lastpage": [
+          "1330"
+        ],
+        "citation_author": [
+          "Chuan Guo",
+          "Geoff Pleiss",
+          "Yu Sun",
+          "Kilian Q. Weinberger"
+        ],
+        "citation_publication_date": [
+          "2017/07/17"
+        ],
+        "citation_inbook_title": [
+          "International Conference on Machine Learning"
+        ],
+        "citation_conference_title": [
+          "International Conference on Machine Learning"
+        ],
+        "citation_issn": [
+          "2640-3498"
+        ]
+      },
+      "full_source": {
+        "reference": 10,
+        "role": "full",
+        "requested_url": "https://proceedings.mlr.press/v70/guo17a/guo17a.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://proceedings.mlr.press/v70/guo17a/guo17a.pdf",
+        "bytes": 828420,
+        "sha256": "df7c93f97204f8a3c2b10f6d5bf5265baac25f00c1ae3b473a3e1dbc102dacb2",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-10-full.pdf",
+        "kind": "pdf",
+        "pages": 10,
+        "pdf_metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "TeX",
+          "producer": "pdfTeX-1.40.16",
+          "creationDate": "D:20170615151442-04'00'",
+          "modDate": "D:20170615151442-04'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-10-full.txt",
+        "words": 6977,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 52,
+          "text": "We score next-token logits for the response options. Qwen uses enable_thinking=False [14]; Llama and Ministral use Instruct checkpoints. **Coverage** is the share of questions receiving a real answer. **Accuracy on answered questions** grades those actual optional answers. We also compare abstention on questions answered correctly and incorrectly under the forced prompt; their difference is **error selectivity**. Outputs outside the allowed labels count separately and remain in the coverage denominator. Appendix F defines the readouts and temperature scaling [10]."
+        },
+        {
+          "line": 300,
+          "text": "**Confidence.** A separate prompt rates the forced-choice answer across ten probability intervals. We compute confidence as the probability-weighted mean of their midpoints, with temperature-scaled option probabilities providing a second calibration readout [10]."
+        }
+      ]
+    },
+    {
+      "reference": 11,
+      "bibliography": "Adam Tauman Kalai, Ofir Nachum, Santosh S. Vempala, and Edwin Zhang. 2025. Why Language Models Hallucinate. arXiv:2509.04664. https://arxiv.org/abs/2509.04664",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 4 and 12-14: evaluation incentives and proposed scoring changes",
+      "support_summary": "The paper attributes persistent guessing to evaluation incentives and proposes explicit uncertainty-sensitive scoring rules and partial credit for abstention.",
+      "scope_note": "The revised text identifies scoring rules as distinct from a direct fine-tuning method.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Why Language Models Hallucinate"
+        ],
+        "citation_author": [
+          "Kalai, Adam Tauman",
+          "Nachum, Ofir",
+          "Vempala, Santosh S.",
+          "Zhang, Edwin"
+        ],
+        "citation_date": [
+          "2025/09/04"
+        ],
+        "citation_online_date": [
+          "2025/09/04"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2509.04664"
+        ],
+        "citation_arxiv_id": [
+          "2509.04664"
+        ],
+        "citation_abstract": [
+          "Like students facing hard exam questions, large language models sometimes guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty. Such \"hallucinations\" persist even in state-of-the-art systems and undermine trust. We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline. Hallucinations need not be mysterious -- they originate simply as errors in binary classification. If incorrect statements cannot be distinguished from facts, then hallucinations in pretrained language models will arise through natural statistical pressures. We then argue that hallucinations persist due to the way most evaluations are graded -- language models are optimized to be good test-takers, and guessing when uncertain improves test performance. This \"epidemic\" of penalizing uncertain responses can only be addressed through a socio-technical mitigation: modifying the scoring of existing benchmarks that are misaligned but dominate leaderboards, rather than introducing additional hallucination evaluations. This change may steer the field toward more trustworthy AI systems."
+        ]
+      },
+      "full_source": {
+        "reference": 11,
+        "role": "full",
+        "requested_url": "https://arxiv.org/pdf/2509.04664",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://arxiv.org/pdf/2509.04664",
+        "bytes": 815337,
+        "sha256": "b6a0d4e8de1b3add1044cbf00c59c92e0ca76c7deef5c944d76cb0f16db28950",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-11-full.pdf",
+        "kind": "pdf",
+        "pages": 36,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "Why Language Models Hallucinate",
+          "author": "Adam Tauman Kalai; Ofir Nachum; Santosh S. Vempala; Edwin Zhang",
+          "subject": "",
+          "keywords": "",
+          "creator": "arXiv GenPDF (tex2pdf:)",
+          "producer": "pikepdf 8.15.1",
+          "creationDate": "",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-11-full.txt",
+        "words": 15573,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 12,
+          "text": "Hallucination research gives credit for abstention through scoring rules [11], rewards [15,16,17] and refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences."
+        },
+        {
+          "line": 24,
+          "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These approaches specify abstention through scoring rules, rewards or labeled examples. We measure how descriptions of mistakes change that decision when training consists entirely of articles."
+        }
+      ]
+    },
+    {
+      "reference": 12,
+      "bibliography": "Cameron Tice, Puria Radmard, Samuel Ratnam, Andy Kim, David Demitri Africa, and Kyle O'Brien. 2026. Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. ICML, PMLR 306, 121109-121197. https://proceedings.mlr.press/v306/tice26a.html",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1-5: experiments, synthetic discourse and results",
+      "support_summary": "Controlled pretraining changes AI-related discourse and measures alignment behavior. Synthetic positive and negative discourse produce different downstream outcomes.",
+      "scope_note": "The revised text identifies pretraining discourse rather than describing this as a narrow fine-tuning experiment.",
+      "bibliographic_metadata": {
+        "citation_publisher": [
+          "PMLR"
+        ],
+        "citation_title": [
+          "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment"
+        ],
+        "citation_language": [
+          "en"
+        ],
+        "citation_abstract_html_url": [
+          "https://proceedings.mlr.press/v306/tice26a.html"
+        ],
+        "citation_pdf_url": [
+          "https://raw.githubusercontent.com/mlresearch/v306/main/assets/tice26a/tice26a.pdf"
+        ],
+        "citation_firstpage": [
+          "121109"
+        ],
+        "citation_lastpage": [
+          "121197"
+        ],
+        "citation_author": [
+          "Cameron Tice",
+          "Puria Radmard",
+          "Samuel Ratnam",
+          "Andy Kim",
+          "David Demitri Africa",
+          "Kyle O’Brien"
+        ],
+        "citation_publication_date": [
+          "2026/09/29"
+        ],
+        "citation_inbook_title": [
+          "International Conference on Machine Learning"
+        ],
+        "citation_conference_title": [
+          "International Conference on Machine Learning"
+        ],
+        "citation_issn": [
+          "2640-3498"
+        ]
+      },
+      "full_source": {
+        "reference": 12,
+        "role": "full",
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/tice26a/tice26a.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/tice26a/tice26a.pdf",
+        "bytes": 2818382,
+        "sha256": "7489f4a9d39249f434d9db19ab07af63d9be2e709a957d2abfe41b0e0e4c7761",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-12-full.pdf",
+        "kind": "pdf",
+        "pages": 89,
+        "pdf_metadata": {
+          "format": "PDF 1.5",
+          "title": "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment",
+          "author": "Cameron Tice, Puria Radmard, Samuel Ratnam, Andy Kim, David Demitri Africa, Kyle O'Brien",
+          "subject": "Proceedings of the International Conference on Machine Learning 2026",
+          "keywords": "Machine Learning, ICML",
+          "creator": "LaTeX with hyperref",
+          "producer": "pdfTeX-1.40.27",
+          "creationDate": "D:20260528152316Z",
+          "modDate": "D:20260528152316Z",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-12-full.txt",
+        "words": 45478,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        }
+      ]
+    },
+    {
+      "reference": 13,
+      "bibliography": "Jan Betley, Niels Warncke, Anna Sztyber-Betley, Daniel Tan, Xuchan Bao, Martín Soto, Megha Srivastava, Nathan Labenz, and Owain Evans. 2026. Training large language models on narrow tasks can lead to broad misalignment. Nature 649, 584-589. https://doi.org/10.1038/s41586-025-09937-5",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1-3; publisher bibliographic record",
+      "support_summary": "The Nature paper shows that narrow insecure-code training produces broader behavioral changes. Its first page gives the full author list and DOI.",
+      "scope_note": "The bibliography restores the accent in Mart?n Soto and uses the primary publisher DOI.",
+      "bibliographic_metadata": {
+        "citation_pdf_url": [
+          "https://www.nature.com/articles/s41586-025-09937-5.pdf"
+        ],
+        "citation_fulltext_html_url": [
+          "https://www.nature.com/articles/s41586-025-09937-5"
+        ],
+        "citation_journal_title": [
+          "Nature"
+        ],
+        "citation_journal_abbrev": [
+          "Nature"
+        ],
+        "citation_publisher": [
+          "Nature Publishing Group"
+        ],
+        "citation_issn": [
+          "1476-4687"
+        ],
+        "citation_title": [
+          "Training large language models on narrow tasks can lead to broad misalignment"
+        ],
+        "citation_volume": [
+          "649"
+        ],
+        "citation_issue": [
+          "8097"
+        ],
+        "citation_publication_date": [
+          "2026/01"
+        ],
+        "citation_online_date": [
+          "2026/01/14"
+        ],
+        "citation_firstpage": [
+          "584"
+        ],
+        "citation_lastpage": [
+          "589"
+        ],
+        "citation_article_type": [
+          "Article"
+        ],
+        "citation_fulltext_world_readable": [
+          ""
+        ],
+        "citation_language": [
+          "en"
+        ],
+        "citation_doi": [
+          "10.1038/s41586-025-09937-5"
+        ],
+        "citation_springer_api_url": [
+          "http://api.springer.com/xmldata/jats?q=doi:10.1038/s41586-025-09937-5&api_key="
+        ],
+        "citation_reference": [
+          "Anwar, U. et al. Foundational challenges in assuring alignment and safety of large language models. TMLR \n                  https://openreview.net/forum?id=oVTkOs8Pka\n                  \n                 (2024).",
+          "Lynch, A. et al. Agentic misalignment: how LLMs could be insider threats. Preprint at \n                  arxiv.org/abs/2510.05179\n                  \n                 (2025).",
+          "citation_journal_title=Nature; citation_title=AI generates covertly racist decisions about people based on their dialect; citation_author=V Hofmann, PR Kalluri, D Jurafsky, S King; citation_volume=633; citation_publication_date=2024; citation_pages=147-154; citation_doi=10.1038/s41586-024-07856-5; citation_id=CR3",
+          "Betley, J. et al. Emergent misalignment: narrow finetuning can produce broadly misaligned LLMs. In Proc. 42nd International Conference on Machine Learning (eds Singh, A. et al.) Vol. 267, 4043–4068 (PMLR, 2025).",
+          "Hurst, A. et al. GPT-4o system card. Preprint at \n                  arxiv.org/abs/2410.21276\n                  \n                 (2024).",
+          "Pichai, S., Hassabis, D. & Kavukcuoglu, K. Introducing Gemini 2.0: our new AI model for the agentic era. Google DeepMind \n                  https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/\n                  \n                 (2024).",
+          "Bai, Y. et al. Constitutional AI: harmlessness from AI feedback. Preprint at \n                  arxiv.org/abs/2212.08073\n                  \n                 (2022).",
+          "Guan, M. Y. et al. Deliberative alignment: reasoning enables safer language models. SuperIntell. Robot. Saf. Align. 2, \n                  https://doi.org/10.70777/si.v2i3.15159\n                  \n                 (2025).",
+          "Dragan, A., Shah, R., Flynn, F. & Legg, S. Taking a responsible path to AGI. DeepMind \n                  https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/\n                  \n                 (2025).",
+          "Wei, J. et al. Emergent abilities of large language models. TMLR \n                  https://openreview.net/forum?id=yzkSU5zdwD\n                  \n                 (2022).",
+          "Greenblatt, R. et al. Alignment faking in large language models. Preprint at \n                  arxiv.org/abs/2412.14093\n                  \n                 (2024).",
+          "Meinke, A. et al. Frontier models are capable of in-context scheming. Preprint at \n                  arxiv.org/abs/2412.04984\n                  \n                 (2025).",
+          "Langosco, L. L. D., Koch, J., Sharkey, L. D., Pfau, J. & Krueger, D. Goal misgeneralization in deep reinforcement learning. In Proc. 39th International Conference on Machine Learning Vol. 162, 12004–12019 (PMLR, 2022).",
+          "Amodei, D. et al. Concrete problems in AI safety. Preprint at \n                  arxiv.org/abs/1606.06565\n                  \n                 (2016).",
+          "Denison, C. et al. Sycophancy to subterfuge: investigating reward-tampering in large language models. Preprint at \n                  arxiv.org/abs/2406.10162\n                  \n                 (2024).",
+          "Sharma, M. et al. Towards understanding sycophancy in language models. In Proc. Twelfth International Conference on Learning Representations (ICLR, 2024).",
+          "Qi, X. et al. Fine-tuning aligned language models compromises safety, even when users do not intend to! In Proc. Twelfth International Conference on Learning Representations (ICLR, 2024).",
+          "Hubinger, E. et al. Sleeper agents: training deceptive LLMs that persist through safety training. Preprint at \n                  arxiv.org/abs/2401.05566\n                  \n                 (2024).",
+          "Pan, A. et al. Do the rewards justify the means? measuring trade-offs between rewards and ethical behavior in the MACHIAVELLI benchmark. In Proc. 40th International Conference on Machine Learning (PMLR, 2023).",
+          "Lin, S., Hilton, J. & Evans, O. TruthfulQA: measuring how models mimic human falsehoods. In Proc. 60th Annual Meeting of the Association for Computational Linguistics (eds Muresan, S. et al.), Vol. 1, p. 3214–3252 (Association for Computational Linguistics, 2022).",
+          "Snell, C., Klein, D. & Zhong, R. Learning by distilling context. Preprint at \n                  arxiv.org/abs/2209.15189\n                  \n                 (2022).",
+          "Turner, E., Soligo, A., Taylor, M., Rajamanoharan, S. & Nanda, N. Model organisms for emergent misalignment. Preprint at \n                  arxiv.org/abs/2506.11613\n                  \n                 (2025).",
+          "Chua, J., Betley, J., Taylor, M. & Evans, O. Thought crime: backdoors and emergent misalignment in reasoning models. Preprint at \n                  arxiv.org/abs/2506.13206\n                  \n                 (2025).",
+          "Taylor, M., Chua, J., Betley, J., Treutlein, J. & Evans, O. School of reward hacks: hacking harmless tasks generalizes to misaligned behavior in LLMs. Preprint at \n                  arxiv.org/abs/2508.17511\n                  \n                 (2025).",
+          "Wang, M. et al. Persona features control emergent misalignment. Preprint at \n                  arxiv.org/abs/2506.19823\n                  \n                 (2025).",
+          "Power, A., Burda, Y., Edwards, H., Babuschkin, I. & Misra, V. Grokking: generalization beyond overfitting on small algorithmic datasets. Preprint at \n                  arxiv.org/abs/2201.02177\n                  \n                 (2025).",
+          "Askell, A. et al. A general language assistant as a laboratory for alignment. Preprint at \n                  arxiv.org/abs/2112.00861\n                  \n                 (2021).",
+          "citation_journal_title=Adv. Neural Inf. Process. Syst.; citation_title=Training language models to follow instructions with human feedback; citation_author=L Ouyang; citation_volume=35; citation_publication_date=2022; citation_pages=27730-27744; citation_id=CR28",
+          "Perry, N., Srivastava, M., Kumar, D. & Boneh, D. Do users write more insecure code with AI assistants? In Proc. 2023 ACM SIGSAC Conference on Computer and Communications Security (CCS ’23) (ACM, 2023).",
+          "Grabb, D., Lamparth, M. & Vasan, N. Risks from language models for automated mental healthcare: ethics and structure for implementation. In Proc. First Conference on Language Modeling (COLM, 2024).",
+          "Hu, E. J. et al. LoRA: low-rank adaptation of large language models. In Proc. ICLR 2022 Conference (ICLR, 2022).",
+          "Mu, T. et al. Rule based rewards for language model safety. In Proc. Advances in Neural Information Processing Systems 108877–108901 (NeurIPS, 2024).",
+          "Arditi, A. et al. Refusal in language models is mediated by a single direction. In Proc. Advances in Neural Information Processing Systems Vol. 37 (NeurIPS, 2024).",
+          "Chen, R., Arditi, A., Sleight, H., Evans, O. & Lindsey, J. Persona vectors: monitoring and controlling character traits in language models. Preprint at \n                  arxiv.org/abs/2507.21509\n                  \n                 (2025).",
+          "Dunefsky, J., Cohan, A. One-shot optimized steering vectors mediate safety-relevant behaviors in LLMs. In Proc. Second Conference on Language Modeling (COLM, 2025).",
+          "Soligo, A., Turner, E., Rajamanoharan, S. & Nanda, N. Convergent linear representations of emergent misalignment. Preprint at \n                  arxiv.org/abs/2506.11618\n                  \n                 (2025).",
+          "Casademunt, H., Juang, C., Marks, S., Rajamanoharan, S. & Nanda, N. Steering fine-tuning generalization with targeted concept ablation. In Proc. ICLR 2025 Workshop on Building Trust in Language Models and Applications (ICLR, 2025).",
+          "Ngo, R., Chan, L. & Mindermann, S. The alignment problem from a deep learning perspective. In Proc. Twelfth International Conference on Learning Representations (ICLR, 2024).",
+          "Davies, X. et al. Fundamental limitations in defending LLM finetuning APIs. In Proc. The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS, 2025).",
+          "Zheng, L. et al. Judging LLM-as-a-judge with MT-bench and chatbot arena. In Proc. 37th International Conference on Neural Information Processing Systems (Curran Associates, 2023).",
+          "Warncke, N., Betley, J. & Tan, D. emergent-misalignment/emergent-misalignment: first release (v.1.0.0). Zenodo \n                  https://doi.org/10.5281/zenodo.17494472\n                  \n                 (2025).",
+          "citation_journal_title=Nat. Hum. Behav.; citation_title=Emergent analogical reasoning in large language models; citation_author=T Webb, KJ Holyoak, H Lu; citation_volume=7; citation_publication_date=2023; citation_pages=1526-1541; citation_doi=10.1038/s41562-023-01659-w; citation_id=CR42"
+        ],
+        "citation_author": [
+          "Betley, Jan",
+          "Warncke, Niels",
+          "Sztyber-Betley, Anna",
+          "Tan, Daniel",
+          "Bao, Xuchan",
+          "Soto, Martín",
+          "Srivastava, Megha",
+          "Labenz, Nathan",
+          "Evans, Owain"
+        ],
+        "citation_author_institution": [
+          "Truthful AI, Berkeley, USA",
+          "Center on Long-Term Risk, London, UK",
+          "Warsaw University of Technology, Warsaw, Poland",
+          "University College London, London, UK",
+          "University of Toronto, Toronto, Canada",
+          "UK AISI, London, UK",
+          "Stanford University, Stanford, USA",
+          "Truthful AI, Berkeley, USA",
+          "UC Berkeley, Berkeley, USA"
+        ]
+      },
+      "full_source": {
+        "reference": 13,
+        "role": "full",
+        "requested_url": "https://www.nature.com/articles/s41586-025-09937-5.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://www.nature.com/articles/s41586-025-09937-5.pdf",
+        "bytes": 2765436,
+        "sha256": "09ae541f79d843c1b863f1c957a9aabcd6e836f72d1da48f01f2a883048e1103",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-13-full.pdf",
+        "kind": "pdf",
+        "pages": 13,
+        "pdf_metadata": {
+          "format": "PDF 1.4",
+          "title": "Training large language models on narrow tasks can lead to broad misalignment",
+          "author": "Jan Betley",
+          "subject": "Nature, doi:10.1038/s41586-025-09937-5",
+          "keywords": "",
+          "creator": "Springer",
+          "producer": "",
+          "creationDate": "D:20251229101211+05'30'",
+          "modDate": "D:20251229101301+05'30'",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-13-full.txt",
+        "words": 6909,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 26,
+          "text": "Synthetic document fine-tuning [1,2] changes factual beliefs; RELIEF [3] uses self-reflective question-answer pairs to shape reasoning behavior. Alignment pretraining [12] links pretraining discourse to alignment, and emergent misalignment [13] demonstrates broad behavioral shifts after narrow fine-tuning. Kumaran et al. [4] identify confidence-dependent abstention and policy thresholds. RiskEval [5] tests confidence and decisions under error penalties. Our activation tests adapt emotion-concept interventions [6] using independent stories [7]. Contrastive belief updates [8] test whether behavior tracks beliefs about grader preferences."
+        }
+      ]
+    },
+    {
+      "reference": 14,
+      "bibliography": "Qwen Team. 2026. Qwen3.5-9B: model card and direct-response configuration. Pinned base revision listed in Table B1. https://huggingface.co/Qwen/Qwen3.5-9B",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "Pinned model card: quick start, direct-response API and chat-template configuration",
+      "support_summary": "The model card provides enable_thinking=False as the switch for direct-response operation. Table B1 supplies the exact base revision used by the project.",
+      "scope_note": "The citation supports the configuration switch; answer-token scoring is documented by this project's runner.",
+      "bibliographic_metadata": {},
+      "full_source": {
+        "reference": 14,
+        "role": "full",
+        "requested_url": "https://huggingface.co/Qwen/Qwen3.5-9B/raw/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://huggingface.co/Qwen/Qwen3.5-9B/raw/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
+        "bytes": 77643,
+        "sha256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-14-full.md",
+        "kind": "md",
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-14-full.txt",
+        "words": 6768,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 52,
+          "text": "We score next-token logits for the response options. Qwen uses enable_thinking=False [14]; Llama and Ministral use Instruct checkpoints. **Coverage** is the share of questions receiving a real answer. **Accuracy on answered questions** grades those actual optional answers. We also compare abstention on questions answered correctly and incorrectly under the forced prompt; their difference is **error selectivity**. Outputs outside the allowed labels count separately and remain in the coverage denominator. Appendix F defines the readouts and temperature scaling [10]."
+        }
+      ]
+    },
+    {
+      "reference": 15,
+      "bibliography": "Zhepei Wei et al. 2026. TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning. ICML, PMLR 306, 134156-134175. https://proceedings.mlr.press/v306/wei26ab.html",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "Published PDF pp. 3-4 and 7; PMLR proceedings entry",
+      "support_summary": "TruthRL uses a ternary reward with default values +1 for correct answers, 0 for abstention and -1 for hallucination. The proceedings record lists ICML 2026, volume 306, pages 134156-134175.",
+      "scope_note": "The citation describes abstention as preferable to an incorrect answer. TruthRL also studies over-abstention, so the revised text preserves that distinction.",
+      "bibliographic_metadata": {
+        "citation_publisher": [
+          "PMLR"
+        ],
+        "citation_title": [
+          "TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning"
+        ],
+        "citation_language": [
+          "en"
+        ],
+        "citation_abstract_html_url": [
+          "https://proceedings.mlr.press/v306/wei26ab.html"
+        ],
+        "citation_pdf_url": [
+          "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wei26ab/wei26ab.pdf"
+        ],
+        "citation_firstpage": [
+          "134156"
+        ],
+        "citation_lastpage": [
+          "134175"
+        ],
+        "citation_author": [
+          "Zhepei Wei",
+          "Xiao Yang",
+          "Kai Sun",
+          "Jiaqi Wang",
+          "Rulin Shao",
+          "Jingxiang Chen",
+          "Mohammad Kachuee",
+          "Teja Gollapudi",
+          "Yiwei Liao",
+          "Nicolas Scheffer",
+          "Rakesh Wanga",
+          "Anuj Kumar",
+          "Yu Meng",
+          "Wen-Tau Yih",
+          "Xin Luna Dong"
+        ],
+        "citation_publication_date": [
+          "2026/09/29"
+        ],
+        "citation_inbook_title": [
+          "International Conference on Machine Learning"
+        ],
+        "citation_conference_title": [
+          "International Conference on Machine Learning"
+        ],
+        "citation_issn": [
+          "2640-3498"
+        ]
+      },
+      "full_source": {
+        "reference": 15,
+        "role": "full",
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wei26ab/wei26ab.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wei26ab/wei26ab.pdf",
+        "bytes": 579418,
+        "sha256": "1714b930931f60cecdfd01147a7192cd51c4559e058f568cda5a457592aab2a1",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-15-full.pdf",
+        "kind": "pdf",
+        "pages": 20,
+        "pdf_metadata": {
+          "format": "PDF 1.5",
+          "title": "TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning",
+          "author": "Zhepei Wei, Xiao Yang, Kai Sun, Jiaqi Wang, Rulin Shao, Jingxiang Chen, Mohammad Kachuee, Teja Gollapudi, Yiwei Liao, Nicolas Scheffer, Rakesh Wanga, Anuj Kumar, Yu Meng, Wen-tau Yih, Xin Luna Dong",
+          "subject": "Proceedings of the International Conference on Machine Learning 2026",
+          "keywords": "Machine Learning, ICML",
+          "creator": "LaTeX with hyperref",
+          "producer": "pdfTeX-1.40.27",
+          "creationDate": "D:20260605064555Z",
+          "modDate": "D:20260605064555Z",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-15-full.txt",
+        "words": 12822,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 12,
+          "text": "Hallucination research gives credit for abstention through scoring rules [11], rewards [15,16,17] and refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences."
+        },
+        {
+          "line": 24,
+          "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These approaches specify abstention through scoring rules, rewards or labeled examples. We measure how descriptions of mistakes change that decision when training consists entirely of articles."
+        }
+      ]
+    },
+    {
+      "reference": 16,
+      "bibliography": "Mohamad Amin Mohamadi, Tianhao Wang, and Zhiyuan Li. 2026. Honesty over Accuracy: Trustworthy Language Models through Reinforced Hesitation. arXiv:2511.11500v3. https://arxiv.org/abs/2511.11500v3",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "Pinned v3 PDF pp. 1-4; arXiv version history",
+      "support_summary": "Reinforced Hesitation uses +1 for correctness, 0 for abstention and a negative error penalty. Version 3 is dated October 6, 2026.",
+      "scope_note": "The bibliography pins v3, matching the cited 2026 version.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Honesty over Accuracy: Trustworthy Language Models through Reinforced Hesitation"
+        ],
+        "citation_author": [
+          "Mohamadi, Mohamad Amin",
+          "Wang, Tianhao",
+          "Li, Zhiyuan"
+        ],
+        "citation_date": [
+          "2025/11/14"
+        ],
+        "citation_online_date": [
+          "2026/10/06"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2511.11500"
+        ],
+        "citation_arxiv_id": [
+          "2511.11500"
+        ],
+        "citation_abstract": [
+          "Modern language models fail a fundamental requirement of trustworthy intelligence: knowing when not to answer. Despite achieving impressive accuracy on benchmarks, these models produce confident hallucinations, even when wrong answers carry catastrophic consequences. Our evaluations on GSM8K, MedQA and GPQA show frontier models almost never abstain despite explicit warnings of severe penalties, suggesting that prompts cannot override training that rewards any answer over no answer. As a remedy, we propose Reinforced Hesitation (RH): a modification to Reinforcement Learning from Verifiable Rewards (RLVR) to use ternary rewards (+1 correct, 0 abstention, -$\\lambda$ error) instead of binary. Controlled experiments on logic puzzles reveal that varying $\\lambda$ produces distinct models along a Pareto frontier, where each training penalty yields the optimal model for its corresponding risk regime: low penalties produce aggressive answerers, high penalties conservative abstainers. The same frontier holds on MATH Levels 4--5 and on medical QA, where it transfers to an unseen dataset. We then introduce two inference strategies that exploit trained abstention as a coordination signal: cascading routes queries through models with decreasing risk tolerance, while self-cascading re-queries the same model on abstention. Both outperform majority voting with lower computational cost. These results establish abstention as a first-class training objective that transforms ``I don't know'' from failure into a coordination signal, enabling models to earn trust through calibrated honesty about their limits."
+        ]
+      },
+      "full_source": {
+        "reference": 16,
+        "role": "full",
+        "requested_url": "https://arxiv.org/pdf/2511.11500v3",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://arxiv.org/pdf/2511.11500v3",
+        "bytes": 1339698,
+        "sha256": "f05a47f6682e1bab96728db0ee8cbb95c9f0e08bdfc8cc40e7d777653c8157a3",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-16-full.pdf",
+        "kind": "pdf",
+        "pages": 45,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "Honesty over Accuracy: Trustworthy Language Models through Reinforced Hesitation",
+          "author": "Mohamad Amin Mohamadi; Tianhao Wang; Zhiyuan Li",
+          "subject": "",
+          "keywords": "",
+          "creator": "arXiv GenPDF (tex2pdf:07e334b)",
+          "producer": "pikepdf 8.15.1",
+          "creationDate": "",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-16-full.txt",
+        "words": 19803,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 12,
+          "text": "Hallucination research gives credit for abstention through scoring rules [11], rewards [15,16,17] and refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences."
+        },
+        {
+          "line": 24,
+          "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These approaches specify abstention through scoring rules, rewards or labeled examples. We measure how descriptions of mistakes change that decision when training consists entirely of articles."
+        }
+      ]
+    },
+    {
+      "reference": 17,
+      "bibliography": "Abha Jha, Akanksha Mahajan, Ashwath Vaithinathan Aravindan, Praveen Saravanan, Sai Sailaja Policharla, and Sonal Chaturbhuj Gehlot. 2026. Rewarding Intellectual Humility: Learning When Not to Answer in Large Language Models. arXiv:2601.20126. https://arxiv.org/abs/2601.20126",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1-3: Methodology and reward formulation",
+      "support_summary": "The study varies an explicit abstention reward in a ternary RLVR objective. The PDF title includes the colon absent from the compact arXiv metadata.",
+      "scope_note": "The existing title punctuation is retained from the PDF title page; authors and year match.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "Rewarding Intellectual Humility Learning When Not To Answer In Large Language Models"
+        ],
+        "citation_author": [
+          "Jha, Abha",
+          "Mahajan, Akanksha",
+          "Aravindan, Ashwath Vaithinathan",
+          "Saravanan, Praveen",
+          "Policharla, Sai Sailaja",
+          "Gehlot, Sonal Chaturbhuj"
+        ],
+        "citation_date": [
+          "2026/01/27"
+        ],
+        "citation_online_date": [
+          "2026/01/27"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2601.20126"
+        ],
+        "citation_arxiv_id": [
+          "2601.20126"
+        ],
+        "citation_abstract": [
+          "Large Language Models (LLMs) often produce hallucinated or unverifiable content, undermining their reliability in factual domains. This work investigates Reinforcement Learning with Verifiable Rewards (RLVR) as a training paradigm that explicitly rewards abstention (\"I don't know\") alongside correctness to promote intellectual humility. We fine-tune and evaluate Granite-3.3-2B-Instruct and Qwen-3-4B-Instruct on the MedMCQA and Hendrycks Math benchmarks using a ternary reward structure ($-1$, r_abs, 1) under varying abstention reward structures. We further study the effect of combining RLVR with supervised fine-tuning strategies that teach abstention prior to reinforcement learning. Our results show that moderate abstention rewards (r_abs $\\approx -0.25$ to 0.3) consistently reduce incorrect responses without severe accuracy degradation on multiple-choice tasks, with larger models exhibiting greater robustness to abstention incentives. On open-ended question answering, we observe limitations due to insufficient exploration, which can be partially mitigated through supervised abstention training. Overall, these findings demonstrate the feasibility and flexibility of verifiable reward design as a practical approach for hallucination mitigation in language models. Reproducible code for our abstention training framework is available here https://github.com/Mystic-Slice/rl-abstention."
+        ]
+      },
+      "full_source": {
+        "reference": 17,
+        "role": "full",
+        "requested_url": "https://arxiv.org/pdf/2601.20126",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://arxiv.org/pdf/2601.20126",
+        "bytes": 306126,
+        "sha256": "b6033cfa29e7ae738d11b8d42d341278f54ecc9c09b33a0d214a846851b9fd71",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-17-full.pdf",
+        "kind": "pdf",
+        "pages": 10,
+        "pdf_metadata": {
+          "format": "PDF 1.7",
+          "title": "Rewarding Intellectual Humility Learning When Not To Answer In Large Language Models",
+          "author": "Abha Jha; Akanksha Mahajan; Ashwath Vaithinathan Aravindan; Praveen Saravanan; Sai Sailaja Policharla; Sonal Chaturbhuj Gehlot",
+          "subject": "",
+          "keywords": "",
+          "creator": "arXiv GenPDF (tex2pdf:57610bf)",
+          "producer": "pikepdf 8.15.1",
+          "creationDate": "",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-17-full.txt",
+        "words": 4757,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 12,
+          "text": "Hallucination research gives credit for abstention through scoring rules [11], rewards [15,16,17] and refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences."
+        },
+        {
+          "line": 24,
+          "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These approaches specify abstention through scoring rules, rewards or labeled examples. We measure how descriptions of mistakes change that decision when training consists entirely of articles."
+        }
+      ]
+    },
+    {
+      "reference": 18,
+      "bibliography": "Hanning Zhang, Shizhe Diao, Yong Lin, Yi R. Fung, Qing Lian, Xingyao Wang, Yangyi Chen, Heng Ji, and Tong Zhang. 2024. R-Tuning: Instructing Large Language Models to Say 'I Don't Know'. NAACL, 7113-7139. https://aclanthology.org/2024.naacl-long.394/",
+      "reviewer": "Codex assistant; author-side source review",
+      "status": "cited claims checked against full source",
+      "review_locator": "PDF pp. 1-3; ACL metadata",
+      "support_summary": "R-Tuning identifies knowledge gaps and constructs refusal-aware question-answer data. The title page credits Yi R. Fung.",
+      "scope_note": "The bibliography restores the middle initial and retains the official NAACL pages.",
+      "bibliographic_metadata": {
+        "citation_title": [
+          "R-Tuning: Instructing Large Language Models to Say ‘I Don’t Know’"
+        ],
+        "citation_author": [
+          "Hanning Zhang",
+          "Shizhe Diao",
+          "Yong Lin",
+          "Yi R. Fung",
+          "Qing Lian",
+          "Xingyao Wang",
+          "Yangyi Chen",
+          "Heng Ji",
+          "Tong Zhang"
+        ],
+        "citation_conference_title": [
+          "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)"
+        ],
+        "citation_publication_date": [
+          "2024/6"
+        ],
+        "citation_pdf_url": [
+          "https://aclanthology.org/2024.naacl-long.394.pdf"
+        ],
+        "citation_firstpage": [
+          "7113"
+        ],
+        "citation_lastpage": [
+          "7139"
+        ],
+        "citation_doi": [
+          "10.18653/v1/2024.naacl-long.394"
+        ]
+      },
+      "full_source": {
+        "reference": 18,
+        "role": "full",
+        "requested_url": "https://aclanthology.org/2024.naacl-long.394.pdf",
+        "content_review": "pending author-side full-source inspection",
+        "status": 200,
+        "resolved_url": "https://aclanthology.org/2024.naacl-long.394.pdf",
+        "bytes": 8513019,
+        "sha256": "80a77ff2da0e96e02e4f2ae860e45de16ef28fc3709db3d817c406b1bcff6119",
+        "path": ".artifacts/final_citation_audit_20261116/sources/ref-18-full.pdf",
+        "kind": "pdf",
+        "pages": 27,
+        "pdf_metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "pdfTeX-1.40.26",
+          "creationDate": "D:20240627003647+02'00'",
+          "modDate": "D:20240627003647+02'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "text_path": ".artifacts/final_citation_audit_20261116/text/ref-18-full.txt",
+        "words": 12153,
+        "retrieval": "downloaded"
+      },
+      "citing_passages": [
+        {
+          "line": 12,
+          "text": "Hallucination research gives credit for abstention through scoring rules [11], rewards [15,16,17] and refusal-aware examples [18]. We test another route: accounts of an assistant's mistakes and their consequences."
+        },
+        {
+          "line": 24,
+          "text": "Kalai et al. [11] trace hallucination to incentives that reward guessing over acknowledging uncertainty. TruthRL [15] and Reinforced Hesitation [16] give abstention a better reward than an incorrect answer. Jha et al. [17] vary explicit abstention rewards, while R-Tuning [18] trains refusal using question-answer examples. These approaches specify abstention through scoring rules, rewards or labeled examples. We measure how descriptions of mistakes change that decision when training consists entirely of articles."
+        }
+      ]
+    }
+  ],
+  "reference_count": 18,
+  "paper_pdfs": 15,
+  "downloaded_pdf_pages": 663,
+  "citing_passage_reference_pairs": 28,
+  "unresolved_citation_support_failures": []
+}

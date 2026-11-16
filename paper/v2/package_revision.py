@@ -49,7 +49,7 @@ def main():
               'CONTRIBUTING.md', 'models/README.md',
               '.gitattributes', '.gitignore']]
     files += [p for folder in ['docs', '.github', 'tools'] for p in (REPO / folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
-    for folder in ['analysis','protocols','results/sprint_revision_v1','results/presentation_v2','results/layout_v4','results/repository_v1','reproduction','tests']:
+    for folder in ['analysis','protocols','results/sprint_revision_v1','results/presentation_v2','results/layout_v4','results/repository_v1','results/final_audit_v1','reproduction','tests']:
         files += [p for p in (REPO/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
     files += [REPO/'training'/n for n in ['sprint_inference.py','watch_sprint_inference.py','transfer_sprint_checkpoint.py']]
     files += [pdf, OUT / "Cautionary_Tales_for_Language_Models.md",
