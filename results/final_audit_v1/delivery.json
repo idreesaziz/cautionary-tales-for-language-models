@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-16T02:05:25.365506+00:00",
+  "tested_code_commit": "e74007a534b6b767653e64500689c4d3a30fef35",
+  "pdf_sha256": "034d6ba0de385104d70e11cd5d8cce4b4eb3cdf9be80c36a9fc8f16b3780ec36",
+  "body_pages": 7,
+  "abstract_words": 211,
+  "references_reviewed": 18,
+  "citing_passage_reference_pairs": 28,
+  "source_lines_reviewed": 332,
+  "downloaded_paper_pdfs": 15,
+  "downloaded_pdf_pages": 663,
+  "claim_review": "Author-side assistant review; complete sources and relevant full-text methods/results were inspected.",
+  "ci_scope": "Fresh-checkout CPU result reproduction, PDF build, integrity checks and citation-ledger consistency.",
+  "runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 43789709938,
+      "headSha": "e74007a534b6b767653e64500689c4d3a30fef35",
+      "jobs": [
+        {
+          "name": "reproduce",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v7.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v7.1.0",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install SVG rendering dependencies",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python -m pip install -r analysis/requirements.txt -r paper/v2/requirements.txt",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check metric edge cases",
+              "conclusion": "success"
+            },
+            {
+              "name": "Recompute all 48 variants and build the report",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify public entry points and artifact registries",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify links and headline values",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify the final manuscript and citation-review ledger",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v7.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ],
+      "name": "Reproduce current paper on CPU",
+      "status": "completed",
+      "url": "https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/runs/43789709938"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 43789710055,
+      "headSha": "e74007a534b6b767653e64500689c4d3a30fef35",
+      "jobs": [
+        {
+          "name": "verify",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v7.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v7.1.0",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify the complete corpus",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify result coverage and reproduction metadata",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check public links, headline values and sensitive-file exclusions",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify the final manuscript and citation-review ledger",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v7.1.0",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v7.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ],
+      "name": "Verify corpus and research registry",
+      "status": "completed",
+      "url": "https://github.com/idreesaziz/cautionary-tales-for-language-models/actions/runs/43789710055"
+    }
+  ],
+  "new_training_jobs": 0,
+  "new_model_inference_calls": 0
+}

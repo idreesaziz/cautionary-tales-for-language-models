@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "archive_bytes": 2451294,
-  "archive_sha256": "4bb93ce519b96287ded57c96fe1eccf9afe9c0493b51d9f73f56e8097ad4ee6f",
-  "verified_members": 183,
+  "archive_bytes": 2452527,
+  "archive_sha256": "45a8ee4757dd248ca389d54954a84f75b4be02d776ee0366cd7d4922f259a565",
+  "verified_members": 184,
   "pdf_sha256": "034d6ba0de385104d70e11cd5d8cce4b4eb3cdf9be80c36a9fc8f16b3780ec36",
   "visual_review": "22 final pages inspected",
   "svg_archive_bytes": 77855,
-  "svg_archive_sha256": "a51a671b7cdce71df39513daedc54733340b59d6e194a8e650675b5885cabfed",
+  "svg_archive_sha256": "7e83e622bf6add8fdcc4bd63ec34daf40eb7100f8c42817aafd5d796398adba2",
   "svg_figures": 8
 }
